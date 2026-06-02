@@ -1,6 +1,7 @@
 {
   "launcher_version": "2.0.0",
-  "installer_url": "https://<org>.sharepoint.com/sites/<site>/Shared%20Documents/CornerBench_Setup.exe",
+  "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/Cor
+  nerBench%20ToolSuite/CornerBench_Setup.exe?download=1",
   "tools": {
     "ABB Migration": "1.1.0",
     "SuperOPCWatchIt": "1.0.0",
