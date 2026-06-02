@@ -1,0 +1,29 @@
+{
+  "launcher_version": "2.0.0",
+  "installer_url": "https://<org>.sharepoint.com/sites/<site>/Shared%20Documents/CornerBench_Setup.exe",
+  "tools": {
+    "ABB Migration": "1.1.0",
+    "SuperOPCWatchIt": "1.0.0",
+    "DifFHX": "8",
+    "FHXport": "20",
+    "FHXEdit": "6",
+    "WebFHX": "9",
+    "EmGen": "1",
+    "FHXMerge": "1",
+    "ModExport": "1.0.0",
+    "FMTExport": "2",
+    "FMTMaker": "1.0",
+    "CEMatrix": "1",
+    "TuningAid": "1",
+    "DvTwin": "17.0",
+    "PvxIO": "3.0",
+    "PvxPDX": "7.0",
+    "PDXDiff": "1",
+    "FSTDecompiler": "1",
+    "ODFDiff": "1",
+    "VMCreds": "1.1",
+    "VMTools": "1.0.0",
+    "ABComms": "2.0",
+    "STReader": "1"
+  }
+}
