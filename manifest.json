@@ -30,7 +30,7 @@
     "STReader": "1",
     "P&ID Reader": "1"
   },
-  "tools_folder_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite",
+  "tools_folder_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/_ToolPackages",
   "tool_downloads": {
     "ABB Migration": {
       "kind": "exe",
