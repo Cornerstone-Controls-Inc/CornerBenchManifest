@@ -2,28 +2,197 @@
   "launcher_version": "2.0.0",
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.exe?download=1",
   "tools": {
-    "ABB Migration": "1.1.0",
-    "SuperOPCWatchIt": "1.0.0",
+    "ABB Migration": "2",
+    "SuperOPCWatchIt": "1",
     "DifFHX": "8",
     "FHXport": "20",
-    "FHXEdit": "7",
+    "FHXEdit": "6",
     "WebFHX": "9",
-    "EmGen": "1",
+    "EMTools": "2",
     "FHXMerge": "1",
-    "ModExport": "1.0.0",
+    "ModExport": "1",
     "FMTExport": "2",
-    "FMTMaker": "1.0",
+    "FMTMaker": "1",
     "CEMatrix": "1",
     "TuningAid": "1",
-    "DvTwin": "17.0",
-    "PvxIO": "3.0",
-    "PvxPDX": "7.0",
+    "DvTwin": "17",
+    "FHXVerify": "1",
+    "OPCBridge": "1",
+    "PvxIO": "3",
+    "PvxPDX": "7",
     "PDXDiff": "1",
     "FSTDecompiler": "1",
     "ODFDiff": "1",
-    "VMCreds": "1.1",
-    "VMTools": "1.0.0",
-    "ABComms": "2.0",
-    "STReader": "1"
+    "VMCreds": "2",
+    "VMTools": "2",
+    "ABComms": "2",
+    "Logix2dv": "1",
+    "STReader": "1",
+    "P&ID Reader": "1"
+  },
+  "tools_folder_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite",
+  "tool_downloads": {
+    "ABB Migration": {
+      "kind": "exe",
+      "file": "ABBMigration.exe",
+      "sha256": "6b3574eeb71d8ce9788b440614d95c2c656098fe84998a7591729cd887babd19",
+      "url": ""
+    },
+    "SuperOPCWatchIt": {
+      "kind": "exe",
+      "file": "SuperOPCWatchIt.exe",
+      "sha256": "2fb72fd5f81d81eee224beb21d31c6c8ec4f297aea1c0e5538de55ce72a2ae9e",
+      "url": ""
+    },
+    "DifFHX": {
+      "kind": "exe",
+      "file": "DifFHX.exe",
+      "sha256": "e0c4f762b8c0b6ca67dd7b3cf0251698daf5e23edd78c65177f769fc3a5045a4",
+      "url": ""
+    },
+    "FHXport": {
+      "kind": "exe",
+      "file": "FHXport.exe",
+      "sha256": "e09a8397cbce39e4c997d74974bb5f12d7f5563ead1ff22ede3afaae068b4b37",
+      "url": ""
+    },
+    "FHXEdit": {
+      "kind": "exe",
+      "file": "FHXEdit.exe",
+      "sha256": "f08753cb71461b524c26861ad460878c3b22fb89199422abda20260d12d9b651",
+      "url": ""
+    },
+    "WebFHX": {
+      "kind": "exe",
+      "file": "WebFHX.exe",
+      "sha256": "29eb8a03d2a56401d63233717ea59325967dd4f2bf6597b97ef4d6dbd510c4ad",
+      "url": ""
+    },
+    "EMTools": {
+      "kind": "exe",
+      "file": "EMTools.exe",
+      "sha256": "def4d7a0542cae31be6aa8a8a3c34e96dc9ad4e7b95ffa41f5cb66accfa570f8",
+      "url": ""
+    },
+    "FHXMerge": {
+      "kind": "exe",
+      "file": "FHXMerge.exe",
+      "sha256": "68000714cc942c4a988952e657251755940490101e14e6f6ab1c44c918f2d713",
+      "url": ""
+    },
+    "ModExport": {
+      "kind": "exe",
+      "file": "ModExport.exe",
+      "sha256": "b7d36d205ec0f5ee5d49f26b96e5b05163b4a8700875aba2ea9ea810c2e1a820",
+      "url": ""
+    },
+    "FMTExport": {
+      "kind": "exe",
+      "file": "FMTExport.exe",
+      "sha256": "a3673064da0ed8d009f82dec0ff25e1ce5942e2f9b3df799571e0121a12eabe4",
+      "url": ""
+    },
+    "FMTMaker": {
+      "kind": "exe",
+      "file": "FMTMaker.exe",
+      "sha256": "b26bde830b904ea1c59126ee89c865316fe904a78f270ea973148294392a0ff8",
+      "url": ""
+    },
+    "CEMatrix": {
+      "kind": "exe",
+      "file": "CEMatrix.exe",
+      "sha256": "c7b1acfffa357aca47006f3c7b298359f2940401e1d2e479fa524170e9bc01ef",
+      "url": ""
+    },
+    "TuningAid": {
+      "kind": "exe",
+      "file": "TuningAid.exe",
+      "sha256": "04e03cac3c141c0eb805fed44c876dccd033910b6b368382e73ba31650157854",
+      "url": ""
+    },
+    "DvTwin": {
+      "kind": "exe",
+      "file": "DvTwin.exe",
+      "sha256": "038008cb6e28cbb1713b83e34a68a8a7e6d683593fde247e8b82dc3a176d9b60",
+      "url": ""
+    },
+    "FHXVerify": {
+      "kind": "exe",
+      "file": "FHXVerify.exe",
+      "sha256": "b3fe4ef948e3ded9b26400b3b8517711dbc4bb3d1421e7797d25d60aa9abcedc",
+      "url": ""
+    },
+    "OPCBridge": {
+      "kind": "zip",
+      "file": "OPCBridge.zip",
+      "sha256": "843c677e6f387dbefba4d3baa5bafa87adacaf45f3efc2508b8aa807bbd48bec",
+      "url": ""
+    },
+    "PvxIO": {
+      "kind": "exe",
+      "file": "PvxIO.exe",
+      "sha256": "554596113f48589e129d7c6d5205d7761974923dc3359450fffb3c939adbc16b",
+      "url": ""
+    },
+    "PvxPDX": {
+      "kind": "exe",
+      "file": "PvxPDX.exe",
+      "sha256": "e2ffd13997407424bfcfa2d3d9caa0301bbd6acfc2d5373e1386487e0ac823a3",
+      "url": ""
+    },
+    "PDXDiff": {
+      "kind": "exe",
+      "file": "PDXDiff.exe",
+      "sha256": "e9b5fb6eccfc0d7d10ec2b187c655ac037e01ee8d1320a3ec1aeb29799bbbc6d",
+      "url": ""
+    },
+    "FSTDecompiler": {
+      "kind": "exe",
+      "file": "FSTDecompiler.exe",
+      "sha256": "b4bc0f686f0bfdddfce2fe6209eadc70c7535bd070a8ce44b09c688370230905",
+      "url": ""
+    },
+    "ODFDiff": {
+      "kind": "exe",
+      "file": "ODFDiff.exe",
+      "sha256": "0249888b80199e5617a6e8b6706cbed529aa2b68643e04b78e4274844ec37c02",
+      "url": ""
+    },
+    "VMCreds": {
+      "kind": "exe",
+      "file": "VMCreds.exe",
+      "sha256": "2d8ba008dff1f5f52a2cc1700564c175efa1408f1e128dfa5bc6084b5fe7d2ae",
+      "url": ""
+    },
+    "VMTools": {
+      "kind": "zip",
+      "file": "VMTools.zip",
+      "sha256": "49d6c00d4fbbe2b295136897a6f4aacc2c476756a9739a48ab6db42d34a03da5",
+      "url": ""
+    },
+    "ABComms": {
+      "kind": "exe",
+      "file": "ABComms.exe",
+      "sha256": "7cff8a828e50be4b75b2763f52cbb0df5b313d47a705fb99dfd9ea9ebcbe7381",
+      "url": ""
+    },
+    "Logix2dv": {
+      "kind": "exe",
+      "file": "Logix2dv.exe",
+      "sha256": "acf1a8d8d4c1e1260cc908c14df0ad8165254c2e6c9810f3ca7fe2faa8318f34",
+      "url": ""
+    },
+    "STReader": {
+      "kind": "exe",
+      "file": "STReader.exe",
+      "sha256": "d2d25c76f0c401a451f2317d54d5b4947f926f2dda28e59f3719e07830257aec",
+      "url": ""
+    },
+    "P&ID Reader": {
+      "kind": "zip",
+      "file": "PIDReader.zip",
+      "sha256": "1ec907135293f6a9d911d69cfeadf59c16f98e0c62d9b7fbc52fe1423ae61a1e",
+      "url": ""
+    }
   }
 }
