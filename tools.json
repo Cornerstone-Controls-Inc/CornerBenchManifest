@@ -1,0 +1,232 @@
+{
+  "ABB": [
+    {
+      "name": "ABB Migration",
+      "version": "2",
+      "desc": "ABB Freelance Migration Tool \u2014 converts ABB Freelance 2016 CSV exports into structured output folders.",
+      "path": "Tools\\ABB\\ABBMigration.exe",
+      "help_file": "Tools\\ABB\\ABBMigration_help.txt",
+      "icon": "Tools\\ABB\\ABBMigration.ico"
+    }
+  ],
+  "DeltaV": [
+    {
+      "name": "SuperOPCWatchIt",
+      "version": "1",
+      "desc": "Advanced OPC-DA Tag Monitor for Emerson DeltaV. Live tag browsing, CSV import/export, write audit log.",
+      "path": "Tools\\DeltaV\\SuperOPCWatchIt.exe",
+      "help_file": "Tools\\DeltaV\\SuperOPCWatchit_help.txt",
+      "icon": "Tools\\DeltaV\\SuperOPCWatchit.ico"
+    },
+    {
+      "name": "DifFHX",
+      "version": "8",
+      "desc": "Compares two DeltaV FHX files and generates a diff report in Excel or PDF format.",
+      "path": "Tools\\DeltaV\\DifFHX.exe",
+      "help_file": "Tools\\DeltaV\\DifFHX_help.txt",
+      "icon": "Tools\\DeltaV\\DifFHX.ico"
+    },
+    {
+      "name": "FHXport",
+      "version": "20",
+      "desc": "Parses a DeltaV FHX file and generates 10 report types: Interlock, Alarm, IO, Module, EM, Reference, Historian, User Log, Phase, Named Set.",
+      "path": "Tools\\DeltaV\\FHXport.exe",
+      "help_file": "Tools\\DeltaV\\FHXport_help.txt",
+      "icon": "Tools\\DeltaV\\FHXport.ico"
+    },
+    {
+      "name": "FHXEdit",
+      "version": "6",
+      "desc": "Interactive tree editor for DeltaV FHX files with advanced find-and-replace, bulk delete, split, trim, and partial export.",
+      "path": "Tools\\DeltaV\\FHXEdit.exe",
+      "help_file": "Tools\\DeltaV\\FHXEdit_help.txt",
+      "icon": "Tools\\DeltaV\\FHXEdit.ico"
+    },
+    {
+      "name": "WebFHX",
+      "version": "9",
+      "desc": "Converts a DeltaV FHX export into a portable standalone HTML viewer with hierarchy tree and optional FBD/SFC graphics.",
+      "path": "Tools\\DeltaV\\WebFHX.exe",
+      "help_file": "Tools\\DeltaV\\WebFHX_help.txt",
+      "icon": "Tools\\DeltaV\\WebFHX.ico"
+    },
+    {
+      "name": "EMTools",
+      "version": "2",
+      "desc": "Unified DeltaV Equipment Module toolkit \u2014 generate EMs from templates with a visual SFC logic editor, export/import class parameters as CSV, and auto-comment SFC steps, all over a shared document library.",
+      "path": "Tools\\DeltaV\\EMTools.exe",
+      "help_file": "Tools\\DeltaV\\EMTools_help.txt",
+      "icon": "Tools\\DeltaV\\EMTools.ico"
+    },
+    {
+      "name": "FHXMerge",
+      "version": "1",
+      "desc": "Merges two DeltaV FHX files with element-level conflict resolution via a dual-pane diff interface.",
+      "path": "Tools\\DeltaV\\FHXMerge.exe",
+      "help_file": "Tools\\DeltaV\\FHXMerge_help.txt",
+      "icon": "Tools\\DeltaV\\FHXMerge.ico"
+    },
+    {
+      "name": "ModExport",
+      "version": "1",
+      "desc": "Parses a DeltaV FHX file and exports module configuration data organised by class, generating CSV and FMT files per class.",
+      "path": "Tools\\DeltaV\\ModExport.exe",
+      "help_file": "Tools\\DeltaV\\ModExport_help.txt",
+      "icon": "Tools\\DeltaV\\ModExport.ico"
+    },
+    {
+      "name": "FMTExport",
+      "version": "2",
+      "desc": "Filters and formats a DeltaV FHX export to match the columns defined in an existing FMT template file, producing aligned CSV output.",
+      "path": "Tools\\DeltaV\\FMTExport.exe",
+      "help_file": "Tools\\DeltaV\\FMTExport_help.txt",
+      "icon": "Tools\\DeltaV\\FMTExport.ico"
+    },
+    {
+      "name": "FMTMaker",
+      "version": "1",
+      "desc": "Creates DeltaV-compatible .fmt format specification files from Excel or CSV input files.",
+      "path": "Tools\\DeltaV\\FMTMaker.exe",
+      "help_file": "Tools\\DeltaV\\FMTMaker_help.txt",
+      "icon": "Tools\\DeltaV\\FMTMaker.ico"
+    },
+    {
+      "name": "CEMatrix",
+      "version": "1",
+      "desc": "Analyses a DeltaV FHX export to generate an interactive HTML interlock matrix and network graph.",
+      "path": "Tools\\DeltaV\\CEMatrix.exe",
+      "help_file": "Tools\\DeltaV\\CEMatrix_help.txt",
+      "icon": "Tools\\DeltaV\\CEMatrix.ico"
+    },
+    {
+      "name": "TuningAid",
+      "version": "1",
+      "desc": "OPC UA-connected PID tuning tool with step testing, process characterisation, and live trending for DeltaV loops.",
+      "path": "Tools\\DeltaV\\TuningAid.exe",
+      "help_file": "Tools\\DeltaV\\TuningAid_help.txt",
+      "icon": "Tools\\DeltaV\\TuningAid.ico"
+    },
+    {
+      "name": "DvTwin",
+      "version": "17",
+      "desc": "DeltaV control system digital twin with OPC UA connectivity, FHX simulation, automated test runner, bulk import/export, and historian.",
+      "path": "Tools\\DeltaV\\DvTwin.exe",
+      "help_file": "Tools\\DeltaV\\DvTwin_help.txt",
+      "icon": "Tools\\DeltaV\\DvTwin.ico"
+    },
+    {
+      "name": "FHXVerify",
+      "version": "1",
+      "desc": "Validates DeltaV FHX exports - reference, integrity, SFC and parameter checks with typo detection - and applies auto-fixes, with a browsable HTML report.",
+      "path": "Tools\\DeltaV\\FHXVerify.exe",
+      "help_file": "Tools\\DeltaV\\FHXVerify_help.txt",
+      "icon": "Tools\\DeltaV\\FHXVerify.ico"
+    },
+    {
+      "name": "OPCBridge",
+      "version": "1",
+      "desc": "OPC DA to OPC UA bridge for DeltaV - native 32-bit COM interop to the DeltaV DA server, republished as an OPC UA server with live diagnostics.",
+      "path": "Tools\\DeltaV\\OPCBridge\\OPCBridge.exe",
+      "help_file": "Tools\\DeltaV\\OPCBridge\\OPCBridge_help.txt",
+      "icon": "Tools\\DeltaV\\OPCBridge\\OPCBridge.ico"
+    }
+  ],
+  "Provox": [
+    {
+      "name": "PvxIO",
+      "version": "3",
+      "desc": "Bidirectional converter for PROVOX IO configuration \u2014 export FHX to Excel (Files, Cards, Channels) or import Excel back to FHX.",
+      "path": "Tools\\Provox\\PvxIO.exe",
+      "help_file": "Tools\\Provox\\PvxIO_help.txt",
+      "icon": "Tools\\Provox\\PvxIO.ico"
+    },
+    {
+      "name": "PvxPDX",
+      "version": "7",
+      "desc": "Processes Provox PDX files to extract tables, FSTs, operations, and queries into human-readable output files.",
+      "path": "Tools\\Provox\\PvxPDX.exe",
+      "help_file": "Tools\\Provox\\PvxPDX_help.txt",
+      "icon": "Tools\\Provox\\PvxPDX.ico"
+    },
+    {
+      "name": "PDXDiff",
+      "version": "1",
+      "desc": "Compares two folders of Provox PDX export data, generating a PDF summary and Excel change log of all differences.",
+      "path": "Tools\\Provox\\PDXDiff.exe",
+      "help_file": "Tools\\Provox\\PDXDiff_help.txt",
+      "icon": "Tools\\Provox\\PDXDiff.ico"
+    },
+    {
+      "name": "FSTDecompiler",
+      "version": "1",
+      "desc": "GUI tool \u2014 decompiles Provox FST bytecode into human-readable pseudocode with a stage-by-stage viewer and syntax highlighting.",
+      "path": "Tools\\Provox\\FSTDecompiler.exe",
+      "help_file": "Tools\\Provox\\FSTDecompiler_help.txt",
+      "icon": "Tools\\Provox\\FSTDecompiler.ico"
+    },
+    {
+      "name": "ODFDiff",
+      "version": "1",
+      "desc": "Diffs two HMI configuration directories, generating SVG overlays, interactive HTML screen reports, and Excel change logs.",
+      "path": "Tools\\Provox\\ODFDiff.exe",
+      "help_file": "Tools\\Provox\\ODFDiff_help.txt",
+      "icon": "Tools\\Provox\\ODFDiff.ico"
+    }
+  ],
+  "Virtualization": [
+    {
+      "name": "VMCreds",
+      "version": "2",
+      "desc": "4-stage tool for auditing, discovering accounts, bulk-updating passwords, and remediating scheduled tasks across Hyper-V VMs via WinRM.",
+      "path": "Tools\\HyperV\\VMCreds.exe",
+      "help_file": "Tools\\HyperV\\VMCreds_help.txt",
+      "icon": "Tools\\HyperV\\VMCreds.ico"
+    },
+    {
+      "name": "VMTools",
+      "version": "2",
+      "desc": "Unified VM administration \u2014 Hyper-V file/user/process/IP management over WinRM, ESXi datastore uploads (SFTP), and ESXi template rebuilds (vSphere API).",
+      "path": "Tools\\HyperV\\VMTools\\VMTools.exe",
+      "help_file": "Tools\\HyperV\\VMTools\\VMTools_help.txt",
+      "icon": "Tools\\HyperV\\VMTools\\VMTools.ico"
+    }
+  ],
+  "Allen Bradley": [
+    {
+      "name": "ABComms",
+      "version": "2",
+      "desc": "GUI tool for communicating with Rockwell Allen-Bradley PLCs \u2014 tag read/write, tag browser, and controller admin functions.",
+      "path": "Tools\\AllenBradley\\ABComms.exe",
+      "help_file": "Tools\\AllenBradley\\ABComms_help.txt",
+      "icon": "Tools\\AllenBradley\\ABComms.ico"
+    },
+    {
+      "name": "Logix2dv",
+      "version": "1",
+      "desc": "Rockwell Logix to DeltaV migration assistant - parses Studio 5000 L5X (and .ACD) exports, maps dependencies, and generates proposed DeltaV modules as importable FHX.",
+      "path": "Tools\\AllenBradley\\Logix2dv.exe",
+      "help_file": "Tools\\AllenBradley\\Logix2dv_help.txt",
+      "icon": "Tools\\AllenBradley\\Logix2dv.ico"
+    }
+  ],
+  "CodeSys": [
+    {
+      "name": "STReader",
+      "version": "1",
+      "desc": "Converts IEC 61131-3 Structured Text programs into Process Flow Diagram HTML and PDF exports.",
+      "path": "Tools\\CodeSys\\STReader.exe",
+      "help_file": "Tools\\CodeSys\\STReader_help.txt",
+      "icon": "Tools\\CodeSys\\STReader.ico"
+    }
+  ],
+  "P&ID": [
+    {
+      "name": "P&ID Reader",
+      "version": "1",
+      "desc": "Extracts tags, device types, symbols and connectivity from P&ID PDFs (OCR + OpenCV) into structured tables, instrument loops, QA overlays and a connectivity graph.",
+      "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
+      "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
+      "icon": "Tools\\PnID\\PIDReader\\PIDReader.ico"
+    }
+  ]
+}
