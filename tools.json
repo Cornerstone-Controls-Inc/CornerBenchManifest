@@ -137,6 +137,22 @@
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
       "icon": "Tools\\DeltaV\\Op2Live\\Op2Live.ico"
+    },
+    {
+      "name": "DvHistExport",
+      "version": "1",
+      "desc": "Exports DeltaV Continuous Historian data — connects to a historian node, live tag search, reads raw samples over a time range, and exports to CSV. Pure-Python client over the DeltaV historian DLLs (32-bit).",
+      "path": "Tools\\DeltaV\\DvHistExport.exe",
+      "help_file": "Tools\\DeltaV\\DvHistExport_help.txt",
+      "icon": "Tools\\DeltaV\\DvHistExport.ico"
+    },
+    {
+      "name": "LiveTools",
+      "version": "2",
+      "desc": "Desktop toolkit for DeltaV Live .ahc graphics files: tabular reports, an interactive editor with live rendering, bulk find/replace, thumbnail export, structural compare, project-wide library analysis, and localization.",
+      "path": "Tools\\DeltaV\\LiveTools.exe",
+      "help_file": "Tools\\DeltaV\\LiveTools_help.txt",
+      "icon": "Tools\\DeltaV\\LiveTools.ico"
     }
   ],
   "Provox": [
@@ -179,6 +195,14 @@
       "path": "Tools\\Provox\\ODFDiff.exe",
       "help_file": "Tools\\Provox\\ODFDiff_help.txt",
       "icon": "Tools\\Provox\\ODFDiff.ico"
+    },
+    {
+      "name": "PVXMigration",
+      "version": "3",
+      "desc": "Generates DeltaV migration deliverables from ProVOX configuration data — appendix tables (CSV), Basebuild (XLSX) and a Functional Requirements doc (DOCX).",
+      "path": "Tools\\Provox\\PVXMigration.exe",
+      "help_file": "Tools\\Provox\\PVXMigration_help.txt",
+      "icon": "Tools\\Provox\\PVXMigration.ico"
     }
   ],
   "Virtualization": [
@@ -215,6 +239,22 @@
       "path": "Tools\\AllenBradley\\Logix2dv.exe",
       "help_file": "Tools\\AllenBradley\\Logix2dv_help.txt",
       "icon": "Tools\\AllenBradley\\Logix2dv.ico"
+    },
+    {
+      "name": "ABCommission",
+      "version": "1",
+      "desc": "EtherNet/IP device commissioning — a friendlier replacement for Rockwell's BootP-DHCP and Address Commissioning tools: discover devices (ListIdentity), assign IPs to factory-default devices via a built-in BOOTP/DHCP server, set the CIP TCP/IP config static, and read/write device parameters from EDS files.",
+      "path": "Tools\\AllenBradley\\ABCommission.exe",
+      "help_file": "Tools\\AllenBradley\\ABCommission_help.txt",
+      "icon": "Tools\\AllenBradley\\ABCommission.ico"
+    },
+    {
+      "name": "EDSCatalog",
+      "version": "1",
+      "desc": "Browser for CIP/EtherNet-IP EDS device files — resolves device identities to catalog numbers and lists configurable device parameters.",
+      "path": "Tools\\AllenBradley\\EDSCatalog.exe",
+      "help_file": "Tools\\AllenBradley\\EDSCatalog_help.txt",
+      "icon": "Tools\\AllenBradley\\EDSCatalog.ico"
     }
   ],
   "CodeSys": [
@@ -245,6 +285,42 @@
       "path": "Tools\\ReverseEngineering\\Patina.exe",
       "help_file": "Tools\\ReverseEngineering\\Patina_help.txt",
       "icon": "Tools\\ReverseEngineering\\Patina.ico"
+    },
+    {
+      "name": "ByteWright",
+      "version": "1",
+      "desc": "Binary file detective — auto-analyses unknown files (magic numbers, entropy, embedded data, PE/ELF/Mach-O/PDF/OLE/PCAP, YARA rules, disassembly) into a plain-language verdict. Fully offline.",
+      "path": "Tools\\ReverseEngineering\\ByteWright\\ByteWright.exe",
+      "help_file": "Tools\\ReverseEngineering\\ByteWright\\ByteWright_help.txt",
+      "icon": "Tools\\ReverseEngineering\\ByteWright\\ByteWright.ico"
+    }
+  ],
+  "Documentation": [
+    {
+      "name": "FnR",
+      "version": "7",
+      "desc": "Multi-format find & replace across Word, Excel, PowerPoint, DeltaV FHX, XML and text files — case-insensitive, whole-word, and regex matching with backreferences and a dry-run preview.",
+      "path": "Tools\\Documentation\\FnR.exe",
+      "help_file": "Tools\\Documentation\\FnR_help.txt",
+      "icon": "Tools\\Documentation\\FnR.ico"
+    },
+    {
+      "name": "TableX",
+      "version": "1",
+      "desc": "Extracts tables and text from any document — images, scanned/digital PDFs, Word, PowerPoint and HTML — into CSV/Excel. Fully offline OCR (RapidOCR), nothing uploaded.",
+      "path": "Tools\\Documentation\\TableX.exe",
+      "help_file": "Tools\\Documentation\\TableX_help.txt",
+      "icon": "Tools\\Documentation\\TableX.ico"
+    }
+  ],
+  "AI": [
+    {
+      "name": "MP4Transcribe",
+      "version": "1",
+      "desc": "Offline video/audio transcriber powered by OpenAI Whisper. Batch-transcribe files or whole folders to text or .srt/.vtt subtitles, with language selection, translate-to-English, and automatic GPU acceleration. FFMPEG bundled; nothing is uploaded.",
+      "path": "Tools\\AI\\MP4Transcribe\\MP4Transcribe.exe",
+      "help_file": "Tools\\AI\\MP4Transcribe\\MP4Transcribe_help.txt",
+      "icon": "Tools\\AI\\MP4Transcribe\\MP4Transcribe.ico"
     }
   ]
 }
