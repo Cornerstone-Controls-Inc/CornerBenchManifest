@@ -38,98 +38,112 @@
       "file": "ABBMigration.exe",
       "sha256": "fd4b08b8e2a852f33e94e25412047bc3431b3fa75a5d3deb8423e8334a5b84b5",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABBMigration.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABBMigration.exe.cbpk",
+      "sig": "5fc78ec79399ae972820324859ec933fc2afb7be63bce71aa2a6d7bcf16ad4cb718699cad26b41634e6da3106c0a183953d1271bdc382a54ac455f339f2d0805"
     },
     "SuperOPCWatchIt": {
       "kind": "exe",
       "file": "SuperOPCWatchIt.exe",
       "sha256": "18b790ae10b26f0cfa694df659be833464f57a4e0fa7236359274a3c92def64b",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SuperOPCWatchIt.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SuperOPCWatchIt.exe.cbpk",
+      "sig": "e6bb5ae5ff06f6434cc8edf611a149f1b8b86ebab4e47046e9a7d80c722c89aaf4b35183c99e043fd23d59f785bd0b9ccaf6a50f2ad5b6b05a7444d56e7a8d03"
     },
     "DifFHX": {
       "kind": "exe",
       "file": "DifFHX.exe",
       "sha256": "4c4b561b27b7f3346c1363aacab9bef9e206a0b9b73afdc99c22812e5ac8586b",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DifFHX.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DifFHX.exe.cbpk",
+      "sig": "44066439c3e4a9c3ff745f285110a7bbea1d7cddb387252e562def5cab408f05e4e51cf9cc75233be8cd3638f67e89762eb42fd7991e9342303da3c825f2340f"
     },
     "FHXport": {
       "kind": "exe",
       "file": "FHXport.exe",
       "sha256": "fce1c2708683db235696b840863856677512fe4ee9c3cf0f573f634d02fb7d3b",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXport.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXport.exe.cbpk",
+      "sig": "342ee70d06cfc61f7a6ba6c77162cf7b3037301a39d99cfab77c8bd5e87dc092b458b818128d37673b6fe68c4f28cc0dc72ca9037f42dfc425a9c14eec46bf02"
     },
     "FHXEdit": {
       "kind": "exe",
       "file": "FHXEdit.exe",
       "sha256": "666c4831485c7ceb9be5bf65cbfbda7dd069a63b7a923310c764e36d8655987a",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXEdit.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXEdit.exe.cbpk",
+      "sig": "2fbf84ee8c41840fc875444182075e8d689b0a425a77c23f763f2c7fc58ba67d158415a7cccf5758721fe5849e4ce604c5495dd79b937e6ff07c32195856bd0f"
     },
     "WebFHX": {
       "kind": "exe",
       "file": "WebFHX.exe",
       "sha256": "29373732399ff4d4fef0a09360d140a3b990e90995fa230fe5489e8561f9c5a9",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/WebFHX.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/WebFHX.exe.cbpk",
+      "sig": "957655516d40b47bfb77d88dc6c6a82a42f882b3d77ae290e098804dbca5fea5445a9065630b06f4eebab2d479e708922e8037aeda27f467449f9fd6765cdb03"
     },
     "EMTools": {
       "kind": "exe",
       "file": "EMTools.exe",
       "sha256": "23ebb0bc35d430445a1b25354cf14e9df96999f0791f4bbbbdee3b78bd026b99",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/EMTools.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/EMTools.exe.cbpk",
+      "sig": "717316f4b0dd95562979c3b92bf18e236a785ab6fd4a2d5797e05b2ff8b547fc93229401d271860c3a4057845df8dee14bc3096bac47bcb8bdb59cd1801ce30a"
     },
     "FHXMerge": {
       "kind": "exe",
       "file": "FHXMerge.exe",
       "sha256": "e0b55d35151844b80fe6e7d7e30ccfca6aa258e54ee94947c92781ca2f788652",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXMerge.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXMerge.exe.cbpk",
+      "sig": "4383b654969f6efb82326ab44c761d4006d5b8da92c6909651c65d3432e72f4c29965af53f8ac22490022092b640659a0922515ae99c83affea0ecdde056be09"
     },
     "ModExport": {
       "kind": "exe",
       "file": "ModExport.exe",
       "sha256": "f737682fb1223cf3ab517780b91b859e6f9d0e700b7b2e8d4ea92bce10913a01",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ModExport.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ModExport.exe.cbpk",
+      "sig": "98644350d577517153f7cdd22f688c3c228d7ccc53787d4bb4a260aea9dd04dd3b2f9a2fac7048e53e7f35ee7dc7ac4e99261d2868f162c85e7404681167980c"
     },
     "FMTExport": {
       "kind": "exe",
       "file": "FMTExport.exe",
       "sha256": "ac23bc9ef70c0a35b898dd5bcfd08b50887c278a553529bc22b6430ac73fe13b",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FMTExport.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FMTExport.exe.cbpk",
+      "sig": "a5ea6a160a2d27c330e50194aa62b8c51bc0eb80148d9ae42fa46ccdb6415a6de3117f3e702a6d18043afc417f657661c19b51dfc7b5230b21fba18884c5850b"
     },
     "FMTMaker": {
       "kind": "exe",
       "file": "FMTMaker.exe",
       "sha256": "7f3d97b6d7bceb9e7d66ee92437a3bd93999c134910d9961227b3a5cef74ac94",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FMTMaker.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FMTMaker.exe.cbpk",
+      "sig": "c577e003a18546ff6cad86aa07f8903df65b9b29b7c67597c995510677d4ca94eb86d82af200420c42e0fc8a2dab1f046611bcdf050d4a298af58564d584410c"
     },
     "CEMatrix": {
       "kind": "exe",
       "file": "CEMatrix.exe",
       "sha256": "458209cff09b4aac2f8513026c6e2140b3d04bdc819d87cb1abee2a8e1b5f533",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CEMatrix.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CEMatrix.exe.cbpk",
+      "sig": "88be5672785ca4437ee96a77e3869e156f34309a9822a2d55e893eb86b13b0e92e001dd2f45c4c2564e91b32c99ab7c49944a5a41cd0d773d11d2628d1fb3700"
     },
     "TuningAid": {
       "kind": "exe",
       "file": "TuningAid.exe",
       "sha256": "bcfaf540b85ac81f52bf765d8dc8a419d80286c473358b5e4db4c906f3b22c0a",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/TuningAid.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/TuningAid.exe.cbpk",
+      "sig": "7f62ad81f9abaecaa719c77642238bef4707a2ea62092af46e1dabfc58b736f3ffe80941580b0e485743a971c975873e456a7d8b760072bb9ef6eae4de475c06"
     },
     "DvTwin": {
       "kind": "exe",
       "file": "DvTwin.exe",
       "sha256": "001d697da63b611dd9583ecafa27d70196418a90c02545edba630ac33e8620b3",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvTwin.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvTwin.exe.cbpk",
+      "sig": "ab1962fab50b9cf4cd99b5b4d3974eb93e9968f787184260bb4e7a751c945f71aecfc86b84393e05f802892d53320ef1f0e67ad56c8cb48b04fc515136caf506"
     },
     "FHXVerify": {
       "kind": "exe",
@@ -150,42 +164,48 @@
       "file": "PvxIO.exe",
       "sha256": "1d3a3247535863c3163ad207cf025472b5993511dd67cc777bf938f1541891d2",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxIO.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxIO.exe.cbpk",
+      "sig": "b3039dd0ce8dd349fa9925443dbd09f3ed7820e5f673cb7c4cc69ff841f9d6f4e7eeeb15e4cceb35830b36ecf9bbfcc832417fe200f53ffa8da321567e518800"
     },
     "PvxPDX": {
       "kind": "exe",
       "file": "PvxPDX.exe",
       "sha256": "2a4e16c1bc410a3d9da3d944bb56b05b7a7f2abc44e7e81d7dcc327310805498",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxPDX.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxPDX.exe.cbpk",
+      "sig": "b471352ba53f8b9fba03468ec5019bb27c2a9b3b140964fdf28fe78d5d744866c1e19a02db070eb269cddbeaefae0e031437584f848b81a8c0c490a57c92020c"
     },
     "PDXDiff": {
       "kind": "exe",
       "file": "PDXDiff.exe",
       "sha256": "c418a69b658ac9b1857f187eea74e02df82d36a22a73d7b738d641f3d98620d4",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PDXDiff.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PDXDiff.exe.cbpk",
+      "sig": "936961b02284d7685b92cb2a1f2578cbc51f9fc28867e6605f08873687b6285d9a1cb9906eff9bf8b9d42d73278b500040bddcd71e92c7dcd26c3e7da640540b"
     },
     "FSTDecompiler": {
       "kind": "exe",
       "file": "FSTDecompiler.exe",
       "sha256": "ed711c8e0b3918511de37b73f9eb186364a8f320289ed389be96d7e0886124c7",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FSTDecompiler.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FSTDecompiler.exe.cbpk",
+      "sig": "7811dec12e5a5d7ddde9cd67f52515e7e1d5b7d7d10db6cc26b54a988e46ea7168c2351ca88deffb27770bd1790013a6720b851a20638668d2ca3ea211cd0209"
     },
     "ODFDiff": {
       "kind": "exe",
       "file": "ODFDiff.exe",
       "sha256": "5aa378f56359e85580679852b54751284495d6c72fa622a72099e39cb4d4f4ec",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ODFDiff.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ODFDiff.exe.cbpk",
+      "sig": "fa0722ab08155d6fe7c4f6003664845fafc5113c76f142451b24d4a6575780e203534a81922ea73a1f43bc42fdad8d446a83364bc971911c6232911e9c336e02"
     },
     "VMCreds": {
       "kind": "exe",
       "file": "VMCreds.exe",
       "sha256": "04594adcb6df2e63d80ae027c2b84c5184e5c5315f7c2a9834d315e37de0492b",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/VMCreds.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/VMCreds.exe.cbpk",
+      "sig": "7ce05607582c3d87ab4a8de94f691f391c1130efce3da605a4d68ea1b8b6b0f7c81a6238048a4da61e9d3f329206f68d43468e556ea40559f2f3dbfa3fa9080c"
     },
     "VMTools": {
       "kind": "zip",
@@ -199,21 +219,24 @@
       "file": "ABComms.exe",
       "sha256": "da62562eb3c814187d3574a223ad06a7180f943c73640ae54937cdba3afcfcda",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABComms.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABComms.exe.cbpk",
+      "sig": "358c9f4208ab3a0a31a706e34a1b110a707d653454b6f34e82fd2aacb845416634e246ddad4dcc9064361212f6a91f24b0b33d91b9aa7c128b1af9b9a8520a00"
     },
     "Logix2dv": {
       "kind": "exe",
       "file": "Logix2dv.exe",
       "sha256": "2cb2403c1a6ecd2f3bc27e8426ce217aeb01e24c90a1dff9238fdbb68c0cd3d3",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Logix2dv.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Logix2dv.exe.cbpk",
+      "sig": "ff900635ad434e727e389236f17f0f63804529f9592d6e6d889a5be101ae5ef3310dc5d6a12c3ebedabbe8f747663cc5a4ffc614ea7ece914a440e02c7ab7d0c"
     },
     "STReader": {
       "kind": "exe",
       "file": "STReader.exe",
       "sha256": "b3b385722d51e67676a5b0371c281e3cb18ab1fe425d5efa3651fca912d9b0d5",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/STReader.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/STReader.exe.cbpk",
+      "sig": "d07bfd9551f72da55af2845d3712b1465ef0a34cc0dbeb4faae764aa81892e1b5645144025ae071879bd03e3ecffddc964b50b3dbefdda6e10ca28705ef8f000"
     },
     "P&ID Reader": {
       "kind": "zip",
@@ -228,7 +251,7 @@
     "Op2Live": {
       "kind": "zip",
       "file": "Op2Live.zip",
-      "sha256": "9adfb708808449bc5c82df256fa8f08c3fd6fb4e76bbaf468e19e4ff7cd9789f",
+      "sha256": "e407e60bb4d1d5150e1084d4add25f7d896e89abf6e69c20089fc5e6ff88ac08",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk"
     },
@@ -237,7 +260,8 @@
       "file": "Patina.exe",
       "sha256": "c10d590efa9180bc2f1999db15f4331dedf33cd2ae6cb8afe410796eb551e51e",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Patina.exe.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Patina.exe.cbpk",
+      "sig": "b3d461da87a2c5619da7d694b5493a2d6d8f1fc996e5e21fc1cb8a74c1bd3fbf8008130803d9182dbd2ee2f8d10eaa95a240561cebb72a3c7dc08c620b84f40f"
     }
   }
 }
