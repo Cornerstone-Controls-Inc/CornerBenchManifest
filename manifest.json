@@ -251,7 +251,7 @@
     "P&ID Reader": {
       "kind": "zip",
       "file": "PIDReader.zip",
-      "sha256": "b87ea4e7302ec396626c0686d354b22f7f9de9cd58e1d7e1510869452b49ea70",
+      "sha256": "f184b3984d264821ad3ab10e1fef1652fad7f2f86ee2821bd4646d4a63007e22",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.000",
