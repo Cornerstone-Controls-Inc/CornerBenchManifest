@@ -2,7 +2,7 @@
   "launcher_version": "2.0.2",
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
   "tools": {
-    "ABB Migration": "2",
+    "ABB Migration": "3",
     "SuperOPCWatchIt": "1",
     "DifFHX": "8",
     "FHXport": "20",
@@ -25,7 +25,7 @@
     "ODFDiff": "1",
     "VMCreds": "2",
     "VMTools": "2",
-    "ABComms": "2",
+    "ABComms": "3",
     "Logix2dv": "1",
     "STReader": "1",
     "P&ID Reader": "1"
@@ -34,7 +34,7 @@
     "ABB Migration": {
       "kind": "exe",
       "file": "ABBMigration.exe",
-      "sha256": "da695fa6b6b1e85c0d762ec63c31b7cb6a1f23e34e0f716e8466e9b0ac4fc987",
+      "sha256": "fd4b08b8e2a852f33e94e25412047bc3431b3fa75a5d3deb8423e8334a5b84b5",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABBMigration.exe.cbpk"
     },
@@ -48,7 +48,7 @@
     "DifFHX": {
       "kind": "exe",
       "file": "DifFHX.exe",
-      "sha256": "b8ee99bb92474e968f8a1ad29a9b187963077f4e4b48f4b9175f593e1f7ab537",
+      "sha256": "4c4b561b27b7f3346c1363aacab9bef9e206a0b9b73afdc99c22812e5ac8586b",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DifFHX.exe.cbpk"
     },
@@ -62,7 +62,7 @@
     "FHXEdit": {
       "kind": "exe",
       "file": "FHXEdit.exe",
-      "sha256": "c1e82d634a077a48057cddba9c31b84363c63d15e956a44bec6673681ebdbded",
+      "sha256": "666c4831485c7ceb9be5bf65cbfbda7dd069a63b7a923310c764e36d8655987a",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXEdit.exe.cbpk"
     },
@@ -76,7 +76,7 @@
     "EMTools": {
       "kind": "exe",
       "file": "EMTools.exe",
-      "sha256": "bb4bfa83b1a473e1fee0fededac8754a28f04642c1cf0687ce6d4148d9ad3d53",
+      "sha256": "23ebb0bc35d430445a1b25354cf14e9df96999f0791f4bbbbdee3b78bd026b99",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/EMTools.exe.cbpk"
     },
@@ -111,7 +111,7 @@
     "CEMatrix": {
       "kind": "exe",
       "file": "CEMatrix.exe",
-      "sha256": "6490435f6df1233a0b3324bc9de4c7ecedce984d0ac4f1a3eed68e7d567ff8ac",
+      "sha256": "458209cff09b4aac2f8513026c6e2140b3d04bdc819d87cb1abee2a8e1b5f533",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CEMatrix.exe.cbpk"
     },
@@ -125,7 +125,7 @@
     "DvTwin": {
       "kind": "exe",
       "file": "DvTwin.exe",
-      "sha256": "86d154b0d2b1e130a694377bf5a0d8d4d0ba79787b554dd6b380660948d6f0b2",
+      "sha256": "001d697da63b611dd9583ecafa27d70196418a90c02545edba630ac33e8620b3",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvTwin.exe.cbpk"
     },
@@ -195,7 +195,7 @@
     "ABComms": {
       "kind": "exe",
       "file": "ABComms.exe",
-      "sha256": "d95da55239fa250a3ba4ebcfc906983fa71730dc3aed6fd4f8b4144b6d58556b",
+      "sha256": "da62562eb3c814187d3574a223ad06a7180f943c73640ae54937cdba3afcfcda",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABComms.exe.cbpk"
     },
