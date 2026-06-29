@@ -28,8 +28,8 @@
     "ABComms": "3",
     "Logix2dv": "2",
     "STReader": "2",
-    "P&ID Reader": "1",
-    "Op2Live": "2",
+    "P&ID Reader": "2",
+    "Op2Live": "3",
     "Patina": "1",
     "LiveTools": "2",
     "DvHistExport": "1",
@@ -251,7 +251,7 @@
     "P&ID Reader": {
       "kind": "zip",
       "file": "PIDReader.zip",
-      "sha256": "f184b3984d264821ad3ab10e1fef1652fad7f2f86ee2821bd4646d4a63007e22",
+      "sha256": "c27298e24b7e46e85d7abfb6d20b27b337dde81a99dd9968d3f37a3301a3ebf7",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.000",
@@ -261,7 +261,7 @@
     "Op2Live": {
       "kind": "zip",
       "file": "Op2Live.zip",
-      "sha256": "4b5dbc101546b67fb4f54063ec4e9be53a859d3fd73d466ee67ae37c2bba8b33",
+      "sha256": "65354b5813b2b97ae27aad33abd9458deb8fb12c2f5970ee4d7809c032109695",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk"
     },
