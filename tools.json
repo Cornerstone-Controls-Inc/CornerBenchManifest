@@ -124,7 +124,7 @@
     },
     {
       "name": "OPCBridge",
-      "version": "2",
+      "version": "3",
       "desc": "OPC DA to OPC UA bridge for DeltaV - native 32-bit COM interop to the DeltaV DA server, republished as an OPC UA server with live diagnostics.",
       "path": "Tools\\DeltaV\\OPCBridge\\OPCBridge.exe",
       "help_file": "Tools\\DeltaV\\OPCBridge\\OPCBridge_help.txt",
@@ -132,7 +132,7 @@
     },
     {
       "name": "Op2Live",
-      "version": "1",
+      "version": "2",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live — a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
