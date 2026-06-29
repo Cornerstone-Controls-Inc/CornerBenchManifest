@@ -6,7 +6,7 @@
     "SuperOPCWatchIt": "2",
     "DifFHX": "8",
     "FHXport": "21",
-    "FHXEdit": "6",
+    "FHXEdit": "7",
     "WebFHX": "10",
     "EMTools": "2",
     "FHXMerge": "2",
@@ -77,9 +77,9 @@
     "FHXEdit": {
       "kind": "exe",
       "file": "FHXEdit.exe",
-      "sha256": "46cc0efdbb570f0503d41acf439628b0a174e2178a1c6e1474ccb28cf1cc1e69",
+      "sha256": "b332bcf10affe9b5e2a75a04face9f3644d5169a773136b81e1f8a88c1f4367d",
       "enc": "cbpk1",
-      "sig": "d9549228981ba0e6a328de24fde0fba43f804603763fd18c09f91ae78b453c56935f7b959bd8233ee420207fd93f81b5d7dbf822fbf759f06a7a85ba7adc410e",
+      "sig": "c3633fd203198b0270c6d7606c804657c96b02143fa2c5aa65e7b3e95e6f352412aabaca5aeb0f3aeae4d3c33fcd7b5161cec142c4bae5342329f1f458bd290c",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXEdit.exe.cbpk"
     },
     "WebFHX": {
