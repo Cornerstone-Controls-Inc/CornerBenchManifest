@@ -3,7 +3,7 @@
     {
       "name": "ABB Migration",
       "version": "2",
-      "desc": "ABB Freelance Migration Tool \u2014 converts ABB Freelance 2016 CSV exports into structured output folders.",
+      "desc": "ABB Freelance Migration Tool — converts ABB Freelance 2016 CSV exports into structured output folders.",
       "path": "Tools\\ABB\\ABBMigration.exe",
       "help_file": "Tools\\ABB\\ABBMigration_help.txt",
       "icon": "Tools\\ABB\\ABBMigration.ico"
@@ -53,7 +53,7 @@
     {
       "name": "EMTools",
       "version": "2",
-      "desc": "Unified DeltaV Equipment Module toolkit \u2014 generate EMs from templates with a visual SFC logic editor, export/import class parameters as CSV, and auto-comment SFC steps, all over a shared document library.",
+      "desc": "Unified DeltaV Equipment Module toolkit — generate EMs from templates with a visual SFC logic editor, export/import class parameters as CSV, and auto-comment SFC steps, all over a shared document library.",
       "path": "Tools\\DeltaV\\EMTools.exe",
       "help_file": "Tools\\DeltaV\\EMTools_help.txt",
       "icon": "Tools\\DeltaV\\EMTools.ico"
@@ -129,13 +129,21 @@
       "path": "Tools\\DeltaV\\OPCBridge\\OPCBridge.exe",
       "help_file": "Tools\\DeltaV\\OPCBridge\\OPCBridge_help.txt",
       "icon": "Tools\\DeltaV\\OPCBridge\\OPCBridge.ico"
+    },
+    {
+      "name": "Op2Live",
+      "version": "1",
+      "desc": "Converts DeltaV Operate graphics to DeltaV Live — a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
+      "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
+      "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
+      "icon": "Tools\\DeltaV\\Op2Live\\Op2Live.ico"
     }
   ],
   "Provox": [
     {
       "name": "PvxIO",
       "version": "3",
-      "desc": "Bidirectional converter for PROVOX IO configuration \u2014 export FHX to Excel (Files, Cards, Channels) or import Excel back to FHX.",
+      "desc": "Bidirectional converter for PROVOX IO configuration — export FHX to Excel (Files, Cards, Channels) or import Excel back to FHX.",
       "path": "Tools\\Provox\\PvxIO.exe",
       "help_file": "Tools\\Provox\\PvxIO_help.txt",
       "icon": "Tools\\Provox\\PvxIO.ico"
@@ -159,7 +167,7 @@
     {
       "name": "FSTDecompiler",
       "version": "1",
-      "desc": "GUI tool \u2014 decompiles Provox FST bytecode into human-readable pseudocode with a stage-by-stage viewer and syntax highlighting.",
+      "desc": "GUI tool — decompiles Provox FST bytecode into human-readable pseudocode with a stage-by-stage viewer and syntax highlighting.",
       "path": "Tools\\Provox\\FSTDecompiler.exe",
       "help_file": "Tools\\Provox\\FSTDecompiler_help.txt",
       "icon": "Tools\\Provox\\FSTDecompiler.ico"
@@ -185,7 +193,7 @@
     {
       "name": "VMTools",
       "version": "2",
-      "desc": "Unified VM administration \u2014 Hyper-V file/user/process/IP management over WinRM, ESXi datastore uploads (SFTP), and ESXi template rebuilds (vSphere API).",
+      "desc": "Unified VM administration — Hyper-V file/user/process/IP management over WinRM, ESXi datastore uploads (SFTP), and ESXi template rebuilds (vSphere API).",
       "path": "Tools\\HyperV\\VMTools\\VMTools.exe",
       "help_file": "Tools\\HyperV\\VMTools\\VMTools_help.txt",
       "icon": "Tools\\HyperV\\VMTools\\VMTools.ico"
@@ -195,7 +203,7 @@
     {
       "name": "ABComms",
       "version": "2",
-      "desc": "GUI tool for communicating with Rockwell Allen-Bradley PLCs \u2014 tag read/write, tag browser, and controller admin functions.",
+      "desc": "GUI tool for communicating with Rockwell Allen-Bradley PLCs — tag read/write, tag browser, and controller admin functions.",
       "path": "Tools\\AllenBradley\\ABComms.exe",
       "help_file": "Tools\\AllenBradley\\ABComms_help.txt",
       "icon": "Tools\\AllenBradley\\ABComms.ico"

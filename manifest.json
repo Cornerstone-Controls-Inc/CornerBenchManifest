@@ -28,7 +28,8 @@
     "ABComms": "3",
     "Logix2dv": "1",
     "STReader": "1",
-    "P&ID Reader": "1"
+    "P&ID Reader": "1",
+    "Op2Live": "1"
   },
   "tool_downloads": {
     "ABB Migration": {
@@ -222,6 +223,13 @@
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.000",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.001"
       ]
+    },
+    "Op2Live": {
+      "kind": "zip",
+      "file": "Op2Live.zip",
+      "sha256": "9adfb708808449bc5c82df256fa8f08c3fd6fb4e76bbaf468e19e4ff7cd9789f",
+      "enc": "cbpk1",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk"
     }
   }
 }
