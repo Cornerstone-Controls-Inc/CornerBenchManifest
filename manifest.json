@@ -261,7 +261,7 @@
     "Op2Live": {
       "kind": "zip",
       "file": "Op2Live.zip",
-      "sha256": "65354b5813b2b97ae27aad33abd9458deb8fb12c2f5970ee4d7809c032109695",
+      "sha256": "535c2e2cc62f0e8a8b18905ca9f35aed9eaa041df29b32b32fdb7a2e57741601",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk"
     },
