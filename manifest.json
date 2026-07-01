@@ -1,5 +1,5 @@
 {
-  "launcher_version": "2.0.2",
+  "launcher_version": "2.0.3",
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
   "tools": {
     "ABB Migration": "3",
@@ -28,7 +28,7 @@
     "ABComms": "3",
     "Logix2dv": "2",
     "STReader": "2",
-    "P&ID Reader": "2",
+    "P&ID Reader": "3",
     "Op2Live": "3",
     "Patina": "1",
     "LiveTools": "2",
@@ -251,7 +251,7 @@
     "P&ID Reader": {
       "kind": "zip",
       "file": "PIDReader.zip",
-      "sha256": "c27298e24b7e46e85d7abfb6d20b27b337dde81a99dd9968d3f37a3301a3ebf7",
+      "sha256": "3772515a4db30b412129dbff683dc9a01a4ac467539624e16a4c30f1e9ac140d",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.000",
