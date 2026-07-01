@@ -226,7 +226,7 @@
   "Allen Bradley": [
     {
       "name": "ABComms",
-      "version": "3",
+      "version": "4",
       "desc": "GUI tool for communicating with Rockwell Allen-Bradley PLCs \u2014 tag read/write, tag browser, controller admin, and EDS-based chassis catalog lookup.",
       "path": "Tools\\AllenBradley\\ABComms.exe",
       "help_file": "Tools\\AllenBradley\\ABComms_help.txt",
@@ -234,7 +234,7 @@
     },
     {
       "name": "EDSCatalog",
-      "version": "1",
+      "version": "2",
       "desc": "Browser for CIP/EtherNet-IP EDS device files \u2014 resolves device identities to catalog numbers and lists configurable device parameters.",
       "path": "Tools\\AllenBradley\\EDSCatalog.exe",
       "help_file": "Tools\\AllenBradley\\EDSCatalog_help.txt",
@@ -250,7 +250,7 @@
     },
     {
       "name": "ABCommission",
-      "version": "1",
+      "version": "2",
       "desc": "EtherNet/IP device commissioning \u2014 a friendlier replacement for Rockwell's BootP-DHCP and Address Commissioning tools: discover devices (ListIdentity), assign IPs to factory-default devices via a built-in BOOTP/DHCP server, set the CIP TCP/IP config static, and read/write device parameters from EDS files.",
       "path": "Tools\\AllenBradley\\ABCommission.exe",
       "help_file": "Tools\\AllenBradley\\ABCommission_help.txt",
