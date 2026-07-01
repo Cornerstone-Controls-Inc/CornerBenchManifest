@@ -25,7 +25,7 @@
     "ODFDiff": "2",
     "VMCreds": "3",
     "VMTools": "3",
-    "ABComms": "3",
+    "ABComms": "4",
     "Logix2dv": "2",
     "STReader": "2",
     "P&ID Reader": "3",
@@ -34,8 +34,8 @@
     "LiveTools": "2",
     "DvHistExport": "1",
     "PVXMigration": "3",
-    "EDSCatalog": "1",
-    "ABCommission": "1",
+    "EDSCatalog": "2",
+    "ABCommission": "2",
     "FnR": "7",
     "ByteWright": "1",
     "TableX": "1",
@@ -227,10 +227,11 @@
     "ABComms": {
       "kind": "exe",
       "file": "ABComms.exe",
-      "sha256": "8f586d0807d80b19e2e9d7a78186145c8d5aa98df4ea0f8471d14a000b08c5a2",
+      "sha256": "8c9de5140cd7ea65f0032657142fd61dbd10e3ffcc16c2be4d014bb128a2d7c8",
       "enc": "cbpk1",
-      "sig": "2cbc9df42ed4f146922856664b48f0c54677162bd590e26b4c4babb6faecb31aa2a204616cb203d40ae066189edd44f302c10c044b1c229f97d681f297172c0d",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABComms.exe.cbpk"
+      "sig": "2d527e087f0d11d3dba1d5e6f8b4a4dfd65316ae841c6889cd578592be11fcd95723edd0cc4b5014047036c0db90ddeadec06d9f847630850d81bb4f03849002",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABComms.exe.cbpk",
+      "notes": "## v4\n\n- Restored the EDS-based chassis catalog lookup. The shared Allen-Bradley EDS library was missing from the packaged build, so catalog-number resolution silently failed; it is now bundled and working again."
     },
     "Logix2dv": {
       "kind": "exe",
@@ -300,18 +301,20 @@
     "EDSCatalog": {
       "kind": "exe",
       "file": "EDSCatalog.exe",
-      "sha256": "09ba061d7d8c513fc5d7e3b8818e8044aa9f1d1ff0e02c5887c9bcf25db7602f",
+      "sha256": "70cb1de737ca7086597275d12044ffd9f7148f961d30a159e4e309aef88ea480",
       "enc": "cbpk1",
-      "sig": "d1b131c3cfaef3028a223d08bc187c4b412f93cc261363c409fe37f50259391c172d5206e9a4224d6401f93f903c609a16f5dba92d3806797ec332867a33040e",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/EDSCatalog.exe.cbpk"
+      "sig": "a35a4e6bbbe7955bcc8e041adf9caa1a3f15a1b8f408fc57b3b8b4e67d60d4799b073deba9f42f7ad665d285b2565261e882c6a4eff5aa65770c5c5c28fa300e",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/EDSCatalog.exe.cbpk",
+      "notes": "## v2\n\n- Fixed a startup crash (`ModuleNotFoundError: No module named 'shared.allenbradley'`). The shared Allen-Bradley EDS library was missing from the packaged build; it is now bundled correctly and the tool launches again."
     },
     "ABCommission": {
       "kind": "exe",
       "file": "ABCommission.exe",
-      "sha256": "04319cd58623adeef6cadff93dc7e85cec77125aef34ac88c3a8bd30e71156a3",
+      "sha256": "706bbd710546c349f6df40df2af60014b83f8c50475066399eb27ac4e5cb324c",
       "enc": "cbpk1",
-      "sig": "832990886f1c0d546d8058615b4c48b8940736db58c85d07420afc1cd5ec328eb28859dd4975c7833aca1b38d5b0530df8e21c0bfa935bc377547b5bfcb75600",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABCommission.exe.cbpk"
+      "sig": "c7d630684d5cfeb3e9a6d705ed2b6272a4e350e4db860b18865c3878b9f947fffc5b4965c44ad478f889ea5668b1548499a794a13f9aa948ae255377353bf706",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABCommission.exe.cbpk",
+      "notes": "## v2\n\n- Fixed a startup crash caused by the shared Allen-Bradley EDS library being missing from the packaged build. EDS-based parameter lookup and the tool as a whole now launch correctly."
     },
     "FnR": {
       "kind": "exe",
