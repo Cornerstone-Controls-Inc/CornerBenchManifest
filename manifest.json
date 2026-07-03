@@ -20,7 +20,7 @@
     "DvTwin": "17",
     "FHXVerify": "2",
     "OPCBridge": "3",
-    "Op2Live": "4",
+    "Op2Live": "5",
     "OperateTools": "2",
     "PvxIO": "4",
     "PvxPDX": "8",
@@ -263,9 +263,10 @@
     "Op2Live": {
       "kind": "zip",
       "file": "Op2Live.zip",
-      "sha256": "535c2e2cc62f0e8a8b18905ca9f35aed9eaa041df29b32b32fdb7a2e57741601",
+      "sha256": "40a0ff02b4f93d6cf425536d552b75e658a07406d0e007c74c24f74ca6e6da43",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk",
+      "notes": "# Op2Live\n\n## v5\n- Signed release with the latest DeltaV Operate \u2192 Live conversion-engine fixes\n  and improvements.\n\n## v4\n- Guided 12-phase Operate-to-Live conversion pipeline (parse, scan,\n  dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel\n  reports) with a visual mapping editor and GEM thumbnails."
     },
     "Patina": {
       "kind": "exe",
