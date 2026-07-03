@@ -21,7 +21,7 @@
     "FHXVerify": "2",
     "OPCBridge": "3",
     "Op2Live": "5",
-    "OperateTools": "2",
+    "OperateTools": "3",
     "PvxIO": "4",
     "PvxPDX": "8",
     "PDXDiff": "2",
@@ -354,10 +354,10 @@
     "OperateTools": {
       "kind": "zip",
       "file": "OperateTools.zip",
-      "sha256": "2745db4a501bd3ce91a25d860cfb719950d44fecf779f24fdd31b5058b5425c7",
+      "sha256": "075139a928937bd51fd9ae47e0127abe5464039efdd94a915f9085cb9876b080",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/OperateTools.zip.cbpk",
-      "notes": "# OperateTools\n\n## v2\n- Signed release \u2014 fixes the \"couldn't verify its integrity\" error on first launch.\n  (v1 shipped unsigned; the package is now Authenticode-signed and carries its\n  Ed25519 tamper signature.)\n\n## v1\n- First release. Native Rust toolkit for DeltaV Operate (iFix) `.grf` files:\n  property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find &\n  replace with automatic output validation, embedded-Python mass-edit scripting,\n  PNG thumbnail rendering, and structural compare."
+      "notes": "# OperateTools\n\n## v3\n- Find & Replace regex interface overhaul \u2014 much easier to build a\n  match-and-reuse rule:\n  - Live tester now shows a capture-group breakdown (`$1 = PUMP_101`, named\n    groups too) with one-click \"insert $N\" straight into the Replacement.\n  - New option checkboxes: Ignore case, Multiline (`^`/`$` per line),\n    `.` matches newlines, and Ignore whitespace in pattern (extended mode).\n  - \"\u2922 Big editors\" toggle swaps Pattern / Replacement / Sample for tall,\n    resizable multiline boxes for long or multiline patterns.\n\n## v2\n- Signed release \u2014 fixes the \"couldn't verify its integrity\" error on first launch.\n  (v1 shipped unsigned; the package is now Authenticode-signed and carries its\n  Ed25519 tamper signature.)\n\n## v1\n- First release. Native Rust toolkit for DeltaV Operate (iFix) `.grf` files:\n  property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find &\n  replace with automatic output validation, embedded-Python mass-edit scripting,\n  PNG thumbnail rendering, and structural compare."
     }
   }
 }
