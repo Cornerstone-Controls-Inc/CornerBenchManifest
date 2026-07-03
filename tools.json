@@ -153,6 +153,14 @@
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
       "icon": "Tools\\DeltaV\\Op2Live\\Op2Live.ico"
+    },
+    {
+      "name": "OperateTools",
+      "version": "1",
+      "desc": "Native Rust toolkit for DeltaV Operate (iFix) .grf picture files — property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find & replace with automatic output validation, embedded-Python mass-edit scripting, PNG thumbnail rendering, and structural compare.",
+      "path": "Tools\\DeltaV\\OperateTools\\OperateTools.exe",
+      "help_file": "Tools\\DeltaV\\OperateTools\\OperateTools_help.txt",
+      "icon": "Tools\\DeltaV\\OperateTools\\OperateTools.ico"
     }
   ],
   "Provox": [

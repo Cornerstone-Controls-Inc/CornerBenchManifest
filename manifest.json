@@ -21,6 +21,7 @@
     "FHXVerify": "2",
     "OPCBridge": "3",
     "Op2Live": "4",
+    "OperateTools": "1",
     "PvxIO": "4",
     "PvxPDX": "8",
     "PDXDiff": "2",
@@ -348,6 +349,13 @@
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.zip.cbpk.000",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.zip.cbpk.001"
       ]
+    },
+    "OperateTools": {
+      "kind": "zip",
+      "file": "OperateTools.zip",
+      "sha256": "5114b7e34144670e7886caafa26a662c146d1061be5b38acdd96b4688dcdaa3e",
+      "enc": "cbpk1",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/OperateTools.zip.cbpk"
     }
   }
 }
