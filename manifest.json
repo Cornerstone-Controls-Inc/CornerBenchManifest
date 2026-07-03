@@ -21,7 +21,7 @@
     "FHXVerify": "2",
     "OPCBridge": "3",
     "Op2Live": "4",
-    "OperateTools": "1",
+    "OperateTools": "2",
     "PvxIO": "4",
     "PvxPDX": "8",
     "PDXDiff": "2",
@@ -353,9 +353,10 @@
     "OperateTools": {
       "kind": "zip",
       "file": "OperateTools.zip",
-      "sha256": "5114b7e34144670e7886caafa26a662c146d1061be5b38acdd96b4688dcdaa3e",
+      "sha256": "2745db4a501bd3ce91a25d860cfb719950d44fecf779f24fdd31b5058b5425c7",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/OperateTools.zip.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/OperateTools.zip.cbpk",
+      "notes": "# OperateTools\n\n## v2\n- Signed release \u2014 fixes the \"couldn't verify its integrity\" error on first launch.\n  (v1 shipped unsigned; the package is now Authenticode-signed and carries its\n  Ed25519 tamper signature.)\n\n## v1\n- First release. Native Rust toolkit for DeltaV Operate (iFix) `.grf` files:\n  property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find &\n  replace with automatic output validation, embedded-Python mass-edit scripting,\n  PNG thumbnail rendering, and structural compare."
     }
   }
 }
