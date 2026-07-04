@@ -20,7 +20,7 @@
     "DvTwin": "17",
     "FHXVerify": "2",
     "OPCBridge": "3",
-    "Op2Live": "5",
+    "Op2Live": "6",
     "OperateTools": "3",
     "PvxIO": "4",
     "PvxPDX": "8",
@@ -263,10 +263,10 @@
     "Op2Live": {
       "kind": "zip",
       "file": "Op2Live.zip",
-      "sha256": "40a0ff02b4f93d6cf425536d552b75e658a07406d0e007c74c24f74ca6e6da43",
+      "sha256": "6b31555d3ffc3a2d1ea54fd40d9af53a55f9ec0993bb47a957fda47dc7175ede",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk",
-      "notes": "# Op2Live\n\n## v5\n- Signed release with the latest DeltaV Operate \u2192 Live conversion-engine fixes\n  and improvements.\n\n## v4\n- Guided 12-phase Operate-to-Live conversion pipeline (parse, scan,\n  dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel\n  reports) with a visual mapping editor and GEM thumbnails."
+      "notes": "# Op2Live\n\n## v6\n- Live-import reliability fixes uncovered by a full Graphics-Studio import of a\n  real customer bundle:\n  - GEM custom-property types now emit Live's real schema element names\n    (`BoolCustomPropertyDef` / `DoubleCustomPropertyDef`) instead of the\n    non-existent `Boolean*`/`Number*` types that failed import.\n  - Tab controls: a missing/blank tab count no longer emits an empty `<Value/>`\n    (fixed at the XSLT source and floored at 1 in the GEM post-sanitizer), and\n    `TabStripPlacement` defaults to `Top` \u2014 clears the \"Input string was not in\n    a correct format\" / \"must be >= 1\" import errors.\n  - Label-text globals bound to a `GsLocalizedString` property are promoted from\n    `String` to `LocalizableString` on bundle, fixing the\n    \"cannot cast System.String to GsLocalizedString\" import failure.\n  - Any Color-returning conversion function bound to `Visibility` (not just\n    `Status_Color`/`ColorTable_*`, e.g. `Alarm_Color_Table`) is now rewritten to\n    the boolean `VisibilityAnimation`.\n- Vendored the Rust `grf-rs` engine source in-repo (`tools/Op2Live/grf-rs/`),\n  removing the out-of-repo build dependency.\n\n## v5\n- Signed release with the latest DeltaV Operate \u2192 Live conversion-engine fixes\n  and improvements.\n\n## v4\n- Guided 12-phase Operate-to-Live conversion pipeline (parse, scan,\n  dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel\n  reports) with a visual mapping editor and GEM thumbnails."
     },
     "Patina": {
       "kind": "exe",
