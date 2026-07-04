@@ -39,6 +39,7 @@
     "TableX": "1",
     "FnR": "7",
     "MP4Transcribe": "1",
+    "CornerCode": "1",
     "ByteWright": "1",
     "Patina": "1"
   },
@@ -358,6 +359,19 @@
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/OperateTools.zip.cbpk",
       "notes": "# OperateTools\n\n## v3\n- Find & Replace regex interface overhaul \u2014 much easier to build a\n  match-and-reuse rule:\n  - Live tester now shows a capture-group breakdown (`$1 = PUMP_101`, named\n    groups too) with one-click \"insert $N\" straight into the Replacement.\n  - New option checkboxes: Ignore case, Multiline (`^`/`$` per line),\n    `.` matches newlines, and Ignore whitespace in pattern (extended mode).\n  - \"\u2922 Big editors\" toggle swaps Pattern / Replacement / Sample for tall,\n    resizable multiline boxes for long or multiline patterns.\n\n## v2\n- Signed release \u2014 fixes the \"couldn't verify its integrity\" error on first launch.\n  (v1 shipped unsigned; the package is now Authenticode-signed and carries its\n  Ed25519 tamper signature.)\n\n## v1\n- First release. Native Rust toolkit for DeltaV Operate (iFix) `.grf` files:\n  property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find &\n  replace with automatic output validation, embedded-Python mass-edit scripting,\n  PNG thumbnail rendering, and structural compare."
+    },
+    "CornerCode": {
+      "kind": "zip",
+      "file": "CornerCode.zip",
+      "sha256": "daea8e5c0a91c767e066738a50324cf34ac59759190d29f042d6dc284cbd3a9d",
+      "enc": "cbpk1",
+      "parts": [
+        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.000",
+        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.001",
+        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.002",
+        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.003",
+        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.004"
+      ]
     }
   }
 }
