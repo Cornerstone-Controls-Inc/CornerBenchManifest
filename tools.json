@@ -148,7 +148,7 @@
     },
     {
       "name": "Op2Live",
-      "version": "7",
+      "version": "8",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -312,7 +312,7 @@
     },
     {
       "name": "CornerCode",
-      "version": "1",
+      "version": "2",
       "desc": "Fully offline AI coding assistant — a local Qwen2.5-Coder-7B model (bundled llama-server) drives a project-aware editing agent with local embedding retrieval, offline web research, and document import/export (PDF/Word/Excel/PowerPoint), plus a built-in DeltaV FHX converter and custom skills. Nothing is uploaded; the model, embeddings, and runtime all ship in the box.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
