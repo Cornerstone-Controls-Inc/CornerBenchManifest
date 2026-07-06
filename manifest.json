@@ -20,7 +20,7 @@
     "DvTwin": "17",
     "FHXVerify": "2",
     "OPCBridge": "3",
-    "Op2Live": "8",
+    "Op2Live": "9",
     "OperateTools": "3",
     "PvxIO": "4",
     "PvxPDX": "8",
@@ -39,7 +39,7 @@
     "TableX": "1",
     "FnR": "7",
     "MP4Transcribe": "1",
-    "CornerCode": "2",
+    "CornerCode": "3",
     "ByteWright": "1",
     "Patina": "1"
   },
@@ -264,7 +264,7 @@
     "Op2Live": {
       "kind": "zip",
       "file": "Op2Live.zip",
-      "sha256": "9291016a706093230ada6cdfa5cfe7a4c2495333c54a414e9c86d26457ba263b",
+      "sha256": "99c9a6b270f87ef3179bf760eed8dc4b871e9a1a0c128ea86915ea2e5fc61caa",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk",
       "notes": "# Op2Live\n\n## v6\n- Live-import reliability fixes uncovered by a full Graphics-Studio import of a\n  real customer bundle:\n  - GEM custom-property types now emit Live's real schema element names\n    (`BoolCustomPropertyDef` / `DoubleCustomPropertyDef`) instead of the\n    non-existent `Boolean*`/`Number*` types that failed import.\n  - Tab controls: a missing/blank tab count no longer emits an empty `<Value/>`\n    (fixed at the XSLT source and floored at 1 in the GEM post-sanitizer), and\n    `TabStripPlacement` defaults to `Top` \u2014 clears the \"Input string was not in\n    a correct format\" / \"must be >= 1\" import errors.\n  - Label-text globals bound to a `GsLocalizedString` property are promoted from\n    `String` to `LocalizableString` on bundle, fixing the\n    \"cannot cast System.String to GsLocalizedString\" import failure.\n  - Any Color-returning conversion function bound to `Visibility` (not just\n    `Status_Color`/`ColorTable_*`, e.g. `Alarm_Color_Table`) is now rewritten to\n    the boolean `VisibilityAnimation`.\n- Vendored the Rust `grf-rs` engine source in-repo (`tools/Op2Live/grf-rs/`),\n  removing the out-of-repo build dependency.\n\n## v5\n- Signed release with the latest DeltaV Operate \u2192 Live conversion-engine fixes\n  and improvements.\n\n## v4\n- Guided 12-phase Operate-to-Live conversion pipeline (parse, scan,\n  dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel\n  reports) with a visual mapping editor and GEM thumbnails."
@@ -363,7 +363,7 @@
     "CornerCode": {
       "kind": "zip",
       "file": "CornerCode.zip",
-      "sha256": "f8c48d1668d52982542a5210a4b46e37d86a8805519b568a2a3f9e6e9e620777",
+      "sha256": "9b4c39ba2fbbb09e09eb4a7e18b4a573d05e13cd0082dca5f921ced7704c0c17",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.000",
