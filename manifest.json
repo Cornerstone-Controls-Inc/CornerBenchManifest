@@ -39,7 +39,7 @@
     "TableX": "1",
     "FnR": "7",
     "MP4Transcribe": "1",
-    "CornerCode": "3",
+    "CornerCode": "4",
     "ByteWright": "1",
     "Patina": "1"
   },
@@ -363,7 +363,7 @@
     "CornerCode": {
       "kind": "zip",
       "file": "CornerCode.zip",
-      "sha256": "9b4c39ba2fbbb09e09eb4a7e18b4a573d05e13cd0082dca5f921ced7704c0c17",
+      "sha256": "f9631b7d99a4eaab114d23ed73fdbcea079941f5c26b2e5af487681f06b13303",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.000",
