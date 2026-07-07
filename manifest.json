@@ -20,7 +20,7 @@
     "DvTwin": "17",
     "FHXVerify": "2",
     "OPCBridge": "3",
-    "Op2Live": "9",
+    "Op2Live": "10",
     "OperateTools": "7",
     "PvxIO": "4",
     "PvxPDX": "8",
@@ -39,7 +39,7 @@
     "TableX": "1",
     "FnR": "7",
     "MP4Transcribe": "1",
-    "CornerCode": "4",
+    "CornerCode": "5",
     "ByteWright": "1",
     "Patina": "1"
   },
@@ -264,10 +264,10 @@
     "Op2Live": {
       "kind": "zip",
       "file": "Op2Live.zip",
-      "sha256": "99c9a6b270f87ef3179bf760eed8dc4b871e9a1a0c128ea86915ea2e5fc61caa",
+      "sha256": "b508ab9ca9124eb990fd9bbb1b5977d665b3004aafbf3955a04e970e5813b4dc",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Op2Live.zip.cbpk",
-      "notes": "# Op2Live\n\n## v6\n- Live-import reliability fixes uncovered by a full Graphics-Studio import of a\n  real customer bundle:\n  - GEM custom-property types now emit Live's real schema element names\n    (`BoolCustomPropertyDef` / `DoubleCustomPropertyDef`) instead of the\n    non-existent `Boolean*`/`Number*` types that failed import.\n  - Tab controls: a missing/blank tab count no longer emits an empty `<Value/>`\n    (fixed at the XSLT source and floored at 1 in the GEM post-sanitizer), and\n    `TabStripPlacement` defaults to `Top` \u2014 clears the \"Input string was not in\n    a correct format\" / \"must be >= 1\" import errors.\n  - Label-text globals bound to a `GsLocalizedString` property are promoted from\n    `String` to `LocalizableString` on bundle, fixing the\n    \"cannot cast System.String to GsLocalizedString\" import failure.\n  - Any Color-returning conversion function bound to `Visibility` (not just\n    `Status_Color`/`ColorTable_*`, e.g. `Alarm_Color_Table`) is now rewritten to\n    the boolean `VisibilityAnimation`.\n- Vendored the Rust `grf-rs` engine source in-repo (`tools/Op2Live/grf-rs/`),\n  removing the out-of-repo build dependency.\n\n## v5\n- Signed release with the latest DeltaV Operate \u2192 Live conversion-engine fixes\n  and improvements.\n\n## v4\n- Guided 12-phase Operate-to-Live conversion pipeline (parse, scan,\n  dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel\n  reports) with a visual mapping editor and GEM thumbnails."
+      "notes": "# Op2Live\n\n## v10\n- GEM render/mapping fixes from a full Graphics-Studio import of the Elanco bundle:\n  - **Rotated device variants no longer squish.** A stale un-reflection ran against\n    valve bodies whose rotation the export already bakes into the geometry, collapsing\n    the actuator onto the body; removed it, so every disc-symbol variant now renders at\n    its true proportions.\n  - **Wrong-GEM assignment fixed** (e.g. a hand valve drawn as a different device). The\n    device-symbol variant signature now folds in the body-rectangle count, so\n    structurally-different symbols (a 3-rect vs a 5-rect body) get their own variant and\n    representative instead of collapsing onto the majority shape.\n  - **Black \"@MOD@\" device symbols on multi-module overviews** now resolve their tag: a\n    decomposed device GEM carries the tag binding captured at the device-defining cluster\n    (not the last cluster's empty one).\n  - **`SIGlobals` compile errors** (`Cannot find name 'SIGlobals'` on mode/permissive\n    expressions) fixed \u2014 residual `SIGlobals.*` references are rewritten to the real\n    `GL.Library.*` standard globals in the vendored `grf-cli` engine.\n  - **`LocalizableStringTable_*`/`MeasurementTable_*` lookup functions** are now generated\n    as `.cf.ahc` definitions (mirroring the ColorTable path), clearing the\n    \"input Input1 doesn't exist\" static errors.\n\n## v6\n- Live-import reliability fixes uncovered by a full Graphics-Studio import of a\n  real customer bundle:\n  - GEM custom-property types now emit Live's real schema element names\n    (`BoolCustomPropertyDef` / `DoubleCustomPropertyDef`) instead of the\n    non-existent `Boolean*`/`Number*` types that failed import.\n  - Tab controls: a missing/blank tab count no longer emits an empty `<Value/>`\n    (fixed at the XSLT source and floored at 1 in the GEM post-sanitizer), and\n    `TabStripPlacement` defaults to `Top` \u2014 clears the \"Input string was not in\n    a correct format\" / \"must be >= 1\" import errors.\n  - Label-text globals bound to a `GsLocalizedString` property are promoted from\n    `String` to `LocalizableString` on bundle, fixing the\n    \"cannot cast System.String to GsLocalizedString\" import failure.\n  - Any Color-returning conversion function bound to `Visibility` (not just\n    `Status_Color`/`ColorTable_*`, e.g. `Alarm_Color_Table`) is now rewritten to\n    the boolean `VisibilityAnimation`.\n- Vendored the Rust `grf-rs` engine source in-repo (`tools/Op2Live/grf-rs/`),\n  removing the out-of-repo build dependency.\n\n## v5\n- Signed release with the latest DeltaV Operate \u2192 Live conversion-engine fixes\n  and improvements.\n\n## v4\n- Guided 12-phase Operate-to-Live conversion pipeline (parse, scan,\n  dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel\n  reports) with a visual mapping editor and GEM thumbnails."
     },
     "Patina": {
       "kind": "exe",
@@ -363,7 +363,7 @@
     "CornerCode": {
       "kind": "zip",
       "file": "CornerCode.zip",
-      "sha256": "f9631b7d99a4eaab114d23ed73fdbcea079941f5c26b2e5af487681f06b13303",
+      "sha256": "732d0718e9371c348d620418cd366153aafd3ea224c4671dd729c840b5a3ca66",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.000",
