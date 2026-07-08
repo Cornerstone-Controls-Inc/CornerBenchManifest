@@ -5,7 +5,7 @@
     "ABB Migration": "3",
     "LiveTools": "2",
     "DvHistExport": "1",
-    "SuperOPCWatchIt": "2",
+    "SuperOPCWatchIt": "3",
     "DifFHX": "8",
     "FHXport": "21",
     "FHXEdit": "7",
@@ -56,10 +56,11 @@
     "SuperOPCWatchIt": {
       "kind": "exe",
       "file": "SuperOPCWatchIt.exe",
-      "sha256": "367e1fa0219ab6a264f5011780838b3955679ec9593760c443b3e8080afa55e9",
+      "sha256": "1088b436a5599c3689fa9514b6941ef18fe65d1593a947fa47610c6aea03a5be",
       "enc": "cbpk1",
-      "sig": "7b99976433558fac329dbc7dd7fc7bbaf80ba2671256c87890d8b9087d79eadfb1e5418f894bcf6c82997ef7373073bf4937f14c34dc2c903aca1fbe0f2e2c03",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SuperOPCWatchIt.exe.cbpk"
+      "sig": "de6b9fe39f96ffa40178dac64e9b26f2623994d5cfe85ac5a03d5f7f94bbb79f6d43ed826bdbab71523ccf516b9836119f2d662ad75d94aa131f77e57a3be703",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SuperOPCWatchIt.exe.cbpk",
+      "notes": "# SuperOPCWatchIt \u2014 release notes\n\n## v3\n\n**Standalone OPC-DA \u2014 nothing to install, no \"Class not registered\".**\n\n- Replaced the OpenOPC + `OPC.Automation` wrapper stack with a vendored native\n  32-bit helper (`opcda-bridge.exe`) that talks the OPC-DA custom interfaces\n  directly. The tool no longer needs any OPC automation wrapper (Graybox /\n  Matrikon / `gbda_aut.dll`) or any COM registration \u2014 the only requirement is\n  the OPC server itself (e.g. `OPC.DeltaV.1`), which is already present on a\n  DeltaV node.\n- Fixes the \"Connection error / Dispatch: Class not registered\" failure, which\n  was caused by the missing automation-wrapper COM class.\n- Clearer connection errors: the status line now reports the actual OPC/COM\n  reason (e.g. server ProgID not registered, item not writeable, unknown item).\n\n*Note:* runs on the DeltaV node itself (local COM). Connecting to a remote\nnode's OPC server over DCOM is not enabled in this build.\n\n## v2\n\n- Advanced OPC-DA tag monitor: live browsing, CSV import/export, write audit log."
     },
     "DifFHX": {
       "kind": "exe",

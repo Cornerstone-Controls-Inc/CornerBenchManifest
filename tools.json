@@ -28,7 +28,7 @@
     },
     {
       "name": "SuperOPCWatchIt",
-      "version": "2",
+      "version": "3",
       "desc": "Advanced OPC-DA Tag Monitor for Emerson DeltaV. Live tag browsing, CSV import/export, write audit log.",
       "path": "Tools\\DeltaV\\SuperOPCWatchIt.exe",
       "help_file": "Tools\\DeltaV\\SuperOPCWatchit_help.txt",
