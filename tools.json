@@ -338,7 +338,7 @@
     },
     {
       "name": "Patina",
-      "version": "1",
+      "version": "2",
       "desc": "Native decompiler \u2014 lifts Windows PE and Linux ELF binaries to readable C using an x86 disassembler and a custom IR.",
       "path": "Tools\\ReverseEngineering\\Patina.exe",
       "help_file": "Tools\\ReverseEngineering\\Patina_help.txt",
