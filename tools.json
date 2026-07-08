@@ -148,7 +148,7 @@
     },
     {
       "name": "Op2Live",
-      "version": "12",
+      "version": "13",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -338,7 +338,7 @@
     },
     {
       "name": "Patina",
-      "version": "2",
+      "version": "3",
       "desc": "Native decompiler \u2014 lifts Windows PE and Linux ELF binaries to readable C using an x86 disassembler and a custom IR.",
       "path": "Tools\\ReverseEngineering\\Patina.exe",
       "help_file": "Tools\\ReverseEngineering\\Patina_help.txt",
