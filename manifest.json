@@ -42,7 +42,7 @@
     "MP4Transcribe": "1",
     "CornerCode": "5",
     "ByteWright": "1",
-    "Patina": "1"
+    "Patina": "2"
   },
   "tool_downloads": {
     "ABB Migration": {
@@ -275,10 +275,11 @@
     "Patina": {
       "kind": "exe",
       "file": "Patina.exe",
-      "sha256": "0c67e95a4a5be3ce94cf38099502633e93dfc0a7ec798fc02cfc808a5432137b",
+      "sha256": "d9b2536b0498f4d9bc575d722bf2f7f065701123569357368b44d06d68ae371b",
       "enc": "cbpk1",
-      "sig": "f55f9384ae580b25632180008b0e4ea030f307b6c310845587d6d50fb112e07ece0e0e8f7125db488e3be287e0517436079f2991ca092188519fea9275e6630c",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Patina.exe.cbpk"
+      "sig": "7301928da59c1ca3d50ace62193803338e18b29ed908c344f9c0ab27a090ad6b5a6a8d825c42cfb7c3bc743a047eaa199925b1bde5bfe5862fb7d3277e02010c",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Patina.exe.cbpk",
+      "notes": "# Patina v2\n\n- **Fixed: Decompile and Batch did nothing but reopen the window.** Clicking\n  Decompile (or Batch, or Auto-fix) relaunched the Patina window instead of\n  running the decompiler, because the shipped build looked for a separate\n  `patina.exe` next to itself and \u2014 on Windows' case-insensitive filesystem \u2014\n  matched its own `Patina.exe`. Patina is now a single self-contained binary:\n  the same exe is both the GUI and the decompiler it runs, so Decompile/Batch/\n  Auto-fix work in the installed build.\n\n# Patina v1\n\n- First release inside the CornerBench suite (Reverse Engineering category).\n- Decompiles Windows PE and Linux ELF binaries to readable C via an x86\n  disassembler (iced-x86) and a custom IR.\n- Function navigation with cross-references.\n\n_Edit this when you bump the version; the launcher shows it as \"What's new\"\nafter an in-place update._"
     },
     "LiveTools": {
       "kind": "exe",
