@@ -266,7 +266,7 @@
     },
     {
       "name": "ABCommission",
-      "version": "5",
+      "version": "6",
       "desc": "EtherNet/IP device commissioning \u2014 a friendlier replacement for Rockwell's BootP-DHCP and Address Commissioning tools: discover devices (ListIdentity), assign IPs to factory-default devices via a built-in BOOTP/DHCP server, set the CIP TCP/IP config static, and read/write drive/adapter parameters. Probes a device to describe itself (identity, object-model scan, live self-describing parameter list with scaling) so no EDS or manual is needed for most devices.",
       "path": "Tools\\AllenBradley\\ABCommission.exe",
       "help_file": "Tools\\AllenBradley\\ABCommission_help.txt",
