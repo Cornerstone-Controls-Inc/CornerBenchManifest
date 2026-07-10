@@ -286,7 +286,7 @@
   "Documentation": [
     {
       "name": "P&ID Reader",
-      "version": "3",
+      "version": "4",
       "desc": "Extracts tags, device types, symbols and connectivity from P&ID PDFs (OCR + OpenCV) into structured tables, instrument loops, QA overlays and a connectivity graph.",
       "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
       "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
@@ -349,7 +349,7 @@
     {
       "name": "CornerRDP",
       "version": "1",
-      "desc": "Deterministic RDP console \u2014 reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, and reboot \u2014 over saved connection profiles (passwords never persisted).",
+      "desc": "Deterministic RDP console — reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, and reboot — over saved connection profiles (passwords never persisted).",
       "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
       "icon": "Tools\\Remote\\CornerRDP\\CornerRDP.ico"

@@ -36,7 +36,7 @@
     "Logix2dv": "2",
     "ABCommission": "5",
     "STReader": "2",
-    "P&ID Reader": "3",
+    "P&ID Reader": "4",
     "TableX": "1",
     "FnR": "7",
     "MP4Transcribe": "1",
@@ -258,12 +258,13 @@
     "P&ID Reader": {
       "kind": "zip",
       "file": "PIDReader.zip",
-      "sha256": "3772515a4db30b412129dbff683dc9a01a4ac467539624e16a4c30f1e9ac140d",
+      "sha256": "04977a578f72f0acaf5e90b0f153047d012821fd83e33a4e5c00aa8a24114803",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.000",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.001"
-      ]
+      ],
+      "notes": "# P&ID Reader\n\n## v4 \u2014 3D View\n\n- **New \"3D View\" step.** Unfold a processed drawing into a navigable 3D\n  process-flow diagram that opens in your web browser.\n  - Devices are laid out on a clean grid: process equipment (vessels, pumps,\n    valves) on the ground, instruments floating on a signal layer above.\n  - Pipes and instrument leads are routed with right angles only (no diagonals),\n    with flow-direction arrows where the drawing shows them.\n  - **Click a device to isolate it** \u2014 everything except that device and its\n    connections dims out, so you can trace a line at a glance.\n  - **Top-down (2D) mode** for a clean schematic overhead view, plus toggles for\n    labels, signal lines, the instrument deck, and low-confidence \"unclassified\"\n    shapes (hidden by default).\n  - Hover any device for its tag, type, grid cell, loop and confidence.\n- **Reflects your review.** The 3D view is generated from the same reviewed\n  record as the rest of the tool, so tag corrections (Review step) and symbol\n  group labels (Symbols step) carry straight through \u2014 shapes you mark\n  \"Not a symbol\" are dropped from the view.\n\nIt's a schematic reading and tracing aid built from the extracted graph \u2014 not a\nphysical plant model (a P&ID has no real dimensions or elevations)."
     },
     "Op2Live": {
       "kind": "zip",
