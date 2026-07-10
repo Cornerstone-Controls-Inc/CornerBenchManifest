@@ -43,7 +43,7 @@
     "CornerCode": "5",
     "ByteWright": "1",
     "Patina": "3",
-    "CornerRDP": "1"
+    "CornerRDP": "2"
   },
   "tool_downloads": {
     "ABB Migration": {
@@ -391,10 +391,10 @@
     "CornerRDP": {
       "kind": "zip",
       "file": "CornerRDP.zip",
-      "sha256": "17ee45f6dec3bc2496a36924ec03e5b50a8752f59571ab1b038ad83983a5ba7e",
+      "sha256": "da1f2b864efd8efaaa04c1c72bb4739336c31137b247e9bd82f22d652af0e388",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerRDP.zip.cbpk",
-      "notes": "# CornerRDP\n\n## v1\n- First release. A deterministic RDP console for reaching Windows / DeltaV / OT\n  nodes that `mstsc` can connect to but WinRM cannot \u2014 Standard RDP Security (RC4),\n  TLS, and NLA \u2014 via the vendored `rdpilot` engine.\n- Live desktop with click-to-click control and typing, session clipboard,\n  file push/pull, run-as-SYSTEM commands, guest-agent deploy, and reboot.\n- Connections are saved as reusable profiles; passwords are never persisted."
+      "notes": "# CornerRDP\n\n## v2\n- **New: visual automation builder (Flow tab).** Turn any repetitive RDP chore into a\n  saved, repeatable, multi-target automation \u2014 a Power-Automate-style sequence of blocks\n  (click, type, wait-for / assert element, run command, screenshot, if / repeat /\n  for-each-target). No dedicated tool required.\n- **Two ways to author:** configure each step in a form, or capture live \u2014 click the live\n  desktop to drop a Click step at those coordinates, or browse UI elements by name.\n- **Built to be reliable:** every step has an error policy (stop / continue / retry N),\n  plus wait-for-element / wait-until-settles / assertions, because an RDP screen updates\n  asynchronously. Variables ({{output}}, {{exit_code}}, {{target}}, {{index}}, and any you\n  save) carry data between steps.\n- Flows save as JSON and run against one target or a whole list; each step lights up\n  green / red / orange as it runs.\n\n## v1\n- First release. A deterministic RDP console for reaching Windows / DeltaV / OT\n  nodes that `mstsc` can connect to but WinRM cannot \u2014 Standard RDP Security (RC4),\n  TLS, and NLA \u2014 via the vendored `rdpilot` engine.\n- Live desktop with click-to-click control and typing, session clipboard,\n  file push/pull, run-as-SYSTEM commands, guest-agent deploy, and reboot.\n- Connections are saved as reusable profiles; passwords are never persisted."
     }
   }
 }
