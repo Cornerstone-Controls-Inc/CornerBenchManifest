@@ -148,7 +148,7 @@
     },
     {
       "name": "Op2Live",
-      "version": "13",
+      "version": "14",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -266,8 +266,8 @@
     },
     {
       "name": "ABCommission",
-      "version": "2",
-      "desc": "EtherNet/IP device commissioning \u2014 a friendlier replacement for Rockwell's BootP-DHCP and Address Commissioning tools: discover devices (ListIdentity), assign IPs to factory-default devices via a built-in BOOTP/DHCP server, set the CIP TCP/IP config static, and read/write device parameters from EDS files.",
+      "version": "5",
+      "desc": "EtherNet/IP device commissioning \u2014 a friendlier replacement for Rockwell's BootP-DHCP and Address Commissioning tools: discover devices (ListIdentity), assign IPs to factory-default devices via a built-in BOOTP/DHCP server, set the CIP TCP/IP config static, and read/write drive/adapter parameters. Probes a device to describe itself (identity, object-model scan, live self-describing parameter list with scaling) so no EDS or manual is needed for most devices.",
       "path": "Tools\\AllenBradley\\ABCommission.exe",
       "help_file": "Tools\\AllenBradley\\ABCommission_help.txt",
       "icon": "Tools\\AllenBradley\\ABCommission.ico"
@@ -343,6 +343,16 @@
       "path": "Tools\\ReverseEngineering\\Patina.exe",
       "help_file": "Tools\\ReverseEngineering\\Patina_help.txt",
       "icon": "Tools\\ReverseEngineering\\Patina.ico"
+    }
+  ],
+  "Remote": [
+    {
+      "name": "CornerRDP",
+      "version": "1",
+      "desc": "Deterministic RDP console \u2014 reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, and reboot \u2014 over saved connection profiles (passwords never persisted).",
+      "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
+      "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
+      "icon": "Tools\\Remote\\CornerRDP\\CornerRDP.ico"
     }
   ]
 }
