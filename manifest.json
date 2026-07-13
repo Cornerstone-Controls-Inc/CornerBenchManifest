@@ -18,12 +18,12 @@
     "CEMatrix": "1",
     "TuningAid": "2",
     "DvTwin": "18",
-    "FHXVerify": "2",
+    "FHXVerify": "3",
     "OPCBridge": "3",
     "Op2Live": "15",
     "OperateTools": "12",
     "VIMTools": "1",
-    "DvVMManager": "1",
+    "DvVMManager": "2",
     "PvxIO": "4",
     "PvxPDX": "8",
     "PDXDiff": "2",
@@ -165,9 +165,9 @@
     "FHXVerify": {
       "kind": "exe",
       "file": "FHXVerify.exe",
-      "sha256": "f30be0fa3842cbbf2c1b46378ad036d11e916a1579166cbaab02bbec02904d3d",
+      "sha256": "7cc76ff5086fc37e3ea7888da64b40dbb271c9fc8bcd967ff8296ae46e1626f1",
       "enc": "cbpk1",
-      "sig": "2186b5057b15bb3943a59cf91b8b3e10a6f7b5551ea99c07872bb3e0a83b478fd984265cb612568645b930bd8b73370f378dade2f148fd07d4eb1ade63a06605",
+      "sig": "2075007ed6e4dc6d15a74fddebb5e8ff4ddefd017363d8fda30fb41007780846f21bddf0cf3c19f0b1c851144d24cad04e9a6ec90a698b46a1ad6ca5ec74c10d",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXVerify.exe.cbpk"
     },
     "OPCBridge": {
@@ -401,10 +401,10 @@
     "DvVMManager": {
       "kind": "zip",
       "file": "DvVMManager.zip",
-      "sha256": "ee32334365216baaff34662625e5b1bb49256a08d1111afe2677a8abd74aaf35",
+      "sha256": "2a35f566aeddf638ab5cb17c4b5fdcde8b401065cb50e9e59d8494c8cc583fc6",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.zip.cbpk",
-      "notes": "# DvVMManager\n\n## v1\n\nFirst release \u2014 a DeltaV VM fleet cockpit built on the CornerBench RDP automation\nfoundation (the same engine as CornerRDP).\n\n- **Inventory** of DeltaV nodes: RDP connection details plus DeltaV facts (version, role,\n  System ID, DeltaV admin account, database export command). Passwords are never saved.\n- **Operations** \u2014 curated, one-click automations run against the active node with a live\n  per-step view, or opened in the flow builder to inspect/adapt:\n  - **Export database** \u2014 runs the node's DB export command as SYSTEM over SMB, asserts it\n    succeeded, and optionally pulls the export back to your PC.\n- **Monitoring** \u2014 an SMB health grid (reachability, DeltaV services running, free disk)\n  for every node you've activated.\n- **Builder** \u2014 the full flow builder for custom / one-off automation.\n\nMore operations (add user, download controllers, update license via the Emerson SMS\nlookup) are planned."
+      "notes": "# DvVMManager\n\n## v2\n\nThe UI is now an actual cockpit. v1 was four tabs that each looked like a separate dialog;\nv2 is one screen that shows the fleet and the node you're working on at the same time.\n\n- **Node rail** replaces the Inventory *and* Monitoring tabs. Every node is one row with a\n  health dot (grey = not probed, green = up, amber = DeltaV stopped, red = unreachable),\n  its role glyph, and a padlock while it's still locked. Selecting a node activates it \u2014\n  the old \"set as active node\" step is gone.\n- **Node view** replaces the Operations tab's column of list boxes: identity up top, four\n  health tiles (reachable / DeltaV services / free disk / license days) where colour\n  carries the state, then the operations as cards. Planned operations are shown, dimmed and\n  marked \"soon\", instead of being invisible.\n- **Run drawer** slides up when you pick an operation: its parameters, Run / Stop / Open in\n  builder, and a live step list where each step names the command it actually runs and goes\n  green, amber (retry) or red as it goes. The raw log folds away.\n- **Node editor** \u2014 the twelve stacked form rows moved off the main screen into a dialog,\n  grouped into Connection and DeltaV.\n- Yes/no parameters are checkboxes now, not boxes you type \"yes\" into.\n\nUnder the hood this added a drawn line-icon set and a widget kit (cards, stat tiles, status\ndots, step rows, chips) to `shared/rdp/ui`, so CornerRDP and future DeltaV tools get the\nsame look for free.\n\n## v1\n\nFirst release \u2014 a DeltaV VM fleet cockpit built on the CornerBench RDP automation\nfoundation (the same engine as CornerRDP).\n\n- **Inventory** of DeltaV nodes: RDP connection details plus DeltaV facts (version, role,\n  System ID, DeltaV admin account, database export command). Passwords are never saved.\n- **Operations** \u2014 curated, one-click automations run against the active node with a live\n  per-step view, or opened in the flow builder to inspect/adapt:\n  - **Export database** \u2014 runs the node's DB export command as SYSTEM over SMB, asserts it\n    succeeded, and optionally pulls the export back to your PC.\n- **Monitoring** \u2014 an SMB health grid (reachability, DeltaV services running, free disk)\n  for every node you've activated.\n- **Builder** \u2014 the full flow builder for custom / one-off automation.\n\nMore operations (add user, download controllers, update license via the Emerson SMS\nlookup) are planned."
     }
   }
 }
