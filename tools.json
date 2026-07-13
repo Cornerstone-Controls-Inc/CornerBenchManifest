@@ -2,8 +2,8 @@
   "ABB": [
     {
       "name": "ABB Migration",
-      "version": "3",
-      "desc": "ABB Freelance Migration Tool \u2014 converts ABB Freelance 2016 CSV exports into structured output folders.",
+      "version": "4",
+      "desc": "ABB Freelance Migration Tool \u2014 turns an ABB Freelance 2016 CSV export into a migration-ready package: a master tag list (range, units, alarm limits, controller), an IO list (rack/module/channel \u2192 signal \u2192 tag), a signal cross-reference, a resolved FBD netlist, the Structured Text, and HMI screens with the process tag behind every graphic element.",
       "path": "Tools\\ABB\\ABBMigration.exe",
       "help_file": "Tools\\ABB\\ABBMigration_help.txt",
       "icon": "Tools\\ABB\\ABBMigration.ico"
@@ -132,7 +132,7 @@
     },
     {
       "name": "FHXVerify",
-      "version": "2",
+      "version": "3",
       "desc": "Validates DeltaV FHX exports - reference, integrity, SFC, named-set, and DeltaV Module Analysis checks (MODE.ACTUAL, hardcoded confirms, name limits) with typo detection - and applies auto-fixes, with a browsable HTML report.",
       "path": "Tools\\DeltaV\\FHXVerify.exe",
       "help_file": "Tools\\DeltaV\\FHXVerify_help.txt",
@@ -172,8 +172,8 @@
     },
     {
       "name": "DvVMManager",
-      "version": "1",
-      "desc": "DeltaV VM fleet cockpit — inventory your DeltaV nodes and run curated one-click operations (export database) and SMB health monitoring against them over RDP, plus a full flow builder for custom automation. Reaches hardened (Standard-Security/RC4) nodes that WinRM can't; passwords are never saved.",
+      "version": "2",
+      "desc": "DeltaV VM fleet cockpit — your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database) run against the selected node and watched step by step, plus a full flow builder for custom automation. Reaches hardened (Standard-Security/RC4) nodes that WinRM can't; passwords are never saved.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
       "icon": "Tools\\DeltaV\\DvVMManager\\DvVMManager.ico"

@@ -2,7 +2,7 @@
   "launcher_version": "2.0.3",
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
   "tools": {
-    "ABB Migration": "3",
+    "ABB Migration": "4",
     "LiveTools": "2",
     "DvHistExport": "1",
     "SuperOPCWatchIt": "3",
@@ -50,10 +50,11 @@
     "ABB Migration": {
       "kind": "exe",
       "file": "ABBMigration.exe",
-      "sha256": "14bc8a3502bf700cbbcf799813468506cf42d26ba199ec485cebc3b092cb66f6",
+      "sha256": "dd71b001839e1ba3efc2e7d04664d57aa83c52c4a18a46d85e1657066476a33b",
       "enc": "cbpk1",
-      "sig": "cf3a374d8461c03d06256f265cf0c8164c1cd6d76d2c834f4ebcd27199c2ae71b9af716955bd2d3b136d8c0e9773498be580db3f1d37b4c53329ac4cf7c51e0a",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABBMigration.exe.cbpk"
+      "sig": "09267aa087092ce7f39f852b37885b8bec115e66897fcbc651baba411d5c897378c67e9d8f99b6a0f749b7aed5eabce8e2b1be45aee6a8339e659101a6608609",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABBMigration.exe.cbpk",
+      "notes": "## v4\n\nReworked around what a migration actually needs \u2014 a tag list, an IO list and a\ncross-reference \u2014 rather than a dump of ABB's internal structures.\n\n**Three joined deliverables** are now written to the output root, with an\n`index.html` to browse everything:\n\n- **`master_tag_list.csv`** \u2014 every plant tag with its class, description, plant\n  area, controller, scan task and scan rate, engineering range and units, alarm\n  limits with hysteresis and enables, OPC/trend exposure, and the programs and\n  screens that use it.\n- **`io_list.csv`** \u2014 every IO channel with its controller, rack/module path,\n  `module.channel` address, the signal wired to it, that signal's description, and\n  the tagged block that consumes it. Channels with no signal are your spares.\n- **`signal_xref.csv`** \u2014 every signal: type, description, owning controller, IO\n  address, which programs write it and which read it, which screens display it,\n  and whether it is used *outside* its owning controller.\n\n**Data that earlier versions dropped entirely** is now extracted: the master tag\nlist (7.3k tags with descriptions), the signal dictionary (9.9k signals), the\nsignal-to-controller cross-reference, OPC/trend exposure, plant areas, enum/state\ntexts, task definitions, peer-to-peer telegrams, the user-defined function-block\nlibrary, and the project's real HMI colour palette.\n\n**Control logic** is readable at last. Wire endpoints previously could not be\nresolved to a block pin at all; they now resolve **100%**, producing a real FBD\nnetlist in `extracted_lad/logic_connections.csv`.\n\n**Graphics** now export the process tag behind every element \u2014 which tag drives\nwhich graphic, and how (display / animate / write / symbol) \u2014 plus faceplate\ntargets and the screen navigation graph. Rendered screens gained pipework, symbols\nand the correct colours, and you can hover any element to see its tag.\n\n### Fixes\n\n- The hardware section was silently truncated to a **single node**; all 432 now\n  extract as a proper tree, and IO channels carry their controller and rack path.\n- The two most valuable IO columns were emitted as `col6` / `col7`. They are the\n  assigned plant signal and the `module.channel` address, and are now named.\n- Most graphic symbols had no definition, because the macro name was read from the\n  wrong field. All 56 macros now extract.\n- `parameters.csv` in v3 held ~19k rows of misrouted data; the section it claimed\n  to read is empty in a real export. The engineering values it advertised are the\n  block parameters, now surfaced in the tag list with a legend for ABB's German\n  mnemonics (`Mba`/`Mbe` = range, `Gw` = alarm limit, \u2026).\n- Re-running into an existing output folder silently **doubled every table**."
     },
     "SuperOPCWatchIt": {
       "kind": "exe",
