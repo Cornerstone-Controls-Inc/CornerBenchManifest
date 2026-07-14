@@ -12,7 +12,7 @@
   "DeltaV": [
     {
       "name": "LiveTools",
-      "version": "2",
+      "version": "3",
       "desc": "Desktop toolkit for DeltaV Live .ahc graphics files: tabular reports, an interactive editor with live rendering, bulk find/replace, thumbnail export, structural compare, project-wide library analysis, and localization.",
       "path": "Tools\\DeltaV\\LiveTools.exe",
       "help_file": "Tools\\DeltaV\\LiveTools_help.txt",
