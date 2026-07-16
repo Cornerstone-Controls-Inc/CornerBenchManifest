@@ -156,7 +156,7 @@
     },
     {
       "name": "OperateTools",
-      "version": "12",
+      "version": "13",
       "desc": "Native Rust toolkit for DeltaV Operate (iFix) .grf picture files \u2014 property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find & replace with automatic output validation, embedded-Python mass-edit scripting, expression source-copy resync, PNG thumbnail rendering, and structural compare.",
       "path": "Tools\\DeltaV\\OperateTools\\OperateTools.exe",
       "help_file": "Tools\\DeltaV\\OperateTools\\OperateTools_help.txt",
