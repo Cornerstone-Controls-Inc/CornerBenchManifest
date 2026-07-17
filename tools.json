@@ -172,7 +172,7 @@
     },
     {
       "name": "DvVMManager",
-      "version": "3",
+      "version": "4",
       "desc": "DeltaV VM fleet cockpit — your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database) run against the selected node and watched step by step, plus a full flow builder for custom automation. Reaches hardened (Standard-Security/RC4) nodes that WinRM can't; passwords are never saved.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
