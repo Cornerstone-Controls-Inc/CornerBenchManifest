@@ -320,7 +320,7 @@
   "AI": [
     {
       "name": "MP4Transcribe",
-      "version": "1",
+      "version": "2",
       "desc": "Offline video/audio transcriber powered by OpenAI Whisper. Batch-transcribe files or whole folders to text or .srt/.vtt subtitles, with language selection, translate-to-English, and automatic GPU acceleration. FFMPEG bundled; nothing is uploaded.",
       "path": "Tools\\AI\\MP4Transcribe\\MP4Transcribe.exe",
       "help_file": "Tools\\AI\\MP4Transcribe\\MP4Transcribe_help.txt",
@@ -328,7 +328,7 @@
     },
     {
       "name": "CornerCode",
-      "version": "7",
+      "version": "8",
       "desc": "Fully offline AI coding assistant \u2014 a local Qwen2.5-Coder-7B model (bundled llama-server) drives a project-aware editing agent with local embedding retrieval, offline web research, and document import/export (PDF/Word/Excel/PowerPoint), plus a built-in DeltaV FHX converter and custom skills. Nothing is uploaded; the model, embeddings, and runtime all ship in the box.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",

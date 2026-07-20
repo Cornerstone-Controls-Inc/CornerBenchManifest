@@ -40,8 +40,8 @@
     "P&ID Reader": "4",
     "TableX": "1",
     "FnR": "7",
-    "MP4Transcribe": "1",
-    "CornerCode": "7",
+    "MP4Transcribe": "2",
+    "CornerCode": "8",
     "ByteWright": "1",
     "Patina": "3",
     "CornerRDP": "2"
@@ -358,12 +358,13 @@
     "MP4Transcribe": {
       "kind": "zip",
       "file": "MP4Transcribe.zip",
-      "sha256": "4bf1f1ab3e29ebe0f0578dbd74c2d2568060e1361576e7da57a4fe92544f8c49",
+      "sha256": "459941f6d67c7f5b6b17d968df0ad7a72d4bdcd2e52b0ad2616ce1bcc3453340",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.zip.cbpk.000",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.zip.cbpk.001"
-      ]
+      ],
+      "notes": "# MP4Transcribe v2\n\n- Fixed washed-out text in the status log after switching to the dark theme. The log's\n  colour tags were applied once at startup against the light background and never\n  re-applied on a theme switch, leaving \"muted\" entries barely legible on dark.\n\n# MP4Transcribe v1\n\n- First release.\n- Offline video/audio transcription with OpenAI Whisper (FFMPEG bundled).\n- Batch queue (files or whole folders), real cancellation, and .txt/.srt/.vtt output.\n- Language selection + translate-to-English, automatic GPU (CUDA) detection.\n- Light/Dark theme; settings and window size are remembered.\n\n_Edit this when you bump the version; the launcher shows it as \"What's new\"\nafter an in-place update._"
     },
     "OperateTools": {
       "kind": "zip",
@@ -376,7 +377,7 @@
     "CornerCode": {
       "kind": "zip",
       "file": "CornerCode.zip",
-      "sha256": "20e36eccb79b9a7c7ab3da6dbfc149d7fc7c37b86c642a5542797ad14915a5e9",
+      "sha256": "dc356e76715cbbcb391f5bf6fbe194ef296bb1ce99fbca81dfc0c31e900e99fd",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.000",
@@ -385,7 +386,7 @@
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.003",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.004"
       ],
-      "notes": "## v6\n\n- **New skill \u2014 control narrative \u2192 Functional Requirements document.**\n  `/control-narrative-to-requirements` turns a control narrative into a\n  house-format DeltaV Functional Requirements `.docx`, entirely offline. Load the\n  narrative, run the skill, and CornerCode reads it, organises it by system, and\n  writes the formatted document \u2014 cover page, section numbering, and the standard\n  device / custom-logic / interlock / alarm tables \u2014 for you to review in Word.\n\n  - **It extracts, it does not invent.** Every system, tag, interlock and alarm\n    comes from the narrative. Anything the narrative leaves unstated \u2014 a device\n    class, an alarm priority, an interlock setpoint \u2014 is written as `[TBD]` and\n    raised as a numbered **open item** at the back of the document, so the gaps\n    are a checklist rather than a guess.\n\n  - **The document is built by the tool, not typed by the model.** Formatting,\n    numbering, table layout and validation are deterministic; the model only does\n    the reading. It cannot ship a document that is missing a system it found, list\n    the same tag twice, or use an alarm priority outside the house set \u2014 the\n    builder refuses.\n\n  Device classes come back as `[TBD]` \u2014 no class library is bundled, so assigning\n  classes stays an engineering step. DeltaV migrations only."
+      "notes": "## v8\n\n- The requirements-document generator is now vendored inside CornerCode rather than\n  referenced from another project, so it cannot break when that project moves.\n- New deterministic helpers: spreadsheet comparison (`sheetdiff`) and API-spec digests\n  for Postman/OpenAPI collections (`apispec`). Both do the data work in code rather\n  than asking the model to eyeball it.\n- More robust loading of very large FHX files: the step that learns how to name\n  elements uniquely could take an unreasonable amount of time on unusually wide\n  exports. It now uses a bounded search shared with the other FHX tools.\n\n## v6\n\n- **New skill \u2014 control narrative \u2192 Functional Requirements document.**\n  `/control-narrative-to-requirements` turns a control narrative into a\n  house-format DeltaV Functional Requirements `.docx`, entirely offline. Load the\n  narrative, run the skill, and CornerCode reads it, organises it by system, and\n  writes the formatted document \u2014 cover page, section numbering, and the standard\n  device / custom-logic / interlock / alarm tables \u2014 for you to review in Word.\n\n  - **It extracts, it does not invent.** Every system, tag, interlock and alarm\n    comes from the narrative. Anything the narrative leaves unstated \u2014 a device\n    class, an alarm priority, an interlock setpoint \u2014 is written as `[TBD]` and\n    raised as a numbered **open item** at the back of the document, so the gaps\n    are a checklist rather than a guess.\n\n  - **The document is built by the tool, not typed by the model.** Formatting,\n    numbering, table layout and validation are deterministic; the model only does\n    the reading. It cannot ship a document that is missing a system it found, list\n    the same tag twice, or use an alarm priority outside the house set \u2014 the\n    builder refuses.\n\n  Device classes come back as `[TBD]` \u2014 no class library is bundled, so assigning\n  classes stays an engineering step. DeltaV migrations only."
     },
     "VIMTools": {
       "kind": "exe",
