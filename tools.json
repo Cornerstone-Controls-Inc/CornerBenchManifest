@@ -36,7 +36,7 @@
     },
     {
       "name": "DifFHX",
-      "version": "8",
+      "version": "9",
       "desc": "Compares two DeltaV FHX files and generates a diff report in Excel or PDF format.",
       "path": "Tools\\DeltaV\\DifFHX.exe",
       "help_file": "Tools\\DeltaV\\DifFHX_help.txt",
@@ -52,7 +52,7 @@
     },
     {
       "name": "FHXEdit",
-      "version": "7",
+      "version": "8",
       "desc": "Interactive tree editor for DeltaV FHX files with advanced find-and-replace, bulk delete, split, trim, and partial export.",
       "path": "Tools\\DeltaV\\FHXEdit.exe",
       "help_file": "Tools\\DeltaV\\FHXEdit_help.txt",
@@ -76,7 +76,7 @@
     },
     {
       "name": "FHXMerge",
-      "version": "2",
+      "version": "3",
       "desc": "Merges two DeltaV FHX files with element-level conflict resolution via a dual-pane diff interface.",
       "path": "Tools\\DeltaV\\FHXMerge.exe",
       "help_file": "Tools\\DeltaV\\FHXMerge_help.txt",
@@ -124,7 +124,7 @@
     },
     {
       "name": "DvTwin",
-      "version": "18",
+      "version": "19",
       "desc": "DeltaV control system digital twin with OPC UA connectivity, FHX simulation, automated test runner, bulk import/export, and historian.",
       "path": "Tools\\DeltaV\\DvTwin.exe",
       "help_file": "Tools\\DeltaV\\DvTwin_help.txt",
@@ -240,7 +240,7 @@
     },
     {
       "name": "VMTools",
-      "version": "3",
+      "version": "4",
       "desc": "Unified VM administration \u2014 Hyper-V file/user/process/IP management over WinRM, ESXi datastore uploads (SFTP), and ESXi template rebuilds (vSphere API).",
       "path": "Tools\\HyperV\\VMTools\\VMTools.exe",
       "help_file": "Tools\\HyperV\\VMTools\\VMTools_help.txt",
