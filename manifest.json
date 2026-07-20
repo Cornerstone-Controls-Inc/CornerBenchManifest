@@ -6,18 +6,18 @@
     "LiveTools": "3",
     "DvHistExport": "1",
     "SuperOPCWatchIt": "3",
-    "DifFHX": "8",
+    "DifFHX": "9",
     "FHXport": "21",
-    "FHXEdit": "7",
+    "FHXEdit": "8",
     "WebFHX": "10",
     "EMTools": "2",
-    "FHXMerge": "2",
+    "FHXMerge": "3",
     "ModExport": "2",
     "FMTExport": "3",
     "FMTMaker": "2",
     "CEMatrix": "1",
     "TuningAid": "2",
-    "DvTwin": "18",
+    "DvTwin": "19",
     "FHXVerify": "3",
     "OPCBridge": "3",
     "Op2Live": "21",
@@ -31,7 +31,7 @@
     "ODFDiff": "2",
     "PVXMigration": "3",
     "VMCreds": "3",
-    "VMTools": "3",
+    "VMTools": "4",
     "ABComms": "4",
     "EDSCatalog": "2",
     "Logix2dv": "2",
@@ -68,10 +68,11 @@
     "DifFHX": {
       "kind": "exe",
       "file": "DifFHX.exe",
-      "sha256": "f54b91586cd5705100c5e8c5834f37595b5ed5b5429762d7b04e4277d22c30d5",
+      "sha256": "8671ea73f2735c6dc18ade51868167464ea926d404bfe20fac5707b56a84ea3a",
       "enc": "cbpk1",
-      "sig": "486a452593584d79600464a6d4aa1719ad9024bb3f23053c4677b8facd6d0d2f71a35873b106ba444bb287f06344fc3d5e72ed09e075930f97d5dd0d5e234903",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DifFHX.exe.cbpk"
+      "sig": "d96d78036c13a352c2201ff46cb1c41b68f4e3aea90ae79103c5906008f40cf74e0e9680a1d0a84aeadce3e491cfedd39fb79a63a0c66c12cb09cac570b35a0b",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DifFHX.exe.cbpk",
+      "notes": "## v9\n\n- Fixed very large FHX files appearing to hang while loading. The step that learns how\n  to name elements uniquely searched every combination of up to five attributes, which\n  on a wide export ran to hundreds of millions of attempts and never completed. Because\n  DifFHX learns one naming rule across both files being compared, it was more exposed to\n  this than the single-file tools. Files that previously would not load now finish in\n  seconds."
     },
     "FHXport": {
       "kind": "exe",
@@ -84,10 +85,11 @@
     "FHXEdit": {
       "kind": "exe",
       "file": "FHXEdit.exe",
-      "sha256": "b332bcf10affe9b5e2a75a04face9f3644d5169a773136b81e1f8a88c1f4367d",
+      "sha256": "2709c585c60c3a67907c504ad7a2f5133eb7de45e8af808b094bf0164023ef6f",
       "enc": "cbpk1",
-      "sig": "c3633fd203198b0270c6d7606c804657c96b02143fa2c5aa65e7b3e95e6f352412aabaca5aeb0f3aeae4d3c33fcd7b5161cec142c4bae5342329f1f458bd290c",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXEdit.exe.cbpk"
+      "sig": "dd630730b4395c4cadcf6eae800f8601be28e9f3503516e3b58316d318b206a098532294bf4c5b151c0afe611d12e774e005709b04accc7f8e5c63c89ec56d0c",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXEdit.exe.cbpk",
+      "notes": "## v8\n\n- Fixed very large FHX exports appearing to hang after parsing. The log would report\n  \"Successfully parsed N top-level elements\" and then go quiet, with Open Editor View,\n  Split, Trim and Update Timestamps staying greyed out indefinitely. Parsing had not\n  actually finished: a post-parse step that learns how to name elements uniquely was\n  searching every combination of up to five attributes, which on a wide file meant\n  hundreds of millions of attempts. A 331 MB customer export now loads in about 35\n  seconds; previously it would not finish at all.\n- The status log now reports progress through that identity-learning step, so it can\n  no longer look finished while work is still running.\n- Fixed unreadable text on machines with Windows dark mode enabled. The tree filter\n  box, element rows in the tree, the Advanced Find/Replace window and the parse\n  confirmation dialog could all render text the same colour as their background."
     },
     "WebFHX": {
       "kind": "exe",
@@ -108,10 +110,11 @@
     "FHXMerge": {
       "kind": "exe",
       "file": "FHXMerge.exe",
-      "sha256": "2bab882ca5b32cf8567d65562e23961c633fc02b65f040280a044e5cf08799bd",
+      "sha256": "dc3181a4a43abfa0e1a510eaa3b52cd5afb47e452ac2c02d844c929462ddc0ae",
       "enc": "cbpk1",
-      "sig": "8a64564708b8ba7682f4162ecd7c9efd42dc5360847d09ac29c13dd1f6f4fdabde966407631e3e3ffc96fcaa037d7f9d589ca2afae465e5ebc852ccdd13a1600",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXMerge.exe.cbpk"
+      "sig": "a6d73855715523e7f917e3bc4d7c7f42ede83e332c646ed660b612d708a9202259174d07fbc408f37f936f7a57647c10af106fa4e1e4896fb9d291187255e10b",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXMerge.exe.cbpk",
+      "notes": "## v3\n\n- Fixed very large FHX files appearing to hang while loading. The step that learns how\n  to name elements uniquely searched every combination of up to five attributes, which\n  on a wide export ran to hundreds of millions of attempts and never completed. Files\n  that previously would not load now finish in seconds.\n- Fixed unreadable text on machines with Windows dark mode enabled \u2014 the merge tree,\n  the decision counter and filter button in the header, the diff panes, the Advanced\n  Find/Replace window and message dialogs could all render text the same colour as\n  their background."
     },
     "ModExport": {
       "kind": "exe",
@@ -156,11 +159,11 @@
     "DvTwin": {
       "kind": "exe",
       "file": "DvTwin.exe",
-      "sha256": "793b100733e5c9443ed7361904569cf92f7d6d1fff12a1446a29d3c635f597e7",
+      "sha256": "e75fd98853d81200d5416fecd7b17223860fec8f573851367490825e5a67da0c",
       "enc": "cbpk1",
-      "sig": "7237a5594412fb7978d45eb87854d83f57459040db82f5525e4725357bbb7e0ae922f5bbb7d4b0d853236a8300563e5e5554a1c7158b59d11a0662c182be2e04",
+      "sig": "104fca64c9e510091c3ce5e03312e8f38b3bf28dee0a1af4ae1f3b452e02fc7f3f6e91ab8488d9cef7aebb1260683217e930c27c00093e2cf3b82d78a719f00c",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvTwin.exe.cbpk",
-      "notes": "## v18\n\n- Fixed a startup crash that prevented the app from launching. After the shared FHX parser was consolidated, the FHX simulation generator constructed parser objects with an incompatible constructor, raising `TypeError: Element.__init__() got an unexpected keyword argument 'classifier'` at import time. The shared `Element` now accepts those keyword arguments and the app launches again."
+      "notes": "## v19\n\n- Fixed unreadable text on machines with Windows dark mode enabled. Test-run status\n  rows were the worst affected \u2014 a coloured status background was applied without a\n  matching text colour, so some rows rendered white text on a white background. The\n  historian configuration dialog's database path label could also disappear. The app\n  now uses a consistent light theme regardless of the Windows theme.\n\n## v18\n\n- Fixed a startup crash that prevented the app from launching. After the shared FHX parser was consolidated, the FHX simulation generator constructed parser objects with an incompatible constructor, raising `TypeError: Element.__init__() got an unexpected keyword argument 'classifier'` at import time. The shared `Element` now accepts those keyword arguments and the app launches again."
     },
     "FHXVerify": {
       "kind": "exe",
@@ -228,9 +231,10 @@
     "VMTools": {
       "kind": "zip",
       "file": "VMTools.zip",
-      "sha256": "cd3cdd141269446e62976101bf991765ed6d2e5446a5308b5545fb2948a1894c",
+      "sha256": "3e58496cd021aaeceedcb0eb00f76be37606ca15be44257a06e94b3291de832c",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/VMTools.zip.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/VMTools.zip.cbpk",
+      "notes": "## v4\n\n- Fixed hard-to-read text on machines with Windows dark mode enabled. The selected-user\n  label on the Local Users tab and the Hyper-V help dialog rendered dark blue on a dark\n  background; the app now uses a consistent light theme regardless of the Windows theme.\n- Version number brought back in line with the launcher (the app reported v2 while the\n  launcher listed v3)."
     },
     "ABComms": {
       "kind": "exe",
