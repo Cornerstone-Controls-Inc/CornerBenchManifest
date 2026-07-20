@@ -156,8 +156,8 @@
     },
     {
       "name": "OperateTools",
-      "version": "15",
-      "desc": "Native Rust toolkit for DeltaV Operate (iFix) .grf picture files \u2014 property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find & replace with automatic output validation, embedded-Python mass-edit scripting, expression source-copy resync, PNG thumbnail rendering, structural compare, and a Tag Groups tab to edit .tgd tag display groups (grid editor, bulk add/edit/delete across files with per-column Python transforms, @TOKEN@ cross-check).",
+      "version": "16",
+      "desc": "Native Rust toolkit for DeltaV Operate (iFix) graphic files \u2014 .grf pictures plus .fxg globals, .fds dynamo sets and .tbx toolbars (same format) \u2014 property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find & replace with automatic output validation, embedded-Python mass-edit scripting, expression source-copy resync, PNG thumbnail rendering, structural compare, and a Tag Groups tab to edit .tgd tag display groups (grid editor, bulk add/edit/delete across files with per-column Python transforms, @TOKEN@ cross-check).",
       "path": "Tools\\DeltaV\\OperateTools\\OperateTools.exe",
       "help_file": "Tools\\DeltaV\\OperateTools\\OperateTools_help.txt",
       "icon": "Tools\\DeltaV\\OperateTools\\OperateTools.ico"
@@ -333,6 +333,14 @@
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
       "icon": "Tools\\AI\\CornerCode\\CornerCode.ico"
+    },
+    {
+      "name": "SkillExplorer",
+      "version": "1",
+      "desc": "Shared catalog of Cornerstone AI skills. Browse each skill's SKILL.md and install it into Claude Code (~/.claude/skills) or CornerCode (~/.corner-skills), or export it as a shareable .zip. Claude skills ship with their bundled command-line tools (reqgen, dv_converter). Seed catalog: Control Narrative → Requirements, Describe DeltaV Modules, Generate EM Logic.",
+      "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
+      "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
+      "icon": "Tools\\AI\\SkillExplorer\\SkillExplorer.ico"
     }
   ],
   "Reverse Engineering": [
