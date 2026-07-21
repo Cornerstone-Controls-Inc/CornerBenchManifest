@@ -131,6 +131,14 @@
       "icon": "Tools\\DeltaV\\DvTwin.ico"
     },
     {
+      "name": "DVEmu",
+      "version": "1",
+      "desc": "Offline DeltaV emulator - runs an FHX config's control logic faithfully AND simulates the plant it controls, with 2D/3D live views and scenario/sweep/replay testing. No real DeltaV or OPC required.",
+      "path": "Tools\\DeltaV\\DVEmu\\DVEmu.exe",
+      "help_file": "Tools\\DeltaV\\DVEmu\\DVEmu_help.txt",
+      "icon": "Tools\\DeltaV\\DVEmu\\DVEmu.ico"
+    },
+    {
       "name": "FHXVerify",
       "version": "3",
       "desc": "Validates DeltaV FHX exports - reference, integrity, SFC, named-set, and DeltaV Module Analysis checks (MODE.ACTUAL, hardcoded confirms, name limits) with typo detection - and applies auto-fixes, with a browsable HTML report.",
@@ -148,7 +156,7 @@
     },
     {
       "name": "Op2Live",
-      "version": "21",
+      "version": "22",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
