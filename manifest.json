@@ -19,7 +19,7 @@
     "TuningAid": "2",
     "DvTwin": "19",
     "FHXVerify": "3",
-    "OPCBridge": "3",
+    "OPCBridge": "4",
     "Op2Live": "21",
     "OperateTools": "17",
     "VIMTools": "1",
@@ -178,7 +178,7 @@
     "OPCBridge": {
       "kind": "zip",
       "file": "OPCBridge.zip",
-      "sha256": "197da4f76685137a02b00d67b97e689a0d058d6e3a65e882e8311cc86d8d509a",
+      "sha256": "2b092485ced1f1d980d8058072e11cce9fb53deb4906a4b3886d3ab1e7a6ff0a",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/OPCBridge.zip.cbpk"
     },

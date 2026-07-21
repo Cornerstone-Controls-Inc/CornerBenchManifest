@@ -140,7 +140,7 @@
     },
     {
       "name": "OPCBridge",
-      "version": "3",
+      "version": "4",
       "desc": "OPC DA to OPC UA bridge for DeltaV - native 32-bit COM interop to the DeltaV DA server, republished as an OPC UA server with live diagnostics.",
       "path": "Tools\\DeltaV\\OPCBridge\\OPCBridge.exe",
       "help_file": "Tools\\DeltaV\\OPCBridge\\OPCBridge_help.txt",
