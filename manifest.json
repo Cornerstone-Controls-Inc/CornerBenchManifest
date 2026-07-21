@@ -418,7 +418,7 @@
     "SkillExplorer": {
       "kind": "zip",
       "file": "SkillExplorer.zip",
-      "sha256": "6ef240c636275fd0528a2b6bef9dc5bd3fc777a20b7d9fe8ecd413bb1168424c",
+      "sha256": "16781f5fcb443554b4d4fcab70996a62937c23cf4f87e18e0d2747c3bdfbd137",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.zip.cbpk"
     }
