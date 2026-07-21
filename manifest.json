@@ -18,7 +18,7 @@
     "CEMatrix": "1",
     "TuningAid": "2",
     "DvTwin": "19",
-    "DVEmu": "1",
+    "DVEmu": "2",
     "FHXVerify": "3",
     "OPCBridge": "4",
     "Op2Live": "22",
@@ -426,7 +426,7 @@
     "DVEmu": {
       "kind": "zip",
       "file": "DVEmu.zip",
-      "sha256": "1c606cf276c298d412d2726de7eaa75d68b93ad0ec3939d700e507be7f5ec673",
+      "sha256": "d6a884452e16bfd42f235ed883a40c0e95c36d6dcc73bbbb2c8f914b55542192",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DVEmu.zip.cbpk",
       "notes": "## v1\n\nFirst release. DVEmu emulates a DeltaV system entirely in software \u2014 it runs the FHX\ncontrol logic faithfully and simulates the plant it controls, so a configuration can be\ntested against a live plant with no real DeltaV, controller, or OPC server in the loop.\n\n- **Import & scope** \u2014 load a DeltaV FHX export; scope to an area, unit, or controller\n  from the sidebar.\n- **Plant Setup** \u2014 one wizard from raw modules to running physics: equipment types,\n  materials, vessels and junctions, instruments on vessels or lines, flow paths, and the\n  discrete conditions interlocks wait on.\n- **Live plant** \u2014 a 2-D mimic and a 3-D plant floor, driven by a first-principles process\n  sim; **Stabilize plant** clears every loop permissive and device interlock in one click.\n- **Test** \u2014 author and run Scenarios (force/expect timelines with band and threshold\n  comparisons), parameter Sweeps, and historian Replay, all in-app."
