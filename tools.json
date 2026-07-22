@@ -44,7 +44,7 @@
     },
     {
       "name": "FHXport",
-      "version": "22",
+      "version": "23",
       "desc": "Parses a DeltaV FHX file and generates 11 report types: Interlock, Alarm, IO, Module, EM, Reference, Historian, User Log, Phase, Named Set, PID Tuning.",
       "path": "Tools\\DeltaV\\FHXport.exe",
       "help_file": "Tools\\DeltaV\\FHXport_help.txt",
