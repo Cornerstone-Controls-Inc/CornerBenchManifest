@@ -180,7 +180,7 @@
     },
     {
       "name": "DvVMManager",
-      "version": "5",
+      "version": "6",
       "desc": "DeltaV VM fleet cockpit — your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, update license) run against the selected node and watched step by step, plus a full flow builder for custom automation. Reaches hardened (Standard-Security/RC4) nodes that WinRM can't. A node needs one login — the Windows account is the DeltaV admin account — and the tool reads the version, system name and licensing System ID off the node itself. Credentials are kept in an encrypted per-user vault, never in the inventory file.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
