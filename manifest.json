@@ -7,7 +7,7 @@
     "DvHistExport": "1",
     "SuperOPCWatchIt": "3",
     "DifFHX": "9",
-    "FHXport": "22",
+    "FHXport": "23",
     "FHXEdit": "8",
     "WebFHX": "10",
     "EMTools": "2",
@@ -79,11 +79,11 @@
     "FHXport": {
       "kind": "exe",
       "file": "FHXport.exe",
-      "sha256": "25ac121235b0552ca554242a2720a9f0cab5a7a479c39b99378fa8d6d840ca49",
+      "sha256": "e2d196948d5e79bda0de9b620212b6596996e6d0a72bab0c90ff82e8cd0cee03",
       "enc": "cbpk1",
-      "sig": "7c4cfe3d2c6aefc6e99bd004fcc6991e57b529bf538b8f90661354488c2c7eb7d535da67e8760c00913e1c29029d4fa7597d27a292149d1ff2abe5b40ad15408",
+      "sig": "166fb98e652453797b1a45d339adc7456e45c1ff6db1e70c8c64ea8ed4b051e1a52a12051bcf0d52df1b45821284c397b3d711ced3b7cd15776ecfa51bc30a0d",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXport.exe.cbpk",
-      "notes": "## v22\n\nHistorian Report \u2014 from feedback by Leonard Clark.\n\n- **Unit modules are no longer missing.** Modules with history collection configured\n  on them were silently absent from the report. On a real plant export this recovered\n  10 collection points that had never appeared.\n- **Controller nodes are now included too** \u2014 found while fixing the above, and a\n  bigger gap: 72 more points on the same export, including controller scan-time\n  loading and free memory.\n- **The report is now an Excel workbook** with a sheet each for Modules, Unit Modules\n  and Controller Nodes, instead of one flat CSV. Note the output file is now\n  `<name>_HistorianReport.xlsx` \u2014 if you have a script picking up the `.csv` by name,\n  it needs updating.\n- **Column changes**, to line the report up with the standard DeltaV historian export:\n  - `VALUE_RECORDED` (e.g. `LAS-36501A/PV.CV`) replaces the separate `PARAMETER`\n    and `FIELD` columns\n  - `TAG` is now `MODULE_NAME`, `UNIT_NAME` or `NODE_NAME`, per sheet\n  - `EXPOSED` is now `ALLOW_INSTANCE_CONFIG`\n  - added `MODULE_TYPE` and `MODULE_SUBTYPE`\n\nAlso in this release: Named Set Reports, and an SFC formatting fix in the EM and\nPhase reports."
+      "notes": "## v23\n\nExcel output \u2014 from follow-up feedback on the v22 Historian Report.\n\n- **The Historian Report leads with what identifies a row.** `MODULE_NAME` /\n  `UNIT_NAME` / `NODE_NAME` and `VALUE_RECORDED` are now columns 1 and 2 on every\n  sheet, ahead of the module context (area, class, type, description, controller)\n  that used to sit between them.\n- **Each Historian sheet is sorted** by that name column, then by `VALUE_RECORDED`,\n  so every point collected on one tag reads as a contiguous, alphabetical block.\n- **Bold header row and auto-sized columns** on every Excel report this tool\n  writes \u2014 Historian, IO, Reference and User Log \u2014 not just the Historian one.\n  Column widths are capped so a single long description can't push the rest of\n  the sheet off the screen.\n\n## v22\n\nHistorian Report \u2014 from feedback by Leonard Clark.\n\n- **Unit modules are no longer missing.** Modules with history collection configured\n  on them were silently absent from the report. On a real plant export this recovered\n  10 collection points that had never appeared.\n- **Controller nodes are now included too** \u2014 found while fixing the above, and a\n  bigger gap: 72 more points on the same export, including controller scan-time\n  loading and free memory.\n- **The report is now an Excel workbook** with a sheet each for Modules, Unit Modules\n  and Controller Nodes, instead of one flat CSV. Note the output file is now\n  `<name>_HistorianReport.xlsx` \u2014 if you have a script picking up the `.csv` by name,\n  it needs updating.\n- **Column changes**, to line the report up with the standard DeltaV historian export:\n  - `VALUE_RECORDED` (e.g. `LAS-36501A/PV.CV`) replaces the separate `PARAMETER`\n    and `FIELD` columns\n  - `TAG` is now `MODULE_NAME`, `UNIT_NAME` or `NODE_NAME`, per sheet\n  - `EXPOSED` is now `ALLOW_INSTANCE_CONFIG`\n  - added `MODULE_TYPE` and `MODULE_SUBTYPE`\n\nAlso in this release: Named Set Reports, and an SFC formatting fix in the EM and\nPhase reports."
     },
     "FHXEdit": {
       "kind": "exe",
