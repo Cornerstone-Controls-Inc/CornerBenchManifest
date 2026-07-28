@@ -2,8 +2,8 @@
   "ABB": [
     {
       "name": "ABB Migration",
-      "version": "6",
-      "desc": "ABB Freelance Migration Tool \u2014 turns an ABB Freelance 2016 CSV export into a migration-ready package: a master tag list (range, units, alarm limits, controller), an IO list (rack/module/channel \u2192 signal \u2192 tag), a signal cross-reference, a resolved FBD netlist, the Structured Text, and HMI screens with the process tag behind every graphic element.",
+      "version": "8",
+      "desc": "ABB Freelance Migration Tool \u2014 turns an ABB Freelance 2016 CSV export into a DeltaV migration package, with no Freelance licence and no Freelance experience needed. Draws the FBD sheets so the logic can be read; says what each block becomes in DeltaV (PCSD module class, evidence, and a scan rate DeltaV will accept); and gives you the master tag list, IO list with target card types, signal cross-reference, alarm list, controller sizing and cross-controller signals \u2014 plus a coverage report of anything it could not decode.",
       "path": "Tools\\ABB\\ABBMigration.exe",
       "help_file": "Tools\\ABB\\ABBMigration_help.txt",
       "icon": "Tools\\ABB\\ABBMigration.ico"
