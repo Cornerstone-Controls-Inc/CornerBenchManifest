@@ -156,7 +156,7 @@
     },
     {
       "name": "Op2Live",
-      "version": "28",
+      "version": "29",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -337,7 +337,7 @@
     {
       "name": "CornerCode",
       "version": "11",
-      "desc": "Fully offline AI assistant for automation engineers \u2014 a local Qwen2.5-Coder-7B model (bundled llama-server) drives guided, single-purpose task pathways: research a manual or datasheet, write/review/change code that never leaves the plant, turn a control narrative into requirements, review or edit documents and spreadsheets, and ask about DeltaV or your own FHX export. Nothing is uploaded; the model, embeddings, and runtime all ship in the box.",
+      "desc": "Fully offline AI assistant for automation engineers \u2014 a local Qwen2.5-Coder-7B model (bundled llama-server) drives guided, single-purpose tasks: research a manual or datasheet; fix an error, explain or review code, write tests, or write a script for a file that cannot leave the plant; read Rockwell, CODESYS or ABB PLC logic you did not write; turn a control narrative into requirements and review or edit documents and spreadsheets; and for DeltaV, ask your own FHX export, check custom logic, draft Calc/Action/Condition expressions or EM logic for EMTools. Nothing is uploaded; the model, embeddings and runtime all ship in the box.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
       "icon": "Tools\\AI\\CornerCode\\CornerCode.ico"
