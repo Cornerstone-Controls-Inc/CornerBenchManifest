@@ -164,7 +164,7 @@
     },
     {
       "name": "OperateTools",
-      "version": "20",
+      "version": "21",
       "desc": "Native Rust toolkit for DeltaV Operate (iFix) graphic files \u2014 .grf pictures plus .fxg globals, .fds dynamo sets and .tbx toolbars (same format) \u2014 property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find & replace with automatic output validation, embedded-Python mass-edit scripting, expression repair (restores missing animation tag connections and resyncs stale source copies), PNG thumbnail rendering, structural + VBA source compare, and a Tag Groups tab to edit .tgd tag display groups (grid editor, bulk add/edit/delete across files with per-column Python transforms, @TOKEN@ cross-check).",
       "path": "Tools\\DeltaV\\OperateTools\\OperateTools.exe",
       "help_file": "Tools\\DeltaV\\OperateTools\\OperateTools_help.txt",
