@@ -68,7 +68,7 @@
     },
     {
       "name": "EMTools",
-      "version": "4",
+      "version": "5",
       "desc": "Unified DeltaV Equipment Module toolkit \u2014 generate EMs from templates with a visual SFC logic editor, export/import class parameters as CSV, and auto-comment SFC steps, all over a shared document library.",
       "path": "Tools\\DeltaV\\EMTools.exe",
       "help_file": "Tools\\DeltaV\\EMTools_help.txt",
@@ -180,7 +180,7 @@
     },
     {
       "name": "DvVMManager",
-      "version": "10",
+      "version": "11",
       "desc": "DeltaV VM fleet cockpit \u2014 your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, update license) run against the selected node and watched step by step, plus a full flow builder for custom automation. Reaches hardened (Standard-Security/RC4) nodes that WinRM can't. A node needs one login \u2014 the Windows account is the DeltaV admin account \u2014 and the tool reads the version, system name and licensing System ID off the node itself. Credentials are kept in an encrypted per-user vault, never in the inventory file.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
