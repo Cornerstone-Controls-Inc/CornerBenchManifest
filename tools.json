@@ -180,7 +180,7 @@
     },
     {
       "name": "DvVMManager",
-      "version": "14",
+      "version": "15",
       "desc": "DeltaV VM fleet cockpit \u2014 your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, update license) run against the selected node and watched step by step, plus a full flow builder for custom automation. Reaches hardened (Standard-Security/RC4) nodes that WinRM can't. A node needs one login \u2014 the Windows account is the DeltaV admin account \u2014 and the tool reads the version, system name and licensing System ID off the node itself. Credentials are kept in an encrypted per-user vault, never in the inventory file.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
@@ -372,7 +372,7 @@
   "Remote": [
     {
       "name": "CornerRDP",
-      "version": "4",
+      "version": "5",
       "desc": "Deterministic RDP console + visual automation builder \u2014 reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine. Manual cockpit: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, reboot. Power-Automate-style Flow builder: sequence blocks (click, type, wait-for/assert element, run command, screenshot, if/repeat/for-each-target) with per-step retry, variables, and live point-and-click authoring \u2014 turn any repetitive RDP chore into a saved, multi-target automation. Saved connection profiles; passwords never persisted.",
       "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
