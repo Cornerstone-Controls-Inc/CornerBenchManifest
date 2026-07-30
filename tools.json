@@ -83,30 +83,6 @@
       "icon": "Tools\\DeltaV\\FHXMerge.ico"
     },
     {
-      "name": "ModExport",
-      "version": "4",
-      "desc": "Parses a DeltaV FHX file and exports module configuration data organised by class, generating CSV and FMT files per class.",
-      "path": "Tools\\DeltaV\\ModExport.exe",
-      "help_file": "Tools\\DeltaV\\ModExport_help.txt",
-      "icon": "Tools\\DeltaV\\ModExport.ico"
-    },
-    {
-      "name": "FMTExport",
-      "version": "5",
-      "desc": "Filters and formats a DeltaV FHX export to match the columns defined in an existing FMT template file, producing aligned CSV output.",
-      "path": "Tools\\DeltaV\\FMTExport.exe",
-      "help_file": "Tools\\DeltaV\\FMTExport_help.txt",
-      "icon": "Tools\\DeltaV\\FMTExport.ico"
-    },
-    {
-      "name": "FMTMaker",
-      "version": "4",
-      "desc": "Creates DeltaV-compatible .fmt format specification files from Excel or CSV input files.",
-      "path": "Tools\\DeltaV\\FMTMaker.exe",
-      "help_file": "Tools\\DeltaV\\FMTMaker_help.txt",
-      "icon": "Tools\\DeltaV\\FMTMaker.ico"
-    },
-    {
       "name": "CEMatrix",
       "version": "3",
       "desc": "Analyses a DeltaV FHX export to generate an interactive HTML interlock matrix and network graph.",
@@ -185,6 +161,14 @@
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
       "icon": "Tools\\DeltaV\\DvVMManager\\DvVMManager.ico"
+    },
+    {
+      "name": "FMTTools",
+      "version": "1",
+      "desc": "DeltaV user-defined import and export: build, export and validate format specifications and their data files. Replaces FMTMaker, FMTExport and ModExport.",
+      "path": "Tools\\DeltaV\\FMTTools\\FMTTools.exe",
+      "help_file": "Tools\\DeltaV\\FMTTools\\FMTTools_help.txt",
+      "icon": "Tools\\DeltaV\\FMTTools\\FMTTools.ico"
     }
   ],
   "Provox": [
