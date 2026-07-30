@@ -378,5 +378,15 @@
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
       "icon": "Tools\\Remote\\CornerRDP\\CornerRDP.ico"
     }
+  ],
+  "Comms": [
+    {
+      "name": "SuperComms",
+      "version": "1",
+      "desc": "Multi-protocol comms workbench — client AND server for OPC UA, classic OPC (DA), Modbus/TCP and serial, EtherNet/IP (Logix tags), MQTT 3.1.1/5 and Sparkplug B, Siemens S7comm, REST, SOAP, SQL and WebSocket/SSE push. One grid holds points from every protocol at once on a single clock, with quality never guessed and the raw wire detail one click away, and the whole run exports as one evidence record: the values plus the traffic that produced them. Guided connect flow probes before it commits (UA endpoint discovery, Logix identity, S7 slot detection, OPC-DA server listing) and prints the trap that wastes the afternoon. Full credential support — UA username/password plus generated client certificates, MQTT over TLS, REST/SOAP NTLM and WS-Security, EtherNet/IP processor slot. Also serves: stand up a UA server, Modbus slave, MQTT broker, REST/SOAP host or EtherNet/IP adapter holding a device profile, a customer's own FHX address space, or a mirror of what you are watching. Writes are locked until armed, arming expires, and public tunnels are opt-in and logged.",
+      "path": "Tools\\Comms\\SuperComms\\SuperComms.exe",
+      "help_file": "Tools\\Comms\\SuperComms\\SuperComms_help.txt",
+      "icon": "Tools\\Comms\\SuperComms\\SuperComms.ico"
+    }
   ]
 }
