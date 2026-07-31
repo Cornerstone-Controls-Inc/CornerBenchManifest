@@ -28,7 +28,7 @@
     },
     {
       "name": "SuperOPCWatchIt",
-      "version": "5",
+      "version": "6",
       "desc": "Advanced OPC-DA Tag Monitor for Emerson DeltaV. Live tag browsing, CSV import/export, write audit log.",
       "path": "Tools\\DeltaV\\SuperOPCWatchIt.exe",
       "help_file": "Tools\\DeltaV\\SuperOPCWatchit_help.txt",
@@ -366,7 +366,7 @@
   "Comms": [
     {
       "name": "SuperComms",
-      "version": "3",
+      "version": "4",
       "desc": "Read live values from plant equipment over eleven protocols — OPC UA, classic OPC, Modbus, Allen-Bradley, MQTT, Siemens S7, REST, SOAP and SQL — with tags from different systems side by side on one clock. It can also act as the device, so you can test against a system that is not built yet.",
       "path": "Tools\\Comms\\SuperComms\\SuperComms.exe",
       "help_file": "Tools\\Comms\\SuperComms\\SuperComms_help.txt",
