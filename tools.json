@@ -76,8 +76,8 @@
     },
     {
       "name": "FHXMerge",
-      "version": "3",
-      "desc": "Merges two DeltaV FHX files with element-level conflict resolution via a dual-pane diff interface.",
+      "version": "4",
+      "desc": "Merges two or more DeltaV FHX files with element-level conflict resolution via a multi-pane diff interface.",
       "path": "Tools\\DeltaV\\FHXMerge.exe",
       "help_file": "Tools\\DeltaV\\FHXMerge_help.txt",
       "icon": "Tools\\DeltaV\\FHXMerge.ico"
@@ -161,6 +161,14 @@
       "path": "Tools\\DeltaV\\VIMTools.exe",
       "help_file": "Tools\\DeltaV\\VIMTools_help.txt",
       "icon": "Tools\\DeltaV\\VIMTools.ico"
+    },
+    {
+      "name": "DvScan",
+      "version": "2",
+      "desc": "Finds controllers that appear in DeltaV's Decommissioned Nodes list and then vanish, and clears the cause. Captures the plug-and-play traffic (pktmon, passive listen or a .pcapng) and decodes it: a controller is only kept in that list while it announces redundancy role 2, so one carrying an assigned identity ages out in about two minutes and can never be commissioned. The identity comes from a POWERUP binding file on the ProfessionalPLUS that survives a database wipe - DvScan locates it, backs it up and removes it. Also builds a network inventory from the same capture, sorting every node into orphaned, default, commissioned or silent. Read-only except the fix, which confirms every step.",
+      "path": "Tools\\DeltaV\\DvScan.exe",
+      "help_file": "Tools\\DeltaV\\DvScan_help.txt",
+      "icon": "Tools\\DeltaV\\DvScan.ico"
     },
     {
       "name": "DvVMManager",
@@ -284,6 +292,14 @@
     }
   ],
   "Documentation": [
+    {
+      "name": "CornerPDF",
+      "version": "1",
+      "desc": "PDF reader, annotator and measuring tool — read, mark up and measure drawings and specifications without Acrobat. Highlight, freehand, shapes, notes, text boxes and stamps; calibrated distance and area measurement; regex search across a whole drawing set; markup exported as a CSV punchlist. Fully offline.",
+      "path": "Tools\\Documentation\\CornerPDF\\CornerPDF.exe",
+      "help_file": "Tools\\Documentation\\CornerPDF\\CornerPDF_help.txt",
+      "icon": "Tools\\Documentation\\CornerPDF\\CornerPDF.ico"
+    },
     {
       "name": "P&ID Reader",
       "version": "8",

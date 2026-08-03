@@ -11,7 +11,7 @@
     "FHXEdit": "8",
     "WebFHX": "12",
     "EMTools": "5",
-    "FHXMerge": "3",
+    "FHXMerge": "4",
     "FMTTools": "1",
     "CEMatrix": "3",
     "TuningAid": "4",
@@ -22,6 +22,7 @@
     "Op2Live": "30",
     "OperateTools": "21",
     "VIMTools": "3",
+    "DvScan": "2",
     "DvVMManager": "15",
     "PvxIO": "6",
     "PvxPDX": "10",
@@ -36,6 +37,7 @@
     "Logix2dv": "4",
     "ABCommission": "8",
     "STReader": "4",
+    "CornerPDF": "1",
     "P&ID Reader": "8",
     "TableX": "3",
     "FnR": "9",
@@ -329,11 +331,11 @@
     "PVXMigration": {
       "kind": "exe",
       "file": "PVXMigration.exe",
-      "sha256": "26442c2104e2fa916085cf7cd69321459ccaa83b16b55bc3fc4d1fbb49869bdd",
+      "sha256": "3e000fe729da86d386922f99631469219ca5b2dbf7ab9953a36ae69924963984",
       "enc": "cbpk1",
-      "sig": "2171fa4f6ff06695021018bc034f95ee67dcca9c9872720f54b1a488b6e0c63059cb32e56b224b3e52ae6ccc7d9468cdb948c119ae422cba7c0dd912c607aa05",
+      "sig": "a8a696bba3976d9234ab5714696eff1f136efbb575868c176fcb7ac76aa512249df15fd14c206f010b5b3a4c7e05621ab642cac256817d999ff09b3d74b5eb0e",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PVXMigration.exe.cbpk",
-      "notes": "# v5\nCleanup\n\n# v4\nCleanup"
+      "notes": "# v6\nEvery appendix now generates, and the whole plant no longer lands in every one\n\nValidated end to end against a completed project (P3111 GPC Utilities): the nine\nissued appendices, the tables behind them, a full PDX parse and the ProVOX Pic folder.\n\n**The five stub appendices are implemented.** D (IDI Configuration), F (Border\nPoints), G (PI Points), H (Provox IO Configuration) and I (Graphics Analysis) each\nreturned their input unchanged; the docs said there were three. Measured against the\nissued deliverable: F is exact on all 190 border points with no false positives and\nevery derivable column right; D is exact on all 1,384 channels; H matches row for row\nwith type and address 100%; I finds 79 of 87 displays carrying migrating-controller\npoints with no false positives.\n\n**A new Scope step.** Which controllers are migrating, which devices are data\ncollection sinks, which files hold physical I/O, where the displays and PI export\nlive \u2014 none of it is in the ProVOX data, and without it the generators ran against\nthe entire plant. Appendix A came out at 5,184 rows against an issued 683, and\nAppendix H at 28,825. The scope is saved beside the output and can be reloaded.\n\n**A new Requirements step.** The FRS is written from the *completed* appendices, not\nthe raw data: generate them, add a Process Cell column to Appendix A, point step 5 at\nthat folder. ProVOX records no process cell, so it cannot be derived \u2014 without the\ncolumn you now get one section per node instead of no document at all.\n\nFixes:\n- Appendix C never terminated when the extract contained a dangling condition\n  reference \u2014 it looped forever emitting the same warning. Now 0.3 s, and it names\n  what is unresolved.\n- Border Points, Provox IO and PI Points were silently discarded by the Qt export.\n  They write as workbooks, sheets intact.\n- The FRS template was located relative to the working directory, so requirements\n  generation produced nothing unless the tool was launched from its own folder.\n- `clean_column_names` renamed columns in place, corrupting the shared appendix data\n  mid-run.\n- Appendix filenames could not be read back in \u2014 the export sanitised punctuation the\n  importer then required.\n- Appendix H can consume an FST reference export from FSTDecompiler (its new\n  \"Export I/O + point refs\" button). FST logic addresses I/O by register, so without\n  it every logic-driven channel reads as unused: 47 false alarms against the\n  engineer's 13, or 16 with it.\n\n# v5\nCleanup\n\n# v4\nCleanup"
     },
     "EDSCatalog": {
       "kind": "exe",
