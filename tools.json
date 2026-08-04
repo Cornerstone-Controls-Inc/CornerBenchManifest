@@ -115,6 +115,14 @@
       "icon": "Tools\\DeltaV\\DvTwin.ico"
     },
     {
+      "name": "DvStation",
+      "version": "1",
+      "desc": "A portable mock DeltaV workstation for training - a desktop with DeltaV Explorer and Operate, virtual controllers you can add, and real .grf displays you can open. No VM, no licence, no hardware.",
+      "path": "Tools\\DeltaV\\DvStation\\DvStation.exe",
+      "help_file": "Tools\\DeltaV\\DvStation\\DvStation_help.txt",
+      "icon": "Tools\\DeltaV\\DvStation\\DvStation.ico"
+    },
+    {
       "name": "DVEmu",
       "version": "5",
       "desc": "Offline DeltaV emulator - runs an FHX config's control logic faithfully AND simulates the plant it controls, with 2D/3D live views and scenario/sweep/replay testing. No real DeltaV or OPC required.",
@@ -382,7 +390,7 @@
   "Comms": [
     {
       "name": "SuperComms",
-      "version": "5",
+      "version": "6",
       "desc": "Read live values from plant equipment over eleven protocols — OPC UA, classic OPC, Modbus, Allen-Bradley, MQTT, Siemens S7, REST, SOAP and SQL — with tags from different systems side by side on one clock. It can also act as the device, so you can test against a system that is not built yet.",
       "path": "Tools\\Comms\\SuperComms\\SuperComms.exe",
       "help_file": "Tools\\Comms\\SuperComms\\SuperComms_help.txt",
