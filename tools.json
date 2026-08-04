@@ -382,7 +382,7 @@
   "Comms": [
     {
       "name": "SuperComms",
-      "version": "4",
+      "version": "5",
       "desc": "Read live values from plant equipment over eleven protocols — OPC UA, classic OPC, Modbus, Allen-Bradley, MQTT, Siemens S7, REST, SOAP and SQL — with tags from different systems side by side on one clock. It can also act as the device, so you can test against a system that is not built yet.",
       "path": "Tools\\Comms\\SuperComms\\SuperComms.exe",
       "help_file": "Tools\\Comms\\SuperComms\\SuperComms_help.txt",
