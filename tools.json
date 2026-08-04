@@ -172,7 +172,7 @@
     },
     {
       "name": "DvVMManager",
-      "version": "15",
+      "version": "16",
       "desc": "DeltaV VM fleet cockpit \u2014 your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, update license) run against the selected node and watched step by step, plus a full flow builder for custom automation. Reaches hardened (Standard-Security/RC4) nodes that WinRM can't. A node needs one login \u2014 the Windows account is the DeltaV admin account \u2014 and the tool reads the version, system name and licensing System ID off the node itself. Credentials are kept in an encrypted per-user vault, never in the inventory file.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
@@ -294,8 +294,8 @@
   "Documentation": [
     {
       "name": "CornerPDF",
-      "version": "1",
-      "desc": "PDF reader, annotator and measuring tool — read, mark up and measure drawings and specifications without Acrobat. Highlight, freehand, shapes, notes, text boxes and stamps; calibrated distance and area measurement; regex search across a whole drawing set; markup exported as a CSV punchlist. Fully offline.",
+      "version": "3",
+      "desc": "PDF reader, annotator, organiser and engineering review tool — read, mark up, assemble, redact and compare drawings and specifications without Acrobat. Markup with stamps and calibrated measurement; reorder/split/merge/compress pages; watermarks, Bates numbering and headers/footers; offline OCR that makes scans searchable; redaction that truly removes content; revision compare with a visual overlay; instrument-tag index cross-referenced against a DeltaV FHX export; drawing-package assembly with a linked index sheet; batch a folder. Fully offline.",
       "path": "Tools\\Documentation\\CornerPDF\\CornerPDF.exe",
       "help_file": "Tools\\Documentation\\CornerPDF\\CornerPDF_help.txt",
       "icon": "Tools\\Documentation\\CornerPDF\\CornerPDF.ico"
@@ -344,8 +344,8 @@
     },
     {
       "name": "SkillExplorer",
-      "version": "6",
-      "desc": "Shared catalog of Cornerstone AI add-ons for Claude Code. Browse the skills and MCP servers, then install one in a click or export it as a shareable .zip. Skills install to ~/.claude/skills and ship their bundled command-line tools (reqgen, dv_converter); MCP servers are staged and registered with the client for you. Catalog: Control Narrative \u2192 Requirements, Describe DeltaV Modules, Generate EM Logic, plus the DeltaV FHX, Operate Graphics, OPC UA and Remote Windows servers.",
+      "version": "7",
+      "desc": "Shared catalog of Cornerstone AI add-ons for Claude Code. Browse the skills and MCP servers, then install one in a click or export it as a shareable .zip. Skills install to ~/.claude/skills and ship their bundled command-line tools (reqgen, dv_converter); MCP servers are staged and registered with the client for you. Catalog: Control Narrative \u2192 Requirements, Describe DeltaV Modules, Generate EM Logic, plus the DeltaV FHX, Operate Graphics, OPC UA, Remote Windows and Emerson SMS servers.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
       "icon": "Tools\\AI\\SkillExplorer\\SkillExplorer.ico"
@@ -372,7 +372,7 @@
   "Remote": [
     {
       "name": "CornerRDP",
-      "version": "5",
+      "version": "6",
       "desc": "Deterministic RDP console + visual automation builder \u2014 reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine. Manual cockpit: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, reboot. Power-Automate-style Flow builder: sequence blocks (click, type, wait-for/assert element, run command, screenshot, if/repeat/for-each-target) with per-step retry, variables, and live point-and-click authoring \u2014 turn any repetitive RDP chore into a saved, multi-target automation. Saved connection profiles; passwords never persisted.",
       "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
