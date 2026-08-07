@@ -482,7 +482,7 @@
     {
       "name": "InstrumentLab",
       "tags": ["train"],
-      "version": "2",
+      "version": "3",
       "desc": "Learn process instruments by running them: 31 measuring technologies across level, flow, temperature, pressure, analytical, valves and pumps, every one simulated rather than described. Set the process and the installation on a workbench and watch the measurement respond, see the equations worked with your own numbers, and view each instrument as installed and in cutaway — where an unfilled wet leg, a thermowell in a dead leg or an orifice plate fitted backwards is visible, which it never is from the outside. Diagnose-it lessons put you in front of a real complaint with a time budget: every observation costs simulated minutes, and naming the right fault without taking the observation that proves it is scored as a guess. Nothing here touches a plant.",
       "path": "Tools\\Training\\InstrumentLab\\InstrumentLab.exe",
       "help_file": "Tools\\Training\\InstrumentLab\\InstrumentLab_help.txt",
