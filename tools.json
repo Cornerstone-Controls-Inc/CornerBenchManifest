@@ -46,7 +46,7 @@
       "name": "DifFHX",
       "tags": ["verify"],
       "system": "DeltaV",
-      "version": "9",
+      "version": "10",
       "desc": "Compares two DeltaV FHX files and generates a diff report in Excel or PDF format.",
       "path": "Tools\\DeltaV\\DifFHX\\DifFHX.exe",
       "help_file": "Tools\\DeltaV\\DifFHX\\DifFHX_help.txt",
