@@ -6,7 +6,7 @@
     "LiveTools": "5",
     "DvHistExport": "3",
     "SuperOPCWatchIt": "6",
-    "DifFHX": "9",
+    "DifFHX": "10",
     "FHXport": "26",
     "FHXEdit": "8",
     "WebFHX": "12",
@@ -73,10 +73,10 @@
     "DifFHX": {
       "kind": "zip",
       "file": "DifFHX.zip",
-      "sha256": "4974aff873ad1e83cbbcb7c07deea67fe3eb6f25de8dc70cea1fcdd5d5c8a9e8",
+      "sha256": "4f18f437f0bfdccfa3ce186d6687678cb8ab98ca27e7ec5275038157c2a7ddf4",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DifFHX.zip.cbpk",
-      "notes": "## v9\n\n- Fixed very large FHX files appearing to hang while loading. The step that learns how\n  to name elements uniquely searched every combination of up to five attributes, which\n  on a wide export ran to hundreds of millions of attempts and never completed. Because\n  DifFHX learns one naming rule across both files being compared, it was more exposed to\n  this than the single-file tools. Files that previously would not load now finish in\n  seconds."
+      "notes": "## v10\n\n- Fixed the PDF report failing with a \"Character '\u2022' ... is outside the range of\n  characters supported by the font used: helveticaB\" error. When the bundled DejaVu\n  fonts could not be located, DifFHX fell back to a built-in font that only supports\n  latin-1 -- and the report guide page writes bullet characters, so the whole PDF was\n  lost at the last step. The fallback now converts unsupported characters (bullets,\n  dashes, curly quotes, degree/micro signs, and anything arriving from the FHX data)\n  to plain ASCII instead of aborting.\n- The bundled fonts are now searched for in every location a packaged build may put\n  them, and a failure to load them reports the real reason instead of being swallowed.\n- The run log and the \"Done\" dialog now name every file that was written, and the log\n  says so explicitly when the PDF is skipped. The Excel report is always generated --\n  the Step 3 checkbox only controls the PDF -- so if it appears to be missing the log\n  now shows the exact path it went to.\n- If the Excel report cannot be written because it is still open in Excel, the tool now\n  says that instead of showing a raw traceback.\n\n## v9\n\n- Fixed very large FHX files appearing to hang while loading. The step that learns how\n  to name elements uniquely searched every combination of up to five attributes, which\n  on a wide export ran to hundreds of millions of attempts and never completed. Because\n  DifFHX learns one naming rule across both files being compared, it was more exposed to\n  this than the single-file tools. Files that previously would not load now finish in\n  seconds."
     },
     "FHXport": {
       "kind": "zip",
