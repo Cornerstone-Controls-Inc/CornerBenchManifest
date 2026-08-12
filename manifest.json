@@ -8,7 +8,7 @@
     "SuperOPCWatchIt": "6",
     "DifFHX": "10",
     "FHXport": "26",
-    "FHXEdit": "8",
+    "FHXEdit": "9",
     "WebFHX": "12",
     "EMTools": "5",
     "FHXMerge": "4",
@@ -89,10 +89,10 @@
     "FHXEdit": {
       "kind": "zip",
       "file": "FHXEdit.zip",
-      "sha256": "965d1b2fe8ae86040b193e9f83b0439c5df9b036cf8846658b92afa951e2478d",
+      "sha256": "930aec18ffc7d31a91515b38d906f336a97cd43ed384cc1af2dea130b965562c",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXEdit.zip.cbpk",
-      "notes": "## v8\n\n- Fixed very large FHX exports appearing to hang after parsing. The log would report\n  \"Successfully parsed N top-level elements\" and then go quiet, with Open Editor View,\n  Split, Trim and Update Timestamps staying greyed out indefinitely. Parsing had not\n  actually finished: a post-parse step that learns how to name elements uniquely was\n  searching every combination of up to five attributes, which on a wide file meant\n  hundreds of millions of attempts. A 331 MB customer export now loads in about 35\n  seconds; previously it would not finish at all.\n- The status log now reports progress through that identity-learning step, so it can\n  no longer look finished while work is still running.\n- Fixed unreadable text on machines with Windows dark mode enabled. The tree filter\n  box, element rows in the tree, the Advanced Find/Replace window and the parse\n  confirmation dialog could all render text the same colour as their background."
+      "notes": "## v9\n\n- Advanced Find and Replace can now match with regular expressions. Tick the new\n  \"Regex\" box and every text field on the dialog -- Find, Target Key Contains, and the\n  Classifier and Name boxes on the target row and on every ancestor layer -- is read as\n  a pattern instead of as literal text. Previously all five were plain \"contains\"\n  tests, so there was no way to express alternatives, anchors, or digit runs.\n- \"Exact Match Only\" now means \"anchor the pattern to the whole value\" when Regex is\n  on, so `^(HI|LO)_LIM$` in Target Key selects those two keys and nothing else, and\n  `^AI$` as a Classifier no longer drags in AI_ALARM.\n- Groups captured in Find expand in Replace as \\1, \\2, and so on. Finding\n  `^FIC_(\\d+)$` and replacing with `FC-\\1` renumbers an entire naming convention in\n  one pass.\n- A pattern that will not compile is reported against the box it came from and the\n  search is abandoned, rather than half-running. Replacements resolve every new value\n  before any of them are applied, so a bad pattern -- or a \\9 that names no captured\n  group -- cannot leave some rows rewritten and others not. Undo still records the\n  whole replacement as one step.\n- Note that with Regex ticked, characters such as . $ and ( become pattern syntax, so\n  an FHX value like AI1$PV has to be written AI1\\$PV. With Regex off, matching is\n  literal exactly as before.\n\n## v8\n\n- Fixed very large FHX exports appearing to hang after parsing. The log would report\n  \"Successfully parsed N top-level elements\" and then go quiet, with Open Editor View,\n  Split, Trim and Update Timestamps staying greyed out indefinitely. Parsing had not\n  actually finished: a post-parse step that learns how to name elements uniquely was\n  searching every combination of up to five attributes, which on a wide file meant\n  hundreds of millions of attempts. A 331 MB customer export now loads in about 35\n  seconds; previously it would not finish at all.\n- The status log now reports progress through that identity-learning step, so it can\n  no longer look finished while work is still running.\n- Fixed unreadable text on machines with Windows dark mode enabled. The tree filter\n  box, element rows in the tree, the Advanced Find/Replace window and the parse\n  confirmation dialog could all render text the same colour as their background."
     },
     "WebFHX": {
       "kind": "exe",
