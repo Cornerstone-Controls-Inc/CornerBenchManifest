@@ -66,7 +66,7 @@
       "name": "FHXEdit",
       "tags": ["edit"],
       "system": "DeltaV",
-      "version": "9",
+      "version": "10",
       "desc": "Interactive tree editor for DeltaV FHX files with advanced find-and-replace, bulk delete, split, trim, and partial export.",
       "path": "Tools\\DeltaV\\FHXEdit\\FHXEdit.exe",
       "help_file": "Tools\\DeltaV\\FHXEdit\\FHXEdit_help.txt",
