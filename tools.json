@@ -226,7 +226,7 @@
       "name": "DvVMManager",
       "tags": ["simulate"],
       "system": "DeltaV",
-      "version": "20",
+      "version": "21",
       "desc": "DeltaV VM fleet cockpit — your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, licence update), the Hyper-V/ESXi servers behind it, per-system power and checkpoints, file/account/process/network tools, and fleet-wide file deployment (push or delete the same Operate graphics across every station at once). Replaces VMTools.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
