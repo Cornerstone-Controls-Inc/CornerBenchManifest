@@ -89,7 +89,7 @@
     "FHXEdit": {
       "kind": "zip",
       "file": "FHXEdit.zip",
-      "sha256": "9a00824004963f0bb5f47b41282a5a28c2f3a8cd1a457c38d6bc8026046e33d9",
+      "sha256": "965d1b2fe8ae86040b193e9f83b0439c5df9b036cf8846658b92afa951e2478d",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXEdit.zip.cbpk",
       "notes": "## v8\n\n- Fixed very large FHX exports appearing to hang after parsing. The log would report\n  \"Successfully parsed N top-level elements\" and then go quiet, with Open Editor View,\n  Split, Trim and Update Timestamps staying greyed out indefinitely. Parsing had not\n  actually finished: a post-parse step that learns how to name elements uniquely was\n  searching every combination of up to five attributes, which on a wide file meant\n  hundreds of millions of attempts. A 331 MB customer export now loads in about 35\n  seconds; previously it would not finish at all.\n- The status log now reports progress through that identity-learning step, so it can\n  no longer look finished while work is still running.\n- Fixed unreadable text on machines with Windows dark mode enabled. The tree filter\n  box, element rows in the tree, the Advanced Find/Replace window and the parse\n  confirmation dialog could all render text the same colour as their background."
