@@ -186,7 +186,7 @@
       "name": "Op2Live",
       "tags": ["convert"],
       "system": "DeltaV",
-      "version": "31",
+      "version": "32",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -216,8 +216,8 @@
       "name": "DvScan",
       "tags": ["verify"],
       "system": "DeltaV",
-      "version": "2",
-      "desc": "Finds controllers that appear in DeltaV's Decommissioned Nodes list and then vanish, and clears the cause. Captures the plug-and-play traffic (pktmon, passive listen or a .pcapng) and decodes it: a controller is only kept in that list while it announces redundancy role 2, so one carrying an assigned identity ages out in about two minutes and can never be commissioned. The identity comes from a POWERUP binding file on the ProfessionalPLUS that survives a database wipe - DvScan locates it, backs it up and removes it. Also builds a network inventory from the same capture, sorting every node into orphaned, default, commissioned or silent. Read-only except the fix, which confirms every step.",
+      "version": "3",
+      "desc": "Explains why a DeltaV controller appears in the Decommissioned Nodes list and then vanishes, so you can decide what to do about it in DeltaV. A controller is kept in that list only while it announces redundancy role 2; one carrying an assigned identity announces role 0 and ages out in about two minutes, and can never be commissioned. DvScan reads the POWERUP tree, an FHX export of the configuration and the plug-and-play traffic, and says which of the three disagrees - marking every finding with the sources it rests on, because a claim from the disk alone is not the same as one three sources agree about. Every file DeltaV writes carries a timestamp this decodes, so two bindings claiming one node can be told apart by which was written first. It is a diagnostic and does not repair anything: removing a stale binding was the advice for a long time and did not work on a real system, because the workstation writes that file AFTER pushing the identity rather than reading it first. Each verdict says what it means and what to check next.",
       "path": "Tools\\DeltaV\\DvScan.exe",
       "help_file": "Tools\\DeltaV\\DvScan_help.txt",
       "icon": "Tools\\DeltaV\\DvScan.ico"
@@ -346,6 +346,16 @@
       "path": "Tools\\AllenBradley\\ABCommission.exe",
       "help_file": "Tools\\AllenBradley\\ABCommission_help.txt",
       "icon": "Tools\\AllenBradley\\ABCommission.ico"
+    },
+    {
+      "name": "FTViewTools",
+      "tags": ["decode"],
+      "system": "Allen Bradley",
+      "version": "1",
+      "desc": "Read a FactoryTalk View SE/ME application's displays without FactoryTalk View — no licence, no HMI server, no restored project. Scans a folder of .gfx files and reports every caption, step name and expression, every tag each display references, and which FactoryTalk Directory shortcut or data server it resolves through. Distinguishes a real tag from a #n parameter placeholder, cross-references a tag to the displays that use it, searches all display text at once, and flags shortcuts spelled inconsistently — the join between a graphic and a controller that nothing checks until an operator opens the screen. Exports CSV and a standalone HTML report.",
+      "path": "Tools\\AllenBradley\\FTViewTools.exe",
+      "help_file": "Tools\\AllenBradley\\FTViewTools_help.txt",
+      "icon": "Tools\\AllenBradley\\FTViewTools.ico"
     }
   ],
   "CodeSys": [
