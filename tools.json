@@ -20,7 +20,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "6",
+      "version": "7",
       "desc": "Desktop toolkit for DeltaV Live .ahc graphics files: tabular reports, an interactive editor with live rendering, bulk find/replace, thumbnail export, structural compare, project-wide library analysis, and localization.",
       "path": "Tools\\DeltaV\\LiveTools\\LiveTools.exe",
       "help_file": "Tools\\DeltaV\\LiveTools\\LiveTools_help.txt",
@@ -213,7 +213,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "33",
+      "version": "34",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided 12-phase pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, Excel reports) with a visual mapping editor and GEM thumbnails.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
