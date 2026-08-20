@@ -262,7 +262,7 @@
       ],
       "system": "DeltaV",
       "version": "22",
-      "desc": "DeltaV VM fleet cockpit \u2014 your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, licence update), the Hyper-V/ESXi servers behind it, per-system power and checkpoints, file/account/process/network tools, and fleet-wide file deployment (push or delete the same Operate graphics across every station at once). Replaces VMTools.",
+      "desc": "DeltaV VM fleet cockpit \u2014 your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, licence update), the Hyper-V/ESXi servers behind it, per-system power and checkpoints, file/account/process/network tools, fleet-wide file deployment (push or delete the same Operate graphics across every station at once), and local network diagnostics that say whether an unreachable system is really down or the path from this PC is broken. Replaces VMTools.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
       "icon": "Tools\\DeltaV\\DvVMManager\\DvVMManager.ico"
@@ -386,7 +386,7 @@
         "convert"
       ],
       "system": "Allen Bradley",
-      "version": "5",
+      "version": "6",
       "desc": "Rockwell Logix to DeltaV migration assistant - parses Studio 5000 L5X (and .ACD) exports, maps dependencies, and generates proposed DeltaV modules as importable FHX.",
       "path": "Tools\\AllenBradley\\Logix2dv\\Logix2dv.exe",
       "help_file": "Tools\\AllenBradley\\Logix2dv\\Logix2dv_help.txt",
