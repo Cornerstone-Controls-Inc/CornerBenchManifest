@@ -261,7 +261,7 @@
         "simulate"
       ],
       "system": "DeltaV",
-      "version": "22",
+      "version": "23",
       "desc": "DeltaV VM fleet cockpit \u2014 your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, licence update), the Hyper-V/ESXi servers behind it, per-system power and checkpoints, file/account/process/network tools, fleet-wide file deployment (push or delete the same Operate graphics across every station at once), and local network diagnostics that say whether an unreachable system is really down or the path from this PC is broken. Replaces VMTools.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
@@ -449,7 +449,7 @@
         "document"
       ],
       "version": "1",
-      "desc": "Every help file you own in one searchable library — point it at a DeltaV node's Books Online folder and all ~116 .chm files become one index of 16,800 topics you can search at once, with a hit count per manual so you know whether the answer is in Batch, Control Studio, Diagnostics or the SIS books before you read a word. Reads compiled help (.chm) and the older WinHelp (.hlp) that Windows itself can no longer open, plus PDFs and folders of exported HTML — no vendor product installed, no internet and no add-in, because both decoders are built in. Full-text search across every book at once with per-book hit counts, quoted phrases, exclusions, wildcards and a regex mode for tag and loop numbers; every book's keyword index merged into one alphabet. Reader with tabs, light/dark/sepia, text scaling and find-on-page. Favourites, history and reading positions live in a separate file from the library, so re-importing a book never loses them and handing someone the library never hands over yours. Exports a page or a whole result set to a bookmarked PDF, a page to PNG, and chosen pages to a .sdoc share pack that opens in any browser with nothing installed. Also runs as a read-only MCP server so an assistant can search vendor documentation offline.",
+      "desc": "Every help file you own in one searchable library \u2014 point it at a DeltaV node's Books Online folder and all ~116 .chm files become one index of 16,800 topics you can search at once, with a hit count per manual so you know whether the answer is in Batch, Control Studio, Diagnostics or the SIS books before you read a word. Reads compiled help (.chm) and the older WinHelp (.hlp) that Windows itself can no longer open, plus PDFs and folders of exported HTML \u2014 no vendor product installed, no internet and no add-in, because both decoders are built in. Full-text search across every book at once with per-book hit counts, quoted phrases, exclusions, wildcards and a regex mode for tag and loop numbers; every book's keyword index merged into one alphabet. Reader with tabs, light/dark/sepia, text scaling and find-on-page. Favourites, history and reading positions live in a separate file from the library, so re-importing a book never loses them and handing someone the library never hands over yours. Exports a page or a whole result set to a bookmarked PDF, a page to PNG, and chosen pages to a .sdoc share pack that opens in any browser with nothing installed. Also runs as a read-only MCP server so an assistant can search vendor documentation offline.",
       "path": "Tools\\Documentation\\SuperDocs\\SuperDocs.exe",
       "help_file": "Tools\\Documentation\\SuperDocs\\SuperDocs_help.txt",
       "icon": "Tools\\Documentation\\SuperDocs\\SuperDocs.ico"
@@ -528,7 +528,7 @@
       "tags": [
         "ai"
       ],
-      "version": "9",
+      "version": "10",
       "desc": "Shared catalog of Cornerstone AI add-ons for Claude Code. Browse the skills and MCP servers, then install one in a click or export it as a shareable .zip. Skills install to ~/.claude/skills and ship their bundled command-line tools (reqgen, dv_converter); MCP servers are staged and registered with the client for you. Catalog: Control Narrative \u2192 Requirements, Describe DeltaV Modules, Generate EM Logic, plus the DeltaV FHX, Operate Graphics, OPC UA, Event Chronicle (alarms & events), Remote Windows and Emerson SMS servers.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
@@ -565,7 +565,7 @@
       "tags": [
         "connect"
       ],
-      "version": "7",
+      "version": "8",
       "desc": "Deterministic RDP console + visual automation builder \u2014 reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine. Manual cockpit: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, reboot. Power-Automate-style Flow builder: sequence blocks (click, type, wait-for/assert element, run command, screenshot, if/repeat/for-each-target) with per-step retry, variables, and live point-and-click authoring \u2014 turn any repetitive RDP chore into a saved, multi-target automation. Saved connection profiles; passwords never persisted.",
       "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
