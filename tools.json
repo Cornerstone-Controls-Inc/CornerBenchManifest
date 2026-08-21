@@ -437,7 +437,7 @@
       "tags": [
         "document"
       ],
-      "version": "4",
+      "version": "5",
       "desc": "PDF reader, annotator, organiser and engineering review tool \u2014 read, mark up, assemble, redact and compare drawings and specifications without Acrobat. Markup with stamps and calibrated measurement; reorder/split/merge/compress pages; watermarks, Bates numbering and headers/footers; offline OCR that makes scans searchable; redaction that truly removes content; revision compare with a visual overlay; instrument-tag index cross-referenced against a DeltaV FHX export; drawing-package assembly with a linked index sheet; batch a folder. Fully offline.",
       "path": "Tools\\Documentation\\CornerPDF\\CornerPDF.exe",
       "help_file": "Tools\\Documentation\\CornerPDF\\CornerPDF_help.txt",
