@@ -92,7 +92,7 @@
         "document"
       ],
       "system": "DeltaV",
-      "version": "12",
+      "version": "13",
       "desc": "Converts a DeltaV FHX export into a portable standalone HTML viewer with hierarchy tree and optional FBD/SFC graphics.",
       "path": "Tools\\DeltaV\\WebFHX.exe",
       "help_file": "Tools\\DeltaV\\WebFHX_help.txt",

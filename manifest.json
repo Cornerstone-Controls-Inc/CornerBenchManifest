@@ -9,7 +9,7 @@
     "DifFHX": "11",
     "FHXport": "27",
     "FHXEdit": "10",
-    "WebFHX": "12",
+    "WebFHX": "13",
     "EMTools": "5",
     "FHXMerge": "4",
     "FMTTools": "1",
@@ -98,11 +98,11 @@
     "WebFHX": {
       "kind": "exe",
       "file": "WebFHX.exe",
-      "sha256": "dff9ff3ca42f34ad055dd8753e7094d7ac0156f2437b3855cb66d82869a4241d",
+      "sha256": "5e6c3e24d5586f760c679e6246ab8b7ca7653baef77ae64bac28842b7f02b51d",
       "enc": "cbpk1",
-      "sig": "d8eec5fecccf88a1bdbd612c7dfcf954ab54ea39ae9aa8c1040382b4f0bd855c24370d3e35f76ea2174e73f5ec92f958a3617c48e635eb66cb27392f5d12a40e",
+      "sig": "940ef69e08f94b0706e3b9e0bba219de9a34b90a0908ee3faed5a63f09e3601dc074dc6d73f877a18c923fac89ba878b59e05ad9f7bdffacb499a89710b51c09",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/WebFHX.exe.cbpk",
-      "notes": "# v12\nCleanup\n\n# v11\nCleanup"
+      "notes": "# v13\nFixed a completed export being reported as failed when a status message contained a non-ASCII character; simple mode now reports its own failure instead of silently producing a Control Studio export\n\n# v12\nCleanup\n\n# v11\nCleanup"
     },
     "EMTools": {
       "kind": "exe",
