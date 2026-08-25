@@ -492,8 +492,8 @@
       "tags": [
         "edit"
       ],
-      "version": "10",
-      "desc": "Multi-format find & replace across Word, Excel, PowerPoint, DeltaV FHX, XML and text files \u2014 case-insensitive, whole-word, and regex matching with backreferences and a dry-run preview.",
+      "version": "11",
+      "desc": "Multi-format find & replace across Word, Excel, PowerPoint, DeltaV FHX, Operate graphics, XML and text files \u2014 case-insensitive, whole-word and regex matching, a dry-run preview, and DeltaV unit replication that builds the map from an exported FHX.",
       "path": "Tools\\Documentation\\FnR.exe",
       "help_file": "Tools\\Documentation\\FnR_help.txt",
       "icon": "Tools\\Documentation\\FnR.ico"
