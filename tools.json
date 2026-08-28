@@ -492,7 +492,7 @@
       "tags": [
         "edit"
       ],
-      "version": "11",
+      "version": "12",
       "desc": "Multi-format find & replace across Word, Excel, PowerPoint, DeltaV FHX, Operate graphics, XML and text files \u2014 case-insensitive, whole-word and regex matching, a dry-run preview, and DeltaV unit replication that builds the map from an exported FHX.",
       "path": "Tools\\Documentation\\FnR.exe",
       "help_file": "Tools\\Documentation\\FnR_help.txt",
@@ -528,7 +528,7 @@
       "tags": [
         "ai"
       ],
-      "version": "10",
+      "version": "11",
       "desc": "Shared catalog of Cornerstone AI add-ons for Claude Code. Browse the skills and MCP servers, then install one in a click or export it as a shareable .zip. Skills install to ~/.claude/skills and ship their bundled command-line tools (reqgen, dv_converter); MCP servers are staged and registered with the client for you. Catalog: Control Narrative \u2192 Requirements, Describe DeltaV Modules, Generate EM Logic, plus the DeltaV FHX, Operate Graphics, OPC UA, Event Chronicle (alarms & events), Remote Windows and Emerson SMS servers.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
