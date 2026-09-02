@@ -20,7 +20,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "7",
+      "version": "8",
       "desc": "Desktop toolkit for DeltaV Live .ahc graphics files: tabular reports, an interactive editor with live rendering, bulk find/replace, thumbnail export, structural compare, project-wide library analysis, and localization.",
       "path": "Tools\\DeltaV\\LiveTools\\LiveTools.exe",
       "help_file": "Tools\\DeltaV\\LiveTools\\LiveTools_help.txt",
@@ -56,7 +56,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "11",
+      "version": "12",
       "desc": "Compares two DeltaV FHX files and generates a diff report in Excel or PDF format.",
       "path": "Tools\\DeltaV\\DifFHX\\DifFHX.exe",
       "help_file": "Tools\\DeltaV\\DifFHX\\DifFHX_help.txt",
@@ -68,7 +68,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "27",
+      "version": "28",
       "desc": "Parses a DeltaV FHX file and generates 11 report types: Interlock, Alarm, IO, Module, EM, Reference, Historian, User Log, Phase, Named Set, PID Tuning.",
       "path": "Tools\\DeltaV\\FHXport\\FHXport.exe",
       "help_file": "Tools\\DeltaV\\FHXport\\FHXport_help.txt",
@@ -80,7 +80,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "10",
+      "version": "11",
       "desc": "Interactive tree editor for DeltaV FHX files with advanced find-and-replace, bulk delete, split, trim, and partial export.",
       "path": "Tools\\DeltaV\\FHXEdit\\FHXEdit.exe",
       "help_file": "Tools\\DeltaV\\FHXEdit\\FHXEdit_help.txt",
@@ -116,7 +116,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "4",
+      "version": "5",
       "desc": "Merges two or more DeltaV FHX files with element-level conflict resolution via a multi-pane diff interface.",
       "path": "Tools\\DeltaV\\FHXMerge\\FHXMerge.exe",
       "help_file": "Tools\\DeltaV\\FHXMerge\\FHXMerge_help.txt",
@@ -128,7 +128,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "1",
+      "version": "2",
       "desc": "DeltaV user-defined import and export: build, export and validate format specifications and their data files. Replaces FMTMaker, FMTExport and ModExport.",
       "path": "Tools\\DeltaV\\FMTTools\\FMTTools.exe",
       "help_file": "Tools\\DeltaV\\FMTTools\\FMTTools_help.txt",
@@ -177,7 +177,7 @@
         "train"
       ],
       "system": "DeltaV",
-      "version": "7",
+      "version": "6",
       "desc": "Offline DeltaV emulator - runs an FHX config's control logic faithfully AND simulates the plant it controls, with 2D/3D live views and scenario/sweep/replay testing. No real DeltaV or OPC required.",
       "path": "Tools\\DeltaV\\DVEmu\\DVEmu.exe",
       "help_file": "Tools\\DeltaV\\DVEmu\\DVEmu_help.txt",
@@ -213,7 +213,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "36",
+      "version": "35",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, reports, polish, design specification and validation testing) with a visual mapping editor, GEM thumbnails, VBA\u2192TypeScript translation, and a polish step that proposes merging near-identical pop-ups into shared contextual displays. Delivers a gap analysis, a design specification, the four validation gates, and reports covering graphic scope, display/module links, class and standard reuse, and merge recommendations.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -237,7 +237,7 @@
         "decode"
       ],
       "system": "DeltaV",
-      "version": "3",
+      "version": "4",
       "desc": "Reads Emerson/Mynah VimNet .vio configuration files for DeltaV Virtual I/O Modules - browse the VIM / controller / data-set tree, view EtherNet/IP buffer-to-signal mappings, and run read-only VIM diagnostics.",
       "path": "Tools\\DeltaV\\VIMTools\\VIMTools.exe",
       "help_file": "Tools\\DeltaV\\VIMTools\\VIMTools_help.txt",
@@ -249,7 +249,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "6",
+      "version": "7",
       "desc": "Explains why a DeltaV controller appears in the Decommissioned Nodes list and then vanishes, so you can decide what to do about it in DeltaV. A controller is kept in that list only while it announces redundancy role 2; one carrying an assigned identity announces role 0 and ages out in about two minutes, and can never be commissioned. DvScan reads the POWERUP tree, an FHX export of the configuration and the plug-and-play traffic, and says which of the three disagrees - marking every finding with the sources it rests on, because a claim from the disk alone is not the same as one three sources agree about. Every file DeltaV writes carries a timestamp this decodes, so two bindings claiming one node can be told apart by which was written first. Load a packet capture and it also finds controllers no other source can see: one sitting at its default address is in no device table, has no binding and has no download image, so only the wire knows it is there at all. It is a diagnostic with one exception, and that exception asks twice before it acts: DeltaV was captured decommissioning a controller, the message turns out to be broadcast and selected by MAC, and DvScan can replay it to make an orphan return to its default address and become commissionable again. Each verdict says what it means and what to check next.",
       "path": "Tools\\DeltaV\\DvScan\\DvScan.exe",
       "help_file": "Tools\\DeltaV\\DvScan\\DvScan_help.txt",
@@ -261,7 +261,7 @@
         "simulate"
       ],
       "system": "DeltaV",
-      "version": "23",
+      "version": "24",
       "desc": "DeltaV VM fleet cockpit \u2014 your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, licence update), the Hyper-V/ESXi servers behind it, per-system power and checkpoints, file/account/process/network tools, fleet-wide file deployment (push or delete the same Operate graphics across every station at once), and local network diagnostics that say whether an unreachable system is really down or the path from this PC is broken. Replaces VMTools.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
@@ -335,7 +335,7 @@
         "convert"
       ],
       "system": "Provox",
-      "version": "5",
+      "version": "6",
       "desc": "Generates DeltaV migration deliverables from ProVOX configuration data \u2014 appendix tables (CSV), Basebuild (XLSX) and a Functional Requirements doc (DOCX).",
       "path": "Tools\\Provox\\PVXMigration\\PVXMigration.exe",
       "help_file": "Tools\\Provox\\PVXMigration\\PVXMigration_help.txt",
@@ -386,7 +386,7 @@
         "convert"
       ],
       "system": "Allen Bradley",
-      "version": "6",
+      "version": "7",
       "desc": "Rockwell Logix to DeltaV migration assistant - parses Studio 5000 L5X (and .ACD) exports, maps dependencies, and generates proposed DeltaV modules as importable FHX.",
       "path": "Tools\\AllenBradley\\Logix2dv\\Logix2dv.exe",
       "help_file": "Tools\\AllenBradley\\Logix2dv\\Logix2dv_help.txt",
@@ -410,7 +410,7 @@
         "decode"
       ],
       "system": "Allen Bradley",
-      "version": "2",
+      "version": "3",
       "desc": "Read a FactoryTalk View SE/ME application's displays without FactoryTalk View \u2014 no licence, no HMI server, no restored project. Scans a folder of .gfx files and reports every caption, step name and expression, every tag each display references, and which FactoryTalk Directory shortcut or data server it resolves through. Distinguishes a real tag from a #n parameter placeholder, cross-references a tag to the displays that use it, searches all display text at once, and flags shortcuts spelled inconsistently \u2014 the join between a graphic and a controller that nothing checks until an operator opens the screen. Exports CSV and a standalone HTML report.",
       "path": "Tools\\AllenBradley\\FTViewTools.exe",
       "help_file": "Tools\\AllenBradley\\FTViewTools_help.txt",
@@ -437,7 +437,7 @@
       "tags": [
         "document"
       ],
-      "version": "5",
+      "version": "6",
       "desc": "PDF reader, annotator, organiser and engineering review tool \u2014 read, mark up, assemble, redact and compare drawings and specifications without Acrobat. Markup with stamps and calibrated measurement; reorder/split/merge/compress pages; watermarks, Bates numbering and headers/footers; offline OCR that makes scans searchable; redaction that truly removes content; revision compare with a visual overlay; instrument-tag index cross-referenced against a DeltaV FHX export; drawing-package assembly with a linked index sheet; batch a folder. Fully offline.",
       "path": "Tools\\Documentation\\CornerPDF\\CornerPDF.exe",
       "help_file": "Tools\\Documentation\\CornerPDF\\CornerPDF_help.txt",
@@ -448,7 +448,7 @@
       "tags": [
         "document"
       ],
-      "version": "1",
+      "version": "2",
       "desc": "Every help file you own in one searchable library \u2014 point it at a DeltaV node's Books Online folder and all ~116 .chm files become one index of 16,800 topics you can search at once, with a hit count per manual so you know whether the answer is in Batch, Control Studio, Diagnostics or the SIS books before you read a word. Reads compiled help (.chm) and the older WinHelp (.hlp) that Windows itself can no longer open, plus PDFs and folders of exported HTML \u2014 no vendor product installed, no internet and no add-in, because both decoders are built in. Full-text search across every book at once with per-book hit counts, quoted phrases, exclusions, wildcards and a regex mode for tag and loop numbers; every book's keyword index merged into one alphabet. Reader with tabs, light/dark/sepia, text scaling and find-on-page. Favourites, history and reading positions live in a separate file from the library, so re-importing a book never loses them and handing someone the library never hands over yours. Exports a page or a whole result set to a bookmarked PDF, a page to PNG, and chosen pages to a .sdoc share pack that opens in any browser with nothing installed. Also runs as a read-only MCP server so an assistant can search vendor documentation offline.",
       "path": "Tools\\Documentation\\SuperDocs\\SuperDocs.exe",
       "help_file": "Tools\\Documentation\\SuperDocs\\SuperDocs_help.txt",
@@ -459,7 +459,7 @@
       "tags": [
         "document"
       ],
-      "version": "8",
+      "version": "9",
       "desc": "Extracts tags, device types, symbols and connectivity from P&ID PDFs (OCR + OpenCV) into structured tables, instrument loops, QA overlays and a connectivity graph.",
       "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
       "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
@@ -470,7 +470,7 @@
       "tags": [
         "document"
       ],
-      "version": "2",
+      "version": "3",
       "desc": "Draws ISA-5.1 conformant P&IDs and exports them as searchable PDFs that carry their own tag database. Author from scratch, from a project spreadsheet (equipment list / line list / instrument index), from a DeltaV configuration, or from a P&ID Reader extraction. Live conformance checking as you draw.",
       "path": "Tools\\PnID\\PIDMaker\\PIDMaker.exe",
       "help_file": "Tools\\PnID\\PIDMaker\\PIDMaker_help.txt",
@@ -517,7 +517,7 @@
       "tags": [
         "ai"
       ],
-      "version": "16",
+      "version": "17",
       "desc": "Fully offline AI assistant for automation engineers \u2014 a local Qwen2.5-Coder-7B model (bundled llama-server) drives guided, single-purpose tasks: research a manual or datasheet; fix an error, explain or review code, write tests, or write a script for a file that cannot leave the plant; read Rockwell, CODESYS or ABB PLC logic you did not write; turn a control narrative into requirements and review or edit documents and spreadsheets; and for DeltaV, ask your own FHX export, check custom logic, generate a FAT test plan from an FRS, draft Calc/Action/Condition expressions or EM logic for EMTools. Nothing is uploaded; the model, embeddings and runtime all ship in the box.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
@@ -528,7 +528,7 @@
       "tags": [
         "ai"
       ],
-      "version": "11",
+      "version": "12",
       "desc": "Shared catalog of Cornerstone AI add-ons for Claude Code. Browse the skills and MCP servers, then install one in a click or export it as a shareable .zip. Skills install to ~/.claude/skills and ship their bundled command-line tools (reqgen, dv_converter); MCP servers are staged and registered with the client for you. Catalog: Control Narrative \u2192 Requirements, Describe DeltaV Modules, Generate EM Logic, plus the DeltaV FHX, Operate Graphics, OPC UA, Event Chronicle (alarms & events), Remote Windows and Emerson SMS servers.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
@@ -565,7 +565,7 @@
       "tags": [
         "connect"
       ],
-      "version": "8",
+      "version": "9",
       "desc": "Deterministic RDP console + visual automation builder \u2014 reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine. Manual cockpit: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, reboot. Power-Automate-style Flow builder: sequence blocks (click, type, wait-for/assert element, run command, screenshot, if/repeat/for-each-target) with per-step retry, variables, and live point-and-click authoring \u2014 turn any repetitive RDP chore into a saved, multi-target automation. Saved connection profiles; passwords never persisted.",
       "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
