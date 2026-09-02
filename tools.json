@@ -177,7 +177,7 @@
         "train"
       ],
       "system": "DeltaV",
-      "version": "6",
+      "version": "7",
       "desc": "Offline DeltaV emulator - runs an FHX config's control logic faithfully AND simulates the plant it controls, with 2D/3D live views and scenario/sweep/replay testing. No real DeltaV or OPC required.",
       "path": "Tools\\DeltaV\\DVEmu\\DVEmu.exe",
       "help_file": "Tools\\DeltaV\\DVEmu\\DVEmu_help.txt",
@@ -213,7 +213,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "35",
+      "version": "36",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, reports, polish, design specification and validation testing) with a visual mapping editor, GEM thumbnails, VBA\u2192TypeScript translation, and a polish step that proposes merging near-identical pop-ups into shared contextual displays. Delivers a gap analysis, a design specification, the four validation gates, and reports covering graphic scope, display/module links, class and standard reuse, and merge recommendations.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
