@@ -213,7 +213,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "35",
+      "version": "36",
       "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, reports, polish, design specification and validation testing) with a visual mapping editor, GEM thumbnails, VBA\u2192TypeScript translation, and a polish step that proposes merging near-identical pop-ups into shared contextual displays. Delivers a gap analysis, a design specification, the four validation gates, and reports covering graphic scope, display/module links, class and standard reuse, and merge recommendations.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
