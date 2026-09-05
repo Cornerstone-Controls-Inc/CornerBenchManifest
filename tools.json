@@ -116,7 +116,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "5",
+      "version": "6",
       "desc": "Merges two or more DeltaV FHX files with element-level conflict resolution via a multi-pane diff interface.",
       "path": "Tools\\DeltaV\\FHXMerge\\FHXMerge.exe",
       "help_file": "Tools\\DeltaV\\FHXMerge\\FHXMerge_help.txt",
@@ -237,7 +237,7 @@
         "decode"
       ],
       "system": "DeltaV",
-      "version": "4",
+      "version": "5",
       "desc": "Reads Emerson/Mynah VimNet .vio configuration files for DeltaV Virtual I/O Modules - browse the VIM / controller / data-set tree, view EtherNet/IP buffer-to-signal mappings, and run read-only VIM diagnostics.",
       "path": "Tools\\DeltaV\\VIMTools\\VIMTools.exe",
       "help_file": "Tools\\DeltaV\\VIMTools\\VIMTools_help.txt",
@@ -249,7 +249,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "7",
+      "version": "8",
       "desc": "Explains why a DeltaV controller appears in the Decommissioned Nodes list and then vanishes, so you can decide what to do about it in DeltaV. A controller is kept in that list only while it announces redundancy role 2; one carrying an assigned identity announces role 0 and ages out in about two minutes, and can never be commissioned. DvScan reads the POWERUP tree, an FHX export of the configuration and the plug-and-play traffic, and says which of the three disagrees - marking every finding with the sources it rests on, because a claim from the disk alone is not the same as one three sources agree about. Every file DeltaV writes carries a timestamp this decodes, so two bindings claiming one node can be told apart by which was written first. Load a packet capture and it also finds controllers no other source can see: one sitting at its default address is in no device table, has no binding and has no download image, so only the wire knows it is there at all. It is a diagnostic with one exception, and that exception asks twice before it acts: DeltaV was captured decommissioning a controller, the message turns out to be broadcast and selected by MAC, and DvScan can replay it to make an orphan return to its default address and become commissionable again. Each verdict says what it means and what to check next.",
       "path": "Tools\\DeltaV\\DvScan\\DvScan.exe",
       "help_file": "Tools\\DeltaV\\DvScan\\DvScan_help.txt",
@@ -410,7 +410,7 @@
         "decode"
       ],
       "system": "Allen Bradley",
-      "version": "3",
+      "version": "4",
       "desc": "Read a FactoryTalk View SE/ME application's displays without FactoryTalk View \u2014 no licence, no HMI server, no restored project. Scans a folder of .gfx files and reports every caption, step name and expression, every tag each display references, and which FactoryTalk Directory shortcut or data server it resolves through. Distinguishes a real tag from a #n parameter placeholder, cross-references a tag to the displays that use it, searches all display text at once, and flags shortcuts spelled inconsistently \u2014 the join between a graphic and a controller that nothing checks until an operator opens the screen. Exports CSV and a standalone HTML report.",
       "path": "Tools\\AllenBradley\\FTViewTools.exe",
       "help_file": "Tools\\AllenBradley\\FTViewTools_help.txt",
@@ -528,7 +528,7 @@
       "tags": [
         "ai"
       ],
-      "version": "12",
+      "version": "13",
       "desc": "Shared catalog of Cornerstone AI add-ons for Claude Code. Browse the skills and MCP servers, then install one in a click or export it as a shareable .zip. Skills install to ~/.claude/skills and ship their bundled command-line tools (reqgen, dv_converter); MCP servers are staged and registered with the client for you. Catalog: Control Narrative \u2192 Requirements, Describe DeltaV Modules, Generate EM Logic, plus the DeltaV FHX, Operate Graphics, OPC UA, Event Chronicle (alarms & events), Remote Windows and Emerson SMS servers.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
@@ -565,7 +565,7 @@
       "tags": [
         "connect"
       ],
-      "version": "9",
+      "version": "10",
       "desc": "Deterministic RDP console + visual automation builder \u2014 reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine. Manual cockpit: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, reboot. Power-Automate-style Flow builder: sequence blocks (click, type, wait-for/assert element, run command, screenshot, if/repeat/for-each-target) with per-step retry, variables, and live point-and-click authoring \u2014 turn any repetitive RDP chore into a saved, multi-target automation. Saved connection profiles; passwords never persisted.",
       "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
