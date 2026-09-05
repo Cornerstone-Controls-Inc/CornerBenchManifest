@@ -44,7 +44,7 @@
     "TableX": "3",
     "FnR": "12",
     "MP4Transcribe": "4",
-    "CornerCode": "17",
+    "CornerCode": "18",
     "SkillExplorer": "13",
     "ByteWright": "4",
     "Patina": "6",
@@ -536,14 +536,68 @@
     "CornerCode": {
       "kind": "zip",
       "file": "CornerCode.zip",
-      "sha256": "0518730da0d495e4b6bec5f4e74b5b059b98461287709add94647cb7012f5e67",
+      "sha256": "a7af472a49f9da376e4345714fe1062a413c3b8ec7b5051240281ee06c48e9d1",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.000",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.001",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.002"
       ],
-      "notes": "## v17\n\nIts theme is now the suite's, not a copy of it.\n\n- **The window looks the same.** CornerCode's look *was* the suite's \u2014 this tool is where it came from \u2014 but the two had been separate files since it shipped, and had started to drift. Its colours and its chunkier proportions (16px cards, 2px rings, heavier type) are now stated as a palette pack over the shared theme, so a change made once reaches both.\n- **Tick boxes and combo arrows are drawn properly.** The old copy styled `QCheckBox::indicator` and `QComboBox::drop-down` itself. Styling those takes them away from Qt's style, which throws the *tick* away \u2014 a ticked box became a flat coloured square \u2014 and leaves a combo box with no arrow at all. Both are drawn by the shared indicator style now.\n- **A light/dark switch reaches further.** The drop shadow on cards took its colour once at startup, so it kept the dark theme's near-black after switching to light.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v16\n- **Corrects a mislabelled v15.** The catalogue briefly advertised v15 while the\n  downloadable package was still the previous build, so an update would have\n  installed the older binary under the new number. This release carries the\n  actual build.\n- **Knows what a Rockwell P_AIn actually IS**, not merely that one exists. The\n  shared instruction knowledge it draws on now carries each block's meaning and\n  operand roles, so answers about PlantPAx logic describe behaviour instead of\n  listing names.\n\n# v13\nv12\n\n## v13\n\n- **Descriptions of an Equipment Module work now.** Asking for one used to fail on\n  a \"context\" error: the fact-sheet handed to the model was 88% comment banner \u2014\n  every step action was pasted in whole, `(* ===== *)` header and all \u2014 so one\n  module came to about 12,900 tokens against a window of 8,192. Comments are\n  stripped, each action and transition is capped, and transitions are counted at\n  all (there was no limit on them). One real module went from 51,578 characters to\n  12,794, and what is left is the logic rather than the decoration.\n- **State-driven equipment modules are read at all.** The PCSD `_EM_ST*` exports\n  are not Structured Text \u2014 they are state-driven, and their table is stored a\n  different way. Every one of them listed a module and then described nothing,\n  reporting only \"not found in the parse\". They now come through with their\n  devices, and the state table is written the way an engineer reads one: what each\n  device rests at and where it differs, rather than 32 identical cells per row.\n- **A code review no longer times out.** Two faults in the grammar that shapes the\n  model's answers: it could pad a reply with whitespace for ever and still be\n  valid, and the length limits were enforced in a way that made the model 40 times\n  slower per word. Reviewing four files went from failing after five minutes to\n  finishing in eleven seconds. Drafting a whole FAT plan's test steps went from not\n  finishing at all to two and a half minutes.\n- **\"Draft the logic tests\" no longer demands a template.** The template only ever\n  supplied the cover, revision history and contents of your house FAT plan \u2014 never\n  the tests. Leave it blank and you get the same plan in a plain document to paste\n  under your own front matter; supply one and its front matter is kept exactly as\n  it was.\n- **The word in the top-left corner tells the truth.** It always read \"offline\",\n  which was meant as the claim that nothing leaves your machine, and looked like a\n  warning that something was disconnected. It now says what the local model is\n  doing \u2014 \"starting the model\u2026\" while it loads, which takes the best part of a\n  minute and nothing used to say so.\n- **The requirements document reads the control logic.** A control narrative full\n  of int"
+      "notes": "## v18\n\n**v17 could not be installed at all.** Its download is split into three encrypted\nparts and only the last was replaced when the package was rebuilt, so the parts\ncame from two different encryptions and every install failed its checksum. That\nis fixed here, and the look the v17 notes described arrives with it \u2014 v17's\nnumber went out over a package nobody could unpack.\n\n**Six new pathways**, each built against real material and each finding faults as\nit went: write-the-reply, check-against-design, explain-an-error, check-a-rename,\ncheck-nothing-was-lost and extend-a-pattern. Three of them never call the model.\n\n**Things they found, which were wrong for everyone until now:**\n\n- **write-deltav-logic could never find a module instance.** On any export, ever\n  \u2014 it looked for `NAME=` and a module instance is named by `TAG=`.\n- **A UTF-16-LE export with no BOM scanned \"clean\"** and hid 138 renamed tags.\n- **A two-column alias table has one pipe, not two**, and `_A` occurs inside the\n  FHX keyword `PLANT_AREA` \u2014 both of which made renames read wrongly.\n\n**Two checkpoints offered a choice they could not deliver.** edit-document showed\nthe plan for changes to your document as an editable grid with no way to drop a\nrow \u2014 accept all or cancel \u2014 and control-narrative-to-requirements did the same\nfor the device list that becomes the I/O table. Every checkpoint now states which\ncolumns its reader sees.\n\n**A code review no longer cries wolf on `line.split(\",\")[0]`.** It was reported\nas indexing a sequence that may be empty; it cannot be, because split with an\nexplicit separator always returns at least one element. That would have fired on\none of the commonest idioms in Python in every file anyone pointed it at. Bare\n`.split()` still counts, because it genuinely can return nothing.\n\n**A run can no longer die on unparseable JSON** from a literal newline inside a\nstring the model returned.\n\n**167 test cases**, five per pathway: the ordinary input, the awkward one, the one\nthat should produce nothing, and the format it cannot read. Six of them assert\nthat finding nothing in a file full of defects is not an acceptable answer \u2014 a\nsmall model waved every site through and passed before that.\n\n- **A packaging fault that could have stopped it opening.** The suite compiles its\n  shared code into one extension module, which the packager cannot see inside, so\n  a standard-library module imported only from there was left out of the bundle.\n  What the compiled code imports is worked out from the sources now.\n\n## v17\n\nIts theme is now the suite's, not a copy of it.\n\n- **The window looks the same.** CornerCode's look *was* the suite's \u2014 this tool is where it came from \u2014 but the two had been separate files since it shipped, and had started to drift. Its colours and its chunkier proportions (16px cards, 2px rings, heavier type) are now stated as a palette pack over the shared theme, so a change made once reaches both.\n- **Tick boxes and combo arrows are drawn properly.** The old copy styled `QCheckBox::indicator` and `QComboBox::drop-down` itself. Styling those takes them away from Qt's style, which throws the *tick* away \u2014 a ticked box became a flat coloured square \u2014 and leaves a combo box with no arrow at all. Both are drawn by the shared indicator style now.\n- **A light/dark switch reaches further.** The drop shadow on cards took its colour once at startup, so it kept the dark theme's near-black after switching to light.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v16\n- **Corrects a mislabelled v15.** The catalogue briefly advertised v15 while the\n  downloadable package was still the previous build, so an update would have\n  installed the older binary under the new number. This release carries the\n  actual build.\n- **Knows what a ",
+      "components": [
+        {
+          "id": "app",
+          "sha256": "465929eabda4ff7244845ad2ae7d77b6785d53df46162c483786aa97e90f47f8",
+          "enc": "cbpk1",
+          "include": [
+            "CornerCode.exe",
+            "CornerCode.exe.sig",
+            "CornerCode.ico",
+            "CornerCode_help.txt",
+            "py/**",
+            "pathways/**",
+            "pathways_assets/**",
+            "_internal/shared.pyd"
+          ],
+          "bytes": 50168899,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.app.zip.cbpk"
+        },
+        {
+          "id": "help",
+          "sha256": "b145356cb0b6c261fe97ad3d6e67559f5270da248d62b1a152af62a6bfa9908f",
+          "enc": "cbpk1",
+          "include": [
+            "help_index/**"
+          ],
+          "bytes": 54603356,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.help.zip.cbpk"
+        },
+        {
+          "id": "model",
+          "sha256": "53a2fd936762340edb4dac265937969a5616f30ca2bb20ee4ddfe68de32c1bf8",
+          "enc": "cbpk1",
+          "include": [
+            "models/**",
+            "llama/**"
+          ],
+          "bytes": 4322005132,
+          "parts": [
+            "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.model.zip.cbpk.000",
+            "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.model.zip.cbpk.001",
+            "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.model.zip.cbpk.002"
+          ]
+        },
+        {
+          "id": "deps",
+          "sha256": "cb5d32c152460f2233f75d41aa8d73cc7554857ac8d0a772f3c22092f15c1660",
+          "enc": "cbpk1",
+          "include": [
+            "**"
+          ],
+          "bytes": 407471218,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.deps.zip.cbpk"
+        }
+      ]
     },
     "SuperDocs": {
       "kind": "zip",
