@@ -2,41 +2,41 @@
   "launcher_version": "10",
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
   "tools": {
-    "ABB Migration": "8",
+    "ABB Migration": "9",
     "LiveTools": "8",
     "DvHistExport": "3",
     "SuperOPCWatchIt": "6",
     "DifFHX": "12",
     "FHXport": "28",
     "FHXEdit": "13",
-    "WebFHX": "13",
+    "WebFHX": "14",
     "EMTools": "5",
     "FHXMerge": "5",
     "FMTTools": "2",
-    "CEMatrix": "4",
+    "CEMatrix": "5",
     "TuningAid": "5",
     "DvTwin": "22",
     "DVEmu": "7",
-    "FHXVerify": "6",
+    "FHXVerify": "7",
     "OPCBridge": "7",
     "Op2Live": "36",
     "OperateTools": "23",
     "VIMTools": "4",
     "DvScan": "7",
     "DvVMManager": "24",
-    "PvxIO": "6",
-    "PvxPDX": "10",
-    "PDXDiff": "4",
+    "PvxIO": "7",
+    "PvxPDX": "11",
+    "PDXDiff": "5",
     "FSTDecompiler": "4",
-    "ODFDiff": "4",
+    "ODFDiff": "5",
     "PVXMigration": "6",
     "VMCreds": "5",
     "ABComms": "6",
-    "EDSCatalog": "2",
+    "EDSCatalog": "3",
     "Logix2dv": "7",
     "ABCommission": "8",
     "FTViewTools": "3",
-    "STReader": "4",
+    "STReader": "5",
     "CornerPDF": "6",
     "SuperDocs": "2",
     "P&ID Reader": "10",
@@ -54,13 +54,12 @@
   },
   "tool_downloads": {
     "ABB Migration": {
-      "kind": "exe",
-      "file": "ABBMigration.exe",
-      "sha256": "52bb670529f4dc1afee2afd434a0245f807fa42e69d135bb02135295fdde91a8",
+      "kind": "zip",
+      "file": "ABBMigration.zip",
+      "sha256": "7b8168566daf47d0343e1b042052289a941d0c36f6039254c2d2f391d9414ac0",
       "enc": "cbpk1",
-      "sig": "d17eac62d7ea3fa66c3d4cf96801d61d2172a4778ece640b4718b0ebcb73fff487ac2003302349b9bb9812a062762ee50f377cd107905625521ddb0b90db1602",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABBMigration.exe.cbpk",
-      "notes": "# v8\n\nUntil now this tool decoded the project and stopped. Everything it wrote was\nABB's facts, tidied \u2014 correct, useful, and still in the source system's\nvocabulary. That leaves both of its users one step short: the engineer migrating\nto DeltaV had nothing DeltaV-shaped to work from, and the engineer who has never\nused Freelance **could not see the logic at all** \u2014 `logic_connections.csv` is a\nnetlist, and `B-CT-713.3` means nothing without Freelance open next to it.\n\n## Read the logic without Freelance\n\n**The FBD sheets are now drawn.** Every coordinate was already in the export and\nnothing was rendering them. `extracted_svg/logic/` holds one SVG per sheet plus a\ncontact sheet: blocks that carry a plant tag \u2014 the ones that become DeltaV\nmodules \u2014 are drawn heavier, wires and junctions are drawn exactly as the export\nhas them, signals entering and leaving the sheet are named, inverted pins get\ntheir bubble, and hovering any block gives you its tag.\n\n**`extracted_system/block_inventory.csv`** says what each block type *is*, in one\nline, and \u2014 the useful part \u2014 whether it becomes a DeltaV module or folds into\nsomebody else's expression. `M_ANA` is an analog measurement and becomes an\n`_AI_V01`; `AND` is logic and becomes a term inside a module, not a module of its\nown. Getting that distinction wrong inflates a module count, and an estimate, by\nan order of magnitude. Block types the legend does not cover are listed too,\nranked by instance count, so the gaps rank themselves \u2014 and adding one to\n`freelance_refdata/block_library.json` needs no code change.\n\n**Pin names** resolve where the export publishes them (the project's own function\nblocks: `PUMP_FB.START`) and read as `#3` where it does not. The index convention\nfor standard-library blocks has never been confirmed against a real project, so a\nbare number is never dressed up as a name; those pins are documented in the block\ninventory instead.\n\n## Restated for DeltaV\n\n- **`proposed_modules.csv`** \u2014 what each tagged block should become: the PCSD\n  `MODULE_CLASS`, the evidence, and the device parameters already recovered. Two\n  independent signals are used \u2014 the ABB block class, and the type of IO channel\n  the tag is wired to. When they agree the row is `confirmed`; when they disagree\n  it is `conflict` and gets looked at rather than averaged; when neither fires it\n  is a work item naming the block type to add, not a silent gap.\n- **`controller_sizing.csv`** \u2014 per source controller: tags, modules, IO by type,\n  cross-controller signals, fastest scan rate. The first-cut answer to how many\n  DeltaV controllers this needs.\n- **`peer_to_peer.csv`** \u2014 every signal used outside its owning controller, and\n  what DeltaV needs in its place.\n- **Scan rates are now legal.** DeltaV accepts a discrete set of module periods\n  and 0.25 s is not one of them \u2014 a 250 ms Freelance task is the common case and\n  would have failed on import. `deltav_scan_ms` snaps to the nearest accepted\n  period, rounding **down**, so a loop never ends up running slower than the\n  plant was tuned for.\n- **`io_list.csv`** gained the target side: the DeltaV card / CHARM type per\n  channel. Unrecognised modules are left blank \u2014 an IO list with a wrong card\n  type is worse than one with a gap.\n\n## Proving it is complete\n\n- **`extracted_system/coverage.csv`** \u2014 every record type in the export and\n  whether this tool decoded it. The parser used to end in *\"all other tags fall\n  through silently\"*, which meant it could not tell you what it had missed;\n  \"lossless\" was a claim rather than a measurement.\n- **`alarm_list.csv`** \u2014 one row per configured alarm instead of sixteen columns\n  per tag, so the alarm load can be counted and sorted by priority. Discrete\n  alarms carry no limit and are included anyway; counting only limits\n  under-reports the load by every discrete point in the plant.\n- **`index.html` is now the report** \u2014 size of the job, shape per controller,\n  what the logic is made of, and a *Needs a decision* sectio"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ABBMigration.zip.cbpk",
+      "notes": "## v9\n\nOff Tkinter, in rose on the warm conversion ground, in Franklin Gothic.\n\n- **The window is the shared job window.** The hand-written one was 280 lines of\n  layout; the behaviour is the same and there is far less of it to go wrong.\n- **It no longer ships a toolkit it does not use.** The retired Tk window and the\n  theme it depended on are gone, along with the tcl/tk runtime the build bundled\n  to keep them loadable.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v8\n\nUntil now this tool decoded the project and stopped. Everything it wrote was\nABB's facts, tidied \u2014 correct, useful, and still in the source system's\nvocabulary. That leaves both of its users one step short: the engineer migrating\nto DeltaV had nothing DeltaV-shaped to work from, and the engineer who has never\nused Freelance **could not see the logic at all** \u2014 `logic_connections.csv` is a\nnetlist, and `B-CT-713.3` means nothing without Freelance open next to it.\n\n## Read the logic without Freelance\n\n**The FBD sheets are now drawn.** Every coordinate was already in the export and\nnothing was rendering them. `extracted_svg/logic/` holds one SVG per sheet plus a\ncontact sheet: blocks that carry a plant tag \u2014 the ones that become DeltaV\nmodules \u2014 are drawn heavier, wires and junctions are drawn exactly as the export\nhas them, signals entering and leaving the sheet are named, inverted pins get\ntheir bubble, and hovering any block gives you its tag.\n\n**`extracted_system/block_inventory.csv`** says what each block type *is*, in one\nline, and \u2014 the useful part \u2014 whether it becomes a DeltaV module or folds into\nsomebody else's expression. `M_ANA` is an analog measurement and becomes an\n`_AI_V01`; `AND` is logic and becomes a term inside a module, not a module of its\nown. Getting that distinction wrong inflates a module count, and an estimate, by\nan order of magnitude. Block types the legend does not cover are listed too,\nranked by instance count, so the gaps rank themselves \u2014 and adding one to\n`freelance_refdata/block_library.json` needs no code change.\n\n**Pin names** resolve where the export publishes them (the project's own function\nblocks: `PUMP_FB.START`) and read as `#3` where it does not. The index convention\nfor standard-library blocks has never been confirmed against a real project, so a\nbare number is never dressed up as a name; those pins are documented in the block\ninventory instead.\n\n## Restated for DeltaV\n\n- **`proposed_modules.csv`** \u2014 what each tagged block should become: the PCSD\n  `MODULE_CLASS`, the evidence, and the device parameters already recovered. Two\n  independent signals are used \u2014 the ABB block class, and the type of IO channel\n  the tag is wired to. When they agree the row is `confirmed`; when they disagree\n  it is `conflict` and gets looked at rather than averaged; when neither fires it\n  is a work item naming the block type to add, not a silent gap.\n- **`controller_sizing.csv`** \u2014 per source controller: tags, modules, IO by type,\n  cross-controller signals, fastest scan rate. The first-cut answer to how many\n  DeltaV controllers this needs.\n- **`peer_to_peer.csv`** \u2014 every signal used outside its owning controller, and\n  what DeltaV needs in its place.\n- **Scan rates are now legal.** DeltaV accepts a discrete set of module periods\n  and 0.25 s is not one of them \u2014 a 250 ms Freelance task is the common case and\n  would have failed on import. `d"
     },
     "SuperOPCWatchIt": {
       "kind": "exe",
@@ -96,13 +95,12 @@
       "notes": "## v13\n\nFixes a build fault that stopped v12 opening at all: the exe died on\n`ModuleNotFoundError: No module named 'webbrowser'` before the window was drawn.\nThe suite compiles its shared code into a single extension module, which\nPyInstaller cannot see inside, so a stdlib module imported only from there was\nnever bundled. The build now works out what the compiled code imports and names\nevery one of them. No change to the editor itself.\n\n## v12\n\nThe editor could change what was in the file and delete from it. Now it can add to it.\n\n- **Add a field to an element.** The detail panel has an \"Add Field\" row: pick\n  Identifier or Parameter, type a name and a value, press Update Element. Quoting is\n  chosen for you \u2014 a number or a `{ \u2026 }` composite is written bare and text is quoted,\n  which is what a real DeltaV export does \u2014 or set it yourself per field.\n- **Remove a field.** Every field row has an \u2715 that strikes it through. Nothing happens\n  until you press Update Element, and the whole panel \u2014 edits, additions and removals\n  together \u2014 is one undo step. Undo puts a removed field back at its original position\n  in the file, not at the end.\n- **Add elements.** \"New Element\" in the toolbar creates a top-level one; right-click\n  any element for \"Add Child Element inside \u2026\" to nest one within it. The dialog asks\n  for the classifier (offering the ones already in your file), then the identifiers and\n  parameters it should start with, pre-filled with the field names a sibling already\n  uses. It can stamp `user` and `time` the way an export does.\n- **Copy and paste elements.** Ctrl+C / Ctrl+X on a tree selection, then Ctrl+V to\n  paste inside the selected element or Ctrl+Shift+V to paste beside it; Ctrl+D\n  duplicates in place. A copy brings everything nested inside it. Cut is a move and\n  removes nothing until you paste it, so a cut you change your mind about costs\n  nothing.\n- **A copy is a genuinely separate element.** FHX identifies a nested element by a\n  number that has to be unique among its siblings, and the exporter resolves children\n  through it \u2014 so a na\u00efve copy pasted next to its original exports as the original,\n  twice, in a file that still parses and still looks right. Every copy is renumbered\n  throughout, and its internal references are rewritten to match.\n- **All of it is scriptable.** Scripted Edits (Ctrl+R) gains `add_child`, `copy`,\n  `paste`, `duplicate`, `copy_to`, `move_to` and `delete` on an element, and\n  `fhx.add_element` / `fhx.paste` at the top level \u2014 with five new worked examples:\n  cloning a module under new tags, adding a block to every module that lacks one,\n  building an element from scratch, copying children between elements, and deleting a\n  classifier outright. Structural changes are previewed in the same table, applied as\n  one step, and undone as one step.\n- **Names that would corrupt the file are refused where you type them.** A field named\n  `MY KEY`, or a value forced unquoted that contains a space or a quote, does not\n  round-trip: it re-reads as something else, or aborts the parse of the whole file on\n  the next open. The dialog, the panel and the script API all say so at the point of\n  entry rather than letting you find out when you reopen the export.\n- **Edited elements are re-stamped again.** The exporter refreshes `time` on everything\n  the session touched; that had quietly stopped covering scripted edits, and now covers\n  scripted, panel and structural changes alike \u2014 an element that gained or lost a child\n  counts as changed.\n- **What you paste is what gets selected.** Adding or pasting rebuilds the tree, which\n  used to drop the selection and leave the new element somewhere you had to go and find.\n  It is now selected and open in the detail panel, ready to fill in.\n- **A copy that still carries the original's tag says so.** Copying a module is the\n  normal way to make a new one, and the mistake is shipping the copy before renaming it \u2014\n  DeltaV reads two elements with the same TAG as o"
     },
     "WebFHX": {
-      "kind": "exe",
-      "file": "WebFHX.exe",
-      "sha256": "5e6c3e24d5586f760c679e6246ab8b7ca7653baef77ae64bac28842b7f02b51d",
+      "kind": "zip",
+      "file": "WebFHX.zip",
+      "sha256": "98adc5b2044461aa5982a2f2e32f3a617da8348e5c6d858bc5e5a48153e3e1cb",
       "enc": "cbpk1",
-      "sig": "940ef69e08f94b0706e3b9e0bba219de9a34b90a0908ee3faed5a63f09e3601dc074dc6d73f877a18c923fac89ba878b59e05ad9f7bdffacb499a89710b51c09",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/WebFHX.exe.cbpk",
-      "notes": "# v13\nFixed a completed export being reported as failed when a status message contained a non-ASCII character; simple mode now reports its own failure instead of silently producing a Control Studio export\n\n# v12\nCleanup\n\n# v11\nCleanup"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/WebFHX.zip.cbpk",
+      "notes": "## v14\n\nOff Tkinter, in magenta on the slate document ground.\n\n- **Its title-bar mark is drawn rather than traced.** WebFHX's icon is a stack of\n  pages behind a node diagram; shrunk to the size a title bar affords it came out\n  an illegible smear, 63% of the tile painted against 11-25% for every other\n  tool. The drawn mark is a browser window with a hierarchy in it, which is the\n  tool's whole point \u2014 the system tree, in a browser, with no DeltaV licence.\n- **The window is the shared job window**, with the same log and progress every\n  other converter has.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v13\nFixed a completed export being reported as failed when a status message contained a non-ASCII character; simple mode now reports its own failure instead of silently producing a Control Studio export\n\n# v12\nCleanup\n\n# v11\nCleanup"
     },
     "EMTools": {
       "kind": "exe",
@@ -149,13 +147,12 @@
       "notes": "# v4\nCleanup\n\n# v3\nCleanup"
     },
     "CEMatrix": {
-      "kind": "exe",
-      "file": "CEMatrix.exe",
-      "sha256": "076d05b686a0d6ec68dc391f833039e56465d63b20354085f20bff1bff98e4fe",
+      "kind": "zip",
+      "file": "CEMatrix.zip",
+      "sha256": "54af5026798bf08734564f1b2ddf09c50703e852cc932f3bb037a18be92fa921",
       "enc": "cbpk1",
-      "sig": "ebda2df80a761209ed34bf700266e9984a9c4bfa90a3b62a7e5e885eb800e2ebfa92e26ce2ef6ceeb597dccb10e875a82e68fe9cf6fe227bd5dc4304fd7b8603",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CEMatrix.exe.cbpk",
-      "notes": "# v4\n- **Two findings that made a plant look safer than it is.** A cause-and-effect\n  review could pass while a real gap went unreported. Both defects are fixed, so\n  a matrix that clears now clears for the right reason.\n\n# v3\nCleanup\n\n# v2\nCleanup"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CEMatrix.zip.cbpk",
+      "notes": "## v5\n\nOff Tkinter, in lime on the slate document ground.\n\n- **The window is the shared job window**, with the same log, progress and\n  run-once behaviour as the rest of the suite.\n- **The build matches what the tool actually is.** It was still being packaged as\n  a Tk application \u2014 hidden-importing and collecting a theme its entry point no\n  longer used.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v4\n- **Two findings that made a plant look safer than it is.** A cause-and-effect\n  review could pass while a real gap went unreported. Both defects are fixed, so\n  a matrix that clears now clears for the right reason.\n\n# v3\nCleanup\n\n# v2\nCleanup"
     },
     "TuningAid": {
       "kind": "exe",
@@ -175,13 +172,12 @@
       "notes": "# v22\n- **It could never reach a real DeltaV OPC UA server.** The connection path used\n  a client that could not complete the handshake against a genuine server, so\n  every attempt failed against real equipment while appearing fine in testing.\n  It now uses the suite's own UA client.\n\n# v21\nCleanup\n\n# v20\nCleanup\n\n## v19\n\n- Fixed unreadable text on machines with Windows dark mode enabled. Test-run status\n  rows were the worst affected \u2014 a coloured status background was applied without a\n  matching text colour, so some rows rendered white text on a white background. The\n  historian configuration dialog's database path label could also disappear. The app\n  now uses a consistent light theme regardless of the Windows theme.\n\n## v18\n\n- Fixed a startup crash that prevented the app from launching. After the shared FHX parser was consolidated, the FHX simulation generator constructed parser objects with an incompatible constructor, raising `TypeError: Element.__init__() got an unexpected keyword argument 'classifier'` at import time. The shared `Element` now accepts those keyword arguments and the app launches again."
     },
     "FHXVerify": {
-      "kind": "exe",
-      "file": "FHXVerify.exe",
-      "sha256": "9e78e0e1c00dd2c4b51ab3b865b7ac868ff55b21f771a0e42426c94381f1b114",
+      "kind": "zip",
+      "file": "FHXVerify.zip",
+      "sha256": "b0b8ae1908d204925a50e03dce1f51a4caaa8fdaf8cec026790d5fd0f3e28526",
       "enc": "cbpk1",
-      "sig": "e4432e1deea9a80b3be61a57c18fbdd7ad91fe8c1dc3c772f319697c28b485660a9afd531690042a4f6616fa317368bd333fa6b2902c61cdf25f9b67a2685b06",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXVerify.exe.cbpk",
-      "notes": "# v5\nCleanup\n\n# v4\nCleanup"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FHXVerify.zip.cbpk",
+      "notes": "## v7\n\nOff Tkinter, in violet on the forest verification ground. It is a report screen\nrather than a job window: pick a file, choose the checks, run, then read what\ncame back and act on it.\n\n- **A finding you cannot read is a finding you cannot act on.** The message\n  column was fixed at a width that cut anything past about fifty characters with\n  no way to see the rest. It stretches now, and shows the full text on hover.\n- **The severity filter says what it is hiding.** Three bare checkboxes told you\n  which severities were on and never how many of each there were.\n- **A finding the fixer declined says why.** \"No fix exists\" and \"a fix was\n  refused\" used to look identical.\n- **Filtering a large export is usable.** The list was rebuilt on every keystroke.\n- **The actions go quiet while one is running**, instead of accepting a second\n  click and dropping it.\n- **Verify, fix-and-revalidate and comment-SFCs are one implementation** shared\n  with the command-line tool, rather than two that could drift apart.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v6\nPorted off Tkinter to PySide6, in the suite livery \u2014 violet on the forest verify\nground. The window is a report screen now: the findings table stretches its\nmessage column and tooltips what it elides, the severity chips carry live counts,\nthe filter is debounced, and a finding the fixer declined says why. Verify,\nfix-and-revalidate and comment-and-save moved into engine.py, so the GUI and the\nCLI run the same code.\n\n# v5\nCleanup\n\n# v4\nCleanup"
     },
     "OPCBridge": {
       "kind": "zip",
@@ -192,31 +188,28 @@
       "notes": "# v7\n- **No functional change.** Rebuilt so it carries the current shared components.\n  Listed here because the version moved, not because the tool behaves\n  differently.\n\n# v6\nCleanup\n\n# v5\nCleanup"
     },
     "PvxIO": {
-      "kind": "exe",
-      "file": "PvxIO.exe",
-      "sha256": "e1b4630fae1ca9fe6033640533cc3e9128446737433aba404b0316951c1e58cd",
+      "kind": "zip",
+      "file": "PvxIO.zip",
+      "sha256": "dcb7abd04834630ae8b8f40d3ccde59c92ce8cc0b123c730a7d843f45248cc49",
       "enc": "cbpk1",
-      "sig": "ffbb19c1b4df8c2ca013c913ac6bdb110a7e115d7f1f66be04d2f62bd11a82d89ca2d05c3f6e6fd090fd7f66ddda2458783c946610f5c11f383c1ae21845e50c",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxIO.exe.cbpk",
-      "notes": "# v6\nCleanup\n\n# v5\nCleanup"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxIO.zip.cbpk",
+      "notes": "## v7\n\nOff Tkinter, in rose-magenta on the navy editing ground.\n\n- **The window is new.** The converter's panel is the shared job window the rest\n  of the suite uses: the same field rows, the same log, the same progress bar,\n  and a run that cannot be started twice by accident.\n- **It no longer ships a toolkit it does not use.** The retired Tk window is\n  gone, and with it the tcl/tk runtime the build was bundling purely to keep\n  dead code loadable.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v6\nCleanup\n\n# v5\nCleanup"
     },
     "PvxPDX": {
-      "kind": "exe",
-      "file": "PvxPDX.exe",
-      "sha256": "e9bdd57448968c87231bb0a5051361f243c3705f05e28bf39f3b3a633661f66b",
+      "kind": "zip",
+      "file": "PvxPDX.zip",
+      "sha256": "7bc793781d0da38e1340facad3f158e4b1ed80e7c0b2ecd1678349e810cec64a",
       "enc": "cbpk1",
-      "sig": "baee6196c93184fffc4b53d13ee0c6a2bf8d3176073437f2bd16147c20ddf916cc3f790dd043ab5e96131674acdef4c890569bee93dc2fe473fd6a94d3d48104",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxPDX.exe.cbpk",
-      "notes": "# v10\nCleanup\n\n# v9\nCleanup"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxPDX.zip.cbpk",
+      "notes": "## v11\n\nOff Tkinter, in cyan on the plum decoding ground.\n\n- **A failure says which step it happened in.** The six extraction steps run in\n  the same order with the same arguments as before, but a failure now names the\n  stage it stopped at. The old message box did not, and the log had to be read\n  to find out.\n- **The output folder is created rather than demanded.** Choosing \"a new folder\n  next to the PDX\" used to fail unless you had already made it.\n- **An empty table prefix is still refused**, deliberately, rather than quietly\n  defaulting \u2014 a prefix silently replaced extracts the wrong tables and says\n  nothing.\n- **The window is the shared job window**, so disabling controls during a run no\n  longer depends on a hand-maintained list of widgets that every new control had\n  to be added to.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v10\nCleanup\n\n# v9\nCleanup"
     },
     "PDXDiff": {
-      "kind": "exe",
-      "file": "PDXDiff.exe",
-      "sha256": "ecc2fd751d220289bce806abdfa3c5001526db5f00c6b0beed7bbe0cb8dfb360",
+      "kind": "zip",
+      "file": "PDXDiff.zip",
+      "sha256": "2964e5de0d4d389d474876eecbeb0294b50ba14b4a050bf603860fe530d4aab9",
       "enc": "cbpk1",
-      "sig": "9a77d8fd7805209741c299d3352b1906a90e66a37e663d06e4d7f5a7c4eae08e10757b7b2cf6f9eadab4e63f4fff865e2c95146579113833a11de626e34bff00",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PDXDiff.exe.cbpk",
-      "notes": "# v4\nCleanup\n\n# v3\nCleanup"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PDXDiff.zip.cbpk",
+      "notes": "## v5\n\nOff Tkinter, in magenta on the forest verification ground.\n\n- **Input A and B each take a folder or a raw .pdx**, and the tool works out\n  which you gave it. That was true before; the window now says it with one\n  browse control per input rather than implying a choice you do not have to make.\n- **The two filter lists are properly optional.** The window no longer refuses to\n  start until every path is filled \u2014 but a filled-in path is still checked,\n  because a typo silently ignored is worse than one refused.\n- **The progress bar means something.** The comparison already reported how far\n  through it was; the bar now shows it rather than sweeping.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v4\nCleanup\n\n# v3\nCleanup"
     },
     "FSTDecompiler": {
       "kind": "exe",
@@ -228,13 +221,12 @@
       "notes": "# v4\nCleanup\n\n# v3\nCleanup"
     },
     "ODFDiff": {
-      "kind": "exe",
-      "file": "ODFDiff.exe",
-      "sha256": "14b5376a321421eb0a3addcf2eb811c71a3dff6261c575b7e0564bf6ab43fb25",
+      "kind": "zip",
+      "file": "ODFDiff.zip",
+      "sha256": "bdfeeaf540d1648b6fcf058f3456be07d7363cd0a985e9518ccb0fbd55abd5f0",
       "enc": "cbpk1",
-      "sig": "4f9e718e8b0fd991792607cc201886f76c765476d5f2ac61ad5c87fc2b3b330d9bdbcdb954fffdb21d94b0f24852bc6873fb9282aa3f0a8cee2dd16a4fb81008",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ODFDiff.exe.cbpk",
-      "notes": "# v4\nCleanup\n\n# v3\nCleanup"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/ODFDiff.zip.cbpk",
+      "notes": "## v5\n\nOff Tkinter, in periwinkle on the forest verification ground.\n\n- **The tag cross-reference is no longer three folder dialogs in a row.** It used\n  to open three in sequence with no way to see what you had picked and no way to\n  correct the first without cancelling out of all of them. It is a mode now, with\n  its folders on screen where you can read and change them.\n- **Cancel means cancel.** A cancelled run ends as a cancelled run instead of\n  reporting a failure.\n- **One window for both jobs**, with the fields belonging to the other mode\n  hidden rather than crowding it.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v4\nCleanup\n\n# v3\nCleanup"
     },
     "VMCreds": {
       "kind": "exe",
@@ -271,13 +263,12 @@
       "notes": "## v7\n\nIts own colours, and the step rail is no longer a private copy.\n\n- **Green on warm graphite, in Franklin Gothic.** Rockwell work and DeltaV work must never be confused mid-migration, so it takes the hue furthest from the FHX tools.\n- **The rail moved to the shared toolkit.** This tool's top bar, step rail, count cards and detail panel had been *copied* into PVXMigration and P&ID Reader, whose files asked that the three be kept \"visually in step\" by hand. They are now one implementation wearing three palettes.\n- **Fit / review / fallback / bad are theme tones.** All three tools carried the same four colours under different names.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v6\n\n**Bulk Edit CSV + FMT can be exported from the window.** One tab-separated pair\nper matched PCSD class, every device of that class a row with the parameters\nrecovered from the source filled in. It had been reachable only from the command\nline, which meant the output meant for the engineer doing the migration was the\none output they could not produce.\n\n**The narrative is written for someone who works in DeltaV.** It is the spec for\nthe logic no class covers, so it is read by people who may never have opened\nStudio 5000 \u2014 and it was handing them Rockwell comment syntax:\n`(* P_ValveC(FCV306004) when (Simulate) -- manual *)`. That now reads *\"WHEN\n(Simulate) THEN FCV306004 is a valve (device control) module (Rockwell P_ValveC)\n\u2014 configure it as one in DeltaV\"*, and an instruction with no DeltaV block says\nso in words instead of leaving a marker.\n\n**Two valves on one card are two devices, not one device called \"Local\".** The\ncross-reference collapses `Local:12:O.Ch3Data` to `Local`, so a section grouped\nits rungs under the rack they shared rather than under `FCV306004` and\n`FCV306005`. A device is named from the instrument the rung instantiates, and an\nI/O card is never the subject or a listed signal source. The channels get their\nown line instead \u2014 *Field I/O: Local:4:I.Ch13Data (AI), Local:12:O.Ch3Data (AO)*\n\u2014 because each one becomes a DST.\n\n**Valves and motors now wire their I/O.** A composite discrete device has no nested\nchannel block; its I/O goes into a bank of reference slots (`IO_OUT_1..4` for the\ncommands, `INPUT_D1..4` for the feedbacks, or the bare `INPUT`/`OUTPUT` assemblies\non a networked drive), and every slot is declared as an internal connection. The\nbinder only ever looked at input/output-connection ports, so on `MCP_CUP.L5X` all\n24 valves fit their class and wired nothing at all. Points now go into the bank\nthat matches their direction. A control loop likewise binds *both* its channel\nblocks \u2014 only the first was bound, which left every loop's output channel unwired.\nAn I/O point the class has nowhere to reference (a modulating valve's position\nfeedback, which DeltaV resolves inside the device block) is reported rather than\ndropped.\n\n**Unwired ports meant three different things and were reported as one.** The banks\nare fixed-size: a valve with one solenoid uses `IO_OUT_1` and leaves three spare,\nand those three were listed as missing wiring \u2014 96 of the project's 143 \"unbound\nports\" were empty slots on valves, telling the engineer to wire channels that do\nnot exist. A bank now counts once, and only when nothing in it landed. Separately,\na class's optional capabilities \u2014 a loop's cascade input, feedforward, and\npressure/temperature compensation \u2014 are what the class *offers*, not what the\nconversion *owes*: a loop with no cascade source is not a loop with missing\nwiring, so those are listed as unused class capabilities instead.\n\n**Two numbers, because there are two questions.** The match percentage says whether\nthe class is the right one. It took four distinct values across 280 modules,\nbecause it reported which scori"
     },
     "STReader": {
-      "kind": "exe",
-      "file": "STReader.exe",
-      "sha256": "23649d7eaa0fac3716f65dd961f3c7e7a905d0599202fc54963d033974e7cc7d",
+      "kind": "zip",
+      "file": "STReader.zip",
+      "sha256": "cda0a0af0055456db61efee43b18f8d2e069cb8851fe36a6c42893163604e970",
       "enc": "cbpk1",
-      "sig": "1eee1afd04b944841d578eb182946bb62d21c82670f88773d2e4e3d1bbc0e3c59202c9ed8d04d88cbd4233cfe094b80e157528eac547eab361f9982496ba8505",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/STReader.exe.cbpk",
-      "notes": "# v4\nCleanup\n\n# v3\nCleanup"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/STReader.zip.cbpk",
+      "notes": "## v5\n\nOff Tkinter, in green on the plum decoding ground.\n\n- **Both output boxes fill in now, not just the first.** STReader writes an HTML\n  and a PDF from one ST file, and picking an input used to name only the HTML \u2014\n  leaving the PDF box empty and the run refused. Each box derives its own name\n  from its own file type.\n- **An error is readable.** The old status bar carried its outcome in the colour\n  of a label and truncated the message to a single line.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v4\nCleanup\n\n# v3\nCleanup"
     },
     "P&ID Reader": {
       "kind": "zip",
@@ -384,13 +375,12 @@
       "notes": "## v6\n\nIts own colours, and the rail is no longer a vendored copy.\n\n- **Lavender on warm graphite.** Provox is the oldest estate the suite touches; a cooler accent on the warm ground reads as the archival end of conversion. It still opens light.\n- **The step rail moved to the shared toolkit.** This file said it plainly \u2014 \"a vendored copy of the look used by Logix2dv's revamped rail... keep visually in step with that tool's rail\". Keeping three copies in step by hand is not a mechanism.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v6\nEvery appendix now generates, and the whole plant no longer lands in every one\n\nValidated end to end against a completed project (P3111 GPC Utilities): the nine\nissued appendices, the tables behind them, a full PDX parse and the ProVOX Pic folder.\n\n**The five stub appendices are implemented.** D (IDI Configuration), F (Border\nPoints), G (PI Points), H (Provox IO Configuration) and I (Graphics Analysis) each\nreturned their input unchanged; the docs said there were three. Measured against the\nissued deliverable: F is exact on all 190 border points with no false positives and\nevery derivable column right; D is exact on all 1,384 channels; H matches row for row\nwith type and address 100%; I finds 79 of 87 displays carrying migrating-controller\npoints with no false positives.\n\n**A new Scope step.** Which controllers are migrating, which devices are data\ncollection sinks, which files hold physical I/O, where the displays and PI export\nlive \u2014 none of it is in the ProVOX data, and without it the generators ran against\nthe entire plant. Appendix A came out at 5,184 rows against an issued 683, and\nAppendix H at 28,825. The scope is saved beside the output and can be reloaded.\n\n**A new Requirements step.** The FRS is written from the *completed* appendices, not\nthe raw data: generate them, add a Process Cell column to Appendix A, point step 5 at\nthat folder. ProVOX records no process cell, so it cannot be derived \u2014 without the\ncolumn you now get one section per node instead of no document at all.\n\nFixes:\n- Appendix C never terminated when the extract contained a dangling condition\n  reference \u2014 it looped forever emitting the same warning. Now 0.3 s, and it names\n  what is unresolved.\n- Border Points, Provox IO and PI Points were silently discarded by the Qt export.\n  They write as workbooks, sheets intact.\n- The FRS template was located relative to the working directory, so requirements\n  generation produced nothing unless the tool was launched from its own folder.\n- `clean_column_names` renamed columns in place, corrupting the shared appendix data\n  mid-run.\n- Appendix filenames could not be read back in \u2014 the export sanitised punctuation the\n  importer then required.\n- Appendix H can consume an FST reference export from FSTDecompiler (its new\n  \"Export I/O + point refs\" button). FST logic addresses I/O by register, so without\n  it every logic-driven channel reads as unused: 47 false alarms against the\n  engineer's 13, or 16 with it.\n\n# v5\nCleanup\n\n# v4\nCleanup"
     },
     "EDSCatalog": {
-      "kind": "exe",
-      "file": "EDSCatalog.exe",
-      "sha256": "5e2507df11a53d457aabd91f1feb6464a0a9e7c73a5a998c0dc7d07b9d008637",
+      "kind": "zip",
+      "file": "EDSCatalog.zip",
+      "sha256": "3758844621de6f1bca6c38c3c5cc0436b2d867093e9c4f3d1faba5c22ce97ba5",
       "enc": "cbpk1",
-      "sig": "afb34c2cb73819516264a41bad00936552f25408290cc04b1fb01c7b03ac7a085d96d8eb91b6c905faaaf934dcb3294be37f0b50ef41b8dc7f9a8ebc20eae40f",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/EDSCatalog.exe.cbpk",
-      "notes": "## v2\n\n- Fixed a startup crash (`ModuleNotFoundError: No module named 'shared.allenbradley'`). The shared Allen-Bradley EDS library was missing from the packaged build; it is now bundled correctly and the tool launches again."
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/EDSCatalog.zip.cbpk",
+      "notes": "## v3\n\nOff Tkinter, in violet on the plum decoding ground. This one is a catalogue\nrather than a converter, and the window says so: a filter box over the device\ntable with a detail pane beside it.\n\n- **The identity columns sort as numbers.** Vendor id, product type and product\n  code went into the old table as text, where 10 sorts before 9 \u2014 so ordering by\n  product code, which is how you find a device whose code you have, was wrong\n  everywhere past single digits. Checked against 21 real Allen-Bradley EDS files.\n- **A failed load says so and keeps what you had.** Parse errors used to go into\n  the device-count label where the next load overwrote them, and a folder that\n  could not be read did nothing at all. An empty folder is reported too, instead\n  of showing a blank window.\n- **The Rev column no longer reads \"None.None\".** Both halves are optional in the\n  EDS spec and were being interpolated unguarded.\n- **The filter says what it is hiding** \u2014 \"2 of 21\" rather than a bare count \u2014 and\n  a new load clears the previous filter, which otherwise loaded a folder and\n  showed nothing.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n## v2\n\n- Fixed a startup crash (`ModuleNotFoundError: No module named 'shared.allenbradley'`). The shared Allen-Bradley EDS library was missing from the packaged build; it is now bundled correctly and the tool launches again."
     },
     "ABCommission": {
       "kind": "exe",

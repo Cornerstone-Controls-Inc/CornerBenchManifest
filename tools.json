@@ -6,7 +6,7 @@
         "convert"
       ],
       "system": "ABB",
-      "version": "8",
+      "version": "9",
       "desc": "ABB Freelance Migration Tool \u2014 turns an ABB Freelance 2016 CSV export into a DeltaV migration package, with no Freelance licence and no Freelance experience needed. Draws the FBD sheets so the logic can be read; says what each block becomes in DeltaV (PCSD module class, evidence, and a scan rate DeltaV will accept); and gives you the master tag list, IO list with target card types, signal cross-reference, alarm list, controller sizing and cross-controller signals \u2014 plus a coverage report of anything it could not decode.",
       "path": "Tools\\ABB\\ABBMigration\\ABBMigration.exe",
       "help_file": "Tools\\ABB\\ABBMigration\\ABBMigration_help.txt",
@@ -92,7 +92,7 @@
         "document"
       ],
       "system": "DeltaV",
-      "version": "13",
+      "version": "14",
       "desc": "Converts a DeltaV FHX export into a portable standalone HTML viewer with hierarchy tree and optional FBD/SFC graphics.",
       "path": "Tools\\DeltaV\\WebFHX\\WebFHX.exe",
       "help_file": "Tools\\DeltaV\\WebFHX\\WebFHX_help.txt",
@@ -140,7 +140,7 @@
         "document"
       ],
       "system": "DeltaV",
-      "version": "4",
+      "version": "5",
       "desc": "Analyses a DeltaV FHX export to generate an interactive HTML interlock matrix and network graph.",
       "path": "Tools\\DeltaV\\CEMatrix\\CEMatrix.exe",
       "help_file": "Tools\\DeltaV\\CEMatrix\\CEMatrix_help.txt",
@@ -189,7 +189,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "6",
+      "version": "7",
       "desc": "Validates DeltaV FHX exports - reference, integrity, SFC, named-set, and DeltaV Module Analysis checks (MODE.ACTUAL, hardcoded confirms, name limits) with typo detection - and applies auto-fixes, with a browsable HTML report.",
       "path": "Tools\\DeltaV\\FHXVerify\\FHXVerify.exe",
       "help_file": "Tools\\DeltaV\\FHXVerify\\FHXVerify_help.txt",
@@ -275,7 +275,7 @@
         "convert"
       ],
       "system": "Provox",
-      "version": "6",
+      "version": "7",
       "desc": "Bidirectional converter for PROVOX IO configuration \u2014 export FHX to Excel (Files, Cards, Channels) or import Excel back to FHX.",
       "path": "Tools\\Provox\\PvxIO\\PvxIO.exe",
       "help_file": "Tools\\Provox\\PvxIO\\PvxIO_help.txt",
@@ -287,7 +287,7 @@
         "decode"
       ],
       "system": "Provox",
-      "version": "10",
+      "version": "11",
       "desc": "Processes Provox PDX files to extract tables, FSTs, operations, and queries into human-readable output files.",
       "path": "Tools\\Provox\\PvxPDX\\PvxPDX.exe",
       "help_file": "Tools\\Provox\\PvxPDX\\PvxPDX_help.txt",
@@ -299,7 +299,7 @@
         "verify"
       ],
       "system": "Provox",
-      "version": "4",
+      "version": "5",
       "desc": "Compares two folders of Provox PDX export data, generating a PDF summary and Excel change log of all differences.",
       "path": "Tools\\Provox\\PDXDiff\\PDXDiff.exe",
       "help_file": "Tools\\Provox\\PDXDiff\\PDXDiff_help.txt",
@@ -323,7 +323,7 @@
         "verify"
       ],
       "system": "Provox",
-      "version": "4",
+      "version": "5",
       "desc": "Diffs two HMI configuration directories, generating SVG overlays, interactive HTML screen reports, and Excel change logs.",
       "path": "Tools\\Provox\\ODFDiff\\ODFDiff.exe",
       "help_file": "Tools\\Provox\\ODFDiff\\ODFDiff_help.txt",
@@ -374,7 +374,7 @@
         "decode"
       ],
       "system": "Allen Bradley",
-      "version": "2",
+      "version": "3",
       "desc": "Browser for CIP/EtherNet-IP EDS device files \u2014 resolves device identities to catalog numbers and lists configurable device parameters.",
       "path": "Tools\\AllenBradley\\EDSCatalog\\EDSCatalog.exe",
       "help_file": "Tools\\AllenBradley\\EDSCatalog\\EDSCatalog_help.txt",
@@ -424,7 +424,7 @@
         "decode"
       ],
       "system": "CodeSys",
-      "version": "4",
+      "version": "5",
       "desc": "Converts IEC 61131-3 Structured Text programs into Process Flow Diagram HTML and PDF exports.",
       "path": "Tools\\CodeSys\\STReader\\STReader.exe",
       "help_file": "Tools\\CodeSys\\STReader\\STReader_help.txt",
