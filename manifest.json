@@ -39,7 +39,7 @@
     "STReader": "4",
     "CornerPDF": "6",
     "SuperDocs": "2",
-    "P&ID Reader": "9",
+    "P&ID Reader": "10",
     "P&ID Maker": "3",
     "TableX": "3",
     "FnR": "12",
@@ -282,13 +282,65 @@
     "P&ID Reader": {
       "kind": "zip",
       "file": "PIDReader.zip",
-      "sha256": "eed510f68211dd289339c6d24cf368a835516b8e61f223c2a863d71f673f5d8a",
+      "sha256": "a6e16df8b0dbc2aee74d9c80ee72da4201c7e396e051689f61e6dec17fafc35f",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.000",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.zip.cbpk.001"
       ],
-      "notes": "## v9\n\nIts own colours, a shared step rail, and no more pinned palette.\n\n- **Cyan on slate, in Bahnschrift, on a drafting grid.** It still opens light: this tool sits beside a paper drawing and the scans it shows are white.\n- **The hand-built light palette is gone.** It existed to stop Windows dark mode bleeding low-contrast colours into menus, tooltips and the status bar. The shared theme solves that from one palette instead, without pinning the tool to one look.\n- **The step rail is shared** with Logix2dv and PVXMigration rather than being a third copy of the same stylesheet.\n- **Overlay colours follow the theme.** High, review and low were read once at startup, so the overlay kept its old colours while the rows around it changed.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v8 \u2014 Far better tag reading\n\nMeasured against a hand-checked list of what is actually drawn on a real sheet, this\nrelease finds **29 of 39 tags character-perfect where v7 found 11**, and 4 out of 5\nof the tags it reports are now right (v7: fewer than half). It also reads line\nnumbers, which v7 missed entirely.\n\n- **Pipe spec boxes are no longer reported as equipment.** Every line carries a\n  little box with the pipe size over a spec code (\"1\"\" over \"B11F\"), and those were\n  being read as tags \u2014 \"B11F\" became a blower, \"C12\" a compressor. On one drawing\n  that was 56 of the 88 tags found. Serial numbers copied out of notes went the\n  same way.\n- **Real tags are no longer thrown away.** The reader often sees a tag's dash as an\n  underscore, and anything that didn't match the expected pattern was silently\n  dropped \u2014 which is why no real pump, heat exchanger or line number was appearing.\n- **Instrument bubbles are read on their own.** Previously the two lines inside a\n  bubble were picked out of a page-wide scan, so a tag could come out as \"TE-162\"\n  with its loop number cut off, depending on where the scan happened to divide the\n  sheet. Each bubble is now read individually.\n- **The drawing corrects its own loop numbers.** Every loop on a sheet shares an\n  area number, repeated in the line numbers and the off-page references. Where that\n  got clipped (\"TE-2-012\" instead of \"TE-162-012\"), it is restored \u2014 and never\n  silently: a corrected tag keeps what was originally read and is flagged for review.\n- **Loops come out whole.** Those clipped numbers used to split one control loop\n  into three or four fragments. A temperature loop that came out as scattered pieces\n  now appears complete, with its element, thermowell, transmitter, controller and\n  control valve together.\n- **Grid references and connectivity work on large sheets.** Border detection failed\n  on these drawings, and because the grid is read from the margins outside that\n  border, every tag came back with no grid cell. Fixed: grid coordinates are now\n  filled in, and connectivity went from 1 connection to over 100.\n- **New: a tag register across a drawing set.** Processing a folder now also writes\n  `_tag_register.csv` \u2014 every tag, how many sheets it appears on, and any similar\n  readings worth a second look. Deliberately a report, not an auto-correct: tags are\n  numbered in sequence, so neighbouring tags look almost identical and \"fixing\" them\n  automatically would quietly destroy correct data.\n- Faster: about a third of the previous image-scanning work per drawing.\n\n# v7 \u2014 Large-format drawings\n\nLarge sheets (ANSI-D and bigger) failed outright. Two separate size limits, both fixed:\n\n- **Processing crashed immediately on D-size and larger drawings.** At 600 DPI a\n  36\"x24\" sheet renders to 311 megapixels, past the image library's built-in\n  safety cap, so the run stopped before it started. The cap now scales with real\n  drawing sizes.\n- **Bigger sheets then found no tags at all."
+      "notes": "## v10\n\nA package that installs. Nothing in the tool itself has changed.\n\n- **v9 could not be installed at all.** Its download is split into two encrypted\n  parts, and only the second was ever replaced when the package was last rebuilt.\n  The two halves came from different encryptions, so they could not be decrypted\n  together, and every install failed its checksum. Both parts are republished\n  together here.\n- **The build no longer omits what it cannot see.** The suite compiles its shared\n  code into a single extension module, and a stdlib module imported only from\n  there was left out of the bundle entirely. It is worked out from the sources\n  now rather than listed by hand.\n\n## v9\n\nIts own colours, a shared step rail, and no more pinned palette.\n\n- **Cyan on slate, in Bahnschrift, on a drafting grid.** It still opens light: this tool sits beside a paper drawing and the scans it shows are white.\n- **The hand-built light palette is gone.** It existed to stop Windows dark mode bleeding low-contrast colours into menus, tooltips and the status bar. The shared theme solves that from one palette instead, without pinning the tool to one look.\n- **The step rail is shared** with Logix2dv and PVXMigration rather than being a third copy of the same stylesheet.\n- **Overlay colours follow the theme.** High, review and low were read once at startup, so the overlay kept its old colours while the rows around it changed.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v8 \u2014 Far better tag reading\n\nMeasured against a hand-checked list of what is actually drawn on a real sheet, this\nrelease finds **29 of 39 tags character-perfect where v7 found 11**, and 4 out of 5\nof the tags it reports are now right (v7: fewer than half). It also reads line\nnumbers, which v7 missed entirely.\n\n- **Pipe spec boxes are no longer reported as equipment.** Every line carries a\n  little box with the pipe size over a spec code (\"1\"\" over \"B11F\"), and those were\n  being read as tags \u2014 \"B11F\" became a blower, \"C12\" a compressor. On one drawing\n  that was 56 of the 88 tags found. Serial numbers copied out of notes went the\n  same way.\n- **Real tags are no longer thrown away.** The reader often sees a tag's dash as an\n  underscore, and anything that didn't match the expected pattern was silently\n  dropped \u2014 which is why no real pump, heat exchanger or line number was appearing.\n- **Instrument bubbles are read on their own.** Previously the two lines inside a\n  bubble were picked out of a page-wide scan, so a tag could come out as \"TE-162\"\n  with its loop number cut off, depending on where the scan happened to divide the\n  sheet. Each bubble is now read individually.\n- **The drawing corrects its own loop numbers.** Every loop on a sheet shares an\n  area number, repeated in the line numbers and the off-page references. Where that\n  got clipped (\"TE-2-012\" instead of \"TE-162-012\"), it is restored \u2014 and never\n  silently: a corrected tag keeps what was originally read and is flagged for review.\n- **Loops come out whole.** Those clipped numbers used to split one control loop\n  into three or four fragments. A temperature loop that came out as scattered pieces\n  now appears complete, with its element, thermowell, transmitter, controller and\n  control valve together.\n- **Grid references and connectivity work on large sheets.** Border detection failed\n  on these drawings, and because the grid is read from the margins outside that\n  border, every tag came back with no grid cell. Fixed: grid coordinates are now\n  filled in, and connectivity went from 1 connection to over 100.\n- **New: a tag register across a drawing set.** Processing a folder now also writes\n  `_tag_register.csv` \u2014 every tag, how many sheets it appears on, and any similar\n  readings worth a second lo",
+      "components": [
+        {
+          "id": "app",
+          "sha256": "67eb4bbae07b4d121f0f05fd668c76abdb6f0d2b52c5cbb5b5e12508d7147f93",
+          "enc": "cbpk1",
+          "include": [
+            "PIDReader.exe",
+            "PIDReader.exe.sig",
+            "PIDReader.ico",
+            "PIDReader_help.txt",
+            "_internal/pid_processing/**",
+            "_internal/shared.pyd"
+          ],
+          "bytes": 79831966,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.app.zip.cbpk"
+        },
+        {
+          "id": "ocr",
+          "sha256": "cc475f1956afcd38ab716b3e95df37168320e9c32d68217a4afc18e1752127a5",
+          "enc": "cbpk1",
+          "include": [
+            "_internal/easyocr_model/**"
+          ],
+          "bytes": 91292638,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.ocr.zip.cbpk"
+        },
+        {
+          "id": "torch",
+          "sha256": "377304dd9a1da3e924c399d19e34947eb0f475082f99ee744c0e5e7bd3604e24",
+          "enc": "cbpk1",
+          "include": [
+            "_internal/torch/**",
+            "_internal/torchvision/**",
+            "_internal/torchgen/**"
+          ],
+          "bytes": 2537320554,
+          "parts": [
+            "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.torch.zip.cbpk.000",
+            "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.torch.zip.cbpk.001"
+          ]
+        },
+        {
+          "id": "deps",
+          "sha256": "d2d5ffe728adddd299cd4f81444b140186f3146a6aee0d85bcfb7d60ca6167bc",
+          "enc": "cbpk1",
+          "include": [
+            "**"
+          ],
+          "bytes": 215024380,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.deps.zip.cbpk"
+        }
+      ]
     },
     "Op2Live": {
       "kind": "zip",

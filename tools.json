@@ -459,7 +459,7 @@
       "tags": [
         "document"
       ],
-      "version": "9",
+      "version": "10",
       "desc": "Extracts tags, device types, symbols and connectivity from P&ID PDFs (OCR + OpenCV) into structured tables, instrument loops, QA overlays and a connectivity graph.",
       "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
       "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
