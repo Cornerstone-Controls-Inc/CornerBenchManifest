@@ -56,8 +56,8 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "12",
-      "desc": "Compares two DeltaV FHX files and generates a diff report in Excel or PDF format.",
+      "version": "13.4",
+      "desc": "Compares two DeltaV FHX exports three ways: literally, as configured modules with class and block defaults resolved, and as sequence logic with every SFC recovered as pseudocode. Reports in Excel, PDF and HTML.",
       "path": "Tools\\DeltaV\\DifFHX\\DifFHX.exe",
       "help_file": "Tools\\DeltaV\\DifFHX\\DifFHX_help.txt",
       "icon": "Tools\\DeltaV\\DifFHX\\DifFHX.ico"
