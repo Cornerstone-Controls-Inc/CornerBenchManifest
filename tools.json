@@ -266,6 +266,19 @@
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
       "icon": "Tools\\DeltaV\\DvVMManager\\DvVMManager.ico"
+    },
+    {
+      "name": "DVNormalizer",
+      "tags": [
+        "convert",
+        "verify"
+      ],
+      "system": "DeltaV",
+      "version": "1",
+      "desc": "Converts a DeltaV database's modules onto a different module class library \u2014 matches each source class to its best target, reports exactly what the conversion would cost block by block, lets you correct any pairing it got wrong, and writes the converted MODULE_INSTANCE records. Ships with the PCSD library as the default target.",
+      "path": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.exe",
+      "help_file": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer_help.txt",
+      "icon": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.ico"
     }
   ],
   "Provox": [
