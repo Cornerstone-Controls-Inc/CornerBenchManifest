@@ -177,7 +177,7 @@
         "train"
       ],
       "system": "DeltaV",
-      "version": "9",
+      "version": "8",
       "desc": "Offline DeltaV emulator - runs an FHX config's control logic faithfully AND simulates the plant it controls, with 2D/3D live views and scenario/sweep/replay testing. No real DeltaV or OPC required.",
       "path": "Tools\\DeltaV\\DVEmu\\DVEmu.exe",
       "help_file": "Tools\\DeltaV\\DVEmu\\DVEmu_help.txt",
@@ -279,47 +279,6 @@
       "path": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.exe",
       "help_file": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer_help.txt",
       "icon": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.ico"
-    }
-  ],
-  "Syncade": [
-    {
-      "name": "SyncadeRecipe",
-      "tags": [
-        "decode",
-        "verify"
-      ],
-      "system": "Syncade",
-      "version": "2",
-      "desc": "Reads a Syncade Recipe Authoring library export (.rax, .rxf or the library XML) the way an engineer reads it: every master recipe, procedure, unit procedure, operation and phase class as the SFC drawing Recipe Authoring shows, as plain-language logic, and as parameters with the deferral chain resolved so you can see where a value really comes from. Compares two library exports item by item for change control, exports the differences to Excel, inflates the behaviors (.wib / .bfm) a phase calls to show their VB and inputs, and edits parameter values, step values, transition expressions and descriptions offline into a new copy of the library that Recipe Authoring opens, proven to differ by exactly those edits, and writes the LP1 design specification (FDS/DDS) as Word the way the Emerson Document Generator does, without Syncade. Checks the MES interface against a DeltaV FHX export and the Live graphics: MCF names on DVI module classes, interface parameter numbers and the DeltaV paths recipes build.",
-      "path": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.exe",
-      "help_file": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe_help.txt",
-      "icon": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.ico"
-    },
-    {
-      "name": "SyncadePackage",
-      "tags": [
-        "verify",
-        "decode"
-      ],
-      "system": "Syncade",
-      "version": "1",
-      "desc": "Reviews a Syncade deployment package (a Business Integrator migration package, a QRM package, a customer delivery or a behaviors drop) before it goes anywhere: an inventory of every behavior, event script, stylesheet, SQL file and config with its version; code-review findings as rows with rule, severity, file and line; a compare with the previous drop that diffs behavior scripts and flags any file whose version number went down; every web service and execution-group step the configs call; and the BI admin settings. Exports the whole review to Excel, and gates a pipeline from the command line.",
-      "path": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.exe",
-      "help_file": "Tools\\Syncade\\SyncadePackage\\SyncadePackage_help.txt",
-      "icon": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.ico"
-    },
-    {
-      "name": "SyncadeOrders",
-      "tags": [
-        "verify",
-        "decode"
-      ],
-      "system": "Syncade",
-      "version": "1",
-      "desc": "Checks what a Syncade order runs on before an operator finds out: open one folder of bills (BOP, BOM, BOS, BOE, BOCA, BOC), equipment exports and CSDebug event-script traces. Every bill as a grid with its findings; a BOE checked against the equipment class for events, event parameters, required states and custom properties; a BOCA calculation's XPaths checked against its BOP; any two bills compared record by record; every equipment class with its events and instances; and every event-script run with whether it completed. Exports the checks to Excel and gates a pipeline from the command line.",
-      "path": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.exe",
-      "help_file": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders_help.txt",
-      "icon": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.ico"
     }
   ],
   "Provox": [
