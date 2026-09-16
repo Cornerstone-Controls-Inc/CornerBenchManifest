@@ -281,47 +281,6 @@
       "icon": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.ico"
     }
   ],
-  "Syncade": [
-    {
-      "name": "SyncadeRecipe",
-      "tags": [
-        "decode",
-        "verify"
-      ],
-      "system": "Syncade",
-      "version": "2",
-      "desc": "Reads a Syncade Recipe Authoring library export (.rax, .rxf or the library XML) the way an engineer reads it: every master recipe, procedure, unit procedure, operation and phase class as the SFC drawing Recipe Authoring shows, as plain-language logic, and as parameters with the deferral chain resolved so you can see where a value really comes from. Compares two library exports item by item for change control, exports the differences to Excel, inflates the behaviors (.wib / .bfm) a phase calls to show their VB and inputs, and edits parameter values, step values, transition expressions and descriptions offline into a new copy of the library that Recipe Authoring opens, proven to differ by exactly those edits, and writes the LP1 design specification (FDS/DDS) as Word the way the Emerson Document Generator does, without Syncade. Checks the MES interface against a DeltaV FHX export and the Live graphics: MCF names on DVI module classes, interface parameter numbers and the DeltaV paths recipes build.",
-      "path": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.exe",
-      "help_file": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe_help.txt",
-      "icon": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.ico"
-    },
-    {
-      "name": "SyncadePackage",
-      "tags": [
-        "verify",
-        "decode"
-      ],
-      "system": "Syncade",
-      "version": "1",
-      "desc": "Reviews a Syncade deployment package (a Business Integrator migration package, a QRM package, a customer delivery or a behaviors drop) before it goes anywhere: an inventory of every behavior, event script, stylesheet, SQL file and config with its version; code-review findings as rows with rule, severity, file and line; a compare with the previous drop that diffs behavior scripts and flags any file whose version number went down; every web service and execution-group step the configs call; and the BI admin settings. Exports the whole review to Excel, and gates a pipeline from the command line.",
-      "path": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.exe",
-      "help_file": "Tools\\Syncade\\SyncadePackage\\SyncadePackage_help.txt",
-      "icon": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.ico"
-    },
-    {
-      "name": "SyncadeOrders",
-      "tags": [
-        "verify",
-        "decode"
-      ],
-      "system": "Syncade",
-      "version": "2",
-      "desc": "Checks what a Syncade order runs on before an operator finds out: open one folder of bills (BOP, BOM, BOS, BOE, BOCA, BOC), equipment exports and CSDebug event-script traces. Every bill as a grid with its findings; a BOE checked against the equipment class for events, event parameters, required states and custom properties; a BOCA calculation's XPaths checked against its BOP; any two bills compared record by record; every equipment class with its events and instances; and every event-script run with whether it completed. Exports the checks to Excel and gates a pipeline from the command line. Writes the LP1 Equipment Class and Equipment Instance design specifications from the Document Generator's EQCL and EQINST files, without Syncade.",
-      "path": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.exe",
-      "help_file": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders_help.txt",
-      "icon": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.ico"
-    }
-  ],
   "Provox": [
     {
       "name": "PvxIO",
@@ -365,7 +324,7 @@
         "decode"
       ],
       "system": "Provox",
-      "version": "4",
+      "version": "5",
       "desc": "GUI tool \u2014 decompiles Provox FST bytecode into human-readable pseudocode with a stage-by-stage viewer and syntax highlighting.",
       "path": "Tools\\Provox\\FSTDecompiler.exe",
       "help_file": "Tools\\Provox\\FSTDecompiler_help.txt",
@@ -513,7 +472,7 @@
       "tags": [
         "document"
       ],
-      "version": "10",
+      "version": "11",
       "desc": "Extracts tags, device types, symbols and connectivity from P&ID PDFs (OCR + OpenCV) into structured tables, instrument loops, QA overlays and a connectivity graph.",
       "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
       "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
@@ -594,7 +553,7 @@
         "ai"
       ],
       "system": "AI",
-      "version": "1",
+      "version": "2",
       "desc": "Front end for the Microsoft 365 Copilot Chat that comes with your work account, in the shape of a coding assistant: chat with your files as context, an Explore mode where Copilot reads the project itself, a Plan mode that proposes a change before anything is touched, and an Agent that edits files and runs commands with your approval (with an undo for every run). Reads Word, Excel, PDF and code, can use the suite's MCP tool servers, and keeps its history on your PC.",
       "path": "Tools\\AI\\Slipstream\\Slipstream.exe",
       "help_file": "Tools\\AI\\Slipstream\\Slipstream_help.txt",
@@ -662,6 +621,46 @@
       "path": "Tools\\Training\\InstrumentLab\\InstrumentLab.exe",
       "help_file": "Tools\\Training\\InstrumentLab\\InstrumentLab_help.txt",
       "icon": "Tools\\Training\\InstrumentLab\\InstrumentLab.ico"
+    }
+  ],
+  "Syncade": [
+    {
+      "name": "SyncadeRecipe",
+      "tags": [
+        "decode",
+        "verify"
+      ],
+      "system": "Syncade",
+      "version": "2",
+      "desc": "Reads a Syncade Recipe Authoring library export (.rax, .rxf or the library XML) the way an engineer reads it: every master recipe, procedure, unit procedure, operation and phase class as the SFC drawing Recipe Authoring shows, as plain-language logic, and as parameters with the deferral chain resolved so you can see where a value really comes from. Compares two library exports item by item for change control, exports the differences to Excel, and inflates the behaviors (.wib / .bfm) a phase calls to show their VB and inputs. Edits parameter values, step values, transition expressions and descriptions offline into a new copy of the library that Recipe Authoring opens, proven to differ by exactly those edits. Writes the LP1 design specification (FDS/DDS) as Word the way the Emerson Document Generator does, without Syncade. Checks the MES interface against a DeltaV FHX export and the Live graphics: MCF names on DVI module classes, interface parameter numbers, the BLOCK_PATH each interface slot binds through, and the DeltaV paths recipes build.",
+      "path": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.exe",
+      "help_file": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe_help.txt",
+      "icon": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.ico"
+    },
+    {
+      "name": "SyncadePackage",
+      "tags": [
+        "verify",
+        "decode"
+      ],
+      "system": "Syncade",
+      "version": "1",
+      "desc": "Opens a Syncade deployment package - a Business Integrator migration package, a QRM package, a customer delivery folder or a behaviors drop - and answers what a deployment review asks. Inventories every behavior, script, stylesheet, SQL file and config with its version and description; reviews the VB and SQL against 22 rules as rows with severity, file and line; compares two drops file by file with rename pairing, inflated behavior script diffs and a version-went-down flag, including which recipe items changed between two .rxf / .rax files; flattens every web service and execution-group step; and lists the Business Integrator settings with encrypted values masked and unencrypted secrets flagged. It never changes the package.",
+      "path": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.exe",
+      "help_file": "Tools\\Syncade\\SyncadePackage\\SyncadePackage_help.txt",
+      "icon": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.ico"
+    },
+    {
+      "name": "SyncadeOrders",
+      "tags": [
+        "verify"
+      ],
+      "system": "Syncade",
+      "version": "2",
+      "desc": "Checks what a Syncade order runs on before an operator finds out: open one folder of bills (BOP, BOM, BOS, BOE, BOCA, BOC), equipment exports and CSDebug event-script traces. Every bill as a grid with its findings; a BOE checked against the equipment class for events, event parameters, required states and custom properties; a BOCA calculation's XPaths checked against its BOP; any two bills compared record by record; every equipment class with its events and instances; and every event-script run with whether it completed. Exports the checks to Excel and gates a pipeline from the command line. Writes the LP1 Equipment Class and Equipment Instance design specifications from the Document Generator's EQCL and EQINST files, without Syncade.",
+      "path": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.exe",
+      "help_file": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders_help.txt",
+      "icon": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.ico"
     }
   ]
 }
