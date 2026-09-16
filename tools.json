@@ -56,7 +56,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "13.4",
+      "version": "13.6",
       "desc": "Compares two DeltaV FHX exports three ways: literally, as configured modules with class and block defaults resolved, and as sequence logic with every SFC recovered as pseudocode. Reports in Excel, PDF and HTML.",
       "path": "Tools\\DeltaV\\DifFHX\\DifFHX.exe",
       "help_file": "Tools\\DeltaV\\DifFHX\\DifFHX_help.txt",
@@ -177,7 +177,7 @@
         "train"
       ],
       "system": "DeltaV",
-      "version": "7",
+      "version": "10",
       "desc": "Offline DeltaV emulator - runs an FHX config's control logic faithfully AND simulates the plant it controls, with 2D/3D live views and scenario/sweep/replay testing. No real DeltaV or OPC required.",
       "path": "Tools\\DeltaV\\DVEmu\\DVEmu.exe",
       "help_file": "Tools\\DeltaV\\DVEmu\\DVEmu_help.txt",
@@ -189,7 +189,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "7",
+      "version": "9",
       "desc": "Validates DeltaV FHX exports - reference, integrity, SFC, named-set, and DeltaV Module Analysis checks (MODE.ACTUAL, hardcoded confirms, name limits) with typo detection - and applies auto-fixes, with a browsable HTML report.",
       "path": "Tools\\DeltaV\\FHXVerify\\FHXVerify.exe",
       "help_file": "Tools\\DeltaV\\FHXVerify\\FHXVerify_help.txt",
@@ -225,7 +225,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "24",
+      "version": "25",
       "desc": "Native Rust toolkit for DeltaV Operate (iFix) graphic files \u2014 .grf pictures plus .fxg globals, .fds dynamo sets and .tbx toolbars (same format) \u2014 property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find & replace with automatic output validation, embedded-Python mass-edit scripting, expression repair (restores missing animation tag connections and resyncs stale source copies), PNG thumbnail rendering, structural + VBA source compare, and a Tag Groups tab to edit .tgd tag display groups (grid editor, bulk add/edit/delete across files with per-column Python transforms, @TOKEN@ cross-check).",
       "path": "Tools\\DeltaV\\OperateTools\\OperateTools.exe",
       "help_file": "Tools\\DeltaV\\OperateTools\\OperateTools_help.txt",
@@ -279,6 +279,47 @@
       "path": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.exe",
       "help_file": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer_help.txt",
       "icon": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.ico"
+    }
+  ],
+  "Syncade": [
+    {
+      "name": "SyncadeRecipe",
+      "tags": [
+        "decode",
+        "verify"
+      ],
+      "system": "Syncade",
+      "version": "2",
+      "desc": "Reads a Syncade Recipe Authoring library export (.rax, .rxf or the library XML) the way an engineer reads it: every master recipe, procedure, unit procedure, operation and phase class as the SFC drawing Recipe Authoring shows, as plain-language logic, and as parameters with the deferral chain resolved so you can see where a value really comes from. Compares two library exports item by item for change control, exports the differences to Excel, inflates the behaviors (.wib / .bfm) a phase calls to show their VB and inputs, and edits parameter values, step values, transition expressions and descriptions offline into a new copy of the library that Recipe Authoring opens, proven to differ by exactly those edits, and writes the LP1 design specification (FDS/DDS) as Word the way the Emerson Document Generator does, without Syncade. Checks the MES interface against a DeltaV FHX export and the Live graphics: MCF names on DVI module classes, interface parameter numbers and the DeltaV paths recipes build.",
+      "path": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.exe",
+      "help_file": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe_help.txt",
+      "icon": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.ico"
+    },
+    {
+      "name": "SyncadePackage",
+      "tags": [
+        "verify",
+        "decode"
+      ],
+      "system": "Syncade",
+      "version": "1",
+      "desc": "Reviews a Syncade deployment package (a Business Integrator migration package, a QRM package, a customer delivery or a behaviors drop) before it goes anywhere: an inventory of every behavior, event script, stylesheet, SQL file and config with its version; code-review findings as rows with rule, severity, file and line; a compare with the previous drop that diffs behavior scripts and flags any file whose version number went down; every web service and execution-group step the configs call; and the BI admin settings. Exports the whole review to Excel, and gates a pipeline from the command line.",
+      "path": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.exe",
+      "help_file": "Tools\\Syncade\\SyncadePackage\\SyncadePackage_help.txt",
+      "icon": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.ico"
+    },
+    {
+      "name": "SyncadeOrders",
+      "tags": [
+        "verify",
+        "decode"
+      ],
+      "system": "Syncade",
+      "version": "2",
+      "desc": "Checks what a Syncade order runs on before an operator finds out: open one folder of bills (BOP, BOM, BOS, BOE, BOCA, BOC), equipment exports and CSDebug event-script traces. Every bill as a grid with its findings; a BOE checked against the equipment class for events, event parameters, required states and custom properties; a BOCA calculation's XPaths checked against its BOP; any two bills compared record by record; every equipment class with its events and instances; and every event-script run with whether it completed. Exports the checks to Excel and gates a pipeline from the command line. Writes the LP1 Equipment Class and Equipment Instance design specifications from the Document Generator's EQCL and EQINST files, without Syncade.",
+      "path": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.exe",
+      "help_file": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders_help.txt",
+      "icon": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.ico"
     }
   ],
   "Provox": [
@@ -530,7 +571,7 @@
       "tags": [
         "ai"
       ],
-      "version": "18",
+      "version": "19",
       "desc": "Fully offline AI assistant for automation engineers \u2014 a local Qwen2.5-Coder-7B model (bundled llama-server) drives guided, single-purpose tasks: research a manual or datasheet; fix an error, explain or review code, write tests, or write a script for a file that cannot leave the plant; read Rockwell, CODESYS or ABB PLC logic you did not write; turn a control narrative into requirements and review or edit documents and spreadsheets; and for DeltaV, ask your own FHX export, check custom logic, generate a FAT test plan from an FRS, draft Calc/Action/Condition expressions or EM logic for EMTools. Nothing is uploaded; the model, embeddings and runtime all ship in the box.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
