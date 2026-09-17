@@ -53,9 +53,9 @@
     "CornerRDP": "10",
     "SuperComms": "7",
     "InstrumentLab": "3",
-    "SyncadeRecipe": "3",
+    "SyncadeRecipe": "2",
     "SyncadePackage": "1",
-    "SyncadeOrders": "3"
+    "SyncadeOrders": "2"
   },
   "tool_downloads": {
     "ABB Migration": {
