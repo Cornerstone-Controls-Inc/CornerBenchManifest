@@ -7,7 +7,7 @@
       ],
       "system": "ABB",
       "version": "9",
-      "desc": "ABB Freelance Migration Tool \u2014 turns an ABB Freelance 2016 CSV export into a DeltaV migration package, with no Freelance licence and no Freelance experience needed. Draws the FBD sheets so the logic can be read; says what each block becomes in DeltaV (PCSD module class, evidence, and a scan rate DeltaV will accept); and gives you the master tag list, IO list with target card types, signal cross-reference, alarm list, controller sizing and cross-controller signals \u2014 plus a coverage report of anything it could not decode.",
+      "desc": "Turns an ABB Freelance 2016 export into a DeltaV migration package: readable logic drawings, IO and tag lists, and what each block becomes in DeltaV. No Freelance licence needed.",
       "path": "Tools\\ABB\\ABBMigration\\ABBMigration.exe",
       "help_file": "Tools\\ABB\\ABBMigration\\ABBMigration_help.txt",
       "icon": "Tools\\ABB\\ABBMigration\\ABBMigration.ico"
@@ -21,7 +21,7 @@
       ],
       "system": "DeltaV",
       "version": "8",
-      "desc": "Desktop toolkit for DeltaV Live .ahc graphics files: tabular reports, an interactive editor with live rendering, bulk find/replace, thumbnail export, structural compare, project-wide library analysis, and localization.",
+      "desc": "Report on, edit and bulk-change DeltaV Live graphics (.ahc): find and replace, thumbnails, compare, library analysis and translation.",
       "path": "Tools\\DeltaV\\LiveTools\\LiveTools.exe",
       "help_file": "Tools\\DeltaV\\LiveTools\\LiveTools_help.txt",
       "icon": "Tools\\DeltaV\\LiveTools\\LiveTools.ico"
@@ -33,7 +33,7 @@
       ],
       "system": "DeltaV",
       "version": "3",
-      "desc": "Exports DeltaV Continuous Historian data \u2014 connects to a historian node, live tag search, reads raw samples over a time range, and exports to CSV. Pure-Python client over the DeltaV historian DLLs (32-bit).",
+      "desc": "Export DeltaV Continuous Historian data to CSV: connect to a historian node, find your tags, and pull the samples for any time range.",
       "path": "Tools\\DeltaV\\DvHistExport\\DvHistExport.exe",
       "help_file": "Tools\\DeltaV\\DvHistExport\\DvHistExport_help.txt",
       "icon": "Tools\\DeltaV\\DvHistExport\\DvHistExport.ico"
@@ -45,7 +45,7 @@
       ],
       "system": "DeltaV",
       "version": "6",
-      "desc": "Advanced OPC-DA Tag Monitor for Emerson DeltaV. Live tag browsing, CSV import/export, write audit log.",
+      "desc": "Browse and watch DeltaV tags live over OPC, import or export tag lists as CSV, and keep a log of every value you write.",
       "path": "Tools\\DeltaV\\SuperOPCWatchIt.exe",
       "help_file": "Tools\\DeltaV\\SuperOPCWatchit_help.txt",
       "icon": "Tools\\DeltaV\\SuperOPCWatchit.ico"
@@ -57,7 +57,7 @@
       ],
       "system": "DeltaV",
       "version": "13.6",
-      "desc": "Compares two DeltaV FHX exports three ways: literally, as configured modules with class and block defaults resolved, and as sequence logic with every SFC recovered as pseudocode. Reports in Excel, PDF and HTML.",
+      "desc": "Compare two DeltaV FHX exports \u2014 line by line, as configured modules, and as sequence logic \u2014 with the differences reported in Excel, PDF or HTML.",
       "path": "Tools\\DeltaV\\DifFHX\\DifFHX.exe",
       "help_file": "Tools\\DeltaV\\DifFHX\\DifFHX_help.txt",
       "icon": "Tools\\DeltaV\\DifFHX\\DifFHX.ico"
@@ -69,7 +69,7 @@
       ],
       "system": "DeltaV",
       "version": "28",
-      "desc": "Parses a DeltaV FHX file and generates 11 report types: Interlock, Alarm, IO, Module, EM, Reference, Historian, User Log, Phase, Named Set, PID Tuning.",
+      "desc": "Turn a DeltaV FHX export into ready-made reports: interlocks, alarms, IO, modules, equipment modules, phases, historian, named sets, PID tuning and more.",
       "path": "Tools\\DeltaV\\FHXport\\FHXport.exe",
       "help_file": "Tools\\DeltaV\\FHXport\\FHXport_help.txt",
       "icon": "Tools\\DeltaV\\FHXport\\FHXport.ico"
@@ -81,7 +81,7 @@
       ],
       "system": "DeltaV",
       "version": "13",
-      "desc": "Interactive tree editor for DeltaV FHX files with advanced find-and-replace, bulk delete, split, trim, and partial export.",
+      "desc": "Edit DeltaV FHX files in a tree view, with advanced find and replace, bulk delete, split, trim and partial export.",
       "path": "Tools\\DeltaV\\FHXEdit\\FHXEdit.exe",
       "help_file": "Tools\\DeltaV\\FHXEdit\\FHXEdit_help.txt",
       "icon": "Tools\\DeltaV\\FHXEdit\\FHXEdit.ico"
@@ -93,7 +93,7 @@
       ],
       "system": "DeltaV",
       "version": "14",
-      "desc": "Converts a DeltaV FHX export into a portable standalone HTML viewer with hierarchy tree and optional FBD/SFC graphics.",
+      "desc": "Turn a DeltaV FHX export into a standalone web page anyone can open, with the module hierarchy and optional logic drawings.",
       "path": "Tools\\DeltaV\\WebFHX\\WebFHX.exe",
       "help_file": "Tools\\DeltaV\\WebFHX\\WebFHX_help.txt",
       "icon": "Tools\\DeltaV\\WebFHX\\WebFHX.ico"
@@ -105,7 +105,7 @@
       ],
       "system": "DeltaV",
       "version": "5",
-      "desc": "Unified DeltaV Equipment Module toolkit \u2014 generate EMs from templates with a visual SFC logic editor, export/import class parameters as CSV, and auto-comment SFC steps, all over a shared document library.",
+      "desc": "Build DeltaV Equipment Modules from templates with a visual logic editor, move class parameters in and out as CSV, and auto-comment SFC steps.",
       "path": "Tools\\DeltaV\\EMTools.exe",
       "help_file": "Tools\\DeltaV\\EMTools_help.txt",
       "icon": "Tools\\DeltaV\\EMTools.ico"
@@ -117,7 +117,7 @@
       ],
       "system": "DeltaV",
       "version": "6",
-      "desc": "Merges two or more DeltaV FHX files with element-level conflict resolution via a multi-pane diff interface.",
+      "desc": "Merge two or more DeltaV FHX files, resolving conflicts element by element in a side-by-side view.",
       "path": "Tools\\DeltaV\\FHXMerge\\FHXMerge.exe",
       "help_file": "Tools\\DeltaV\\FHXMerge\\FHXMerge_help.txt",
       "icon": "Tools\\DeltaV\\FHXMerge\\FHXMerge.ico"
@@ -129,7 +129,7 @@
       ],
       "system": "DeltaV",
       "version": "2",
-      "desc": "DeltaV user-defined import and export: build, export and validate format specifications and their data files. Replaces FMTMaker, FMTExport and ModExport.",
+      "desc": "Build, export and check DeltaV user-defined import/export formats and their data files. Replaces FMTMaker, FMTExport and ModExport.",
       "path": "Tools\\DeltaV\\FMTTools\\FMTTools.exe",
       "help_file": "Tools\\DeltaV\\FMTTools\\FMTTools_help.txt",
       "icon": "Tools\\DeltaV\\FMTTools\\FMTTools.ico"
@@ -141,7 +141,7 @@
       ],
       "system": "DeltaV",
       "version": "5",
-      "desc": "Analyses a DeltaV FHX export to generate an interactive HTML interlock matrix and network graph.",
+      "desc": "Generate an interactive interlock (cause and effect) matrix and network graph from a DeltaV FHX export.",
       "path": "Tools\\DeltaV\\CEMatrix\\CEMatrix.exe",
       "help_file": "Tools\\DeltaV\\CEMatrix\\CEMatrix_help.txt",
       "icon": "Tools\\DeltaV\\CEMatrix\\CEMatrix.ico"
@@ -153,7 +153,7 @@
       ],
       "system": "DeltaV",
       "version": "5",
-      "desc": "OPC UA-connected PID tuning tool with step testing, process characterisation, and live trending for DeltaV loops.",
+      "desc": "Tune DeltaV PID loops over OPC UA: run step tests, characterise the process and watch live trends.",
       "path": "Tools\\DeltaV\\TuningAid.exe",
       "help_file": "Tools\\DeltaV\\TuningAid_help.txt",
       "icon": "Tools\\DeltaV\\TuningAid.ico"
@@ -165,7 +165,7 @@
       ],
       "system": "DeltaV",
       "version": "22",
-      "desc": "DeltaV control system digital twin with OPC UA connectivity, FHX simulation, automated test runner, bulk import/export, and historian.",
+      "desc": "A digital twin of a DeltaV system: simulate an FHX configuration, connect to it over OPC UA, and run automated tests against it.",
       "path": "Tools\\DeltaV\\DvTwin\\DvTwin.exe",
       "help_file": "Tools\\DeltaV\\DvTwin\\DvTwin_help.txt",
       "icon": "Tools\\DeltaV\\DvTwin\\DvTwin.ico"
@@ -178,7 +178,7 @@
       ],
       "system": "DeltaV",
       "version": "10",
-      "desc": "Offline DeltaV emulator - runs an FHX config's control logic faithfully AND simulates the plant it controls, with 2D/3D live views and scenario/sweep/replay testing. No real DeltaV or OPC required.",
+      "desc": "Run a DeltaV configuration's control logic offline against a simulated plant, with 2D/3D live views and repeatable test scenarios. No DeltaV or OPC needed.",
       "path": "Tools\\DeltaV\\DVEmu\\DVEmu.exe",
       "help_file": "Tools\\DeltaV\\DVEmu\\DVEmu_help.txt",
       "icon": "Tools\\DeltaV\\DVEmu\\DVEmu.ico"
@@ -190,7 +190,7 @@
       ],
       "system": "DeltaV",
       "version": "9",
-      "desc": "Validates DeltaV FHX exports - reference, integrity, SFC, named-set, and DeltaV Module Analysis checks (MODE.ACTUAL, hardcoded confirms, name limits) with typo detection - and applies auto-fixes, with a browsable HTML report.",
+      "desc": "Check a DeltaV FHX export for broken references, SFC problems, naming limits and typos, fix what can be fixed automatically, and get an HTML report.",
       "path": "Tools\\DeltaV\\FHXVerify\\FHXVerify.exe",
       "help_file": "Tools\\DeltaV\\FHXVerify\\FHXVerify_help.txt",
       "icon": "Tools\\DeltaV\\FHXVerify\\FHXVerify.ico"
@@ -202,7 +202,7 @@
       ],
       "system": "DeltaV",
       "version": "7",
-      "desc": "OPC DA to OPC UA bridge for DeltaV - native 32-bit COM interop to the DeltaV DA server, republished as an OPC UA server with live diagnostics.",
+      "desc": "Make DeltaV's classic OPC DA data available as an OPC UA server, with live diagnostics.",
       "path": "Tools\\DeltaV\\OPCBridge\\OPCBridge.exe",
       "help_file": "Tools\\DeltaV\\OPCBridge\\OPCBridge_help.txt",
       "icon": "Tools\\DeltaV\\OPCBridge\\OPCBridge.ico"
@@ -214,7 +214,7 @@
       ],
       "system": "DeltaV",
       "version": "37",
-      "desc": "Converts DeltaV Operate graphics to DeltaV Live \u2014 a vendored Python port of Emerson's ConversionUtility wrapped in a guided pipeline (parse, scan, dynamo/contextual study, draft mappings, XSLT build/apply, verify, reports, polish, design specification and validation testing) with a visual mapping editor, GEM thumbnails, VBA\u2192TypeScript translation, and a polish step that proposes merging near-identical pop-ups into shared contextual displays. Delivers a gap analysis, a design specification, the four validation gates, and reports covering graphic scope, display/module links, class and standard reuse, and merge recommendations.",
+      "desc": "Convert DeltaV Operate graphics to DeltaV Live in a guided, step-by-step process, with mapping review, VBA translation, a design specification and validation tests.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
       "icon": "Tools\\DeltaV\\Op2Live\\Op2Live.ico"
@@ -226,7 +226,7 @@
       ],
       "system": "DeltaV",
       "version": "25",
-      "desc": "Native Rust toolkit for DeltaV Operate (iFix) graphic files \u2014 .grf pictures plus .fxg globals, .fds dynamo sets and .tbx toolbars (same format) \u2014 property/inventory/tag/animation/VBA reports (XLSX/CSV), iFix-style find & replace with automatic output validation, embedded-Python mass-edit scripting, expression repair (restores missing animation tag connections and resyncs stale source copies), PNG thumbnail rendering, structural + VBA source compare, and a Tag Groups tab to edit .tgd tag display groups (grid editor, bulk add/edit/delete across files with per-column Python transforms, @TOKEN@ cross-check).",
+      "desc": "Report on, search, bulk-edit and compare DeltaV Operate (iFix) graphics (.grf), including tag groups and VBA, and repair broken animation links.",
       "path": "Tools\\DeltaV\\OperateTools\\OperateTools.exe",
       "help_file": "Tools\\DeltaV\\OperateTools\\OperateTools_help.txt",
       "icon": "Tools\\DeltaV\\OperateTools\\OperateTools.ico"
@@ -238,7 +238,7 @@
       ],
       "system": "DeltaV",
       "version": "5",
-      "desc": "Reads Emerson/Mynah VimNet .vio configuration files for DeltaV Virtual I/O Modules - browse the VIM / controller / data-set tree, view EtherNet/IP buffer-to-signal mappings, and run read-only VIM diagnostics.",
+      "desc": "Read DeltaV Virtual I/O Module configuration files (.vio): browse the VIM tree, see how EtherNet/IP data maps to signals, and run read-only diagnostics.",
       "path": "Tools\\DeltaV\\VIMTools\\VIMTools.exe",
       "help_file": "Tools\\DeltaV\\VIMTools\\VIMTools_help.txt",
       "icon": "Tools\\DeltaV\\VIMTools\\VIMTools.ico"
@@ -250,7 +250,7 @@
       ],
       "system": "DeltaV",
       "version": "8",
-      "desc": "Explains why a DeltaV controller appears in the Decommissioned Nodes list and then vanishes, so you can decide what to do about it in DeltaV. A controller is kept in that list only while it announces redundancy role 2; one carrying an assigned identity announces role 0 and ages out in about two minutes, and can never be commissioned. DvScan reads the POWERUP tree, an FHX export of the configuration and the plug-and-play traffic, and says which of the three disagrees - marking every finding with the sources it rests on, because a claim from the disk alone is not the same as one three sources agree about. Every file DeltaV writes carries a timestamp this decodes, so two bindings claiming one node can be told apart by which was written first. Load a packet capture and it also finds controllers no other source can see: one sitting at its default address is in no device table, has no binding and has no download image, so only the wire knows it is there at all. It is a diagnostic with one exception, and that exception asks twice before it acts: DeltaV was captured decommissioning a controller, the message turns out to be broadcast and selected by MAC, and DvScan can replay it to make an orphan return to its default address and become commissionable again. Each verdict says what it means and what to check next.",
+      "desc": "Finds out why a DeltaV controller shows up in the Decommissioned list and then vanishes, and says what to check next. Can reset an orphaned controller so it can be commissioned \u2014 it asks first.",
       "path": "Tools\\DeltaV\\DvScan\\DvScan.exe",
       "help_file": "Tools\\DeltaV\\DvScan\\DvScan_help.txt",
       "icon": "Tools\\DeltaV\\DvScan\\DvScan.ico"
@@ -262,7 +262,7 @@
       ],
       "system": "DeltaV",
       "version": "24",
-      "desc": "DeltaV VM fleet cockpit \u2014 your whole DeltaV fleet in one rail, colour-coded by health, with curated one-click operations (export database, add user, download setup data, licence update), the Hyper-V/ESXi servers behind it, per-system power and checkpoints, file/account/process/network tools, fleet-wide file deployment (push or delete the same Operate graphics across every station at once), and local network diagnostics that say whether an unreachable system is really down or the path from this PC is broken. Replaces VMTools.",
+      "desc": "Manage your DeltaV virtual machines from one place: health at a glance, one-click jobs like database export and licence updates, power and checkpoints, and file deployment. Replaces VMTools.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
       "icon": "Tools\\DeltaV\\DvVMManager\\DvVMManager.ico"
@@ -275,7 +275,7 @@
       ],
       "system": "DeltaV",
       "version": "1",
-      "desc": "Converts a DeltaV database's modules onto a different module class library \u2014 matches each source class to its best target, reports exactly what the conversion would cost block by block, lets you correct any pairing it got wrong, and writes the converted MODULE_INSTANCE records. Ships with the PCSD library as the default target.",
+      "desc": "Move a DeltaV database's modules onto a different module class library (PCSD by default): it matches the classes, shows what the change costs, and writes the converted modules.",
       "path": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.exe",
       "help_file": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer_help.txt",
       "icon": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.ico"
@@ -289,7 +289,7 @@
       ],
       "system": "Provox",
       "version": "7",
-      "desc": "Bidirectional converter for PROVOX IO configuration \u2014 export FHX to Excel (Files, Cards, Channels) or import Excel back to FHX.",
+      "desc": "Convert Provox IO configuration between FHX and Excel, in either direction.",
       "path": "Tools\\Provox\\PvxIO\\PvxIO.exe",
       "help_file": "Tools\\Provox\\PvxIO\\PvxIO_help.txt",
       "icon": "Tools\\Provox\\PvxIO\\PvxIO.ico"
@@ -301,7 +301,7 @@
       ],
       "system": "Provox",
       "version": "11",
-      "desc": "Processes Provox PDX files to extract tables, FSTs, operations, and queries into human-readable output files.",
+      "desc": "Extract tables, FSTs, operations and queries from Provox PDX files into readable output files.",
       "path": "Tools\\Provox\\PvxPDX\\PvxPDX.exe",
       "help_file": "Tools\\Provox\\PvxPDX\\PvxPDX_help.txt",
       "icon": "Tools\\Provox\\PvxPDX\\PvxPDX.ico"
@@ -313,7 +313,7 @@
       ],
       "system": "Provox",
       "version": "5",
-      "desc": "Compares two folders of Provox PDX export data, generating a PDF summary and Excel change log of all differences.",
+      "desc": "Compare two folders of Provox PDX exports and get a PDF summary and an Excel log of every difference.",
       "path": "Tools\\Provox\\PDXDiff\\PDXDiff.exe",
       "help_file": "Tools\\Provox\\PDXDiff\\PDXDiff_help.txt",
       "icon": "Tools\\Provox\\PDXDiff\\PDXDiff.ico"
@@ -325,7 +325,7 @@
       ],
       "system": "Provox",
       "version": "5",
-      "desc": "GUI tool \u2014 decompiles Provox FST bytecode into human-readable pseudocode with a stage-by-stage viewer and syntax highlighting.",
+      "desc": "Turn Provox FST programs into readable pseudocode, stage by stage. Can also explain an FST in plain English through your work Copilot in Slipstream.",
       "path": "Tools\\Provox\\FSTDecompiler.exe",
       "help_file": "Tools\\Provox\\FSTDecompiler_help.txt",
       "icon": "Tools\\Provox\\FSTDecompiler.ico"
@@ -337,7 +337,7 @@
       ],
       "system": "Provox",
       "version": "5",
-      "desc": "Diffs two HMI configuration directories, generating SVG overlays, interactive HTML screen reports, and Excel change logs.",
+      "desc": "Compare two versions of an HMI configuration and see the changes as screen overlays, interactive HTML reports and an Excel change log.",
       "path": "Tools\\Provox\\ODFDiff\\ODFDiff.exe",
       "help_file": "Tools\\Provox\\ODFDiff\\ODFDiff_help.txt",
       "icon": "Tools\\Provox\\ODFDiff\\ODFDiff.ico"
@@ -349,7 +349,7 @@
       ],
       "system": "Provox",
       "version": "6",
-      "desc": "Generates DeltaV migration deliverables from ProVOX configuration data \u2014 appendix tables (CSV), Basebuild (XLSX) and a Functional Requirements doc (DOCX).",
+      "desc": "Generate DeltaV migration deliverables from Provox configuration data: appendix tables, the base build workbook and a Functional Requirements document.",
       "path": "Tools\\Provox\\PVXMigration\\PVXMigration.exe",
       "help_file": "Tools\\Provox\\PVXMigration\\PVXMigration_help.txt",
       "icon": "Tools\\Provox\\PVXMigration\\PVXMigration.ico"
@@ -362,7 +362,7 @@
         "simulate"
       ],
       "version": "5",
-      "desc": "4-stage tool for auditing, discovering accounts, bulk-updating passwords, and remediating scheduled tasks across Hyper-V VMs via WinRM.",
+      "desc": "Audit accounts and change passwords in bulk across Hyper-V virtual machines, including the scheduled tasks that use them.",
       "path": "Tools\\HyperV\\VMCreds.exe",
       "help_file": "Tools\\HyperV\\VMCreds_help.txt",
       "icon": "Tools\\HyperV\\VMCreds.ico"
@@ -376,7 +376,7 @@
       ],
       "system": "Allen Bradley",
       "version": "6",
-      "desc": "GUI tool for communicating with Rockwell Allen-Bradley PLCs \u2014 tag read/write, tag browser, controller admin, and EDS-based chassis catalog lookup.",
+      "desc": "Talk to Allen-Bradley PLCs: browse, read and write tags, manage the controller, and look up chassis modules.",
       "path": "Tools\\AllenBradley\\ABComms.exe",
       "help_file": "Tools\\AllenBradley\\ABComms_help.txt",
       "icon": "Tools\\AllenBradley\\ABComms.ico"
@@ -388,7 +388,7 @@
       ],
       "system": "Allen Bradley",
       "version": "3",
-      "desc": "Browser for CIP/EtherNet-IP EDS device files \u2014 resolves device identities to catalog numbers and lists configurable device parameters.",
+      "desc": "Browse EtherNet/IP device description (EDS) files: identify devices by catalog number and see their configurable parameters.",
       "path": "Tools\\AllenBradley\\EDSCatalog\\EDSCatalog.exe",
       "help_file": "Tools\\AllenBradley\\EDSCatalog\\EDSCatalog_help.txt",
       "icon": "Tools\\AllenBradley\\EDSCatalog\\EDSCatalog.ico"
@@ -400,7 +400,7 @@
       ],
       "system": "Allen Bradley",
       "version": "7",
-      "desc": "Rockwell Logix to DeltaV migration assistant - parses Studio 5000 L5X (and .ACD) exports, maps dependencies, and generates proposed DeltaV modules as importable FHX.",
+      "desc": "Convert Rockwell Studio 5000 programs (L5X or ACD) into proposed DeltaV modules you can import as FHX.",
       "path": "Tools\\AllenBradley\\Logix2dv\\Logix2dv.exe",
       "help_file": "Tools\\AllenBradley\\Logix2dv\\Logix2dv_help.txt",
       "icon": "Tools\\AllenBradley\\Logix2dv\\Logix2dv.ico"
@@ -412,7 +412,7 @@
       ],
       "system": "Allen Bradley",
       "version": "8",
-      "desc": "EtherNet/IP device commissioning \u2014 a friendlier replacement for Rockwell's BootP-DHCP and Address Commissioning tools: discover devices (ListIdentity), assign IPs to factory-default devices via a built-in BOOTP/DHCP server, set the CIP TCP/IP config static, and read/write drive/adapter parameters. Probes a device to describe itself (identity, object-model scan, live self-describing parameter list with scaling) so no EDS or manual is needed for most devices.",
+      "desc": "A simpler alternative to Rockwell's BootP/DHCP tool: find EtherNet/IP devices, assign IP addresses, and read or change drive and adapter settings, usually without the EDS file or manual.",
       "path": "Tools\\AllenBradley\\ABCommission.exe",
       "help_file": "Tools\\AllenBradley\\ABCommission_help.txt",
       "icon": "Tools\\AllenBradley\\ABCommission.ico"
@@ -424,7 +424,7 @@
       ],
       "system": "Allen Bradley",
       "version": "4",
-      "desc": "Read a FactoryTalk View SE/ME application's displays without FactoryTalk View \u2014 no licence, no HMI server, no restored project. Scans a folder of .gfx files and reports every caption, step name and expression, every tag each display references, and which FactoryTalk Directory shortcut or data server it resolves through. Distinguishes a real tag from a #n parameter placeholder, cross-references a tag to the displays that use it, searches all display text at once, and flags shortcuts spelled inconsistently \u2014 the join between a graphic and a controller that nothing checks until an operator opens the screen. Exports CSV and a standalone HTML report.",
+      "desc": "Read FactoryTalk View SE/ME displays without FactoryTalk installed: every tag, caption and expression, which displays use each tag, and inconsistent shortcuts flagged. Exports CSV and HTML.",
       "path": "Tools\\AllenBradley\\FTViewTools.exe",
       "help_file": "Tools\\AllenBradley\\FTViewTools_help.txt",
       "icon": "Tools\\AllenBradley\\FTViewTools.ico"
@@ -438,7 +438,7 @@
       ],
       "system": "CodeSys",
       "version": "5",
-      "desc": "Converts IEC 61131-3 Structured Text programs into Process Flow Diagram HTML and PDF exports.",
+      "desc": "Turn IEC 61131-3 Structured Text programs into flow diagrams you can export as HTML or PDF.",
       "path": "Tools\\CodeSys\\STReader\\STReader.exe",
       "help_file": "Tools\\CodeSys\\STReader\\STReader_help.txt",
       "icon": "Tools\\CodeSys\\STReader\\STReader.ico"
@@ -451,7 +451,7 @@
         "document"
       ],
       "version": "6",
-      "desc": "PDF reader, annotator, organiser and engineering review tool \u2014 read, mark up, assemble, redact and compare drawings and specifications without Acrobat. Markup with stamps and calibrated measurement; reorder/split/merge/compress pages; watermarks, Bates numbering and headers/footers; offline OCR that makes scans searchable; redaction that truly removes content; revision compare with a visual overlay; instrument-tag index cross-referenced against a DeltaV FHX export; drawing-package assembly with a linked index sheet; batch a folder. Fully offline.",
+      "desc": "Read, mark up, organise, compare and redact PDFs without Acrobat, with OCR for scans, calibrated measurements and drawing-package assembly. Works fully offline.",
       "path": "Tools\\Documentation\\CornerPDF\\CornerPDF.exe",
       "help_file": "Tools\\Documentation\\CornerPDF\\CornerPDF_help.txt",
       "icon": "Tools\\Documentation\\CornerPDF\\CornerPDF.ico"
@@ -462,7 +462,7 @@
         "document"
       ],
       "version": "2",
-      "desc": "Every help file you own in one searchable library \u2014 point it at a DeltaV node's Books Online folder and all ~116 .chm files become one index of 16,800 topics you can search at once, with a hit count per manual so you know whether the answer is in Batch, Control Studio, Diagnostics or the SIS books before you read a word. Reads compiled help (.chm) and the older WinHelp (.hlp) that Windows itself can no longer open, plus PDFs and folders of exported HTML \u2014 no vendor product installed, no internet and no add-in, because both decoders are built in. Full-text search across every book at once with per-book hit counts, quoted phrases, exclusions, wildcards and a regex mode for tag and loop numbers; every book's keyword index merged into one alphabet. Reader with tabs, light/dark/sepia, text scaling and find-on-page. Favourites, history and reading positions live in a separate file from the library, so re-importing a book never loses them and handing someone the library never hands over yours. Exports a page or a whole result set to a bookmarked PDF, a page to PNG, and chosen pages to a .sdoc share pack that opens in any browser with nothing installed. Also runs as a read-only MCP server so an assistant can search vendor documentation offline.",
+      "desc": "Search all your help files at once \u2014 DeltaV Books Online, other .chm and old .hlp manuals, and PDFs \u2014 in one offline library, with a hit count per manual.",
       "path": "Tools\\Documentation\\SuperDocs\\SuperDocs.exe",
       "help_file": "Tools\\Documentation\\SuperDocs\\SuperDocs_help.txt",
       "icon": "Tools\\Documentation\\SuperDocs\\SuperDocs.ico"
@@ -473,7 +473,7 @@
         "document"
       ],
       "version": "11",
-      "desc": "Extracts tags, device types, symbols and connectivity from P&ID PDFs (OCR + OpenCV) into structured tables, instrument loops, QA overlays and a connectivity graph.",
+      "desc": "Pull tags, devices, symbols and line connections out of P&ID PDFs into tables and instrument loops. Can ask your work Copilot, through Slipstream, to double-check misread tags.",
       "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
       "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
       "icon": "Tools\\PnID\\PIDReader\\PIDReader.ico"
@@ -484,7 +484,7 @@
         "document"
       ],
       "version": "3",
-      "desc": "Draws ISA-5.1 conformant P&IDs and exports them as searchable PDFs that carry their own tag database. Author from scratch, from a project spreadsheet (equipment list / line list / instrument index), from a DeltaV configuration, or from a P&ID Reader extraction. Live conformance checking as you draw.",
+      "desc": "Draw ISA-5.1 P&IDs and export them as searchable PDFs, starting from scratch, a spreadsheet, a DeltaV configuration or a P&ID Reader extraction, with standards checking as you draw.",
       "path": "Tools\\PnID\\PIDMaker\\PIDMaker.exe",
       "help_file": "Tools\\PnID\\PIDMaker\\PIDMaker_help.txt",
       "icon": "Tools\\PnID\\PIDMaker\\PIDMaker.ico"
@@ -495,7 +495,7 @@
         "document"
       ],
       "version": "3",
-      "desc": "Extracts tables and text from any document \u2014 images, scanned/digital PDFs, Word, PowerPoint and HTML \u2014 into CSV/Excel. Fully offline OCR (RapidOCR), nothing uploaded.",
+      "desc": "Pull tables and text out of images, scanned or digital PDFs, Word, PowerPoint and web pages into Excel or CSV. Works offline; nothing is uploaded.",
       "path": "Tools\\Documentation\\TableX.exe",
       "help_file": "Tools\\Documentation\\TableX_help.txt",
       "icon": "Tools\\Documentation\\TableX.ico"
@@ -506,7 +506,7 @@
         "edit"
       ],
       "version": "12",
-      "desc": "Multi-format find & replace across Word, Excel, PowerPoint, DeltaV FHX, Operate graphics, XML and text files \u2014 case-insensitive, whole-word and regex matching, a dry-run preview, and DeltaV unit replication that builds the map from an exported FHX.",
+      "desc": "Find and replace across Word, Excel, PowerPoint, DeltaV FHX, Operate graphics, XML and text files, with a preview before anything changes.",
       "path": "Tools\\Documentation\\FnR.exe",
       "help_file": "Tools\\Documentation\\FnR_help.txt",
       "icon": "Tools\\Documentation\\FnR.ico"
@@ -516,11 +516,10 @@
     {
       "name": "MP4Transcribe",
       "tags": [
-        "ai",
         "document"
       ],
       "version": "4",
-      "desc": "Offline video/audio transcriber powered by OpenAI Whisper. Batch-transcribe files or whole folders to text or .srt/.vtt subtitles, with language selection, translate-to-English, and automatic GPU acceleration. FFMPEG bundled; nothing is uploaded.",
+      "desc": "Turn video and audio recordings into text or subtitles, offline: batch whole folders, pick the language or translate to English. Nothing is uploaded.",
       "path": "Tools\\AI\\MP4Transcribe\\MP4Transcribe.exe",
       "help_file": "Tools\\AI\\MP4Transcribe\\MP4Transcribe_help.txt",
       "icon": "Tools\\AI\\MP4Transcribe\\MP4Transcribe.ico"
@@ -531,7 +530,7 @@
         "ai"
       ],
       "version": "19",
-      "desc": "Fully offline AI assistant for automation engineers \u2014 a local Qwen2.5-Coder-7B model (bundled llama-server) drives guided, single-purpose tasks: research a manual or datasheet; fix an error, explain or review code, write tests, or write a script for a file that cannot leave the plant; read Rockwell, CODESYS or ABB PLC logic you did not write; turn a control narrative into requirements and review or edit documents and spreadsheets; and for DeltaV, ask your own FHX export, check custom logic, generate a FAT test plan from an FRS, draft Calc/Action/Condition expressions or EM logic for EMTools. Nothing is uploaded; the model, embeddings and runtime all ship in the box.",
+      "desc": "An offline AI assistant for automation engineers: explain or fix code and PLC logic, research manuals, draft requirements and test plans, and ask about your DeltaV configuration. Nothing leaves your PC.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
       "icon": "Tools\\AI\\CornerCode\\CornerCode.ico"
@@ -542,7 +541,7 @@
         "ai"
       ],
       "version": "14",
-      "desc": "Shared catalog of Cornerstone AI add-ons for Claude Code. Browse the skills and MCP servers, then install one in a click or export it as a shareable .zip. Skills install to ~/.claude/skills and ship their bundled command-line tools (reqgen, dv_converter); MCP servers are staged and registered with the client for you. Catalog: Control Narrative \u2192 Requirements, Describe DeltaV Modules, Generate EM Logic, plus the DeltaV FHX, Operate Graphics, OPC UA, Event Chronicle (alarms & events), Remote Windows and Emerson SMS servers.",
+      "desc": "Install Cornerstone's AI add-ons \u2014 skills and tool servers for DeltaV FHX, graphics, OPC UA, alarms, remote machines and Emerson SMS \u2014 into Claude Code or Slipstream in one click.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
       "icon": "Tools\\AI\\SkillExplorer\\SkillExplorer.ico"
@@ -552,9 +551,9 @@
       "tags": [
         "ai"
       ],
-      "system": "AI",
+      "system": "",
       "version": "2",
-      "desc": "Front end for the Microsoft 365 Copilot Chat that comes with your work account, in the shape of a coding assistant: chat with your files as context, an Explore mode where Copilot reads the project itself, a Plan mode that proposes a change before anything is touched, and an Agent that edits files and runs commands with your approval (with an undo for every run). Reads Word, Excel, PDF and code, can use the suite's MCP tool servers, and keeps its history on your PC.",
+      "desc": "Use the Microsoft 365 Copilot that comes with your work account as a coding assistant: chat about your files, let it plan and make changes with your approval, and undo any run.",
       "path": "Tools\\AI\\Slipstream\\Slipstream.exe",
       "help_file": "Tools\\AI\\Slipstream\\Slipstream_help.txt",
       "icon": "Tools\\AI\\Slipstream\\Slipstream.ico"
@@ -567,7 +566,7 @@
         "decode"
       ],
       "version": "4",
-      "desc": "Binary file detective \u2014 auto-analyses unknown files (magic numbers, entropy, embedded data, PE/ELF/Mach-O/PDF/OLE/PCAP, YARA rules, disassembly) into a plain-language verdict. Fully offline.",
+      "desc": "Identify an unknown file: it analyses the contents and gives a plain-language verdict on what the file is and what is inside. Works offline.",
       "path": "Tools\\ReverseEngineering\\ByteWright\\ByteWright.exe",
       "help_file": "Tools\\ReverseEngineering\\ByteWright\\ByteWright_help.txt",
       "icon": "Tools\\ReverseEngineering\\ByteWright\\ByteWright.ico"
@@ -578,7 +577,7 @@
         "decode"
       ],
       "version": "6",
-      "desc": "Native decompiler \u2014 lifts Windows PE and Linux ELF binaries to readable C using an x86 disassembler and a custom IR.",
+      "desc": "Decompile Windows and Linux programs (.exe, ELF) into readable C code.",
       "path": "Tools\\ReverseEngineering\\Patina.exe",
       "help_file": "Tools\\ReverseEngineering\\Patina_help.txt",
       "icon": "Tools\\ReverseEngineering\\Patina.ico"
@@ -591,7 +590,7 @@
         "connect"
       ],
       "version": "10",
-      "desc": "Deterministic RDP console + visual automation builder \u2014 reaches Windows/DeltaV/OT nodes that mstsc can but WinRM cannot (Standard RDP Security/RC4, TLS, NLA) via the vendored rdpilot engine. Manual cockpit: live desktop with click-to-click control and typing, session clipboard, file push/pull, run-as-SYSTEM commands, guest-agent deploy, reboot. Power-Automate-style Flow builder: sequence blocks (click, type, wait-for/assert element, run command, screenshot, if/repeat/for-each-target) with per-step retry, variables, and live point-and-click authoring \u2014 turn any repetitive RDP chore into a saved, multi-target automation. Saved connection profiles; passwords never persisted.",
+      "desc": "Remote-control Windows and DeltaV machines over RDP, including ones other tools cannot reach, and record repetitive jobs as reusable automations across many machines. Passwords are never saved.",
       "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
       "icon": "Tools\\Remote\\CornerRDP\\CornerRDP.ico"
@@ -604,7 +603,7 @@
         "connect"
       ],
       "version": "7",
-      "desc": "Read live values from plant equipment over eleven protocols \u2014 OPC UA, classic OPC, Modbus, Allen-Bradley, MQTT, Siemens S7, REST, SOAP and SQL \u2014 with tags from different systems side by side on one clock. It can also act as the device, so you can test against a system that is not built yet.",
+      "desc": "Read live values from plant equipment over 11 protocols \u2014 OPC UA, classic OPC, Modbus, Allen-Bradley, Siemens S7, MQTT and more \u2014 side by side, or stand in for a device when testing.",
       "path": "Tools\\Comms\\SuperComms\\SuperComms.exe",
       "help_file": "Tools\\Comms\\SuperComms\\SuperComms_help.txt",
       "icon": "Tools\\Comms\\SuperComms\\SuperComms.ico"
@@ -617,7 +616,7 @@
         "train"
       ],
       "version": "3",
-      "desc": "Learn process instruments by running them: 31 measuring technologies across level, flow, temperature, pressure, analytical, valves and pumps, every one simulated rather than described. Set the process and the installation on a workbench and watch the measurement respond, see the equations worked with your own numbers, and view each instrument as installed and in cutaway \u2014 where an unfilled wet leg, a thermowell in a dead leg or an orifice plate fitted backwards is visible, which it never is from the outside. Diagnose-it lessons put you in front of a real complaint with a time budget: every observation costs simulated minutes, and naming the right fault without taking the observation that proves it is scored as a guess. Nothing here touches a plant.",
+      "desc": "Learn process instruments by running them: 31 simulated measuring technologies with worked equations, cutaway views and timed troubleshooting exercises. Nothing touches a plant.",
       "path": "Tools\\Training\\InstrumentLab\\InstrumentLab.exe",
       "help_file": "Tools\\Training\\InstrumentLab\\InstrumentLab_help.txt",
       "icon": "Tools\\Training\\InstrumentLab\\InstrumentLab.ico"
@@ -632,7 +631,7 @@
       ],
       "system": "Syncade",
       "version": "3",
-      "desc": "Reads a Syncade Recipe Authoring library export (.rax, .rxf or the library XML) the way an engineer reads it: every master recipe, procedure, unit procedure, operation and phase class as the SFC drawing Recipe Authoring shows, as plain-language logic, and as parameters with the deferral chain resolved so you can see where a value really comes from. Compares two library exports item by item for change control, exports the differences to Excel, and inflates the behaviors (.wib / .bfm) a phase calls to show their VB and inputs. Edits parameter values, step values, transition expressions and descriptions offline into a new copy of the library that Recipe Authoring opens, proven to differ by exactly those edits. Writes the LP1 design specification (FDS/DDS) as Word the way the Emerson Document Generator does, without Syncade. Fills the team's hand-authored LP1 MCF FDS template from the library: design tables, split input and output parameters with where each value comes from, and the author's decisions left in blue. Checks the MES interface against a DeltaV FHX export, the Live graphics and the generated Event Monitor design document: MCF names on DVI module classes, interface parameter numbers, the BLOCK_PATH each interface slot binds through, the DeltaV paths recipes build, and whether every module and slot has exactly one OPC event wired to the right slot, script and task.",
+      "desc": "Read, compare and edit Syncade recipe libraries (.rax, .rxf) offline: see each recipe as a drawing and in plain language, trace where parameter values come from, generate design specifications, and check the interface to DeltaV.",
       "path": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.exe",
       "help_file": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe_help.txt",
       "icon": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.ico"
@@ -645,7 +644,7 @@
       ],
       "system": "Syncade",
       "version": "1",
-      "desc": "Opens a Syncade deployment package - a Business Integrator migration package, a QRM package, a customer delivery folder or a behaviors drop - and answers what a deployment review asks. Inventories every behavior, script, stylesheet, SQL file and config with its version and description; reviews the VB and SQL against 22 rules as rows with severity, file and line; compares two drops file by file with rename pairing, inflated behavior script diffs and a version-went-down flag, including which recipe items changed between two .rxf / .rax files; flattens every web service and execution-group step; and lists the Business Integrator settings with encrypted values masked and unencrypted secrets flagged. It never changes the package.",
+      "desc": "Review a Syncade deployment package before it goes in: list every file with its version, check scripts and SQL against 22 rules, and compare two drops. Read-only.",
       "path": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.exe",
       "help_file": "Tools\\Syncade\\SyncadePackage\\SyncadePackage_help.txt",
       "icon": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.ico"
@@ -657,7 +656,7 @@
       ],
       "system": "Syncade",
       "version": "3",
-      "desc": "Checks what a Syncade order runs on before an operator finds out: open one folder of bills (BOP, BOM, BOS, BOE, BOCA, BOC), equipment exports and CSDebug event-script traces. Every bill as a grid with its findings; a BOE checked against the equipment class for events, event parameters, required states and custom properties; a BOCA calculation's XPaths checked against its BOP; any two bills compared record by record; every equipment class with its events and instances; and every event-script run with whether it completed. Exports the checks to Excel and gates a pipeline from the command line. Writes the LP1 Equipment Class and Equipment Instance design specifications from the Document Generator's EQCL and EQINST files, without Syncade.",
+      "desc": "Check Syncade order bills (BOP, BOM, BOE and more) and equipment exports for problems before an operator hits them, and generate equipment design specifications. Exports to Excel.",
       "path": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.exe",
       "help_file": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders_help.txt",
       "icon": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.ico"
