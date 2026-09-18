@@ -529,8 +529,8 @@
       "tags": [
         "ai"
       ],
-      "version": "19",
-      "desc": "An offline AI assistant for automation engineers: explain or fix code and PLC logic, research manuals, draft requirements and test plans, and ask about your DeltaV configuration. Nothing leaves your PC.",
+      "version": "20",
+      "desc": "An AI assistant for automation engineers: explain or fix code and PLC logic, research manuals, draft requirements and test plans, and ask about your DeltaV configuration. Runs on your PC, or on your work Copilot if you switch it.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
       "icon": "Tools\\AI\\CornerCode\\CornerCode.ico"

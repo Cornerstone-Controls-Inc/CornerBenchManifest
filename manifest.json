@@ -45,7 +45,7 @@
     "TableX": "3",
     "FnR": "12",
     "MP4Transcribe": "4",
-    "CornerCode": "19",
+    "CornerCode": "20",
     "SkillExplorer": "14",
     "Slipstream": "3",
     "ByteWright": "4",
@@ -544,18 +544,18 @@
     "CornerCode": {
       "kind": "zip",
       "file": "CornerCode.zip",
-      "sha256": "aa22c3379b0d03e18bf96b4e2008196b5029ee66519b582e3f559830d8d0dd08",
+      "sha256": "962e8a636d846cbe75f9745606bff9de72603d5fef11095dd89b7a9f1709329d",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.000",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.001",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.zip.cbpk.002"
       ],
-      "notes": "## v19\n\n**Reports save as web pages.** Any pathway's report can be saved as `.html`: one\nfile with its styles inside it (nothing fetched, so it opens on a plant machine\nwith no internet), light and dark, tables that scroll instead of squeezing, and a\nrow filter when a table is long. A pathway can fold sections and mark them\n(`corner.html_export`). check-against-design now saves its full report as a web\npage beside the Word review notes, with the answer-key, evidence and not-checked\nsections folded.\n\n**check-custom-logic reads a design specification's interlocks.** A PCSD design\nwrites its interlocks, forced setpoints and permissives as tables, and a PCSD\ndevice module keeps each as a numbered DCC condition (`DCC1$I_EXP5`,\n`I_DESC_5`, `I_DELAY_ON5`); the pathway read neither, so on the batch course's\ndesign it found nothing to check. Now each tag's conditions are one requirement,\ntags match across an area suffix (`P-100A_A`), and code settles what it can\nprove before the model judges the rest: a condition the design lists that the\nmodule lacks, a signal the design names that the condition never reads, the\nalarm limit it compares against, the comparison's direction, a stated constant, an\non-delay that differs, a configured condition the design does not list. Those\nare code's verdict and a model cannot turn them into \"conforms\". Measured on a\ntrainee export: P-100A's Low Flow interlock read FI-100B where the design says\nFI-100A, and the local model called P-400A's High Temp against `HI_HI_LIM`\n\"conforms\" to a design that says HI. A model reading that code overrules is\nprinted as such. The report is grouped by verdict and saves as a web page, with the\nconforming items folded.\n\n**check-against-design takes an answer key, and stops over-reporting.** Read\nagainst a real trainee's batch export, the review listed 72 things to change;\nabout ten were the trainee's.\n\n- **An answer key, optionally.** It is compared with the same design first, and\n  a deviation it has too goes in its own section of the review, \"Also in the\n  answer key\", instead of among the things to change: the starting database's\n  module classes and alarm limits, and the design document's own typos\n  (`PS_SETUP1`). The report's deviation table gains an \"In the key\" column.\n- **Which part of the design.** Everything, batch only (units, phases, recipes,\n  trains) or modules only. The review puts batch findings first either way.\n- **A unit parameter written through any field is written.** `'/PS_SETUP.CVS'\n  := 'Running'` writes a named-set parameter by its string; eight logics were\n  reported as never writing PS_SETUP.\n- **An alias under another name is one finding.** A logic reaching TC-100A\n  through the trainee's `TEMP_CTRL` references it, whatever the design called\n  the alias. One typo had been missing, extra, and four logics that \"never\n  reference\" the controller.\n- **A missing alarm is one finding,** carrying the limit and on-delay the design\n  gives it. Seven alarms had come out as 21 rows, the second of each saying the\n  alarm was enabled.\n- **Restart sections are short only when there are fewer.** Steps may be split.\n- **Descriptions** that differ only by the area suffix (\"TK100_A Equipment\n  Module\") or a Programming Standards abbreviation (\"Recirc\") are not findings.\n- **The review is tables, not bullets.** A count row at the top, then one table per\n  part of the design in each section, each object named once beside its findings;\n  the report's facts about the run are a table too.\n- **Tables about the document** (revision history, drawings, EM command\n  descriptions, class parameter values) are counted in one line instead of\n  listed as unchecked.\n\n**check-against-design reads a batch design.** Alongside the module, alarm and\nequipment-module tables it now reads the batch specification's own tables and\ncompares each against the export, still without a model in the loop:\n\n- **units** \u2014 unit parameters (present on the unit class, type, named set,\n  default on th",
+      "notes": "## v20\n\n**Choose which model answers: the one on this PC, or your work Copilot.** A new\nbutton in the title bar, next to the light/dark switch, offers **Local model\n(nothing leaves this PC)** \u2014 still the default \u2014 or **Work Copilot (via\nSlipstream)**, the Microsoft 365 Copilot your work account already includes. The\nwords beside the CornerCode name say which is answering, and \"waiting for\nSlipstream\u2026\" while Copilot signs in. Copilot needs Slipstream open (CornerBench \u2192\nAI \u2192 Slipstream). With Copilot chosen, what each step sends \u2014 files, exports,\nquestions \u2014 goes to Microsoft under your company's agreement; switch back to keep\neverything on this PC.\n\n**New pathway: Test a display.** Drives DeltaV Live through RDCMan and works\nthrough one graphic's test-sheet procedure: opens the display, checks every label\nis drawn, clicks the controls the sheet samples, and saves Before / After / live\npictures of what only a person can judge. It starts from Op2Live's test plan\nrather than scanning blind. Safety is built in, not asked for: only reviewed\ncontrols at reviewed points, nothing clicked inside a faceplate, nothing typed but\na display name, and a data entry is never automated.\n\n## v19\n\n**Reports save as web pages.** Any pathway's report can be saved as `.html`: one\nfile with its styles inside it (nothing fetched, so it opens on a plant machine\nwith no internet), light and dark, tables that scroll instead of squeezing, and a\nrow filter when a table is long. A pathway can fold sections and mark them\n(`corner.html_export`). check-against-design now saves its full report as a web\npage beside the Word review notes, with the answer-key, evidence and not-checked\nsections folded.\n\n**check-custom-logic reads a design specification's interlocks.** A PCSD design\nwrites its interlocks, forced setpoints and permissives as tables, and a PCSD\ndevice module keeps each as a numbered DCC condition (`DCC1$I_EXP5`,\n`I_DESC_5`, `I_DELAY_ON5`); the pathway read neither, so on the batch course's\ndesign it found nothing to check. Now each tag's conditions are one requirement,\ntags match across an area suffix (`P-100A_A`), and code settles what it can\nprove before the model judges the rest: a condition the design lists that the\nmodule lacks, a signal the design names that the condition never reads, the\nalarm limit it compares against, the comparison's direction, a stated constant, an\non-delay that differs, a configured condition the design does not list. Those\nare code's verdict and a model cannot turn them into \"conforms\". Measured on a\ntrainee export: P-100A's Low Flow interlock read FI-100B where the design says\nFI-100A, and the local model called P-400A's High Temp against `HI_HI_LIM`\n\"conforms\" to a design that says HI. A model reading that code overrules is\nprinted as such. The report is grouped by verdict and saves as a web page, with the\nconforming items folded.\n\n**check-against-design takes an answer key, and stops over-reporting.** Read\nagainst a real trainee's batch export, the review listed 72 things to change;\nabout ten were the trainee's.\n\n- **An answer key, optionally.** It is compared with the same design first, and\n  a deviation it has too goes in its own section of the review, \"Also in the\n  answer key\", instead of among the things to change: the starting database's\n  module classes and alarm limits, and the design document's own typos\n  (`PS_SETUP1`). The report's deviation table gains an \"In the key\" column.\n- **Which part of the design.** Everything, batch only (units, phases, recipes,\n  trains) or modules only. The review puts batch findings first either way.\n- **A unit parameter written through any field is written.** `'/PS_SETUP.CVS'\n  := 'Running'` writes a named-set parameter by its string; eight logics were\n  reported as never writing PS_SETUP.\n- **An alias under another name is one finding.** A logic reaching TC-100A\n  through the trainee's `TEMP_CTRL` references it, whatever the design called\n  the alias. One typo had been missing",
       "components": [
         {
           "id": "app",
-          "sha256": "29772d4427df580b55cceb6f46c608e15a62f34e6d2cd38dead56bd110a0dce8",
+          "sha256": "9596261bb8e7689cf5ba18742ca9b586f7cf5cbbad450a12208e17c1d385f420",
           "enc": "cbpk1",
           "include": [
             "CornerCode.exe",
@@ -567,7 +567,7 @@
             "pathways_assets/**",
             "_internal/shared.pyd"
           ],
-          "bytes": 52174139,
+          "bytes": 52382585,
           "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.app.zip.cbpk"
         },
         {
@@ -582,13 +582,13 @@
         },
         {
           "id": "model",
-          "sha256": "a13f9398074ea18e1fa184d4c4cc32de268a3a1901daabd840f1dcc3fe98de87",
+          "sha256": "c2d064d77113a9057bda8d17889d3ce363887b96a9be4ddf0b80cb297e1f1be3",
           "enc": "cbpk1",
           "include": [
             "models/**",
             "llama/**"
           ],
-          "bytes": 4322004633,
+          "bytes": 4322003587,
           "parts": [
             "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.model.zip.cbpk.000",
             "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.model.zip.cbpk.001",
@@ -597,12 +597,12 @@
         },
         {
           "id": "deps",
-          "sha256": "e089db80d199a6bfa126a151d1d45a2e09050695cfc8e84988b7cbcfdf6428dd",
+          "sha256": "9fca8822829eb2db4b1a03e81eab2e6eeb6782b24fe097218d920c91d7beb9eb",
           "enc": "cbpk1",
           "include": [
             "**"
           ],
-          "bytes": 407832947,
+          "bytes": 412967569,
           "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCode.deps.zip.cbpk"
         }
       ]
