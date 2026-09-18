@@ -631,8 +631,8 @@
         "verify"
       ],
       "system": "Syncade",
-      "version": "2",
-      "desc": "Reads a Syncade Recipe Authoring library export (.rax, .rxf or the library XML) the way an engineer reads it: every master recipe, procedure, unit procedure, operation and phase class as the SFC drawing Recipe Authoring shows, as plain-language logic, and as parameters with the deferral chain resolved so you can see where a value really comes from. Compares two library exports item by item for change control, exports the differences to Excel, and inflates the behaviors (.wib / .bfm) a phase calls to show their VB and inputs. Edits parameter values, step values, transition expressions and descriptions offline into a new copy of the library that Recipe Authoring opens, proven to differ by exactly those edits. Writes the LP1 design specification (FDS/DDS) as Word the way the Emerson Document Generator does, without Syncade. Checks the MES interface against a DeltaV FHX export, the Live graphics and the generated Event Monitor design document: MCF names on DVI module classes, interface parameter numbers, the BLOCK_PATH each interface slot binds through, the DeltaV paths recipes build, and whether every module and slot has exactly one OPC event wired to the right slot, script and task.",
+      "version": "3",
+      "desc": "Reads a Syncade Recipe Authoring library export (.rax, .rxf or the library XML) the way an engineer reads it: every master recipe, procedure, unit procedure, operation and phase class as the SFC drawing Recipe Authoring shows, as plain-language logic, and as parameters with the deferral chain resolved so you can see where a value really comes from. Compares two library exports item by item for change control, exports the differences to Excel, and inflates the behaviors (.wib / .bfm) a phase calls to show their VB and inputs. Edits parameter values, step values, transition expressions and descriptions offline into a new copy of the library that Recipe Authoring opens, proven to differ by exactly those edits. Writes the LP1 design specification (FDS/DDS) as Word the way the Emerson Document Generator does, without Syncade. Fills the team's hand-authored LP1 MCF FDS template from the library: design tables, split input and output parameters with where each value comes from, and the author's decisions left in blue. Checks the MES interface against a DeltaV FHX export, the Live graphics and the generated Event Monitor design document: MCF names on DVI module classes, interface parameter numbers, the BLOCK_PATH each interface slot binds through, the DeltaV paths recipes build, and whether every module and slot has exactly one OPC event wired to the right slot, script and task.",
       "path": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.exe",
       "help_file": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe_help.txt",
       "icon": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.ico"
@@ -656,7 +656,7 @@
         "verify"
       ],
       "system": "Syncade",
-      "version": "2",
+      "version": "3",
       "desc": "Checks what a Syncade order runs on before an operator finds out: open one folder of bills (BOP, BOM, BOS, BOE, BOCA, BOC), equipment exports and CSDebug event-script traces. Every bill as a grid with its findings; a BOE checked against the equipment class for events, event parameters, required states and custom properties; a BOCA calculation's XPaths checked against its BOP; any two bills compared record by record; every equipment class with its events and instances; and every event-script run with whether it completed. Exports the checks to Excel and gates a pipeline from the command line. Writes the LP1 Equipment Class and Equipment Instance design specifications from the Document Generator's EQCL and EQINST files, without Syncade.",
       "path": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.exe",
       "help_file": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders_help.txt",
