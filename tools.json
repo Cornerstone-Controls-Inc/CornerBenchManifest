@@ -552,7 +552,7 @@
         "ai"
       ],
       "system": "",
-      "version": "2",
+      "version": "3",
       "desc": "Use the Microsoft 365 Copilot that comes with your work account as a coding assistant: chat about your files, let it plan and make changes with your approval, and undo any run.",
       "path": "Tools\\AI\\Slipstream\\Slipstream.exe",
       "help_file": "Tools\\AI\\Slipstream\\Slipstream_help.txt",
