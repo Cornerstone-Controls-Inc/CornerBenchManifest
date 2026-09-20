@@ -68,7 +68,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "28",
+      "version": "31",
       "desc": "Turn a DeltaV FHX export into ready-made reports: interlocks, alarms, IO, modules, equipment modules, phases, historian, named sets, PID tuning and more.",
       "path": "Tools\\DeltaV\\FHXport\\FHXport.exe",
       "help_file": "Tools\\DeltaV\\FHXport\\FHXport_help.txt",
@@ -128,7 +128,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "2",
+      "version": "4",
       "desc": "Build, export and check DeltaV user-defined import/export formats and their data files. Replaces FMTMaker, FMTExport and ModExport.",
       "path": "Tools\\DeltaV\\FMTTools\\FMTTools.exe",
       "help_file": "Tools\\DeltaV\\FMTTools\\FMTTools_help.txt",
@@ -189,7 +189,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "9",
+      "version": "10",
       "desc": "Check a DeltaV FHX export for broken references, SFC problems, naming limits and typos, fix what can be fixed automatically, and get an HTML report.",
       "path": "Tools\\DeltaV\\FHXVerify\\FHXVerify.exe",
       "help_file": "Tools\\DeltaV\\FHXVerify\\FHXVerify_help.txt",
@@ -553,7 +553,7 @@
       "tags": [
         "ai"
       ],
-      "version": "20",
+      "version": "24",
       "desc": "An AI assistant for automation engineers: explain or fix code and PLC logic, research manuals, draft requirements and test plans, and ask about your DeltaV configuration. Runs on your PC, or on your work Copilot if you switch it.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
