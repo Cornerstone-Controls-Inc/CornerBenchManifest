@@ -279,6 +279,18 @@
       "path": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.exe",
       "help_file": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer_help.txt",
       "icon": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.ico"
+    },
+    {
+      "name": "UpgradeScout",
+      "tags": [
+        "verify"
+      ],
+      "system": "DeltaV",
+      "version": "2",
+      "desc": "Scope a DeltaV version upgrade from the customer's own data: SMS system summary and device export, with the system FHX when you have one. Node table, v16 compatibility against Emerson's chart, dongle, warranty and subscription flags, and the upgrade estimate's quantities filled in.",
+      "path": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout.exe",
+      "help_file": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout_help.txt",
+      "icon": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout.ico"
     }
   ],
   "Provox": [
@@ -510,6 +522,18 @@
       "path": "Tools\\Documentation\\FnR.exe",
       "help_file": "Tools\\Documentation\\FnR_help.txt",
       "icon": "Tools\\Documentation\\FnR.ico"
+    },
+    {
+      "name": "PunchList",
+      "tags": [
+        "document",
+        "verify"
+      ],
+      "version": "1",
+      "desc": "Read FAT, SAT and development punch lists, whatever their column layout, with live open/closed counts. Fills the count and the retest box into the acknowledgment and builds the status report's Issues table.",
+      "path": "Tools\\Documentation\\PunchList\\PunchList.exe",
+      "help_file": "Tools\\Documentation\\PunchList\\PunchList_help.txt",
+      "icon": "Tools\\Documentation\\PunchList\\PunchList.ico"
     }
   ],
   "AI": [
