@@ -104,7 +104,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "5",
+      "version": "6",
       "desc": "Build DeltaV Equipment Modules from templates with a visual logic editor, move class parameters in and out as CSV, and auto-comment SFC steps.",
       "path": "Tools\\DeltaV\\EMTools.exe",
       "help_file": "Tools\\DeltaV\\EMTools_help.txt",
@@ -336,7 +336,7 @@
         "decode"
       ],
       "system": "Provox",
-      "version": "5",
+      "version": "6",
       "desc": "Turn Provox FST programs into readable pseudocode, stage by stage. Can also explain an FST in plain English through your work Copilot in Slipstream.",
       "path": "Tools\\Provox\\FSTDecompiler.exe",
       "help_file": "Tools\\Provox\\FSTDecompiler_help.txt",
@@ -484,7 +484,7 @@
       "tags": [
         "document"
       ],
-      "version": "11",
+      "version": "12",
       "desc": "Pull tags, devices, symbols and line connections out of P&ID PDFs into tables and instrument loops. Can ask your work Copilot, through Slipstream, to double-check misread tags.",
       "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
       "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
@@ -553,7 +553,7 @@
       "tags": [
         "ai"
       ],
-      "version": "24",
+      "version": "25",
       "desc": "An AI assistant for automation engineers: explain or fix code and PLC logic, research manuals, draft requirements and test plans, and ask about your DeltaV configuration. Runs on your PC, or on your work Copilot if you switch it.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
