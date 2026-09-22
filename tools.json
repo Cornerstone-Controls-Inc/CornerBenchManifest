@@ -104,7 +104,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "6",
+      "version": "7",
       "desc": "Build DeltaV Equipment Modules from templates with a visual logic editor, move class parameters in and out as CSV, and auto-comment SFC steps.",
       "path": "Tools\\DeltaV\\EMTools.exe",
       "help_file": "Tools\\DeltaV\\EMTools_help.txt",
