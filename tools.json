@@ -589,7 +589,7 @@
         "service"
       ],
       "system": "",
-      "version": "1",
+      "version": "2",
       "desc": "Offline AI inference engine (Qwen2.5-Coder-7B + llama-server). Optional standalone install for air-gapped plant operation; enables local AI across CornerCode, TestPilot, and other suite tools without internet.",
       "path": "Tools\\AI\\LocalModel\\LocalModel.exe",
       "help_file": "Tools\\AI\\LocalModel\\LocalModel_help.txt",
