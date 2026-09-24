@@ -1,5 +1,5 @@
 {
-  "launcher_version": "15",
+  "launcher_version": "16",
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
   "tools": {
     "ABB Migration": "10",
@@ -679,10 +679,10 @@
   "launcher_download": {
     "kind": "exe",
     "file": "CornerBench.exe",
-    "sha256": "5ce699dd7f9e1770b7230d240afd05ca8948aa9b38f2dadc7522aa4a128376e7",
+    "sha256": "6f0b65ccbc944c3b4ff086f9a8751f51f48562f30c2222edb23fb21d575d9733",
     "enc": "cbpk1",
-    "version": "15",
-    "sig": "bf1ec10cae9cb59a7da103ce1c370c5931193ad8e87c9dd2df751c77728f330d05d277626a1fb65ddf3f5fd8063177e7441b7a30eb018d5624ea62f58823e90b",
+    "version": "16",
+    "sig": "36a597cad6e9b90c50805a62125a5a0d5cb6b0d1ee7962ea283c2284b02843280d674e2f3e8f0c9b674baf54dedc3638c5c0958f3a338cb5c1576672daa8f601",
     "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerBench.exe.cbpk"
   }
 }
