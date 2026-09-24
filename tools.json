@@ -189,7 +189,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "10",
+      "version": "11",
       "desc": "Check a DeltaV FHX export for broken references, SFC problems, naming limits and typos, fix what can be fixed automatically, and get an HTML report.",
       "path": "Tools\\DeltaV\\FHXVerify\\FHXVerify.exe",
       "help_file": "Tools\\DeltaV\\FHXVerify\\FHXVerify_help.txt",
@@ -213,7 +213,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "37",
+      "version": "38",
       "desc": "Convert DeltaV Operate graphics to DeltaV Live in a guided, step-by-step process, with mapping review, VBA translation, a design specification and validation tests.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -553,7 +553,7 @@
       "tags": [
         "ai"
       ],
-      "version": "25",
+      "version": "26",
       "desc": "An AI assistant for automation engineers: explain or fix code and PLC logic, research manuals, draft requirements and test plans, and ask about your DeltaV configuration. Runs on your PC, or on your work Copilot if you switch it.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
@@ -564,7 +564,7 @@
       "tags": [
         "ai"
       ],
-      "version": "14",
+      "version": "15",
       "desc": "Install Cornerstone's AI add-ons \u2014 skills and tool servers for DeltaV FHX, graphics, OPC UA, alarms, remote machines and Emerson SMS \u2014 into Claude Code or Slipstream in one click.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
@@ -581,6 +581,32 @@
       "path": "Tools\\AI\\Slipstream\\Slipstream.exe",
       "help_file": "Tools\\AI\\Slipstream\\Slipstream_help.txt",
       "icon": "Tools\\AI\\Slipstream\\Slipstream.ico"
+    },
+    {
+      "name": "LocalModel",
+      "tags": [
+        "ai",
+        "service"
+      ],
+      "system": "",
+      "version": "1",
+      "desc": "Offline AI inference engine (Qwen2.5-Coder-7B + llama-server). Optional standalone install for air-gapped plant operation; enables local AI across CornerCode, TestPilot, and other suite tools without internet.",
+      "path": "Tools\\AI\\LocalModel\\LocalModel.exe",
+      "help_file": "Tools\\AI\\LocalModel\\LocalModel_help.txt",
+      "icon": "Tools\\AI\\LocalModel\\localmodel.ico"
+    },
+    {
+      "name": "TestPilot",
+      "tags": [
+        "verify",
+        "ai"
+      ],
+      "system": "DeltaV",
+      "version": "1",
+      "desc": "Automated GUI & display test runner: open screens, verify labels and faceplates, execute navigation playbooks, and generate Before/After visual comparison reports.",
+      "path": "Tools\\DeltaV\\TestPilot\\TestPilot.exe",
+      "help_file": "Tools\\DeltaV\\TestPilot\\TestPilot_help.txt",
+      "icon": "Tools\\DeltaV\\TestPilot\\testpilot.ico"
     }
   ],
   "Reverse Engineering": [
@@ -613,7 +639,7 @@
       "tags": [
         "connect"
       ],
-      "version": "10",
+      "version": "11",
       "desc": "Remote-control Windows and DeltaV machines over RDP, including ones other tools cannot reach, and record repetitive jobs as reusable automations across many machines. Passwords are never saved.",
       "path": "Tools\\Remote\\CornerRDP\\CornerRDP.exe",
       "help_file": "Tools\\Remote\\CornerRDP\\CornerRDP_help.txt",
