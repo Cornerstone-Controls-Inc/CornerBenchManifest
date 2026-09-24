@@ -6,7 +6,7 @@
         "convert"
       ],
       "system": "ABB",
-      "version": "9",
+      "version": "10",
       "desc": "Turns an ABB Freelance 2016 export into a DeltaV migration package: readable logic drawings, IO and tag lists, and what each block becomes in DeltaV. No Freelance licence needed.",
       "path": "Tools\\ABB\\ABBMigration\\ABBMigration.exe",
       "help_file": "Tools\\ABB\\ABBMigration\\ABBMigration_help.txt",
@@ -32,7 +32,7 @@
         "connect"
       ],
       "system": "DeltaV",
-      "version": "3",
+      "version": "4",
       "desc": "Export DeltaV Continuous Historian data to CSV: connect to a historian node, find your tags, and pull the samples for any time range.",
       "path": "Tools\\DeltaV\\DvHistExport\\DvHistExport.exe",
       "help_file": "Tools\\DeltaV\\DvHistExport\\DvHistExport_help.txt",
@@ -44,7 +44,7 @@
         "connect"
       ],
       "system": "DeltaV",
-      "version": "6",
+      "version": "7",
       "desc": "Browse and watch DeltaV tags live over OPC, import or export tag lists as CSV, and keep a log of every value you write.",
       "path": "Tools\\DeltaV\\SuperOPCWatchIt.exe",
       "help_file": "Tools\\DeltaV\\SuperOPCWatchit_help.txt",
@@ -92,7 +92,7 @@
         "document"
       ],
       "system": "DeltaV",
-      "version": "14",
+      "version": "15",
       "desc": "Turn a DeltaV FHX export into a standalone web page anyone can open, with the module hierarchy and optional logic drawings.",
       "path": "Tools\\DeltaV\\WebFHX\\WebFHX.exe",
       "help_file": "Tools\\DeltaV\\WebFHX\\WebFHX_help.txt",
@@ -152,7 +152,7 @@
         "connect"
       ],
       "system": "DeltaV",
-      "version": "5",
+      "version": "6",
       "desc": "Tune DeltaV PID loops over OPC UA: run step tests, characterise the process and watch live trends.",
       "path": "Tools\\DeltaV\\TuningAid.exe",
       "help_file": "Tools\\DeltaV\\TuningAid_help.txt",
@@ -164,7 +164,7 @@
         "simulate"
       ],
       "system": "DeltaV",
-      "version": "22",
+      "version": "23",
       "desc": "A digital twin of a DeltaV system: simulate an FHX configuration, connect to it over OPC UA, and run automated tests against it.",
       "path": "Tools\\DeltaV\\DvTwin\\DvTwin.exe",
       "help_file": "Tools\\DeltaV\\DvTwin\\DvTwin_help.txt",
@@ -201,7 +201,7 @@
         "connect"
       ],
       "system": "DeltaV",
-      "version": "7",
+      "version": "8",
       "desc": "Make DeltaV's classic OPC DA data available as an OPC UA server, with live diagnostics.",
       "path": "Tools\\DeltaV\\OPCBridge\\OPCBridge.exe",
       "help_file": "Tools\\DeltaV\\OPCBridge\\OPCBridge_help.txt",
@@ -225,7 +225,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "25",
+      "version": "26",
       "desc": "Report on, search, bulk-edit and compare DeltaV Operate (iFix) graphics (.grf), including tag groups and VBA, and repair broken animation links.",
       "path": "Tools\\DeltaV\\OperateTools\\OperateTools.exe",
       "help_file": "Tools\\DeltaV\\OperateTools\\OperateTools_help.txt",
@@ -237,7 +237,7 @@
         "decode"
       ],
       "system": "DeltaV",
-      "version": "5",
+      "version": "6",
       "desc": "Read DeltaV Virtual I/O Module configuration files (.vio): browse the VIM tree, see how EtherNet/IP data maps to signals, and run read-only diagnostics.",
       "path": "Tools\\DeltaV\\VIMTools\\VIMTools.exe",
       "help_file": "Tools\\DeltaV\\VIMTools\\VIMTools_help.txt",
@@ -286,7 +286,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "2",
+      "version": "3",
       "desc": "Scope a DeltaV version upgrade from the customer's own data: SMS system summary and device export, with the system FHX when you have one. Node table, v16 compatibility against Emerson's chart, dongle, warranty and subscription flags, and the upgrade estimate's quantities filled in.",
       "path": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout.exe",
       "help_file": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout_help.txt",
@@ -300,7 +300,7 @@
         "convert"
       ],
       "system": "Provox",
-      "version": "7",
+      "version": "8",
       "desc": "Convert Provox IO configuration between FHX and Excel, in either direction.",
       "path": "Tools\\Provox\\PvxIO\\PvxIO.exe",
       "help_file": "Tools\\Provox\\PvxIO\\PvxIO_help.txt",
@@ -312,7 +312,7 @@
         "decode"
       ],
       "system": "Provox",
-      "version": "11",
+      "version": "12",
       "desc": "Extract tables, FSTs, operations and queries from Provox PDX files into readable output files.",
       "path": "Tools\\Provox\\PvxPDX\\PvxPDX.exe",
       "help_file": "Tools\\Provox\\PvxPDX\\PvxPDX_help.txt",
@@ -324,7 +324,7 @@
         "verify"
       ],
       "system": "Provox",
-      "version": "5",
+      "version": "6",
       "desc": "Compare two folders of Provox PDX exports and get a PDF summary and an Excel log of every difference.",
       "path": "Tools\\Provox\\PDXDiff\\PDXDiff.exe",
       "help_file": "Tools\\Provox\\PDXDiff\\PDXDiff_help.txt",
@@ -336,7 +336,7 @@
         "decode"
       ],
       "system": "Provox",
-      "version": "6",
+      "version": "7",
       "desc": "Turn Provox FST programs into readable pseudocode, stage by stage. Can also explain an FST in plain English through your work Copilot in Slipstream.",
       "path": "Tools\\Provox\\FSTDecompiler.exe",
       "help_file": "Tools\\Provox\\FSTDecompiler_help.txt",
@@ -348,7 +348,7 @@
         "verify"
       ],
       "system": "Provox",
-      "version": "5",
+      "version": "6",
       "desc": "Compare two versions of an HMI configuration and see the changes as screen overlays, interactive HTML reports and an Excel change log.",
       "path": "Tools\\Provox\\ODFDiff\\ODFDiff.exe",
       "help_file": "Tools\\Provox\\ODFDiff\\ODFDiff_help.txt",
@@ -360,7 +360,7 @@
         "convert"
       ],
       "system": "Provox",
-      "version": "6",
+      "version": "7",
       "desc": "Generate DeltaV migration deliverables from Provox configuration data: appendix tables, the base build workbook and a Functional Requirements document.",
       "path": "Tools\\Provox\\PVXMigration\\PVXMigration.exe",
       "help_file": "Tools\\Provox\\PVXMigration\\PVXMigration_help.txt",
@@ -373,7 +373,7 @@
       "tags": [
         "simulate"
       ],
-      "version": "5",
+      "version": "6",
       "desc": "Audit accounts and change passwords in bulk across Hyper-V virtual machines, including the scheduled tasks that use them.",
       "path": "Tools\\HyperV\\VMCreds.exe",
       "help_file": "Tools\\HyperV\\VMCreds_help.txt",
@@ -411,7 +411,7 @@
         "convert"
       ],
       "system": "Allen Bradley",
-      "version": "7",
+      "version": "8",
       "desc": "Convert Rockwell Studio 5000 programs (L5X or ACD) into proposed DeltaV modules you can import as FHX.",
       "path": "Tools\\AllenBradley\\Logix2dv\\Logix2dv.exe",
       "help_file": "Tools\\AllenBradley\\Logix2dv\\Logix2dv_help.txt",
@@ -473,7 +473,7 @@
       "tags": [
         "document"
       ],
-      "version": "2",
+      "version": "3",
       "desc": "Search all your help files at once \u2014 DeltaV Books Online, other .chm and old .hlp manuals, and PDFs \u2014 in one offline library, with a hit count per manual.",
       "path": "Tools\\Documentation\\SuperDocs\\SuperDocs.exe",
       "help_file": "Tools\\Documentation\\SuperDocs\\SuperDocs_help.txt",
@@ -484,7 +484,7 @@
       "tags": [
         "document"
       ],
-      "version": "12",
+      "version": "13",
       "desc": "Pull tags, devices, symbols and line connections out of P&ID PDFs into tables and instrument loops. Can ask your work Copilot, through Slipstream, to double-check misread tags.",
       "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
       "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
@@ -495,7 +495,7 @@
       "tags": [
         "document"
       ],
-      "version": "3",
+      "version": "4",
       "desc": "Draw ISA-5.1 P&IDs and export them as searchable PDFs, starting from scratch, a spreadsheet, a DeltaV configuration or a P&ID Reader extraction, with standards checking as you draw.",
       "path": "Tools\\PnID\\PIDMaker\\PIDMaker.exe",
       "help_file": "Tools\\PnID\\PIDMaker\\PIDMaker_help.txt",
@@ -506,7 +506,7 @@
       "tags": [
         "document"
       ],
-      "version": "3",
+      "version": "4",
       "desc": "Pull tables and text out of images, scanned or digital PDFs, Word, PowerPoint and web pages into Excel or CSV. Works offline; nothing is uploaded.",
       "path": "Tools\\Documentation\\TableX.exe",
       "help_file": "Tools\\Documentation\\TableX_help.txt",
@@ -553,7 +553,7 @@
       "tags": [
         "ai"
       ],
-      "version": "26",
+      "version": "27",
       "desc": "An AI assistant for automation engineers: explain or fix code and PLC logic, research manuals, draft requirements and test plans, and ask about your DeltaV configuration. Runs on your PC, or on your work Copilot if you switch it.",
       "path": "Tools\\AI\\CornerCode\\CornerCode.exe",
       "help_file": "Tools\\AI\\CornerCode\\CornerCode_help.txt",
@@ -576,7 +576,7 @@
         "ai"
       ],
       "system": "",
-      "version": "3",
+      "version": "4",
       "desc": "Use the Microsoft 365 Copilot that comes with your work account as a coding assistant: chat about your files, let it plan and make changes with your approval, and undo any run.",
       "path": "Tools\\AI\\Slipstream\\Slipstream.exe",
       "help_file": "Tools\\AI\\Slipstream\\Slipstream_help.txt",
@@ -626,7 +626,7 @@
       "tags": [
         "decode"
       ],
-      "version": "6",
+      "version": "7",
       "desc": "Decompile Windows and Linux programs (.exe, ELF) into readable C code.",
       "path": "Tools\\ReverseEngineering\\Patina.exe",
       "help_file": "Tools\\ReverseEngineering\\Patina_help.txt",
@@ -652,7 +652,7 @@
       "tags": [
         "connect"
       ],
-      "version": "7",
+      "version": "8",
       "desc": "Read live values from plant equipment over 11 protocols \u2014 OPC UA, classic OPC, Modbus, Allen-Bradley, Siemens S7, MQTT and more \u2014 side by side, or stand in for a device when testing.",
       "path": "Tools\\Comms\\SuperComms\\SuperComms.exe",
       "help_file": "Tools\\Comms\\SuperComms\\SuperComms_help.txt",
@@ -680,7 +680,7 @@
         "verify"
       ],
       "system": "Syncade",
-      "version": "3",
+      "version": "4",
       "desc": "Read, compare and edit Syncade recipe libraries (.rax, .rxf) offline: see each recipe as a drawing and in plain language, trace where parameter values come from, generate design specifications, and check the interface to DeltaV.",
       "path": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe.exe",
       "help_file": "Tools\\Syncade\\SyncadeRecipe\\SyncadeRecipe_help.txt",
@@ -693,7 +693,7 @@
         "decode"
       ],
       "system": "Syncade",
-      "version": "1",
+      "version": "2",
       "desc": "Review a Syncade deployment package before it goes in: list every file with its version, check scripts and SQL against 22 rules, and compare two drops. Read-only.",
       "path": "Tools\\Syncade\\SyncadePackage\\SyncadePackage.exe",
       "help_file": "Tools\\Syncade\\SyncadePackage\\SyncadePackage_help.txt",
@@ -705,7 +705,7 @@
         "verify"
       ],
       "system": "Syncade",
-      "version": "3",
+      "version": "4",
       "desc": "Check Syncade order bills (BOP, BOM, BOE and more) and equipment exports for problems before an operator hits them, and generate equipment design specifications. Exports to Excel.",
       "path": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.exe",
       "help_file": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders_help.txt",
