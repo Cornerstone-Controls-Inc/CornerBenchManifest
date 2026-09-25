@@ -1,5 +1,5 @@
 {
-  "launcher_version": "17",
+  "launcher_version": "18",
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
   "tools": {
     "ABB Migration": "10",
@@ -50,7 +50,7 @@
     "CornerCode": "27",
     "SkillExplorer": "15",
     "Slipstream": "4",
-    "LocalModel": "1",
+    "LocalModel": "2",
     "TestPilot": "1",
     "ByteWright": "4",
     "Patina": "7",
@@ -659,13 +659,14 @@
     "LocalModel": {
       "kind": "zip",
       "file": "LocalModel.zip",
-      "sha256": "78fc7a48be50b0930a62d64de0efc2fbe82f3076aae194aedd23f97383e4eb56",
+      "sha256": "c1d2598b340882fb558852f80666e80240bbfdac8cbf8675792a93809f30622e",
       "enc": "cbpk1",
       "parts": [
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/LocalModel.zip.cbpk.000",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/LocalModel.zip.cbpk.001",
         "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/LocalModel.zip.cbpk.002"
-      ]
+      ],
+      "notes": "# v2\n- Fix package extraction decompression error by storing uncompressed GGUF model weights.\n- Accelerate installation streaming by eliminating zlib decompression overhead on large model files.\n- Standalone llama-server process orchestration and UI health monitoring.\n\n# v1\n- Initial release of LocalModel offline AI inference service."
     },
     "TestPilot": {
       "kind": "zip",
@@ -679,10 +680,10 @@
   "launcher_download": {
     "kind": "exe",
     "file": "CornerBench.exe",
-    "sha256": "d092d8f00bf19f0105c88aa35378df02f15ff4ee81ed694e2645aebca4ef5cd0",
+    "sha256": "4dff77c02e3064bb2e04bb5ea41ab92559e0fd898c7876c50aea67f6022ffdde",
     "enc": "cbpk1",
-    "version": "17",
-    "sig": "6e519fe3b637795b626ae735c8d2b84c30aea971d0b7122fd497ff136ebba127a27b95f92ac3ae7995d888aee8b31ccb923000eb2a2dce3ef0b7c6bc31b4c002",
+    "version": "18",
+    "sig": "c285054163c21961a78633076a1b0af5fd1cc73bf776d0ce1e070cf0b5aded0fcc6d9913792c62894caab1ffa7fff9403a27713f31ff6ff4531e1e30f9668905",
     "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerBench.exe.cbpk"
   }
 }
