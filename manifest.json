@@ -1,6 +1,6 @@
 {
   "launcher_version": "19",
-  "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
+  "installer_url": "https://<org>.sharepoint.com/sites/<site>/Shared%20Documents/CornerBench_Setup.exe",
   "tools": {
     "ABB Migration": "10",
     "LiveTools": "8",
@@ -51,7 +51,7 @@
     "SkillExplorer": "15",
     "Slipstream": "4",
     "LocalModel": "2",
-    "TestPilot": "1",
+    "TestPilot": "2",
     "ByteWright": "4",
     "Patina": "7",
     "CornerRDP": "11",
@@ -671,19 +671,10 @@
     "TestPilot": {
       "kind": "zip",
       "file": "TestPilot.zip",
-      "sha256": "8aaf831a3d3b3f9fad4e33a51d49b47fee58f128b7da6d23074b2b65d72e5241",
+      "sha256": "5b56b23d0bd66e6f7ccd697f1873c11ccae1e91cd44ae4a1161bd391a17b1819",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/TestPilot.zip.cbpk",
-      "notes": "## v1\n\n**Initial standalone release of TestPilot.**\n\n- **Decoupled automated testing engine.** Spun off from CornerCode's display testing prototype into a dedicated, multi-target verification workbench.\n- **Multi-target execution.** Native support for DeltaV Live graphics, direct protocol-level RDP sessions, arbitrary desktop applications, headless/isolated Qt & web viewports, and simulation mode.\n- **Direct & windowed RDP testing.** Full support for testing remote nodes both via open desktop windows (`mstsc`, `RDCMan`, `CornerRDP`) and via headless, direct-socket RDP (`rdpilot`) that streams framebuffers and dispatches inputs without touching the physical mouse or screen.\n- **Target discovery.** Automatic enumeration of open desktop windows and background processes with coordinate tracking.\n- **DeltaV Live integration.** Automatic parsing of Op2Live `TestPlan.json` test sheets with instant playbook generation for graphic displays, faceplate opening, and display navigation links.\n- **Hardware safety failsafes.** Automatic abortion of screen-driving tests if operator moves the physical mouse cursor.\n- **Visual evidence reporting.** Interactive, self-contained HTML verification reports featuring side-by-side Before/After screenshot captures, filterable verdict metrics, and zoomable evidence modals.\n- **CornerStone AI integration.** Optional visual condition verification powered by the shared AI service (Local Model, Copilot, or Claude)."
+      "notes": "## v2\n\n**Multi-Assertion Verification Suite, Native WinRT OCR & Audit Reporting.**\n\n- **Multi-Expectation Acceptance Criteria.** Steps support concurrent assertions across multiple verification kinds:\n  - `TEXT`: Case-insensitive substring, exact matching, and regex pattern evaluation.\n  - `NUMERIC`: Range bounds (`min..max`), relational operators (`>=`, `<=`, `>`, `<`), and target values with tolerance.\n  - `COLOR`: Dominant HSV color classification and RGB Euclidean distance checks.\n  - `DIFF`: Visual delta state change detection (`changed` vs `no_change`) with bounding-box calculation.\n  - `AI`: Semantic visual verification against captured regions.\n- **Native WinRT Async OCR.** Out-of-the-box Windows native text recognition using WinRT `OcrEngine` with zero extra dependencies.\n- **Non-Blocking Target Discovery.** Background worker thread with loading spinner for enumerating active desktop windows and processes.\n- **ROI Snippet Evidence Capture.** Step-level cropping and saving of evaluated regions of interest for instant visual auditing.\n- **Enhanced Standalone Audit Reports.** Responsive HTML and Markdown reports featuring step timings, individual assertion status badges, and embedded evidence screenshots.\n\n## v1\n\n- **Decoupled automated testing engine.** Spun off from CornerCode's display testing prototype into a dedicated, multi-target verification workbench.\n- **Multi-target execution.** Native support for DeltaV Live graphics, direct protocol-level RDP sessions, arbitrary desktop applications, headless/isolated Qt & web viewports, and simulation mode.\n- **Direct & windowed RDP testing.** Full support for testing remote nodes both via open desktop windows (`mstsc`, `RDCMan`, `CornerRDP`) and via headless, direct-socket RDP (`rdpilot`) that streams framebuffers and dispatches inputs without touching the physical mouse or screen.\n- **Target discovery.** Automatic enumeration of open desktop windows and background processes with coordinate tracking.\n- **DeltaV Live integration.** Automatic parsing of Op2Live `TestPlan.json` test sheets with instant playbook generation for graphic displays, faceplate opening, and display navigation links.\n- **Hardware safety failsafes.** Automatic abortion of screen-driving tests if operator moves the physical mouse cursor.\n- **Visual evidence reporting.** Interactive, self-contained HTML verification reports featuring side-by-side Before/After screenshot captures, filterable verdict metrics, and zoomable evidence modals.\n- **CornerStone AI integration.** Optional visual condition verification powered by the shared AI service (Local Model, Copilot, or Claude)."
     }
-  },
-  "launcher_download": {
-    "kind": "exe",
-    "file": "CornerBench.exe",
-    "sha256": "02685306514cbd6a80a0277b58f58f701c7d36aabe341727d4eed9374c7ca257",
-    "enc": "cbpk1",
-    "version": "19",
-    "sig": "4acd8fba8b559a30f05c7e8360b85c2497291075abd09b119b580fa113c801541af042a849e37f04f60bafd5507306b50cd94d810ed3a6135414334768817f08",
-    "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerBench.exe.cbpk"
   }
 }
