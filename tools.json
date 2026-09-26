@@ -585,8 +585,7 @@
     {
       "name": "LocalModel",
       "tags": [
-        "ai",
-        "service"
+        "ai"
       ],
       "system": "",
       "version": "2",
@@ -602,8 +601,8 @@
         "ai"
       ],
       "system": "DeltaV",
-      "version": "1",
-      "desc": "Automated GUI & display test runner: open screens, verify labels and faceplates, execute navigation playbooks, and generate Before/After visual comparison reports.",
+      "version": "2",
+      "desc": "Automated GUI & display test runner: open screens, verify labels and faceplates, execute multi-expectation visual playbooks, and generate standalone audit reports.",
       "path": "Tools\\DeltaV\\TestPilot\\TestPilot.exe",
       "help_file": "Tools\\DeltaV\\TestPilot\\TestPilot_help.txt",
       "icon": "Tools\\DeltaV\\TestPilot\\testpilot.ico"
