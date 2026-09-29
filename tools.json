@@ -544,7 +544,7 @@
         "verify",
         "legacy"
       ],
-      "version": "2 [Superceded by SpecManager]",
+      "version": "2",
       "desc": "[Superceded by SpecManager] FAT & Punch List Manager. Now integrated into SpecManager with FRS narrative ingestion and qualification reporting.",
       "path": "Tools\\Documentation\\PunchList\\PunchList.exe",
       "help_file": "Tools\\Documentation\\PunchList\\PunchList_help.txt",
