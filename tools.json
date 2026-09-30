@@ -531,7 +531,7 @@
         "verify",
         "testing"
       ],
-      "version": "1.1",
+      "version": "1.2",
       "desc": "Specification, Qualification & Punch List Workstation: ingest control narratives, audit FRS quality, generate FAT/IQ/OQ qualification protocols, track punch lists with bi-directional requirement traceability, and draft weekly status/site trip reports.",
       "path": "Tools\\Documentation\\SpecManager\\SpecManager.exe",
       "help_file": "Tools\\Documentation\\SpecManager\\SpecManager_help.txt",
@@ -580,7 +580,7 @@
         "ai"
       ],
       "system": "",
-      "version": "5",
+      "version": "6",
       "desc": "Use the Microsoft 365 Copilot that comes with your work account as a coding assistant: chat about your files, let it plan and make changes with your approval, and undo any run.",
       "path": "Tools\\AI\\Slipstream\\Slipstream.exe",
       "help_file": "Tools\\AI\\Slipstream\\Slipstream_help.txt",
