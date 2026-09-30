@@ -45,8 +45,7 @@
     "P&ID Maker": "4",
     "TableX": "4",
     "FnR": "12",
-    "SpecManager": "1.0",
-    "PunchList": "2",
+    "SpecManager": "1.1",
     "CornerCast": "2",
     "MP4Transcribe": "4",
     "SkillExplorer": "15",
@@ -60,11 +59,13 @@
     "InstrumentLab": "3",
     "SyncadeRecipe": "4",
     "SyncadePackage": "2",
-    "SyncadeOrders": "4"
+    "SyncadeOrders": "4",
+    "BIExpert": "1"
   },
   "retired_tools": [
     "CornerCode",
-    "DvStation"
+    "DvStation",
+    "PunchList"
   ],
   "tool_downloads": {
     "ABB Migration": {
@@ -693,6 +694,14 @@
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCast.zip.cbpk",
       "notes": "# CornerCast Release Notes\n\n## Version 2.0\n- **Standard ToolSuite UI Format:** Migrated window to canonical `JobWindow` standard with declarative `Field` specifications, progress meter, `LogView`, and sidecar dialogs (`Help`, `Revisions`).\n- **Integrated Audio Player:** Added inline `[\u25b6 Play Audio]` controls with `QMediaPlayer` / `QAudioOutput` to preview generated walkthrough audio directly within the studio.\n- **CornerBench Livery & Theming:** Full integration with Cornerstone dark theme and design language.\n\n## Version 1.0 (Initial Release)\n- **Master Instructor Explainer Audio Engine:** Converts technical manuals into dense, concept-grounded spoken walkthroughs with zero morning-radio fluff.\n- **CornerBench Standard AI Toggle:** Integrated support for Slipstream Copilot, Local Model (Corner Code llama-server / Ollama), and Claude 3.7 Sonnet API.\n- **Dual TTS Backends:**\n  - Cloud Generative Neural (Edge-TTS, Andrew & Ava Multilingual).\n  - 100% Air-Gapped Offline Neural (Kokoro-82M ONNX, runs purely on CPU).\n- **Industrial Phonetics Engine:** Automatic normalization of industrial acronyms and trademarks (`Sync-aid`, `SC Consumer`, `Sys-WOW sixty-four`).\n- **Interactive Multi-Chapter Web Player:** Emits standalone, responsive, dark-mode `player.html` with playlist controls and synchronized WebVTT subtitles."
+    },
+    "BIExpert": {
+      "kind": "zip",
+      "file": "BIExpert.zip",
+      "sha256": "c6c45b9bfb9ede847767be7ccd0565036b52a7cbe7c8cacff74d23a3889e15d6",
+      "enc": "cbpk1",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/BIExpert.zip.cbpk",
+      "notes": "# BIExpert Release Notes\n\n## Version 1.0 (Initial Release)\n\n- **Unified Business Integrator Studio:** Replaces the fragmented XML files and legacy WinForms SC Consumer admin with a single, modern dark-themed Qt studio.\n- **Visual Pipeline Studio:** Interactive flowcharts rendering `<ExecutionGroup>` pipelines, step badges, data dependencies, and condition gates.\n- **Deep Step Inspector:** Structured tables for Arguments, XML Arguments, execution preconditions, and error-handling triggers with syntax-formatted XML snippets.\n- **Offline XSLT Sandbox:** 100% offline transformation laboratory powered by `lxml`, supporting parameter injection (`XslTransformWithParams`), namespace stripping, and live XPath verification.\n- **Queue & Payload Workbench:** Automated detection and one-click repair for common ERP/MES failure modes (null material types, UOM mismatches, namespace interference).\n- **Static Analysis & Preflight Engine:** Automated auditing of execution group configurations, catching missing web services, undefined operations, broken `ResultID` references, and empty conditions."
     }
   }
 }
