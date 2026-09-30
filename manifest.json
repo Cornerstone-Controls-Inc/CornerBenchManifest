@@ -47,7 +47,7 @@
     "FnR": "12",
     "SpecManager": "1.0",
     "PunchList": "2",
-    "CornerCast": "1",
+    "CornerCast": "2",
     "MP4Transcribe": "4",
     "SkillExplorer": "15",
     "Slipstream": "5",
@@ -689,10 +689,10 @@
     "CornerCast": {
       "kind": "zip",
       "file": "CornerCast.zip",
-      "sha256": "c0f2ac43db0d4439dbdba312ffade68cf6e040b4563e5bab474638ef6a5cb99b",
+      "sha256": "45d3f71d756e4315963451e7e44d1cf8f7c2c6965fae0567cee46eb28dda651a",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerCast.zip.cbpk",
-      "notes": "# CornerCast Release Notes\n\n## Version 1.0 (Initial Release)\n\n- **Master Instructor Explainer Audio Engine:** Converts technical manuals into dense, concept-grounded spoken walkthroughs with zero morning-radio fluff.\n- **CornerBench Standard AI Toggle:** Integrated support for Slipstream Copilot, Local Model (Corner Code llama-server / Ollama), and Claude 3.7 Sonnet API.\n- **Dual TTS Backends:**\n  - Cloud Generative Neural (Edge-TTS, Andrew & Ava Multilingual).\n  - 100% Air-Gapped Offline Neural (Kokoro-82M ONNX, runs purely on CPU).\n- **Industrial Phonetics Engine:** Automatic normalization of industrial acronyms and trademarks (`Sync-aid`, `SC Consumer`, `Sys-WOW sixty-four`).\n- **Interactive Multi-Chapter Web Player:** Emits standalone, responsive, dark-mode `player.html` with playlist controls and synchronized WebVTT subtitles."
+      "notes": "# CornerCast Release Notes\n\n## Version 2.0\n- **Standard ToolSuite UI Format:** Migrated window to canonical `JobWindow` standard with declarative `Field` specifications, progress meter, `LogView`, and sidecar dialogs (`Help`, `Revisions`).\n- **Integrated Audio Player:** Added inline `[\u25b6 Play Audio]` controls with `QMediaPlayer` / `QAudioOutput` to preview generated walkthrough audio directly within the studio.\n- **CornerBench Livery & Theming:** Full integration with Cornerstone dark theme and design language.\n\n## Version 1.0 (Initial Release)\n- **Master Instructor Explainer Audio Engine:** Converts technical manuals into dense, concept-grounded spoken walkthroughs with zero morning-radio fluff.\n- **CornerBench Standard AI Toggle:** Integrated support for Slipstream Copilot, Local Model (Corner Code llama-server / Ollama), and Claude 3.7 Sonnet API.\n- **Dual TTS Backends:**\n  - Cloud Generative Neural (Edge-TTS, Andrew & Ava Multilingual).\n  - 100% Air-Gapped Offline Neural (Kokoro-82M ONNX, runs purely on CPU).\n- **Industrial Phonetics Engine:** Automatic normalization of industrial acronyms and trademarks (`Sync-aid`, `SC Consumer`, `Sys-WOW sixty-four`).\n- **Interactive Multi-Chapter Web Player:** Emits standalone, responsive, dark-mode `player.html` with playlist controls and synchronized WebVTT subtitles."
     }
   }
 }
