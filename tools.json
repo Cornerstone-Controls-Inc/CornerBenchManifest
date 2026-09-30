@@ -475,7 +475,7 @@
         "ai"
       ],
       "version": "5",
-      "desc": "Search all your help files at once — DeltaV Books Online, other .chm and old .hlp manuals, and PDFs — in one offline library, with a hit count per manual and an AI assistant to answer questions citing documentation topics.",
+      "desc": "Search all your help files at once \u2014 DeltaV Books Online, other .chm and old .hlp manuals, and PDFs \u2014 in one offline library, with a hit count per manual and an AI assistant to answer questions citing documentation topics.",
       "path": "Tools\\Documentation\\SuperDocs\\SuperDocs.exe",
       "help_file": "Tools\\Documentation\\SuperDocs\\SuperDocs_help.txt",
       "icon": "Tools\\Documentation\\SuperDocs\\SuperDocs.ico"
@@ -531,24 +531,11 @@
         "verify",
         "testing"
       ],
-      "version": "1.0",
+      "version": "1.1",
       "desc": "Specification, Qualification & Punch List Workstation: ingest control narratives, audit FRS quality, generate FAT/IQ/OQ qualification protocols, track punch lists with bi-directional requirement traceability, and draft weekly status/site trip reports.",
       "path": "Tools\\Documentation\\SpecManager\\SpecManager.exe",
       "help_file": "Tools\\Documentation\\SpecManager\\SpecManager_help.txt",
       "icon": "Tools\\Documentation\\SpecManager\\SpecManager.ico"
-    },
-    {
-      "name": "PunchList",
-      "tags": [
-        "document",
-        "verify",
-        "legacy"
-      ],
-      "version": "2",
-      "desc": "[Superceded by SpecManager] FAT & Punch List Manager. Now integrated into SpecManager with FRS narrative ingestion and qualification reporting.",
-      "path": "Tools\\Documentation\\PunchList\\PunchList.exe",
-      "help_file": "Tools\\Documentation\\PunchList\\PunchList_help.txt",
-      "icon": "Tools\\Documentation\\PunchList\\PunchList.ico"
     }
   ],
   "AI": [
@@ -557,7 +544,7 @@
       "tags": [
         "ai",
         "document",
-        "training"
+        "train"
       ],
       "version": "2",
       "desc": "Industrial audio walkthrough & podcast studio. Converts SOPs and manuals into spoken masterclasses using conceptual mental models and offline neural speech.",
@@ -726,6 +713,19 @@
       "path": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.exe",
       "help_file": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders_help.txt",
       "icon": "Tools\\Syncade\\SyncadeOrders\\SyncadeOrders.ico"
+    },
+    {
+      "name": "BIExpert",
+      "tags": [
+        "verify",
+        "decode"
+      ],
+      "system": "Syncade",
+      "version": "1",
+      "desc": "Business Integrator Studio & Control Cockpit: visually trace and inspect DynamicWS pipelines, test XSLT transformations offline, diagnose and repair queue message payloads, and validate integration configs.",
+      "path": "Tools\\Syncade\\BIExpert\\BIExpert.exe",
+      "help_file": "Tools\\Syncade\\BIExpert\\BIExpert_help.txt",
+      "icon": "Tools\\Syncade\\BIExpert\\BIExpert.ico"
     }
   ]
 }
