@@ -80,8 +80,8 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "16",
-      "desc": "Edit DeltaV FHX files in a tree view, with advanced find and replace, AI-assisted scripted edits, and DeltaV Expression Workbench with autocommenting and syntax checking.",
+      "version": "17",
+      "desc": "Edit DeltaV FHX files in a tree view, with advanced find and replace, AI-assisted scripted edits, audit report generation (HTML/CSV/MD), and DeltaV Expression Workbench with autocommenting and syntax checking.",
       "path": "Tools\\DeltaV\\FHXEdit\\FHXEdit.exe",
       "help_file": "Tools\\DeltaV\\FHXEdit\\FHXEdit_help.txt",
       "icon": "Tools\\DeltaV\\FHXEdit\\FHXEdit.ico"
@@ -721,7 +721,7 @@
         "decode"
       ],
       "system": "Syncade",
-      "version": "5",
+      "version": "6",
       "desc": "Business Integrator Studio & Control Cockpit: visually trace and inspect DynamicWS pipelines, test XSLT transformations offline, diagnose and repair queue message payloads, and validate integration configs.",
       "path": "Tools\\Syncade\\BIExpert\\BIExpert.exe",
       "help_file": "Tools\\Syncade\\BIExpert\\BIExpert_help.txt",
