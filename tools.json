@@ -531,7 +531,7 @@
         "verify",
         "testing"
       ],
-      "version": "1.2",
+      "version": "1.3",
       "desc": "Specification, Qualification & Punch List Workstation: ingest control narratives, audit FRS quality, generate FAT/IQ/OQ qualification protocols, track punch lists with bi-directional requirement traceability, and draft weekly status/site trip reports.",
       "path": "Tools\\Documentation\\SpecManager\\SpecManager.exe",
       "help_file": "Tools\\Documentation\\SpecManager\\SpecManager_help.txt",
@@ -721,7 +721,7 @@
         "decode"
       ],
       "system": "Syncade",
-      "version": "3",
+      "version": "4",
       "desc": "Business Integrator Studio & Control Cockpit: visually trace and inspect DynamicWS pipelines, test XSLT transformations offline, diagnose and repair queue message payloads, and validate integration configs.",
       "path": "Tools\\Syncade\\BIExpert\\BIExpert.exe",
       "help_file": "Tools\\Syncade\\BIExpert\\BIExpert_help.txt",
