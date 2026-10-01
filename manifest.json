@@ -45,7 +45,7 @@
     "P&ID Maker": "4",
     "TableX": "4",
     "FnR": "12",
-    "SpecManager": "1.2",
+    "SpecManager": "1.3",
     "CornerCast": "2",
     "MP4Transcribe": "4",
     "SkillExplorer": "15",
@@ -60,7 +60,7 @@
     "SyncadeRecipe": "4",
     "SyncadePackage": "2",
     "SyncadeOrders": "4",
-    "BIExpert": "3"
+    "BIExpert": "4"
   },
   "retired_tools": [
     "CornerCode",
@@ -698,10 +698,10 @@
     "BIExpert": {
       "kind": "zip",
       "file": "BIExpert.zip",
-      "sha256": "5138ff34798cfd7e41fa97ee4fda35e13182c59af63da129e69ca4919fda51de",
+      "sha256": "b40528bd88c5b3f480b7c12db75b0e4926acf21a83d5b2520bded4303606221a",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/BIExpert.zip.cbpk",
-      "notes": "# BIExpert Release Notes\n\n## Version 3.0\n\n- **Standard Library XML Packaging:** Added `-CollectSubmodules xml` to build specification to ensure `xml.etree`, `xml.parsers.expat`, and all XML submodules are bundled in the distribution.\n\n## Version 2.0\n\n- **Dependency Packaging Fix:** Bundled standard library `xml.etree` / `xml.parsers.expat` in the frozen binary package.\n\n## Version 1.0 (Initial Release)\n\n- **Unified Business Integrator Studio:** Replaces the fragmented XML files and legacy WinForms SC Consumer admin with a single, modern dark-themed Qt studio.\n- **Visual Pipeline Studio:** Interactive flowcharts rendering `<ExecutionGroup>` pipelines, step badges, data dependencies, and condition gates.\n- **Deep Step Inspector:** Structured tables for Arguments, XML Arguments, execution preconditions, and error-handling triggers with syntax-formatted XML snippets.\n- **Offline XSLT Sandbox:** 100% offline transformation laboratory powered by `lxml`, supporting parameter injection (`XslTransformWithParams`), namespace stripping, and live XPath verification.\n- **Queue & Payload Workbench:** Automated detection and one-click repair for common ERP/MES failure modes (null material types, UOM mismatches, namespace interference).\n- **Static Analysis & Preflight Engine:** Automated auditing of execution group configurations, catching missing web services, undefined operations, broken `ResultID` references, and empty conditions."
+      "notes": "# BIExpert Release Notes\n\n## Version 4.0\n\n- **Suite Frameless UI & Livery Redesign:** Redesigned to follow the standard CornerStone ToolSuite GUI format (matching TestPilot and Slipstream) with frameless window chrome and a custom Amethyst / Royal Violet on Midnight Obsidian palette with Cyber Cyan and Emerald accents.\n- **Workflow Stage Navigation:** Added 4-stage segmented workflow header (1. Explore & Flow, 2. Direct XML Editor, 3. Sandbox & Diagnostics, 4. Audit & Reports) with live active pipeline and health status pills.\n- **Full Pipeline & Step Authoring Suite:**\n  - Create new ExecutionGroup pipelines with templates (Inbound ERP download, Outbound MES dispatch).\n  - Add, duplicate, delete, and reorder steps (with auto-reindexing).\n  - Interactive modal builders for Arguments, XML Arguments, Preconditions, and Error Handlers.\n  - Two-way synchronized XML code editor with syntax formatting and one-click apply to visual studio.\n  - Safe saving with automatic timestamped backups (`.backups/`) to prevent production config corruption.\n- **HTML Report Generation:**\n  - Standalone, printable HTML Pipeline Specification reports with embedded SVG flowcharts, step specs, and argument matrices.\n  - Standalone, printable HTML Validation & Health Audit reports with severity scores and remediation guidance.\n\n## Version 3.0\n\n- **Standard Library XML Packaging:** Added `-CollectSubmodules xml` to build specification to ensure `xml.etree`, `xml.parsers.expat`, and all XML submodules are bundled in the distribution.\n\n## Version 2.0\n\n- **Dependency Packaging Fix:** Bundled standard library `xml.etree` / `xml.parsers.expat` in the frozen binary package.\n\n## Version 1.0 (Initial Release)\n\n- **Unified Business Integrator Studio:** Replaces the fragmented XML files and legacy WinForms SC Consumer admin with a single, modern dark-themed Qt studio.\n- **Visual Pipeline Studio:** Interactive flowcharts rendering `<ExecutionGroup>` pipelines, step badges, data dependencies, and condition gates.\n- **Deep Step Inspector:** Structured tables for Arguments, XML Arguments, execution preconditions, and error-handling triggers with syntax-formatted XML snippets.\n- **Offline XSLT Sandbox:** 100% offline transformation laboratory powered by `lxml`, supporting parameter injection (`XslTransformWithParams`), namespace stripping, and live XPath verification.\n- **Queue & Payload Workbench:** Automated detection and one-click repair for common ERP/MES failure modes (null material types, UOM mismatches, namespace interference).\n- **Static Analysis & Preflight Engine:** Automated auditing of execution group configurations, catching missing web services, undefined operations, broken `ResultID` references, and empty conditions."
     }
   }
 }
