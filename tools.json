@@ -80,8 +80,8 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "15",
-      "desc": "Edit DeltaV FHX files in a tree view, with advanced find and replace, bulk delete, split, trim, partial export, and DeltaV Expression Workbench with AI logic drafting and deterministic syntax checking.",
+      "version": "16",
+      "desc": "Edit DeltaV FHX files in a tree view, with advanced find and replace, AI-assisted scripted edits, and DeltaV Expression Workbench with autocommenting and syntax checking.",
       "path": "Tools\\DeltaV\\FHXEdit\\FHXEdit.exe",
       "help_file": "Tools\\DeltaV\\FHXEdit\\FHXEdit_help.txt",
       "icon": "Tools\\DeltaV\\FHXEdit\\FHXEdit.ico"
