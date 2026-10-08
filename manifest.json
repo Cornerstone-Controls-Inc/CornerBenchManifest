@@ -47,7 +47,7 @@
     "FnR": "13",
     "SpecManager": "1.5",
     "CornerCast": "3",
-    "MP4Transcribe": "4",
+    "MP4Transcribe": "5",
     "SkillExplorer": "16",
     "Slipstream": "9",
     "LocalModel": "3",
@@ -430,13 +430,82 @@
     "MP4Transcribe": {
       "kind": "zip",
       "file": "MP4Transcribe.zip",
-      "sha256": "066b6a27963b696dabc0d87ff8a9a7edbb6f4fb18463e1191c7ed358824620c7",
+      "sha256": "367e64a31d03040e1e5a57cf887f2b55a74b71c75a9a9bccb39c4364f2307290",
       "enc": "cbpk1",
       "parts": [
-        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.zip.cbpk.000",
-        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.zip.cbpk.001"
+        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.v5.zip.cbpk.000",
+        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.v5.zip.cbpk.001"
       ],
-      "notes": "# v4\nCleanup\n\n# v3\nCleanup\n\n# MP4Transcribe v2\n\n- Fixed washed-out text in the status log after switching to the dark theme. The log's\n  colour tags were applied once at startup against the light background and never\n  re-applied on a theme switch, leaving \"muted\" entries barely legible on dark.\n\n# MP4Transcribe v1\n\n- First release.\n- Offline video/audio transcription with OpenAI Whisper (FFMPEG bundled).\n- Batch queue (files or whole folders), real cancellation, and .txt/.srt/.vtt output.\n- Language selection + translate-to-English, automatic GPU (CUDA) detection.\n- Light/Dark theme; settings and window size are remembered.\n\n_Edit this when you bump the version; the launcher shows it as \"What's new\"\nafter an in-place update._"
+      "notes": "# v5\n\n- **Updates download only what changed.** The tool now also ships in parts (the app, Whisper, ffmpeg, PyTorch and the rest of the runtime), so after this one a normal update fetches the app part, tens of MB, instead of the whole 2.8 GB package.\n\n# v4\nCleanup\n\n# v3\nCleanup\n\n# MP4Transcribe v2\n\n- Fixed washed-out text in the status log after switching to the dark theme. The log's\n  colour tags were applied once at startup against the light background and never\n  re-applied on a theme switch, leaving \"muted\" entries barely legible on dark.\n\n# MP4Transcribe v1\n\n- First release.\n- Offline video/audio transcription with OpenAI Whisper (FFMPEG bundled).\n- Batch queue (files or whole folders), real cancellation, and .txt/.srt/.vtt output.\n- Language selection + translate-to-English, automatic GPU (CUDA) detection.\n- Light/Dark theme; settings and window size are remembered.\n\n_Edit this when you bump the version; the launcher shows it as \"What's new\"\nafter an in-place update._",
+      "components": [
+        {
+          "id": "app",
+          "sha256": "dbd9b72335068053939d3cd0f41642da623e3dcda2b4c389ad2c568745ca7b9b",
+          "enc": "cbpk1",
+          "include": [
+            "MP4Transcribe.exe",
+            "MP4Transcribe.exe.sig",
+            "MP4Transcribe.ico",
+            "MP4Transcribe_help.txt",
+            "_internal/shared.pyd"
+          ],
+          "bytes": 50699659,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.app.dbd9b7233506.zip.cbpk"
+        },
+        {
+          "id": "whisper",
+          "sha256": "1d46c206c5601834830254393169e53aad089ea560fa353741d05f1a5c03dc69",
+          "enc": "cbpk1",
+          "include": [
+            "_internal/whisper/**",
+            "_internal/openai_whisper-*/**"
+          ],
+          "bytes": 797689,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.whisper.1d46c206c560.zip.cbpk"
+        },
+        {
+          "id": "ffmpeg",
+          "sha256": "148254bab9e6b586d4f2962bae841deee4913f636c63370bdf80cfafa4df1edd",
+          "enc": "cbpk1",
+          "include": [
+            "_internal/ffmpeg_bundle/**",
+            "_internal/avcodec-*.dll",
+            "_internal/avformat-*.dll",
+            "_internal/avfilter-*.dll",
+            "_internal/avdevice-*.dll",
+            "_internal/avutil-*.dll",
+            "_internal/swresample-*.dll",
+            "_internal/swscale-*.dll"
+          ],
+          "bytes": 131901662,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.ffmpeg.148254bab9e6.zip.cbpk"
+        },
+        {
+          "id": "torch",
+          "sha256": "5315ab1b99456f15f64cdc4878f7eb7827e1ac5b36b6c0c77d867998946ed592",
+          "enc": "cbpk1",
+          "include": [
+            "_internal/torch/**",
+            "_internal/torchaudio/**",
+            "_internal/torchgen/**"
+          ],
+          "bytes": 2531335969,
+          "parts": [
+            "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.torch.5315ab1b9945.zip.cbpk.000",
+            "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.torch.5315ab1b9945.zip.cbpk.001"
+          ]
+        },
+        {
+          "id": "deps",
+          "sha256": "0992f71b1c776c97774a1dcdb8b5a570d8e6f1ccde2aeb2794ed0f54b85027ce",
+          "enc": "cbpk1",
+          "include": [
+            "**"
+          ],
+          "bytes": 67725662,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/MP4Transcribe.deps.0992f71b1c77.zip.cbpk"
+        }
+      ]
     },
     "OperateTools": {
       "kind": "zip",

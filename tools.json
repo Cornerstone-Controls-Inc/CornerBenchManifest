@@ -557,7 +557,7 @@
       "tags": [
         "document"
       ],
-      "version": "4",
+      "version": "5",
       "desc": "Turn video and audio recordings into text or subtitles, offline: batch whole folders, pick the language or translate to English. Nothing is uploaded.",
       "path": "Tools\\AI\\MP4Transcribe\\MP4Transcribe.exe",
       "help_file": "Tools\\AI\\MP4Transcribe\\MP4Transcribe_help.txt",
