@@ -721,7 +721,7 @@
         "decode"
       ],
       "system": "Syncade",
-      "version": "10",
+      "version": "11",
       "desc": "Business Integrator Studio & Control Cockpit: visually trace and inspect DynamicWS pipelines, test XSLT transformations offline, diagnose and repair queue message payloads, and validate integration configs.",
       "path": "Tools\\Syncade\\BIExpert\\BIExpert.exe",
       "help_file": "Tools\\Syncade\\BIExpert\\BIExpert_help.txt",
