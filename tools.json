@@ -546,7 +546,7 @@
         "document",
         "train"
       ],
-      "version": "4",
+      "version": "5",
       "desc": "Industrial audio walkthrough & podcast studio. Converts SOPs and manuals into spoken masterclasses using conceptual mental models and offline neural speech.",
       "path": "Tools\\AI\\CornerCast\\CornerCast.exe",
       "help_file": "Tools\\AI\\CornerCast\\CornerCast_help.txt",
