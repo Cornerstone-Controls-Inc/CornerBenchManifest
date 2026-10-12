@@ -213,7 +213,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "38",
+      "version": "39",
       "desc": "Convert DeltaV Operate graphics to DeltaV Live in a guided, step-by-step process, with mapping review, VBA translation, a design specification and validation tests.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
