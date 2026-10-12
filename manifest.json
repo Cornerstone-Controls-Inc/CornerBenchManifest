@@ -27,7 +27,7 @@
     "DVNormalizer": "2",
     "UpgradeScout": "4",
     "PvxIO": "9",
-    "PvxPDX": "13",
+    "PvxPDX": "14",
     "PDXDiff": "7",
     "FSTDecompiler": "8",
     "ODFDiff": "7",
@@ -46,7 +46,7 @@
     "TableX": "5",
     "FnR": "13",
     "SpecManager": "1.5",
-    "CornerCast": "6",
+    "CornerCast": "7",
     "MP4Transcribe": "5",
     "SkillExplorer": "16",
     "Slipstream": "9",
@@ -212,10 +212,10 @@
     "PvxPDX": {
       "kind": "zip",
       "file": "PvxPDX.zip",
-      "sha256": "a446629ecb69c923c546fb3626b4bacd5a67d2bd3dc0f019eb9f8487f0db7681",
+      "sha256": "441aedb754806c10b0a2b42fdfb932cd10126762b6ee107a8a2fd3c0dd783b1a",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxPDX.zip.cbpk",
-      "notes": "## v13\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **The suite's window.** It opens in the suite's frameless window, with the coloured title bar and the light/dark switch.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n\n## v11\n\nOff Tkinter, in cyan on the plum decoding ground.\n\n- **A failure says which step it happened in.** The six extraction steps run in\n  the same order with the same arguments as before, but a failure now names the\n  stage it stopped at. The old message box did not, and the log had to be read\n  to find out.\n- **The output folder is created rather than demanded.** Choosing \"a new folder\n  next to the PDX\" used to fail unless you had already made it.\n- **An empty table prefix is still refused**, deliberately, rather than quietly\n  defaulting \u2014 a prefix silently replaced extracts the wrong tables and says\n  nothing.\n- **The window is the shared job window**, so disabling controls during a run no\n  longer depends on a hand-maintained list of widgets that every new control had\n  to be added to.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v10\nCleanup\n\n# v9\nCleanup\n\n# v8\n- Adds a schema-aware catalog step after the query tables step: table, column and\n  index counts, device_tag-keyed tables, and controller count are summarized into\n  a new `Catalog/` output.\n- Fixes several generated alarm and description queries where a `user_type`\n  comparison against `GROUP` was quoted wrong and never matched, plus other\n  quoting bugs in the generated SQL.\n\n# v7\nFirst release in the suite, carried over from the standalone ProvoxPDX Parser\nwith the same extraction pipeline."
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PvxPDX.v14.zip.cbpk",
+      "notes": "## v14\n\n- **Fix Pandas Copy-on-Write ChainedAssignmentError.** Eliminated false-positive `ChainedAssignmentError` warnings during FST and Operation table extractions under newer Pandas versions (Pandas 3.0+ / Copy-on-Write) and Nuitka-compiled execution.\n\n## v13\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **The suite's window.** It opens in the suite's frameless window, with the coloured title bar and the light/dark switch.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n\n## v11\n\nOff Tkinter, in cyan on the plum decoding ground.\n\n- **A failure says which step it happened in.** The six extraction steps run in\n  the same order with the same arguments as before, but a failure now names the\n  stage it stopped at. The old message box did not, and the log had to be read\n  to find out.\n- **The output folder is created rather than demanded.** Choosing \"a new folder\n  next to the PDX\" used to fail unless you had already made it.\n- **An empty table prefix is still refused**, deliberately, rather than quietly\n  defaulting \u2014 a prefix silently replaced extracts the wrong tables and says\n  nothing.\n- **The window is the shared job window**, so disabling controls during a run no\n  longer depends on a hand-maintained list of widgets that every new control had\n  to be added to.\n- **A build fault that stopped some tools opening at all.** The suite compiles its shared code into one extension module, which the packager cannot see inside, so a standard-library module imported only from there was left out of the bundle entirely and the exe died before drawing anything. What the compiled code imports is now worked out from the sources rather than listed by hand.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v10\nCleanup\n\n# v9\nCleanup\n\n# v8\n- Adds a schema-aware catalog step after the query tables step: table, column and\n  index counts, device_tag-keyed tables, and controller count are summarized into\n  a new `Catalog/` output.\n- Fixes several generated alarm and description queries where a `user_type`\n  comparison against `GROUP` was quoted wrong and never matched, plus other\n  quoting bugs in the generated SQL.\n\n# v7\nFirst release in the suite, carried over from the standalone ProvoxPDX Parser\nwith the same extraction pipeline."
     },
     "PDXDiff": {
       "kind": "zip",
