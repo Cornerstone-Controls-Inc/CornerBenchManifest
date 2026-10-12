@@ -312,7 +312,7 @@
         "decode"
       ],
       "system": "Provox",
-      "version": "13",
+      "version": "14",
       "desc": "Extract tables, FSTs, operations and queries from Provox PDX files into readable output files.",
       "path": "Tools\\Provox\\PvxPDX\\PvxPDX.exe",
       "help_file": "Tools\\Provox\\PvxPDX\\PvxPDX_help.txt",
@@ -546,7 +546,7 @@
         "document",
         "train"
       ],
-      "version": "6",
+      "version": "7",
       "desc": "Industrial audio walkthrough & podcast studio. Converts SOPs and manuals into spoken masterclasses using conceptual mental models and offline neural speech.",
       "path": "Tools\\AI\\CornerCast\\CornerCast.exe",
       "help_file": "Tools\\AI\\CornerCast\\CornerCast_help.txt",
