@@ -213,7 +213,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "39",
+      "version": "40",
       "desc": "Convert DeltaV Operate graphics to DeltaV Live in a guided, step-by-step process, with mapping review, VBA translation, a design specification and validation tests.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -546,7 +546,7 @@
         "train",
         "ai"
       ],
-      "version": "4",
+      "version": "5",
       "desc": "Studio-grade screen recorder & video editor for engineering demos: canvas framing, multi-window capture, smart dialog tracking, speed adjustment, and offline AI subtitles.",
       "path": "Tools\\AI\\DemoCraft\\DemoCraft.exe",
       "help_file": "Tools\\AI\\DemoCraft\\DemoCraft_help.txt",
