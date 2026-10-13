@@ -771,7 +771,7 @@
     "DemoCraft": {
       "kind": "zip",
       "file": "DemoCraft.zip",
-      "sha256": "aa57abc73b731d93c486b5848fb47ad6efdfb26dca848d058e6dd454f7585eb2",
+      "sha256": "681abac465d6eba1b4f62c289604aeb3b05841d561f1fe2d87f56a677624aaa3",
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DemoCraft.v1.zip.cbpk"
     }
