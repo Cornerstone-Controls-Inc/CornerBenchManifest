@@ -348,7 +348,7 @@
         "verify"
       ],
       "system": "Provox",
-      "version": "8",
+      "version": "9",
       "desc": "Compare two versions of an HMI configuration and see the changes as screen overlays, interactive HTML reports and an Excel change log.",
       "path": "Tools\\Provox\\ODFDiff\\ODFDiff.exe",
       "help_file": "Tools\\Provox\\ODFDiff\\ODFDiff_help.txt",
