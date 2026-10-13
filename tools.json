@@ -20,7 +20,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "9",
+      "version": "10",
       "desc": "Report on, edit and bulk-change DeltaV Live graphics (.ahc): find and replace, thumbnails, compare, library analysis and translation.",
       "path": "Tools\\DeltaV\\LiveTools\\LiveTools.exe",
       "help_file": "Tools\\DeltaV\\LiveTools\\LiveTools_help.txt",
@@ -593,7 +593,7 @@
         "ai"
       ],
       "system": "",
-      "version": "9",
+      "version": "10",
       "desc": "Use the Microsoft 365 Copilot that comes with your work account as a coding assistant: chat about your files, let it plan and make changes with your approval, and undo any run.",
       "path": "Tools\\AI\\Slipstream\\Slipstream.exe",
       "help_file": "Tools\\AI\\Slipstream\\Slipstream_help.txt",
@@ -623,6 +623,19 @@
       "path": "Tools\\DeltaV\\TestPilot\\TestPilot.exe",
       "help_file": "Tools\\DeltaV\\TestPilot\\TestPilot_help.txt",
       "icon": "Tools\\DeltaV\\TestPilot\\testpilot.ico"
+    },
+    {
+      "name": "Axiom",
+      "tags": [
+        "ai",
+        "edit",
+        "verify"
+      ],
+      "version": "1",
+      "desc": "High-performance air-gapped deterministic inference assistant: sub-millisecond AST script synthesis, zero GPU footprint, and live GxP audit telemetry for DeltaV and MES.",
+      "path": "Tools\\AI\\Axiom\\Axiom.exe",
+      "help_file": "Tools\\AI\\Axiom\\Axiom_help.txt",
+      "icon": "Tools\\AI\\Axiom\\Axiom.ico"
     }
   ],
   "Reverse Engineering": [
