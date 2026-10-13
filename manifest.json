@@ -46,7 +46,7 @@
     "TableX": "5",
     "FnR": "13",
     "SpecManager": "1.5",
-    "DemoCraft": "1",
+    "DemoCraft": "2",
     "CornerCast": "7",
     "MP4Transcribe": "5",
     "SkillExplorer": "16",
@@ -771,9 +771,9 @@
     "DemoCraft": {
       "kind": "zip",
       "file": "DemoCraft.zip",
-      "sha256": "681abac465d6eba1b4f62c289604aeb3b05841d561f1fe2d87f56a677624aaa3",
+      "sha256": "3899068dab3698eb3ffff41c6d552c24d32a15f421071dce94bd47ccecbf7c3e",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DemoCraft.v1.zip.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DemoCraft.v2.zip.cbpk"
     }
   }
 }
