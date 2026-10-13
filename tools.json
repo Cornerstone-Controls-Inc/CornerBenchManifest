@@ -546,7 +546,7 @@
         "train",
         "ai"
       ],
-      "version": "3",
+      "version": "4",
       "desc": "Studio-grade screen recorder & video editor for engineering demos: canvas framing, multi-window capture, smart dialog tracking, speed adjustment, and offline AI subtitles.",
       "path": "Tools\\AI\\DemoCraft\\DemoCraft.exe",
       "help_file": "Tools\\AI\\DemoCraft\\DemoCraft_help.txt",
