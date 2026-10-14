@@ -46,7 +46,7 @@
     "TableX": "5",
     "FnR": "13",
     "SpecManager": "1.5",
-    "DemoCraft": "5",
+    "DemoCraft": "6",
     "CornerCast": "7",
     "MP4Transcribe": "5",
     "SkillExplorer": "16",
@@ -772,9 +772,10 @@
     "DemoCraft": {
       "kind": "zip",
       "file": "DemoCraft.zip",
-      "sha256": "10d29bdd99f8dc52b84145d1c2dd5e4f9f992e3b646b2357b3508ecba6a4f817",
+      "sha256": "f216626c4927dcfc640466fe698e105b3d55190e2f362f1534ebc7a7ca9431fc",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DemoCraft.v4.zip.cbpk"
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DemoCraft.v6.zip.cbpk",
+      "notes": "# DemoCraft Release Notes\n\n## Version 6 (v0.6.0)\n- **Smart Auto-Union Window Capture**:\n  - Added native `HWND_TOPMOST` Z-order enforcement during recording to prevent background applications (IDEs, browsers, terminals) from covering or occluding the recorded target window and its dialogs.\n  - Automatic restore of `HWND_NOTOPMOST` across all tracked windows upon stopping, pausing, or session drop.\n  - Tight union bounds: Added strict filtering of invisible system and Qt framework helper windows (`Qt6111ScreenChangeObserverWindow`, `Qt6111ThemeChangeObserverWindow`, `_q_titlebar`, `QOffscreenSurface`, `DWMWA_CLOAKED`, tool windows without titles), preventing artificial canvas expansion.\n  - Software Studio Backdrop Matting: Implemented single-pass `#0f111a` dark carbon studio matte fill across all non-window desktop regions in post-processing.\n- **Graceful Shutdown**:\n  - Non-blocking recording stop with instant UI feedback and fast FFmpeg teardown (`+faststart` moov atom placement)."
     }
   }
 }
