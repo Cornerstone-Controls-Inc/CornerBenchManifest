@@ -53,7 +53,7 @@
     "Slipstream": "11",
     "LocalModel": "4",
     "TestPilot": "4",
-    "Axiom": "1",
+    "Axiom": "2",
     "ByteWright": "5",
     "Patina": "7",
     "CornerRDP": "13",
@@ -1011,6 +1011,14 @@
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DemoCraft.v6.zip.cbpk",
       "notes": "# DemoCraft Release Notes\n\n## Version 6 (v0.6.0)\n- **Smart Auto-Union Window Capture**:\n  - Added native `HWND_TOPMOST` Z-order enforcement during recording to prevent background applications (IDEs, browsers, terminals) from covering or occluding the recorded target window and its dialogs.\n  - Automatic restore of `HWND_NOTOPMOST` across all tracked windows upon stopping, pausing, or session drop.\n  - Tight union bounds: Added strict filtering of invisible system and Qt framework helper windows (`Qt6111ScreenChangeObserverWindow`, `Qt6111ThemeChangeObserverWindow`, `_q_titlebar`, `QOffscreenSurface`, `DWMWA_CLOAKED`, tool windows without titles), preventing artificial canvas expansion.\n  - Software Studio Backdrop Matting: Implemented single-pass `#0f111a` dark carbon studio matte fill across all non-window desktop regions in post-processing.\n- **Graceful Shutdown**:\n  - Non-blocking recording stop with instant UI feedback and fast FFmpeg teardown (`+faststart` moov atom placement)."
+    },
+    "Axiom": {
+      "kind": "zip",
+      "file": "Axiom.zip",
+      "sha256": "f62702d1932cdef607d0a3174662ea3b9a1ba6ebfef015c308b0089a8b0c10ed",
+      "enc": "cbpk1",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Axiom.v2.zip.cbpk",
+      "notes": "## v2\n\n**First release: a fast, offline reasoning assistant for DeltaV, Provox, Syncade and ISA-88 work.**\n- **Deterministic script synthesis.** Describe what you need in plain language and the *Script Synthesizer* tab returns code from a native Rust engine in well under a millisecond, using about 15 MB of memory, with no GPU and no network. The same prompt always gives the same answer.\n- **Codebase assistant.** Audit a file or a whole folder for GxP rule violations, preview a refactor as a diff, apply it with a backup, and revert the last change.\n- **Logic proofs and conversion.** The *E-Graph Logic Tracer* verifies Cause & Effect matrices (with sample reactor, tank-farm and boiler templates) and checks for conflicting commands. The *SMT Safety Prover* proves safety conditions or finds conflicts, and the *Provox SFC Transpiler* explains an FST or converts it to a DeltaV SFC.\n- **Service for the other tools.** Axiom runs a local gateway on 127.0.0.1:8088 so other CornerStone tools can use it as an AI provider. Opening Axiom, or pressing **Start Axiom** on CornerBench's AI Service card, starts the gateway; tools whose Axiom features found nothing to talk to will use it once it is running. The window has Start / Stop and a self-diagnostic, and shows memory, latency and an audit trail of derivation proofs.\n- **Command line.** `Axiom.exe gateway` runs it headless, `status` reports the daemon, `ask \"<prompt>\"` synthesizes a script, and `audit <file>` checks a file."
     }
   },
   "launcher_download": {
