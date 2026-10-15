@@ -128,7 +128,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "6",
+      "version": "7",
       "desc": "Build, export and check DeltaV user-defined import/export formats and their data files. Replaces FMTMaker, FMTExport and ModExport.",
       "path": "Tools\\DeltaV\\FMTTools\\FMTTools.exe",
       "help_file": "Tools\\DeltaV\\FMTTools\\FMTTools_help.txt",
