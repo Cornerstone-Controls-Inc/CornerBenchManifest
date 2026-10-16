@@ -311,7 +311,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "2",
+      "version": "3",
       "desc": "Parse Emerson AMS Device Manager backups (.ams_bckup / .ams_bckup_svn) into raw SQL tables or 9 engineering reports, diff backups or devices across snapshots, and reconcile AMS tags, ranges, and HART I/O paths against DeltaV FHX exports.",
       "path": "Tools\\DeltaV\\AMSTools\\AMSTools.exe",
       "help_file": "Tools\\DeltaV\\AMSTools\\AMSTools_help.txt",
@@ -656,7 +656,7 @@
         "edit",
         "verify"
       ],
-      "version": "3",
+      "version": "4",
       "desc": "High-performance air-gapped deterministic inference assistant: sub-millisecond AST script synthesis, zero GPU footprint, and live GxP audit telemetry for DeltaV and MES.",
       "path": "Tools\\AI\\Axiom\\Axiom.exe",
       "help_file": "Tools\\AI\\Axiom\\Axiom_help.txt",
