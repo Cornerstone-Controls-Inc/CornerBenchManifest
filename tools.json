@@ -293,16 +293,16 @@
       "icon": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout.ico"
     },
     {
-      "name": "Doc2Op",
+      "name": "Doc2DV",
       "tags": [
         "convert"
       ],
       "system": "DeltaV",
       "version": "1",
       "desc": "Turn drawn operator screens (PDF, one page per graphic) into DeltaV Operate pictures (.grf) built on your site's picture template and dynamo set, and into DeltaV Live displays (.di.ahc).",
-      "path": "Tools\\DeltaV\\Doc2Op\\Doc2Op.exe",
-      "help_file": "Tools\\DeltaV\\Doc2Op\\Doc2Op_help.txt",
-      "icon": "Tools\\DeltaV\\Doc2Op\\Doc2Op.ico"
+      "path": "Tools\\DeltaV\\Doc2DV\\Doc2DV.exe",
+      "help_file": "Tools\\DeltaV\\Doc2DV\\Doc2DV_help.txt",
+      "icon": "Tools\\DeltaV\\Doc2DV\\Doc2DV.ico"
     },
     {
       "name": "AMSTools",
