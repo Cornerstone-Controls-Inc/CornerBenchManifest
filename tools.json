@@ -291,6 +291,18 @@
       "path": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout.exe",
       "help_file": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout_help.txt",
       "icon": "Tools\\DeltaV\\UpgradeScout\\UpgradeScout.ico"
+    },
+    {
+      "name": "Doc2Op",
+      "tags": [
+        "convert"
+      ],
+      "system": "DeltaV",
+      "version": "1",
+      "desc": "Turn drawn operator screens (PDF, one page per graphic) into DeltaV Operate pictures (.grf) built on your site's picture template and dynamo set, and into DeltaV Live displays (.di.ahc).",
+      "path": "Tools\\DeltaV\\Doc2Op\\Doc2Op.exe",
+      "help_file": "Tools\\DeltaV\\Doc2Op\\Doc2Op_help.txt",
+      "icon": "Tools\\DeltaV\\Doc2Op\\Doc2Op.ico"
     }
   ],
   "Provox": [
@@ -631,7 +643,7 @@
         "edit",
         "verify"
       ],
-      "version": "2",
+      "version": "3",
       "desc": "High-performance air-gapped deterministic inference assistant: sub-millisecond AST script synthesis, zero GPU footprint, and live GxP audit telemetry for DeltaV and MES.",
       "path": "Tools\\AI\\Axiom\\Axiom.exe",
       "help_file": "Tools\\AI\\Axiom\\Axiom_help.txt",
