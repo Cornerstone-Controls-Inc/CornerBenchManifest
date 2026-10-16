@@ -26,6 +26,7 @@
     "DvVMManager": "26",
     "DVNormalizer": "3",
     "UpgradeScout": "5",
+    "Doc2Op": "1",
     "PvxIO": "10",
     "PvxPDX": "15",
     "PDXDiff": "8",
@@ -53,7 +54,7 @@
     "Slipstream": "11",
     "LocalModel": "4",
     "TestPilot": "4",
-    "Axiom": "2",
+    "Axiom": "3",
     "ByteWright": "5",
     "Patina": "7",
     "CornerRDP": "13",
@@ -1015,10 +1016,10 @@
     "Axiom": {
       "kind": "zip",
       "file": "Axiom.zip",
-      "sha256": "f62702d1932cdef607d0a3174662ea3b9a1ba6ebfef015c308b0089a8b0c10ed",
+      "sha256": "fbb2f96f20d273bc0a705b6aa9ba66c47107077572108d5aa559c33ba94d34f6",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Axiom.v2.zip.cbpk",
-      "notes": "## v2\n\n**First release: a fast, offline reasoning assistant for DeltaV, Provox, Syncade and ISA-88 work.**\n- **Deterministic script synthesis.** Describe what you need in plain language and the *Script Synthesizer* tab returns code from a native Rust engine in well under a millisecond, using about 15 MB of memory, with no GPU and no network. The same prompt always gives the same answer.\n- **Codebase assistant.** Audit a file or a whole folder for GxP rule violations, preview a refactor as a diff, apply it with a backup, and revert the last change.\n- **Logic proofs and conversion.** The *E-Graph Logic Tracer* verifies Cause & Effect matrices (with sample reactor, tank-farm and boiler templates) and checks for conflicting commands. The *SMT Safety Prover* proves safety conditions or finds conflicts, and the *Provox SFC Transpiler* explains an FST or converts it to a DeltaV SFC.\n- **Service for the other tools.** Axiom runs a local gateway on 127.0.0.1:8088 so other CornerStone tools can use it as an AI provider. Opening Axiom, or pressing **Start Axiom** on CornerBench's AI Service card, starts the gateway; tools whose Axiom features found nothing to talk to will use it once it is running. The window has Start / Stop and a self-diagnostic, and shows memory, latency and an audit trail of derivation proofs.\n- **Command line.** `Axiom.exe gateway` runs it headless, `status` reports the daemon, `ask \"<prompt>\"` synthesizes a script, and `audit <file>` checks a file."
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/Axiom.v3.zip.cbpk",
+      "notes": "## v3\n\n**Smarter deterministic intent synthesis, expanded GxP code assistant rules, and deeper formal solvers.**\n- **Slot-filling semantic intent parser & synthesizer.** Recognizes 40+ standard DeltaV parameters and custom uppercase identifiers, binds natural-language comparison thresholds (`faster than`, `greater than`, `at least`, `at most`, `!=`, `==`), and synthesizes scripts for function block port wiring (`Wire AI1/OUT to PID1/IN`), parameter syncing (`Copy HI_LIM to HI_ALM`), filtered snapshot deletions, and CSV parameter reports.\n- **Expanded GxP Code Assistant (`AXIOM-001` \u2013 `AXIOM-006`).** Adds a string- and docstring-aware lexical splitter that preserves inline `#` comments during refactoring, LCS unified diff generation, and new rules for `.attributes[]` mutations (`AXIOM-004`), `del .parameters[]` dictionary deletions (`AXIOM-005`), and unbuffered iterator `.delete()` loops (`AXIOM-006`).\n- **Upgraded formal solvers & ST symbolic execution.** Replaces single-operator interval estimation with a full recursive-descent AST interval evaluator, upgrades the SMT fallback to fail-closed fixed-point interval propagation, checks SFC action preconditions via logical implication (`Transition ==> Precondition`), intersects DBM clock zones for timed automata, and adds hierarchical `IF / ELSIF / ELSE / END_IF` AST scoping with a symbolic variable store for Structured Text.\n\n## v2\n\n**First release: a fast, offline reasoning assistant for DeltaV, Provox, Syncade and ISA-88 work.**\n- **Deterministic script synthesis.** Describe what you need in plain language and the *Script Synthesizer* tab returns code from a native Rust engine in well under a millisecond, using about 15 MB of memory, with no GPU and no network. The same prompt always gives the same answer.\n- **Codebase assistant.** Audit a file or a whole folder for GxP rule violations, preview a refactor as a diff, apply it with a backup, and revert the last change.\n- **Logic proofs and conversion.** The *E-Graph Logic Tracer* verifies Cause & Effect matrices (with sample reactor, tank-farm and boiler templates) and checks for conflicting commands. The *SMT Safety Prover* proves safety conditions or finds conflicts, and the *Provox SFC Transpiler* explains an FST or converts it to a DeltaV SFC.\n- **Service for the other tools.** Axiom runs a local gateway on 127.0.0.1:8088 so other CornerStone tools can use it as an AI provider. Opening Axiom, or pressing **Start Axiom** on CornerBench's AI Service card, starts the gateway; tools whose Axiom features found nothing to talk to will use it once it is running. The window has Start / Stop and a self-diagnostic, and shows memory, latency and an audit trail of derivation proofs.\n- **Command line.** `Axiom.exe gateway` runs it headless, `status` reports the daemon, `ask \"<prompt>\"` synthesizes a script, and `audit <file>` checks a file."
     }
   },
   "launcher_download": {
