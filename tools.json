@@ -303,6 +303,19 @@
       "path": "Tools\\DeltaV\\Doc2Op\\Doc2Op.exe",
       "help_file": "Tools\\DeltaV\\Doc2Op\\Doc2Op_help.txt",
       "icon": "Tools\\DeltaV\\Doc2Op\\Doc2Op.ico"
+    },
+    {
+      "name": "AMSTools",
+      "tags": [
+        "verify",
+        "convert"
+      ],
+      "system": "DeltaV",
+      "version": "1",
+      "desc": "Parse Emerson AMS Device Manager backups (.ams_bckup / .ams_bckup_svn) into raw SQL tables or 9 engineering reports, diff backups or devices across snapshots, and reconcile AMS tags, ranges, and HART I/O paths against DeltaV FHX exports.",
+      "path": "Tools\\DeltaV\\AMSTools\\AMSTools.exe",
+      "help_file": "Tools\\DeltaV\\AMSTools\\AMSTools_help.txt",
+      "icon": "Tools\\DeltaV\\AMSTools\\AMSTools.ico"
     }
   ],
   "Provox": [
