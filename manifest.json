@@ -27,7 +27,7 @@
     "DVNormalizer": "3",
     "UpgradeScout": "5",
     "Doc2DV": "1",
-    "AMSTools": "2",
+    "AMSTools": "3",
     "PvxIO": "10",
     "PvxPDX": "15",
     "PDXDiff": "8",
@@ -55,7 +55,7 @@
     "Slipstream": "11",
     "LocalModel": "4",
     "TestPilot": "4",
-    "Axiom": "3",
+    "Axiom": "4",
     "ByteWright": "5",
     "Patina": "7",
     "CornerRDP": "13",
@@ -1025,10 +1025,10 @@
     "AMSTools": {
       "kind": "zip",
       "file": "AMSTools.zip",
-      "sha256": "0150f589e8295ea8bc494539a65228f8d1df2884142035fa2b593a0e17c853fb",
+      "sha256": "cf38448c4b71666ca3042dd84092b72980dc2ff4b341a9b63663c1bb73e12706",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/AMSTools.v2.zip.cbpk",
-      "notes": "# AMSTools v2\n\n- **Bundled `uuid` / `shared.*` Stdlib Dependencies**: Fixed startup `ModuleNotFoundError: No module named 'uuid'` in the hybrid Nuitka + PyInstaller package (`shared.ams.mdf`) and taught `scripts/compiled_stdlib_imports.py` to transitively follow `shared.<subpkg>` imports.\n- **Upgraded DeltaV FHX Reconciliation to the `FMTTools` / `shared.fhxparams` Engine**:\n  - Uses `shared.fhxparams.extract_modules` to resolve DeltaV's 3-layer class inheritance (`FUNCTION_BLOCK_DEFINITION` \u2192 `MODULE_CLASS` \u2192 `MODULE` / `UNIT_MODULE`) so inherited `XD_SCALE` / `OUT_SCALE` / `PV_SCALE` (`EU0`, `EU100`, `UNITS`) and per-block `IO_IN` / `IO_OUT` DST bindings on class-based modules are accurately compared.\n  - Uses `FMTTools`-style AST extraction for `CHARM_IO_SERVER_NODE` (CIOC carrier) + `CHARM` Electronic Marshalling (`CONTROLLER_ASSIGNMENT`, `CARD_SLOT`, `DEVICE_SIGNAL_TAG`, `HART_LONG_TAG`) alongside traditional/wireless/Provox/serial I/O cards.\n\n# AMSTools v1\n\n- Initial release of **AMSTools** for Emerson AMS Device Manager backup analysis:\n  - **Pure-Python MTF + SQL Server MDF Parser (`shared.ams`)**: Extracts `AmsDb_Data.MDF` directly from `.ams_bckup` Microsoft Tape Format archives and parses companion `.ams_bckup_svn` OLE2 Compound File major/minor device revision catalogs without requiring SQL Server.\n  - **1. Reports & Raw CSV Export**: Generates 9 engineering reports (`devices`, `io_bindings`, `param_summary`, `parameters`, `param_history`, `snapon`, `alerts`, `calibration`, `event_log`) or dumps all 116 raw SQL Server tables to CSV.\n  - **2. Backup & Device Diff**: Compares two AMS backups (`Backup A vs Backup B`), compares initial baseline vs latest snapshot within a single backup, or diffs two devices side-by-side (`Device A vs Device B`) across parameters and ValveLink SNAP-ON blobs.\n  - **3. DeltaV FHX Reconciliation**: Cross-checks AMS device tags, HART I/O channel bindings, and PV EU ranges/units against a DeltaV `.fhx` export (`RANGE_MISMATCH`, `IO_PATH_MISMATCH`, `TAG_NAME_DRIFT`, `TAG_MISSING_IN_FHX`, `TAG_MISSING_IN_AMS`, `UNASSIGNED_DEVICE`, `ACTIVE_DEVICE_ALERT`).\n  - **Headless CLI**: Supports `AMSTools dump`, `AMSTools report`, `AMSTools diff`, and `AMSTools reconcile`."
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/AMSTools.v3.zip.cbpk",
+      "notes": "# AMSTools v3\n\n- **Fixed GUI Crash on Backup Load / Diff / Reconciliation**:\n  - Connected background worker `done` signals to a main-thread bound `QObject` slot (`_on_worker_done`) instead of a transient closure, preventing cross-thread GUI widget updates and `QThread.wait()` deadlocks on the worker thread.\n  - Updated `DataTable` (`set_rows`) and `FilterChipsRow` (`set_count`) calls across Reports, Diff, and Reconciliation tabs.\n\n# AMSTools v2\n\n- **Bundled `uuid` / `shared.*` Stdlib Dependencies**: Fixed startup `ModuleNotFoundError: No module named 'uuid'` in the hybrid Nuitka + PyInstaller package (`shared.ams.mdf`) and taught `scripts/compiled_stdlib_imports.py` to transitively follow `shared.<subpkg>` imports.\n- **Upgraded DeltaV FHX Reconciliation to the `FMTTools` / `shared.fhxparams` Engine**:\n  - Uses `shared.fhxparams.extract_modules` to resolve DeltaV's 3-layer class inheritance (`FUNCTION_BLOCK_DEFINITION` \u2192 `MODULE_CLASS` \u2192 `MODULE` / `UNIT_MODULE`) so inherited `XD_SCALE` / `OUT_SCALE` / `PV_SCALE` (`EU0`, `EU100`, `UNITS`) and per-block `IO_IN` / `IO_OUT` DST bindings on class-based modules are accurately compared.\n  - Uses `FMTTools`-style AST extraction for `CHARM_IO_SERVER_NODE` (CIOC carrier) + `CHARM` Electronic Marshalling (`CONTROLLER_ASSIGNMENT`, `CARD_SLOT`, `DEVICE_SIGNAL_TAG`, `HART_LONG_TAG`) alongside traditional/wireless/Provox/serial I/O cards.\n\n# AMSTools v1\n\n- Initial release of **AMSTools** for Emerson AMS Device Manager backup analysis:\n  - **Pure-Python MTF + SQL Server MDF Parser (`shared.ams`)**: Extracts `AmsDb_Data.MDF` directly from `.ams_bckup` Microsoft Tape Format archives and parses companion `.ams_bckup_svn` OLE2 Compound File major/minor device revision catalogs without requiring SQL Server.\n  - **1. Reports & Raw CSV Export**: Generates 9 engineering reports (`devices`, `io_bindings`, `param_summary`, `parameters`, `param_history`, `snapon`, `alerts`, `calibration`, `event_log`) or dumps all 116 raw SQL Server tables to CSV.\n  - **2. Backup & Device Diff**: Compares two AMS backups (`Backup A vs Backup B`), compares initial baseline vs latest snapshot within a single backup, or diffs two devices side-by-side (`Device A vs Device B`) across parameters and ValveLink SNAP-ON blobs.\n  - **3. DeltaV FHX Reconciliation**: Cross-checks AMS device tags, HART I/O channel bindings, and PV EU ranges/units against a DeltaV `.fhx` export (`RANGE_MISMATCH`, `IO_PATH_MISMATCH`, `TAG_NAME_DRIFT`, `TAG_MISSING_IN_FHX`, `TAG_MISSING_IN_AMS`, `UNASSIGNED_DEVICE`, `ACTIVE_DEVICE_ALERT`).\n  - **Headless CLI**: Supports `AMSTools dump`, `AMSTools report`, `AMSTools diff`, and `AMSTools reconcile`."
     },
     "Doc2DV": {
       "kind": "zip",
