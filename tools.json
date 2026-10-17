@@ -656,7 +656,7 @@
         "edit",
         "verify"
       ],
-      "version": "4",
+      "version": "5",
       "desc": "High-performance air-gapped deterministic inference assistant: sub-millisecond AST script synthesis, zero GPU footprint, and live GxP audit telemetry for DeltaV and MES.",
       "path": "Tools\\AI\\Axiom\\Axiom.exe",
       "help_file": "Tools\\AI\\Axiom\\Axiom_help.txt",
