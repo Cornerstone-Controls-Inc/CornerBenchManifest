@@ -65,11 +65,13 @@
     {
       "name": "FHXport",
       "tags": [
-        "convert"
+        "convert",
+        "document",
+        "verify"
       ],
       "system": "DeltaV",
-      "version": "33",
-      "desc": "Turn a DeltaV FHX export into ready-made reports: interlocks, alarms, IO, modules, equipment modules, phases, historian, named sets, PID tuning and more.",
+      "version": "34",
+      "desc": "Turn a DeltaV FHX export into ready-made engineering reports (interlocks, alarms, IO, modules, equipment modules, phases, historian, named sets, PID tuning, interactive C&E Matrix, standalone WebFHX browser), estimate counts, historian OQ comparison, and full FHX verification. Replaces CEMatrix, WebFHX and FHXVerify.",
       "path": "Tools\\DeltaV\\FHXport\\FHXport.exe",
       "help_file": "Tools\\DeltaV\\FHXport\\FHXport_help.txt",
       "icon": "Tools\\DeltaV\\FHXport\\FHXport.ico"
@@ -85,18 +87,6 @@
       "path": "Tools\\DeltaV\\FHXEdit\\FHXEdit.exe",
       "help_file": "Tools\\DeltaV\\FHXEdit\\FHXEdit_help.txt",
       "icon": "Tools\\DeltaV\\FHXEdit\\FHXEdit.ico"
-    },
-    {
-      "name": "WebFHX",
-      "tags": [
-        "document"
-      ],
-      "system": "DeltaV",
-      "version": "17",
-      "desc": "Turn a DeltaV FHX export into a standalone web page anyone can open, with the module hierarchy and optional logic drawings.",
-      "path": "Tools\\DeltaV\\WebFHX\\WebFHX.exe",
-      "help_file": "Tools\\DeltaV\\WebFHX\\WebFHX_help.txt",
-      "icon": "Tools\\DeltaV\\WebFHX\\WebFHX.ico"
     },
     {
       "name": "EMTools",
@@ -135,18 +125,6 @@
       "icon": "Tools\\DeltaV\\FMTTools\\FMTTools.ico"
     },
     {
-      "name": "CEMatrix",
-      "tags": [
-        "document"
-      ],
-      "system": "DeltaV",
-      "version": "7",
-      "desc": "Generate an interactive interlock (cause and effect) matrix and network graph from a DeltaV FHX export.",
-      "path": "Tools\\DeltaV\\CEMatrix\\CEMatrix.exe",
-      "help_file": "Tools\\DeltaV\\CEMatrix\\CEMatrix_help.txt",
-      "icon": "Tools\\DeltaV\\CEMatrix\\CEMatrix.ico"
-    },
-    {
       "name": "TuningAid",
       "tags": [
         "connect"
@@ -182,18 +160,6 @@
       "path": "Tools\\DeltaV\\DVEmu\\DVEmu.exe",
       "help_file": "Tools\\DeltaV\\DVEmu\\DVEmu_help.txt",
       "icon": "Tools\\DeltaV\\DVEmu\\DVEmu.ico"
-    },
-    {
-      "name": "FHXVerify",
-      "tags": [
-        "verify"
-      ],
-      "system": "DeltaV",
-      "version": "13",
-      "desc": "Check a DeltaV FHX export for broken references, SFC problems, naming limits and typos, fix what can be fixed automatically, and get an HTML report.",
-      "path": "Tools\\DeltaV\\FHXVerify\\FHXVerify.exe",
-      "help_file": "Tools\\DeltaV\\FHXVerify\\FHXVerify_help.txt",
-      "icon": "Tools\\DeltaV\\FHXVerify\\FHXVerify.ico"
     },
     {
       "name": "OPCBridge",
