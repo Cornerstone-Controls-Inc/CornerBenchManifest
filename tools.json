@@ -179,7 +179,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "46",
+      "version": "47",
       "desc": "Convert DeltaV Operate graphics to DeltaV Live in a guided, step-by-step process, with mapping review, VBA translation, a design specification and validation tests.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -527,6 +527,18 @@
       "path": "Tools\\Documentation\\SpecManager\\SpecManager.exe",
       "help_file": "Tools\\Documentation\\SpecManager\\SpecManager_help.txt",
       "icon": "Tools\\Documentation\\SpecManager\\SpecManager.ico"
+    },
+    {
+      "name": "ReTemplate",
+      "tags": [
+        "document",
+        "convert"
+      ],
+      "version": "1",
+      "desc": "Move a Word document's content into another document's template: matches sections, restyles tables and headings, converts between table and prose layouts, fills cover properties and sign-offs, and checks that 100% of the source text is placed. Works offline.",
+      "path": "Tools\\Documentation\\ReTemplate\\ReTemplate.exe",
+      "help_file": "Tools\\Documentation\\ReTemplate\\ReTemplate_help.txt",
+      "icon": "Tools\\Documentation\\ReTemplate\\ReTemplate.ico"
     }
   ],
   "AI": [
