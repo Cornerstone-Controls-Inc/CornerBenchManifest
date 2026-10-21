@@ -20,7 +20,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "12",
+      "version": "13",
       "desc": "Report on, edit and bulk-change DeltaV Live graphics (.ahc): find and replace, thumbnails, compare, library analysis and translation.",
       "path": "Tools\\DeltaV\\LiveTools\\LiveTools.exe",
       "help_file": "Tools\\DeltaV\\LiveTools\\LiveTools_help.txt",
@@ -179,7 +179,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "47",
+      "version": "48",
       "desc": "Convert DeltaV Operate graphics to DeltaV Live in a guided, step-by-step process, with mapping review, VBA translation, a design specification and validation tests.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
