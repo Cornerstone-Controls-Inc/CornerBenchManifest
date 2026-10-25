@@ -57,7 +57,7 @@
       ],
       "system": "DeltaV",
       "version": "13.9",
-      "desc": "Compare two DeltaV FHX exports \u2014 line by line, as configured modules, and as sequence logic \u2014 with the differences reported in Excel, PDF or HTML.",
+      "desc": "Compare two DeltaV FHX exports — line by line, as configured modules, and as sequence logic — with the differences reported in Excel, PDF or HTML.",
       "path": "Tools\\DeltaV\\DifFHX\\DifFHX.exe",
       "help_file": "Tools\\DeltaV\\DifFHX\\DifFHX_help.txt",
       "icon": "Tools\\DeltaV\\DifFHX\\DifFHX.ico"
@@ -142,7 +142,7 @@
         "simulate"
       ],
       "system": "DeltaV",
-      "version": "25",
+      "version": "26",
       "desc": "A digital twin of a DeltaV system: simulate an FHX configuration, connect to it over OPC UA, and run automated tests against it.",
       "path": "Tools\\DeltaV\\DvTwin\\DvTwin.exe",
       "help_file": "Tools\\DeltaV\\DvTwin\\DvTwin_help.txt",
@@ -216,7 +216,7 @@
       ],
       "system": "DeltaV",
       "version": "11",
-      "desc": "Finds out why a DeltaV controller shows up in the Decommissioned list and then vanishes, and says what to check next. Can reset an orphaned controller so it can be commissioned \u2014 it asks first.",
+      "desc": "Finds out why a DeltaV controller shows up in the Decommissioned list and then vanishes, and says what to check next. Can reset an orphaned controller so it can be commissioned — it asks first.",
       "path": "Tools\\DeltaV\\DvScan\\DvScan.exe",
       "help_file": "Tools\\DeltaV\\DvScan\\DvScan_help.txt",
       "icon": "Tools\\DeltaV\\DvScan\\DvScan.ico"
@@ -466,7 +466,7 @@
         "ai"
       ],
       "version": "8",
-      "desc": "Search all your help files at once \u2014 DeltaV Books Online, other .chm and old .hlp manuals, and PDFs \u2014 in one offline library, with a hit count per manual and an AI assistant to answer questions citing documentation topics.",
+      "desc": "Search all your help files at once — DeltaV Books Online, other .chm and old .hlp manuals, and PDFs — in one offline library, with a hit count per manual and an AI assistant to answer questions citing documentation topics.",
       "path": "Tools\\Documentation\\SuperDocs\\SuperDocs.exe",
       "help_file": "Tools\\Documentation\\SuperDocs\\SuperDocs_help.txt",
       "icon": "Tools\\Documentation\\SuperDocs\\SuperDocs.ico"
@@ -585,7 +585,7 @@
         "ai"
       ],
       "version": "18",
-      "desc": "Install Cornerstone's AI add-ons \u2014 skills and tool servers for DeltaV FHX, graphics, OPC UA, alarms, remote machines and Emerson SMS \u2014 into Claude Code or Slipstream in one click.",
+      "desc": "Install Cornerstone's AI add-ons — skills and tool servers for DeltaV FHX, graphics, OPC UA, alarms, remote machines and Emerson SMS — into Claude Code or Slipstream in one click.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
       "icon": "Tools\\AI\\SkillExplorer\\SkillExplorer.ico"
@@ -685,7 +685,7 @@
         "connect"
       ],
       "version": "11",
-      "desc": "Read live values from plant equipment over 11 protocols \u2014 OPC UA, classic OPC, Modbus, Allen-Bradley, Siemens S7, MQTT and more \u2014 side by side, or stand in for a device when testing.",
+      "desc": "Read live values from plant equipment over 11 protocols — OPC UA, classic OPC, Modbus, Allen-Bradley, Siemens S7, MQTT and more — side by side, or stand in for a device when testing.",
       "path": "Tools\\Comms\\SuperComms\\SuperComms.exe",
       "help_file": "Tools\\Comms\\SuperComms\\SuperComms_help.txt",
       "icon": "Tools\\Comms\\SuperComms\\SuperComms.ico"
