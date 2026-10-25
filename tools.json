@@ -20,7 +20,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "12",
+      "version": "14",
       "desc": "Report on, edit and bulk-change DeltaV Live graphics (.ahc): find and replace, thumbnails, compare, library analysis and translation.",
       "path": "Tools\\DeltaV\\LiveTools\\LiveTools.exe",
       "help_file": "Tools\\DeltaV\\LiveTools\\LiveTools_help.txt",
