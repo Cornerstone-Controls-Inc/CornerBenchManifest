@@ -44,7 +44,7 @@
         "connect"
       ],
       "system": "DeltaV",
-      "version": "8",
+      "version": "9",
       "desc": "Browse and watch DeltaV tags live over OPC, import or export tag lists as CSV, and keep a log of every value you write.",
       "path": "Tools\\DeltaV\\SuperOPCWatchIt.exe",
       "help_file": "Tools\\DeltaV\\SuperOPCWatchit_help.txt",
