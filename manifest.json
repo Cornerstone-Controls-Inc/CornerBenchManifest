@@ -20,7 +20,7 @@
     "OperateTools": "27",
     "VIMTools": "9",
     "DvScan": "11",
-    "DvVMManager": "27",
+    "DvVMManager": "28",
     "DVNormalizer": "4",
     "UpgradeScout": "6",
     "Doc2DV": "3",
@@ -515,14 +515,14 @@
     "DvVMManager": {
       "kind": "zip",
       "file": "DvVMManager.zip",
-      "sha256": "d10b0feeae353175b399053eb31d261605695d6e9f76621c4fdb169d3da58437",
+      "sha256": "fecf344ce7a89813b2c3b9023213595e9d968c20e60e83b58275f312a49c5e8c",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.v27.zip.cbpk",
-      "notes": "## v27\n\n- **One-click VM provisioning from a blank DB template**, version first: *Suggest from Farm / UTN*, owner and end date for the VM Farm sheet, and the VLAN set on the DeltaV NICs.\n- **Workstation Configuration runs as the named user** and sets the node's identity; a new VM gets its VLAN and Hyper-V time sync in the same step.\n- **AI choice in the title bar.** A button beside the light/dark switch shows which AI the suite is using and switches it between Axiom, Copilot, Claude and a local model. It can also turn on the Customer No-AI Lock, which keeps every CornerStone tool on Axiom: local and deterministic, with nothing sent to the cloud.\n\n## v26\n\nUpdates arrive in pieces, and the window is identified on the taskbar.\n\n- **The download is split into app, browsers and dependencies.** DvVMManager is about 960 MB, of which 417 MB is the bundled Chromium; a change to the tool no longer re-sends all of it.\n- **Its own icon on the taskbar.** The window now registers its own Windows taskbar identity and puts its icon on the top-level window, so the tool groups under its own name and shows its own icon instead of a generic one.\n\n## v25\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **The suite's window.** It opens in the suite's frameless window, with the coloured title bar and the light/dark switch.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n- **Status tiles, chips and cards keep their colours readable** after a light/dark switch; a value stayed in the other mode's pale shade.\n- **\"&\" shows in labels again.** Qt took a lone \"&\" as a shortcut marker and hid it.\n\n## v24\n\nIts own colours instead of the shared charcoal.\n\n- **Jade green on charcoal.** It keeps the charcoal ground it has always had; the blue moved to CornerRDP so the two RDP tools stay a family without being a blur.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v23\n\n- **\"Is it the node, or is it me?\" is now a question the tool answers.** Every reading in here\n  was about the far end \u2014 a probe asks the node and reports what came back, so a VPN that\n  connected without its routes, an MTU that quietly drops anything over ~1300 bytes, or a\n  firewall eating one port all arrive as `Down` and read as a fleet outage. The \u22cf button beside\n  \u27f3 on a node's page \u2014 and the \"reachable\" tile itself, which is what you are already looking at\n  when you want to know \u2014 runs five checks from *this PC*: what adapters it has and which looks\n  like the VPN, whether traffic for that node leaves by the VPN or by your own internet\n  connection, whether Remote Desktop / file sharing / WinRM answer (all three, because RDP open\n  with SMB shut is not an outage but a transport finding), the largest packet that survives the\n  path, and where the packets actually go. It then says what to do from the *combination*: a\n  shut port on its own is a firewall on the node, a shut port with a small-packet ceiling is\n  almost always the wrong VPN group. None of it needs a credential or any cooperation from the\n  node, so unlike everything else on that page it works on the node that answers nothing \u2014\n  which is the only node it is really for. VMTools had this as a Network Test tab; it arrives\n  here with the target no longer pasted into a shell command line, one typed-in port replaced\n  by the three the tool actually uses, and a verdict per check instead of a wall of console\n  output.\n\n- **The rail has a filter.** Forty systems in a 238-pixel column was a scroll. The box under\n  Nodes searches far more than the two li",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.v28.zip.cbpk",
+      "notes": "## v28\n\nMoving files onto the virtual-controller server, and making more controllers, without leaving the tool.\n\n- **Files tab on ESXi servers.** This PC (or a share like `\\\\devvh04.dev.local\\D$`) on the left, the datastores on the right. Drag files or whole folder trees either way to upload or download, with progress and a Cancel that removes the half-copied file. On the datastore side: new folder, rename, copy, move, delete, measure a folder's size, and register a `.vmx`. Nothing is written over, and files that a registered VM uses cannot be deleted, moved or renamed. Replaces the old Datastore tab.\n- **Make instances, without Emerson's Setup.exe.** Pick a pool version and a device type and make more numbered controllers or IO cards right on the server, with the same names and MAC addresses Setup.exe would give them. Checked against a real Setup.exe run: identical, disks included.\n\n## v27\n\n- **One-click VM provisioning from a blank DB template**, version first: *Suggest from Farm / UTN*, owner and end date for the VM Farm sheet, and the VLAN set on the DeltaV NICs.\n- **Workstation Configuration runs as the named user** and sets the node's identity; a new VM gets its VLAN and Hyper-V time sync in the same step.\n- **AI choice in the title bar.** A button beside the light/dark switch shows which AI the suite is using and switches it between Axiom, Copilot, Claude and a local model. It can also turn on the Customer No-AI Lock, which keeps every CornerStone tool on Axiom: local and deterministic, with nothing sent to the cloud.\n\n## v26\n\nUpdates arrive in pieces, and the window is identified on the taskbar.\n\n- **The download is split into app, browsers and dependencies.** DvVMManager is about 960 MB, of which 417 MB is the bundled Chromium; a change to the tool no longer re-sends all of it.\n- **Its own icon on the taskbar.** The window now registers its own Windows taskbar identity and puts its icon on the top-level window, so the tool groups under its own name and shows its own icon instead of a generic one.\n\n## v25\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **The suite's window.** It opens in the suite's frameless window, with the coloured title bar and the light/dark switch.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n- **Status tiles, chips and cards keep their colours readable** after a light/dark switch; a value stayed in the other mode's pale shade.\n- **\"&\" shows in labels again.** Qt took a lone \"&\" as a shortcut marker and hid it.\n\n## v24\n\nIts own colours instead of the shared charcoal.\n\n- **Jade green on charcoal.** It keeps the charcoal ground it has always had; the blue moved to CornerRDP so the two RDP tools stay a family without being a blur.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v23\n\n- **\"Is it the node, or is it me?\" is now a question the tool answers.** Every reading in here\n  was about the far end \u2014 a probe asks the node and reports what came back, so a VPN that\n  connected without its routes, an MTU that quietly drops anything over ~1300 bytes, or a\n  firewall eating one port all arrive as `Down` and read as a fleet outage. The \u22cf button beside\n  \u27f3 on a node's page \u2014 and the \"reachable\" tile itself, which is what you are already looking at\n  when you want to know \u2014 runs five checks from *this PC*: what adapters it has and which looks\n  like the VPN, whether traffic for that node leaves by the VPN or by your own internet\n  connection, whether Remote Desktop / file sharing / WinRM answer (all three, because RDP o",
       "components": [
         {
           "id": "app",
-          "sha256": "647cce254eb80eb79428d671329cbc69c793b05fbacba7aadbea6f2634fb5b75",
+          "sha256": "ccf40ec7304e0de52c9bdc998edcb3a7aafd8570bd204c8795741b96a36182e2",
           "enc": "cbpk1",
           "include": [
             "DvVMManager.exe",
@@ -550,8 +550,8 @@
             "bin/**",
             "_vendor/**"
           ],
-          "bytes": 44862861,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.app.647cce254eb8.zip.cbpk"
+          "bytes": 42950083,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.app.ccf40ec7304e.zip.cbpk"
         },
         {
           "id": "browsers",
@@ -565,13 +565,13 @@
         },
         {
           "id": "deps",
-          "sha256": "b33379dc7a42ec7a576f3cabcbaad3ca38ddec451f84f1293ea2a364eaddfd4d",
+          "sha256": "40579d5aa761dff01a3c7d893a5b35e8f174d8a94c4fbcd524c06a5abca15778",
           "enc": "cbpk1",
           "include": [
             "**"
           ],
-          "bytes": 186515837,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.deps.b33379dc7a42.zip.cbpk"
+          "bytes": 186888067,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.deps.40579d5aa761.zip.cbpk"
         }
       ]
     },
