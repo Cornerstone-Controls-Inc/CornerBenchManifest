@@ -215,7 +215,7 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "12",
+      "version": "13",
       "desc": "Finds out why a DeltaV controller shows up in the Decommissioned list and then vanishes, and says what to check next. Can remove a stale identity binding and restart the workstation to clear it, and exports a case file (optionally masked) to share or give to an AI \u2014 it asks before every change.",
       "path": "Tools\\DeltaV\\DvScan\\DvScan.exe",
       "help_file": "Tools\\DeltaV\\DvScan\\DvScan_help.txt",
