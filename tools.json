@@ -615,18 +615,6 @@
       "icon": "Tools\\AI\\LocalModel\\localmodel.ico"
     },
     {
-      "name": "DataMask",
-      "tags": [
-        "ai"
-      ],
-      "system": "",
-      "version": "",
-      "desc": "Mask Center: set up the data-protection mask that hides customer names, sites, people, hosts and addresses before anything reaches a cloud AI. Build each customer's dictionary, preview and export masked copies, and export the AI audit trail. Also opens from the AI card and every tool's AI menu.",
-      "path": "Tools\\AI\\DataMask\\DataMask.exe",
-      "help_file": "Tools\\AI\\DataMask\\DataMask_help.txt",
-      "icon": "Tools\\AI\\DataMask\\DataMask.ico"
-    },
-    {
       "name": "TestPilot",
       "tags": [
         "verify",
@@ -762,7 +750,7 @@
         "decode"
       ],
       "system": "Syncade",
-      "version": "15",
+      "version": "16",
       "desc": "Business Integrator Studio & Control Cockpit: visually trace and inspect DynamicWS pipelines, test XSLT transformations offline, diagnose and repair queue message payloads, and validate integration configs.",
       "path": "Tools\\Syncade\\BIExpert\\BIExpert.exe",
       "help_file": "Tools\\Syncade\\BIExpert\\BIExpert_help.txt",
