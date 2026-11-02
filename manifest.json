@@ -1,5 +1,5 @@
 {
-  "launcher_version": "21",
+  "launcher_version": "22",
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
   "tools": {
     "ABB Migration": "14",
@@ -1031,5 +1031,14 @@
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DataMask.v1.zip.cbpk",
       "notes": "# DataMask \u2014 release notes\n\n## v1\n\nFirst release of Mask Center, the data-protection mask's own window. It opens from the launcher's AI card (\"\ud83d\udee1 Mask Center\u2026\"), from every tool's AI menu, or from its own tile.\n\n- **What the mask does.** With Cloud AI masked chosen in a tool's AI menu, everything sent to a cloud AI has its customer names, sites, people, computer names, addresses and other free text replaced with stand-ins first, and the answer comes back with the real names. Words that are structure, ordinary English, DeltaV vocabulary or numbers stay readable, so the AI can still work (K360 becomes Q360, the same way every time). File structure stays valid: an FHX still parses, a Word or Excel file still opens.\n- **Dictionary.** One per customer: names that must always be masked even when they are ordinary words, with their spellings and aliases, plus the never-masked words and domains. It can propose names from the project's files, the customer settings, DvVMManager's nodes and the RDP targets, for you to accept.\n- **Vault.** The table of real names and their stand-ins for a customer. It stays on this PC, encrypted to your Windows login, and can be exported with a password to share with a colleague.\n- **Preview.** Drop a file to see it masked side by side, with what changed highlighted and a check that nothing known was left.\n- **Sanitized export.** A folder or zip in, a masked copy out (file names too), with a report of what was masked and anything it could not mask. For sending files to a vendor or support.\n- **Logos, audit trail and policy.** Logos to paint over in images and PDFs; the per-project record of every cloud send; and the effective AI mode with the reason for it (a folder lock, a policy file or your choice)."
     }
+  },
+  "launcher_download": {
+    "kind": "exe",
+    "file": "CornerBench.exe",
+    "sha256": "bce88303ae26a7208c963d237e30eec805d3c7bd112f8f4f5612a419e0403cfc",
+    "enc": "cbpk1",
+    "version": "22",
+    "sig": "e51e0213ce840a72e7fd1855fe3ead81dddb6441fc8d78960e2553f8a89a9b55df2b2950c7a47b183a4ac604f24923b021b8fe18393e4084e887b6c34b6c4404",
+    "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/CornerBench.v22.exe.cbpk"
   }
 }
