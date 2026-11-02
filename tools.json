@@ -476,7 +476,7 @@
       "tags": [
         "document"
       ],
-      "version": "17",
+      "version": "18",
       "desc": "Pull tags, devices, symbols and line connections out of P&ID PDFs into tables and instrument loops. Can ask your work Copilot, through Slipstream, to double-check misread tags.",
       "path": "Tools\\PnID\\PIDReader\\PIDReader.exe",
       "help_file": "Tools\\PnID\\PIDReader\\PIDReader_help.txt",
