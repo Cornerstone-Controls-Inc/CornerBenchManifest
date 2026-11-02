@@ -40,7 +40,7 @@
     "STReader": "9",
     "CornerPDF": "10",
     "SuperDocs": "9",
-    "P&ID Reader": "17",
+    "P&ID Reader": "18",
     "P&ID Maker": "8",
     "TableX": "8",
     "FnR": "16",
@@ -267,17 +267,12 @@
     "P&ID Reader": {
       "kind": "zip",
       "file": "PIDReader.zip",
-      "sha256": "0cf545946438e4143957ab372400bb4060bce6ebebcea8ee0bdeee79655c3050",
+      "sha256": "9fbecfceaa69eb50a36de4ff6305859e0f5bc7949f945fd1af9a0f703dfa413d",
       "enc": "cbpk1",
-      "parts": [
-        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.v17.zip.cbpk.000",
-        "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.v17.zip.cbpk.001"
-      ],
-      "notes": "## v17\n\n- **Verify with Axiom.** With Axiom as the provider, *Ask Copilot* on the review page becomes *Verify with Axiom* and the symbol review runs locally.\n- **AI choice in the title bar.** A button beside the light/dark switch shows which AI the suite is using and switches it between Axiom, Copilot, Claude and a local model. It can also turn on the Customer No-AI Lock, which keeps every CornerStone tool on Axiom: local and deterministic, with nothing sent to the cloud.\n\n## v16\n\nTaskbar identity and AI provider choice for the P&ID review features.\n\n- **Its own icon on the taskbar.** The tool now gives Windows its own identity and puts its icon on the window itself, so it groups and shows under its own icon on the taskbar instead of a generic one.\n- **AI symbol classification and review follow the suite's provider.** They use the shared AI layer, which now offers Axiom as a provider, with the provider chosen per call. Claude runs on your Claude Code login, so no Anthropic API key is needed.\n- **The window icon is found more reliably.** The reader also looks for pidreader_icon.ico next to the program, so the title bar and taskbar pick up the P&ID Reader icon.\n\n## v15\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n- **The step rail, notes and headings follow the switch.** On the dark window the rail stayed white and the notes were dark grey on a dark ground.\n\n## v14 \u2014 AI Symbol Classification, Batch Review & Persistent Verification\n\n- **AI Symbol Classification:** Added automated vision and heuristic classification of valves, actuators, instruments, pumps, and in-line process equipment (`copilot_symbols.py`).\n- **Interactive Batch Symbol Suggestions Dialog:** New `SymbolSuggestionsDialog` allows engineers to review AI-proposed symbol classifications side-by-side with extracted drawing crops, accepting or rejecting proposals in bulk or individually.\n- **Enhanced Review Workflow:** Added dedicated \"Not a tag\" button, Delete key shortcut for immediate rejection of drawing noise, and a 3-way status filter (`To check`, `Unreviewed`, `Reviewed`) to accelerate sheet QA.\n- **Progress Dialog Fix:** Fixed a `QProgressDialog` cancellation bug where dismissing background review cancelled the active session.\n- **Cross-Step Persistence:** Tag review status (`Tag.reviewed`) and OCR repair provenance (`repaired_from`) now persist cleanly across processing, review, and loop export steps.\n\n## v13 \u2014 Stabilization & Shared Gate Integration\n\n- **Shared Runtime Verification:** Bound startup integrity checks to the suite's centralized runtime guard and domain-derived tamper signatures.\n- **Performance:** Optimized EasyOCR tile decomposition and multi-channel image preprocessing on high-resolution P&ID PDFs.\n\n## v12 \u2014 Same behaviour, one fewer copy of the plumbing\n\nNothing here changes what the tool does. \"Ask Copilot\" behaves exactly as it did: the\nsame Yes/No prompt naming what will be sent, the same batching and progress, the same\nlist of suggestions to accept or reject, and nothing written without your approval.\n\nUnderneath, the code that decides whether Copilot can answer \u2014 and what to tell you\nwhen it cannot \u2014 now comes from the suite's shared library rather than a copy kept\nhere, so this tool, EMTools and FSTDecompiler no longer each maintain their own.\n\n## v11 \u2014 A second opinion on the tags it read\n\nThe reader finds about four tags in five, but only about half of those are\ncharacter-perfect: the rest are one-character misreads \u2014 a leading digit eaten at\nthe edge of a bubble, an `O` for a zero, `I` for `L`. Reviewing those by eye is the\nslow part of using this tool.\n\n- **New \"Ask Copilot\" button on the Review step.** It sends the ",
       "components": [
         {
           "id": "app",
-          "sha256": "1da42dabb7ea8b51f91ee970cc39c5f7f08a84ca6e0b7ca2786a60cd2ba65dc4",
+          "sha256": "f0d71949162dc33570ab6645b29b0724ecf2386478e4b8acb140825b1a865487",
           "enc": "cbpk1",
           "include": [
             "PIDReader.exe",
@@ -287,8 +282,8 @@
             "_internal/pid_processing/**",
             "_internal/shared.pyd"
           ],
-          "bytes": 85019933,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.app.1da42dabb7ea.zip.cbpk"
+          "bytes": 89902093,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.app.f0d71949162d.zip.cbpk"
         },
         {
           "id": "ocr",
@@ -317,15 +312,16 @@
         },
         {
           "id": "deps",
-          "sha256": "76293fe4737b5b2e1af62f4c27ae5347c2823ff5f8a3b8ce5e681740baee1869",
+          "sha256": "b4577384b1f8f584af805a264a9a1d560e06ae5ab9e96f55e25515a5c01f1f15",
           "enc": "cbpk1",
           "include": [
             "**"
           ],
-          "bytes": 216127121,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.deps.76293fe4737b.zip.cbpk"
+          "bytes": 216453600,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/PIDReader.deps.b4577384b1f8.zip.cbpk"
         }
-      ]
+      ],
+      "notes": "## v18\n\n- **Opens again.** v17 failed on every launch (a missing import).\n- **AI starts off, in four modes.** The AI button in the title bar now chooses Off, Local AI only, Cloud AI masked or Cloud AI unmasked, and every tool starts with AI off. Off and Local AI only stop anything being sent to a cloud AI. Where a tool has no AI feature, the button is greyed out.\n- **The data mask.** With Cloud AI masked, customer names, sites, people, computer names, addresses and other free text are replaced with stand-ins before anything leaves this PC, and put back in the answer, so files keep their structure and the tool still shows real names. **Mask Center**, opened from the AI menu, shows and edits what is masked.\n- **AI-usage record.** \"Show the AI-usage record\u2026\" in the AI menu saves what this PC's log shows was sent to which cloud AI, masked or not. It replaces the Non-AI Compliance Certificate, which claimed more than the log can show.\n- **Local AI on the new local model.** Local AI only asks Qwen3.5-4B (LocalModel v6), which answers faster and passed more of the suite's AI jobs than the model before it.\n\n## v17\n\n- **Verify with Axiom.** With Axiom as the provider, *Ask Copilot* on the review page becomes *Verify with Axiom* and the symbol review runs locally.\n- **AI choice in the title bar.** A button beside the light/dark switch shows which AI the suite is using and switches it between Axiom, Copilot, Claude and a local model. It can also turn on the Customer No-AI Lock, which keeps every CornerStone tool on Axiom: local and deterministic, with nothing sent to the cloud.\n\n## v16\n\nTaskbar identity and AI provider choice for the P&ID review features.\n\n- **Its own icon on the taskbar.** The tool now gives Windows its own identity and puts its icon on the window itself, so it groups and shows under its own icon on the taskbar instead of a generic one.\n- **AI symbol classification and review follow the suite's provider.** They use the shared AI layer, which now offers Axiom as a provider, with the provider chosen per call. Claude runs on your Claude Code login, so no Anthropic API key is needed.\n- **The window icon is found more reliably.** The reader also looks for pidreader_icon.ico next to the program, so the title bar and taskbar pick up the P&ID Reader icon.\n\n## v15\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n- **The step rail, notes and headings follow the switch.** On the dark window the rail stayed white and the notes were dark grey on a dark ground.\n\n## v14 \u2014 AI Symbol Classification, Batch Review & Persistent Verification\n\n- **AI Symbol Classification:** Added automated vision and heuristic classification of valves, actuators, instruments, pumps, and in-line process equipment (`copilot_symbols.py`).\n- **Interactive Batch Symbol Suggestions Dialog:** New `SymbolSuggestionsDialog` allows engineers to review AI-proposed symbol classifications side-by-side with extracted drawing crops, accepting or rejecting proposals in bulk or individually.\n- **Enhanced Review Workflow:** Added dedicated \"Not a tag\" button, Delete key shortcut for immediate rejection of drawing noise, and a 3-way status filter (`To check`, `Unreviewed`, `Reviewed`) to accelerate sheet QA.\n- **Progress Dialog Fix:** Fixed a `QProgressDialog` cancellation bug where dismissing background review cancelled the active session.\n- **Cross-Step Persistence:** Tag review status (`Tag.reviewed`) and OCR repair provenance (`repaired_from`) now persist cleanly across processing, review, and loop export steps.\n\n## v13 \u2014 Stabilization & Shared Gate Integration\n\n- **Shared Runtime Verification:** Bound startup integrity checks to the suite's centralized runtim"
     },
     "Op2Live": {
       "kind": "zip",
