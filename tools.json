@@ -240,8 +240,8 @@
         "verify"
       ],
       "system": "DeltaV",
-      "version": "5",
-      "desc": "Move a DeltaV database's modules onto a different module class library (PCSD by default): it matches the classes, shows what the change costs, and writes the converted modules.",
+      "version": "6",
+      "desc": "Move a DeltaV database's modules onto a different module class library (PCSD by default): it matches the classes, shows what the change costs, and writes the converted modules. It can also turn a plant's classless modules into classes of their own, verified and simulated before and after.",
       "path": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.exe",
       "help_file": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer_help.txt",
       "icon": "Tools\\DeltaV\\DVNormalizer\\DVNormalizer.ico"
