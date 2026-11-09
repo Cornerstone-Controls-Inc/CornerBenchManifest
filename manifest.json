@@ -20,7 +20,7 @@
     "OperateTools": "27",
     "VIMTools": "10",
     "DvScan": "14",
-    "DvVMManager": "29",
+    "DvVMManager": "30",
     "DVNormalizer": "6",
     "UpgradeScout": "7",
     "Doc2DV": "6",
@@ -512,14 +512,12 @@
     "DvVMManager": {
       "kind": "zip",
       "file": "DvVMManager.zip",
-      "sha256": "e2c24b7f7ee984f725edcab1f061ad23e9219ad19b081ca30e799aaf58bc6953",
+      "sha256": "c71aaf138542b258613e35f4bec111ad357ec78f65a7cc10702b450455c7239c",
       "enc": "cbpk1",
-      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.v29.zip.cbpk",
-      "notes": "## v29\n\n- **AI starts off.** Every tool now starts with AI off, and Off or Local AI only in the AI menu stops every send to a cloud AI, not just some of them.\n- **AI-usage record.** \"Show the AI-usage record\u2026\" in the AI menu saves what this PC's log shows was sent to which cloud AI, masked or not. It replaces the Non-AI Compliance Certificate, which claimed more than the log can show.\n- **Local AI on the new local model.** Local AI only asks Qwen3.5-4B (LocalModel v6), which answers faster and passed more of the suite's AI jobs than the model before it.\n\n## v28\n\nMoving files onto the virtual-controller server, and making more controllers, without leaving the tool.\n\n- **Files tab on ESXi servers.** This PC (or a share like `\\\\devvh04.dev.local\\D$`) on the left, the datastores on the right. Drag files or whole folder trees either way to upload or download, with progress and a Cancel that removes the half-copied file. On the datastore side: new folder, rename, copy, move, delete, measure a folder's size, and register a `.vmx`. Nothing is written over, and files that a registered VM uses cannot be deleted, moved or renamed. Replaces the old Datastore tab.\n- **Make instances, without Emerson's Setup.exe.** Pick a pool version and a device type and make more numbered controllers or IO cards right on the server, with the same names and MAC addresses Setup.exe would give them. Checked against a real Setup.exe run: identical, disks included.\n\n## v27\n\n- **One-click VM provisioning from a blank DB template**, version first: *Suggest from Farm / UTN*, owner and end date for the VM Farm sheet, and the VLAN set on the DeltaV NICs.\n- **Workstation Configuration runs as the named user** and sets the node's identity; a new VM gets its VLAN and Hyper-V time sync in the same step.\n- **AI choice in the title bar.** A button beside the light/dark switch shows which AI the suite is using and switches it between Axiom, Copilot, Claude and a local model. It can also turn on the Customer No-AI Lock, which keeps every CornerStone tool on Axiom: local and deterministic, with nothing sent to the cloud.\n\n## v26\n\nUpdates arrive in pieces, and the window is identified on the taskbar.\n\n- **The download is split into app, browsers and dependencies.** DvVMManager is about 960 MB, of which 417 MB is the bundled Chromium; a change to the tool no longer re-sends all of it.\n- **Its own icon on the taskbar.** The window now registers its own Windows taskbar identity and puts its icon on the top-level window, so the tool groups under its own name and shows its own icon instead of a generic one.\n\n## v25\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **The suite's window.** It opens in the suite's frameless window, with the coloured title bar and the light/dark switch.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n- **Status tiles, chips and cards keep their colours readable** after a light/dark switch; a value stayed in the other mode's pale shade.\n- **\"&\" shows in labels again.** Qt took a lone \"&\" as a shortcut marker and hid it.\n\n## v24\n\nIts own colours instead of the shared charcoal.\n\n- **Jade green on charcoal.** It keeps the charcoal ground it has always had; the blue moved to CornerRDP so the two RDP tools stay a family without being a blur.\n\n_Part of a suite-wide change: every tool now has its own colours, proportions and title-bar mark, so a taskbar full of them is readable at a glance. Data-quality colours (good / uncertain / bad / stale) are deliberately **unchanged** and identical in every tool._\n\n# v23\n\n- **\"Is it the node, or is it me?\" is now a question the tool answers.** Every reading in here\n  was about the far end \u2014 a probe asks the node and reports what came back, so a VPN tha",
       "components": [
         {
           "id": "app",
-          "sha256": "3829179c2b90a1869b274daba155b6ebf575e8d50dac5daaaf328b9d5834e504",
+          "sha256": "4a161202429c8a11e91d8687948d5f029e7d04c7ee31a2c5ec16f2cc78cb1987",
           "enc": "cbpk1",
           "include": [
             "DvVMManager.exe",
@@ -547,8 +545,8 @@
             "bin/**",
             "_vendor/**"
           ],
-          "bytes": 44936636,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.app.3829179c2b90.zip.cbpk"
+          "bytes": 45094636,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.app.4a161202429c.zip.cbpk"
         },
         {
           "id": "browsers",
@@ -562,15 +560,16 @@
         },
         {
           "id": "deps",
-          "sha256": "aa534c73ec63023f95c2469183bbb9497759cb6412bc8f72f1b51b153f142f5c",
+          "sha256": "a6ae7f76ae20701ca5204822a834027ad4b8c62d8d86f0097ad97616031b748c",
           "enc": "cbpk1",
           "include": [
             "**"
           ],
-          "bytes": 186888063,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.deps.aa534c73ec63.zip.cbpk"
+          "bytes": 187136811,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DvVMManager.deps.a6ae7f76ae20.zip.cbpk"
         }
-      ]
+      ],
+      "notes": "## v30\n\n- **Password generator.** Tools \u25b8 Password generator\u2026 (Ctrl+Shift+P) makes readable passwords like `Otter.apple#stew34`: real words, one capitalised, symbols between them and a number on one word. Choose from six, set the words, digits and symbols, then Copy.\n- **Key button on password fields.** In the node editor and beside the engineering account password in a build, the key button fills the field with a generated password and shows it. The password never contains the account name, and its symbols are safe in PowerShell, cmd and RDP typing. Nothing generated is saved.\n\n## v29\n\n- **AI starts off.** Every tool now starts with AI off, and Off or Local AI only in the AI menu stops every send to a cloud AI, not just some of them.\n- **AI-usage record.** \"Show the AI-usage record\u2026\" in the AI menu saves what this PC's log shows was sent to which cloud AI, masked or not. It replaces the Non-AI Compliance Certificate, which claimed more than the log can show.\n- **Local AI on the new local model.** Local AI only asks Qwen3.5-4B (LocalModel v6), which answers faster and passed more of the suite's AI jobs than the model before it.\n\n## v28\n\nMoving files onto the virtual-controller server, and making more controllers, without leaving the tool.\n\n- **Files tab on ESXi servers.** This PC (or a share like `\\\\devvh04.dev.local\\D$`) on the left, the datastores on the right. Drag files or whole folder trees either way to upload or download, with progress and a Cancel that removes the half-copied file. On the datastore side: new folder, rename, copy, move, delete, measure a folder's size, and register a `.vmx`. Nothing is written over, and files that a registered VM uses cannot be deleted, moved or renamed. Replaces the old Datastore tab.\n- **Make instances, without Emerson's Setup.exe.** Pick a pool version and a device type and make more numbered controllers or IO cards right on the server, with the same names and MAC addresses Setup.exe would give them. Checked against a real Setup.exe run: identical, disks included.\n\n## v27\n\n- **One-click VM provisioning from a blank DB template**, version first: *Suggest from Farm / UTN*, owner and end date for the VM Farm sheet, and the VLAN set on the DeltaV NICs.\n- **Workstation Configuration runs as the named user** and sets the node's identity; a new VM gets its VLAN and Hyper-V time sync in the same step.\n- **AI choice in the title bar.** A button beside the light/dark switch shows which AI the suite is using and switches it between Axiom, Copilot, Claude and a local model. It can also turn on the Customer No-AI Lock, which keeps every CornerStone tool on Axiom: local and deterministic, with nothing sent to the cloud.\n\n## v26\n\nUpdates arrive in pieces, and the window is identified on the taskbar.\n\n- **The download is split into app, browsers and dependencies.** DvVMManager is about 960 MB, of which 417 MB is the bundled Chromium; a change to the tool no longer re-sends all of it.\n- **Its own icon on the taskbar.** The window now registers its own Windows taskbar identity and puts its icon on the top-level window, so the tool groups under its own name and shows its own icon instead of a generic one.\n\n## v25\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **The suite's window.** It opens in the suite's frameless window, with the coloured title bar and the light/dark switch.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n- **Status tiles, chips and cards keep their colours readable** after a light/dark switch; a value stayed in the other mode's pale shade.\n- **\"&\" shows in labels again.** Qt took a lone \"&\" as a shortcut marker and hid it.\n\n## v24\n\nIts own colours instead of the shared charcoal.\n\n- **Jade green on charcoal.** It "
     },
     "SkillExplorer": {
       "kind": "zip",
