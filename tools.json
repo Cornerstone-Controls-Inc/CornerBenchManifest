@@ -227,7 +227,7 @@
         "simulate"
       ],
       "system": "DeltaV",
-      "version": "29",
+      "version": "30",
       "desc": "Manage your DeltaV virtual machines from one place: health at a glance, one-click jobs like database export and licence updates, power and checkpoints, and file deployment. Replaces VMTools.",
       "path": "Tools\\DeltaV\\DvVMManager\\DvVMManager.exe",
       "help_file": "Tools\\DeltaV\\DvVMManager\\DvVMManager_help.txt",
