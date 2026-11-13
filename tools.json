@@ -20,7 +20,7 @@
         "edit"
       ],
       "system": "DeltaV",
-      "version": "18",
+      "version": "19",
       "desc": "Report on, edit and bulk-change DeltaV Live graphics (.ahc): find and replace, thumbnails, compare, library analysis and translation.",
       "path": "Tools\\DeltaV\\LiveTools\\LiveTools.exe",
       "help_file": "Tools\\DeltaV\\LiveTools\\LiveTools_help.txt",
@@ -179,7 +179,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "55",
+      "version": "56",
       "desc": "Convert DeltaV Operate graphics to DeltaV Live in a guided, step-by-step process, with mapping review, VBA translation, a design specification and validation tests.",
       "path": "Tools\\DeltaV\\Op2Live\\Op2Live.exe",
       "help_file": "Tools\\DeltaV\\Op2Live\\Op2Live_help.txt",
@@ -633,7 +633,7 @@
         "ai"
       ],
       "system": "DeltaV",
-      "version": "6",
+      "version": "7",
       "desc": "Automated GUI & display test runner: open screens, verify labels and faceplates, execute multi-expectation visual playbooks, and generate standalone audit reports.",
       "path": "Tools\\DeltaV\\TestPilot\\TestPilot.exe",
       "help_file": "Tools\\DeltaV\\TestPilot\\TestPilot_help.txt",
