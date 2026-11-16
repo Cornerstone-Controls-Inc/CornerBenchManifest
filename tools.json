@@ -516,6 +516,17 @@
       "icon": "Tools\\Documentation\\FnR\\FnR.ico"
     },
     {
+      "name": "FollowSuit",
+      "tags": [
+        "edit"
+      ],
+      "version": "1",
+      "desc": "Change one file by hand and FollowSuit makes the same change in the others. It learns the change from your before and after, asks about anything it can't be sure of, and writes a change package. No AI.",
+      "path": "Tools\\Documentation\\FollowSuit\\FollowSuit.exe",
+      "help_file": "Tools\\Documentation\\FollowSuit\\FollowSuit_help.txt",
+      "icon": "Tools\\Documentation\\FollowSuit\\FollowSuit.ico"
+    },
+    {
       "name": "SpecManager",
       "tags": [
         "document",

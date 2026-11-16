@@ -44,6 +44,7 @@
     "P&ID Maker": "8",
     "TableX": "8",
     "FnR": "16",
+    "FollowSuit": "1",
     "SpecManager": "3",
     "ReTemplate": "2",
     "DemoCraft": "6",
@@ -1025,6 +1026,14 @@
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/DataMask.v1.zip.cbpk",
       "notes": "# DataMask \u2014 release notes\n\n## v1\n\nFirst release of Mask Center, the data-protection mask's own window. It opens from the launcher's AI card (\"\ud83d\udee1 Mask Center\u2026\"), from every tool's AI menu, or from its own tile.\n\n- **What the mask does.** With Cloud AI masked chosen in a tool's AI menu, everything sent to a cloud AI has its customer names, sites, people, computer names, addresses and other free text replaced with stand-ins first, and the answer comes back with the real names. Words that are structure, ordinary English, DeltaV vocabulary or numbers stay readable, so the AI can still work (AB12 becomes QX12, the same way every time). File structure stays valid: an FHX still parses, a Word or Excel file still opens.\n- **Dictionary.** One per customer: names that must always be masked even when they are ordinary words, with their spellings and aliases, plus the never-masked words and domains. It can propose names from the project's files, the customer settings, DvVMManager's nodes and the RDP targets, for you to accept.\n- **Vault.** The table of real names and their stand-ins for a customer. It stays on this PC, encrypted to your Windows login, and can be exported with a password to share with a colleague.\n- **Preview.** Drop a file to see it masked side by side, with what changed highlighted and a check that nothing known was left.\n- **Sanitized export.** A folder or zip in, a masked copy out (file names too), with a report of what was masked and anything it could not mask. For sending files to a vendor or support.\n- **Logos, audit trail and policy.** Logos to paint over in images and PDFs; the per-project record of every cloud send; and the effective AI mode with the reason for it (a folder lock, a policy file or your choice)."
+    },
+    "FollowSuit": {
+      "kind": "zip",
+      "file": "FollowSuit.zip",
+      "sha256": "c82fdd61206ebd1eb43ea54d94b7d926b44c90352ecb682ff82fb011981d8bf2",
+      "enc": "cbpk1",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FollowSuit.v1.zip.cbpk",
+      "notes": "# v1\n\n- **Repeat an edit across many files.** Change one file by hand, give FollowSuit the file before and after, and point it at the other files. It works out the change and makes it in each file it fits. Works on text files of any kind: FHX, XML and Live graphics exports, CSV, ini, scripts.\n- **No AI.** Every change comes from a rule learned from your example, shown in plain view. Nothing is sent anywhere.\n- **It asks instead of guessing.** Where your edit can be read more than one way, it shows a real file and what each reading would do to it, and applies only what you confirm. A rule that would change a large share of the files from one or two examples waits for your go-ahead.\n- **A change package, not changed originals.** The result goes to a new folder: the changed files (an FHX holds only the changed items, ready to import), a zip of changed Live graphics, a list of every edit, and a change log row per file.\n- **First release.** It handles changes that repeat the same way from file to file. Where a second example is needed (a number that steps, a name that follows the file), add one."
     }
   },
   "launcher_download": {
