@@ -142,7 +142,7 @@
         "simulate"
       ],
       "system": "DeltaV",
-      "version": "27",
+      "version": "28",
       "desc": "A digital twin of a DeltaV system: simulate an FHX configuration, connect to it over OPC UA, and run automated tests against it.",
       "path": "Tools\\DeltaV\\DvTwin\\DvTwin.exe",
       "help_file": "Tools\\DeltaV\\DvTwin\\DvTwin_help.txt",
