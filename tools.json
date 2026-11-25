@@ -6,7 +6,7 @@
         "convert"
       ],
       "system": "ABB",
-      "version": "15",
+      "version": "16",
       "desc": "Turns an ABB Freelance 2016 export into a DeltaV migration package: readable logic drawings, IO and tag lists, and what each block becomes in DeltaV. No Freelance licence needed.",
       "path": "Tools\\ABB\\ABBMigration\\ABBMigration.exe",
       "help_file": "Tools\\ABB\\ABBMigration\\ABBMigration_help.txt",
