@@ -595,7 +595,7 @@
       "tags": [
         "ai"
       ],
-      "version": "20",
+      "version": "21",
       "desc": "Install Cornerstone's AI add-ons \u2014 skills and tool servers for DeltaV FHX, graphics, OPC UA, alarms, remote machines and Emerson SMS \u2014 into Claude Code or Slipstream in one click.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",

@@ -50,7 +50,7 @@
     "DemoCraft": "6",
     "CornerCast": "11",
     "MP4Transcribe": "9",
-    "SkillExplorer": "20",
+    "SkillExplorer": "21",
     "Slipstream": "14",
     "LocalModel": "7",
     "DataMask": "2",
@@ -571,12 +571,12 @@
     "SkillExplorer": {
       "kind": "zip",
       "file": "SkillExplorer.zip",
-      "sha256": "1f7d6dfd289956d193ab8ad74f941e1a3147ff8cd5d34b01c20487e6874c825e",
+      "sha256": "99da740607292e70db8b5fc3003dd8867f2e7be7e8cb812648f9592bd04748f7",
       "enc": "cbpk1",
       "components": [
         {
           "id": "app",
-          "sha256": "4be04f105dd85b5d6af60e13dde59588bf6c9090aab72616997dd908f2b97159",
+          "sha256": "21dda46d698232bcce4596eaa25b7e4704a1b92ab3caa730b0ccae5da34ddcb3",
           "enc": "cbpk1",
           "include": [
             "SkillExplorer.exe",
@@ -588,121 +588,121 @@
             "_internal/catalog.cp313-win_amd64.pyd",
             "_internal/installer.cp313-win_amd64.pyd"
           ],
-          "bytes": 25528684,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.app.4be04f105dd8.zip.cbpk"
+          "bytes": 32391694,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.app.21dda46d6982.zip.cbpk"
         },
         {
           "id": "skills",
-          "sha256": "564dfe7626a9ae6b2b7d4a243e8d39b1af62c99cbd5eb3f26b44951224474d81",
+          "sha256": "6210faf3758332ac855d35eb4d5f0834621838192410b49e805883e5ed8a3344",
           "enc": "cbpk1",
           "include": [
             "_internal/skills/**"
           ],
-          "bytes": 22617344,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.skills.564dfe7626a9.zip.cbpk"
+          "bytes": 22617866,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.skills.6210faf37583.zip.cbpk"
         },
         {
           "id": "srv-sms",
-          "sha256": "1798bcc2c330ade6c4f07557cc79cad7740e3f20e424dea763943cbabad9406a",
+          "sha256": "d54cca7a0e13ce73e5b75a1ef84cc5dc89fa25f4e0243bd6b2d68e9a6b31aeef",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/sms/**"
           ],
-          "bytes": 352737524,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-sms.1798bcc2c330.zip.cbpk"
+          "bytes": 352748038,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-sms.d54cca7a0e13.zip.cbpk"
         },
         {
           "id": "srv-remote",
-          "sha256": "53b22f1b04bf3b7ebc777d16843cb3ff53f4dc4ca1489aa7825a7d70d50f4199",
+          "sha256": "4f1fd92608c9e36c456734a3e39e6471483d8a44b0dc63c49bfa598168ec5e32",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/remote/**"
           ],
-          "bytes": 170632497,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-remote.53b22f1b04bf.zip.cbpk"
+          "bytes": 170642506,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-remote.4f1fd92608c9.zip.cbpk"
         },
         {
           "id": "srv-chronicle",
-          "sha256": "ee7190833519cd8a14fb87d2abdbd4a4ff77c8b0c7c2563695884e4f27795281",
+          "sha256": "8c3777119215acc43ca79dca96428bd0d585d31bd09b24106711a113ad853055",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/chronicle/**"
           ],
-          "bytes": 159010908,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-chronicle.ee7190833519.zip.cbpk"
+          "bytes": 159020751,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-chronicle.8c3777119215.zip.cbpk"
         },
         {
           "id": "srv-opcua",
-          "sha256": "88d9c820d427a562dcccfdc118e2ea9d871016270326d6d52b68c1fa6e70a372",
+          "sha256": "7c6e7fbb82a6740c017be1723e8d6846efb1a0823a5b1abe7cef4af12192011d",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/opcua/**"
           ],
-          "bytes": 162493207,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-opcua.88d9c820d427.zip.cbpk"
+          "bytes": 162503178,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-opcua.7c6e7fbb82a6.zip.cbpk"
         },
         {
           "id": "srv-grf",
-          "sha256": "eed8b707d86b3b46dfbfd3b2274a0d4d7db0bf698d7bef73a2cf92728125b635",
+          "sha256": "0452f85755b3aad2c3ac6f3ecc9f895eab900667e49a078699e959f9e2b16718",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/grf/**"
           ],
-          "bytes": 150850124,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-grf.eed8b707d86b.zip.cbpk"
+          "bytes": 151128313,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-grf.0452f85755b3.zip.cbpk"
         },
         {
           "id": "srv-syncade",
-          "sha256": "975a0f1a55fbcffb156f223bcfd932f21763d2dfaad9ae5bf4983cf2c3fffd90",
+          "sha256": "f80a5de98554d2c446ce71df99f362827cb1767866b069c1c4878785a8d78f23",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/syncade/**"
           ],
-          "bytes": 161070446,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-syncade.975a0f1a55fb.zip.cbpk"
+          "bytes": 161080664,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-syncade.f80a5de98554.zip.cbpk"
         },
         {
           "id": "srv-logix",
-          "sha256": "32dd4ab4feb93ca35870cd89f68b3df906e6fa596106ad23eb6dad768f93272b",
+          "sha256": "4abc54d806e8ce48bf8492902d08d5dec3e48462b9f782185d926a2950339b33",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/logix/**"
           ],
-          "bytes": 148417043,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-logix.32dd4ab4feb9.zip.cbpk"
+          "bytes": 148427088,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-logix.4abc54d806e8.zip.cbpk"
         },
         {
           "id": "srv-fhx",
-          "sha256": "2a27bfb92df121e8e7a41fdc373988160809aa92457522e332adb193ccb0ef93",
+          "sha256": "d3ac209c0dc7e6f4c57e50bab07b66b5c00a89ec1a9b506c234b44e771cb1bc0",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/fhx/**"
           ],
-          "bytes": 148590279,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-fhx.2a27bfb92df1.zip.cbpk"
+          "bytes": 148600771,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-fhx.d3ac209c0dc7.zip.cbpk"
         },
         {
           "id": "srv-apprentice",
-          "sha256": "b0ff6c8b96b55173ae676014af29c0035b91394aa4da7a5e176dbb0bbcd78d48",
+          "sha256": "ac1ab9c31cbab190d5720a488ea6d7716c21744c338b058c5da1ef8960c878ae",
           "enc": "cbpk1",
           "include": [
             "_internal/servers/apprentice/**"
           ],
-          "bytes": 158950277,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-apprentice.b0ff6c8b96b5.zip.cbpk"
+          "bytes": 158960122,
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.srv-apprentice.ac1ab9c31cba.zip.cbpk"
         },
         {
           "id": "deps",
-          "sha256": "4af3dd854cb394ea5ed61600c3264c560aecd0df2ce1ecdfa10bda56f7eadf29",
+          "sha256": "dca1e73aae572ada296be66e811424501ee50d0f77ed89d661af84958dfba2e1",
           "enc": "cbpk1",
           "include": [
             "**"
           ],
           "bytes": 68785739,
-          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.deps.4af3dd854cb3.zip.cbpk"
+          "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/SkillExplorer.deps.dca1e73aae57.zip.cbpk"
         }
       ],
-      "notes": "## v20\n\n- **Remove from the Skills tab.** \"Remove installed...\" deletes the installed copy of a skill and \"Remove backup...\" deletes one of its backups (you pick which when there are several). Each asks first, only plain folders inside the skills folder are ever touched, and the buttons are greyed out when there is nothing to remove.\n- **\"Bundled tool\" is checked.** A skill shows the chip only when its program is really in the catalog; otherwise it shows \"tool missing\".\n- **Broken catalog entries are reported.** An entry that cannot be loaded no longer vanishes silently: the footer warns how many were skipped and the tooltip lists which and why.\n- **Small fix.** \"1 file\" instead of \"1 files\".\n\n## v19\n\n- **The tool servers honour the data mask.** With Cloud AI masked, what the FHX, GRF and other servers return to Claude Code is masked, and names Claude sends back are unmasked, so searches still find the real tags.\n- **Tool descriptions use made-up examples.** The Syncade and FHX descriptions quoted a real server, material, lot and customer name to every model that listed them.\n- **AI starts off, in four modes.** The AI button in the title bar now chooses Off, Local AI only, Cloud AI masked or Cloud AI unmasked, and every tool starts with AI off. Off and Local AI only stop anything being sent to a cloud AI. Where a tool has no AI feature, the button is greyed out.\n- **The data mask.** With Cloud AI masked, customer names, sites, people, computer names, addresses and other free text are replaced with stand-ins before anything leaves this PC, and put back in the answer, so files keep their structure and the tool still shows real names. **Mask Center**, opened from the AI menu, shows and edits what is masked.\n- **AI-usage record.** \"Show the AI-usage record\u2026\" in the AI menu saves what this PC's log shows was sent to which cloud AI, masked or not. It replaces the Non-AI Compliance Certificate, which claimed more than the log can show.\n- **Local AI on the new local model.** Local AI only asks Qwen3.5-4B (LocalModel v6), which answers faster and passed more of the suite's AI jobs than the model before it.\n\n## v18\n\n- **Long FHX text handled the DeltaV way.** Text too long for DeltaV to take in one piece (long scripts, expressions, descriptions) is split into 4,000-character pieces the way DeltaV writes it, and read back whole, so imports no longer fail with \"maximum token length exceeded\".\n- **AI choice in the title bar.** A button beside the light/dark switch shows which AI the suite is using and switches it between Axiom, Copilot, Claude and a local model. It can also turn on the Customer No-AI Lock, which keeps every CornerStone tool on Axiom: local and deterministic, with nothing sent to the cloud.\n\n## v17\n\nSyncade tools for your AI assistant, in parts, and a taskbar icon.\n\n- **A Syncade MES server is bundled.** It gives AI assistants read and query access to Emerson Syncade through its web services: server status, barcode and identifier scans, containers and lots, manufacturing orders and BOMs, materials, equipment, and a raw SOAP call.\n- **Ships in parts.** The app, the skills, each MCP server and the runtime are separate pieces, so a normal update downloads only what changed instead of about 600 MB.\n- **Its own icon on the taskbar.** The tool now gives Windows its own identity and puts its icon on the window itself, so it groups and shows under its own icon on the taskbar instead of a generic one.\n\n## v16\n\n- **A window colour of its own.** Every tool in the suite now has its own colour, where nine of them used to share one navy. The title bar is a deeper shade of it.\n- **The suite's window.** It opens in the suite's frameless window, with the coloured title bar and the light/dark switch.\n- **Light and dark both read.** Text on a coloured button picks dark or white ink to suit the colour, and the window's own colours follow the light/dark switch instead of keeping the mode it opened in.\n- **Skill text and chips re-render on a lig"
+      "notes": "## v21\n\n- **The graphics server runs the suite's new graphics engine.** The GRF server now reads and renames Operate pictures inside itself, on the engine the rest of the suite uses, instead of starting a separate engine program. Its tools, report columns and rename preview work as before.\n- **Values read as iFIX gives them.** A tag's source names the tag its connection holds, not leftover text. Pictures are named after their file, and about 85 objects the old engine lost are now read.\n- **Renames do exactly what the preview listed.** An apply writes the edits its preview showed, and nothing else. With expressions turned off, an expression and the tag references stored behind it are both left alone; the old engine skipped the text but still changed some of those references.\n- **Faster on large pictures.** Indexing 289 K360 pictures takes 5.9 s, against 7.7 s before.\n\n## v20\n\n- **Remove from the Skills tab.** \"Remove installed...\" deletes the installed copy of a skill and \"Remove backup...\" deletes one of its backups (you pick which when there are several). Each asks first, only plain folders inside the skills folder are ever touched, and the buttons are greyed out when there is nothing to remove.\n- **\"Bundled tool\" is checked.** A skill shows the chip only when its program is really in the catalog; otherwise it shows \"tool missing\".\n- **Broken catalog entries are reported.** An entry that cannot be loaded no longer vanishes silently: the footer warns how many were skipped and the tooltip lists which and why.\n- **Small fix.** \"1 file\" instead of \"1 files\".\n\n## v19\n\n- **The tool servers honour the data mask.** With Cloud AI masked, what the FHX, GRF and other servers return to Claude Code is masked, and names Claude sends back are unmasked, so searches still find the real tags.\n- **Tool descriptions use made-up examples.** The Syncade and FHX descriptions quoted a real server, material, lot and customer name to every model that listed them.\n- **AI starts off, in four modes.** The AI button in the title bar now chooses Off, Local AI only, Cloud AI masked or Cloud AI unmasked, and every tool starts with AI off. Off and Local AI only stop anything being sent to a cloud AI. Where a tool has no AI feature, the button is greyed out.\n- **The data mask.** With Cloud AI masked, customer names, sites, people, computer names, addresses and other free text are replaced with stand-ins before anything leaves this PC, and put back in the answer, so files keep their structure and the tool still shows real names. **Mask Center**, opened from the AI menu, shows and edits what is masked.\n- **AI-usage record.** \"Show the AI-usage record\u2026\" in the AI menu saves what this PC's log shows was sent to which cloud AI, masked or not. It replaces the Non-AI Compliance Certificate, which claimed more than the log can show.\n- **Local AI on the new local model.** Local AI only asks Qwen3.5-4B (LocalModel v6), which answers faster and passed more of the suite's AI jobs than the model before it.\n\n## v18\n\n- **Long FHX text handled the DeltaV way.** Text too long for DeltaV to take in one piece (long scripts, expressions, descriptions) is split into 4,000-character pieces the way DeltaV writes it, and read back whole, so imports no longer fail with \"maximum token length exceeded\".\n- **AI choice in the title bar.** A button beside the light/dark switch shows which AI the suite is using and switches it between Axiom, Copilot, Claude and a local model. It can also turn on the Customer No-AI Lock, which keeps every CornerStone tool on Axiom: local and deterministic, with nothing sent to the cloud.\n\n## v17\n\nSyncade tools for your AI assistant, in parts, and a taskbar icon.\n\n- **A Syncade MES server is bundled.** It gives AI assistants read and query access to Emerson Syncade through its web services: server status, barcode and identifier scans, containers and lots, manufacturing orders and BOMs, materials, equipment, and a raw SOAP call.\n- **Ships in parts.** The app, "
     },
     "DVEmu": {
       "kind": "zip",
