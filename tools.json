@@ -264,7 +264,7 @@
         "convert"
       ],
       "system": "DeltaV",
-      "version": "9",
+      "version": "10",
       "desc": "Turn drawn or scanned operator screens (PDF, one page per graphic) into DeltaV Operate pictures (.grf) built on your site's picture template and dynamo set, and into DeltaV Live displays (.di.ahc).",
       "path": "Tools\\DeltaV\\Doc2DV\\Doc2DV.exe",
       "help_file": "Tools\\DeltaV\\Doc2DV\\Doc2DV_help.txt",
@@ -509,7 +509,7 @@
       "tags": [
         "edit"
       ],
-      "version": "17",
+      "version": "18",
       "desc": "Find and replace across Word, Excel, PowerPoint, DeltaV FHX, Operate graphics, XML and text files, with a preview before anything changes.",
       "path": "Tools\\Documentation\\FnR\\FnR.exe",
       "help_file": "Tools\\Documentation\\FnR\\FnR_help.txt",
