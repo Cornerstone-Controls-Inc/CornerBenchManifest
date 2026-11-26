@@ -351,7 +351,7 @@
         "convert"
       ],
       "system": "Provox",
-      "version": "12",
+      "version": "13",
       "desc": "Generate DeltaV migration deliverables from Provox configuration data: appendix tables, the base build workbook and a Functional Requirements document.",
       "path": "Tools\\Provox\\PVXMigration\\PVXMigration.exe",
       "help_file": "Tools\\Provox\\PVXMigration\\PVXMigration_help.txt",
