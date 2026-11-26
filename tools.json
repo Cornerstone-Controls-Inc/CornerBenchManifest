@@ -155,7 +155,7 @@
         "train"
       ],
       "system": "DeltaV",
-      "version": "14",
+      "version": "15",
       "desc": "Run a DeltaV configuration's control logic offline against a simulated plant, with 2D/3D live views and repeatable test scenarios. No DeltaV or OPC needed.",
       "path": "Tools\\DeltaV\\DVEmu\\DVEmu.exe",
       "help_file": "Tools\\DeltaV\\DVEmu\\DVEmu_help.txt",
