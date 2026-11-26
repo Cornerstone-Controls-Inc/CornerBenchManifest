@@ -15,18 +15,6 @@
   ],
   "DeltaV": [
     {
-      "name": "LiveTools",
-      "tags": [
-        "edit"
-      ],
-      "system": "DeltaV",
-      "version": "22",
-      "desc": "Report on, edit and bulk-change DeltaV Live graphics (.ahc): find and replace, thumbnails, compare, library analysis and translation.",
-      "path": "Tools\\DeltaV\\LiveTools\\LiveTools.exe",
-      "help_file": "Tools\\DeltaV\\LiveTools\\LiveTools_help.txt",
-      "icon": "Tools\\DeltaV\\LiveTools\\LiveTools.ico"
-    },
-    {
       "name": "DvHistExport",
       "tags": [
         "connect"
@@ -186,18 +174,6 @@
       "icon": "Tools\\DeltaV\\Op2Live\\Op2Live.ico"
     },
     {
-      "name": "OperateTools",
-      "tags": [
-        "edit"
-      ],
-      "system": "DeltaV",
-      "version": "28",
-      "desc": "Report on, search, bulk-edit and compare DeltaV Operate (iFix) graphics (.grf), including tag groups and VBA, and repair broken animation links.",
-      "path": "Tools\\DeltaV\\OperateTools\\OperateTools.exe",
-      "help_file": "Tools\\DeltaV\\OperateTools\\OperateTools_help.txt",
-      "icon": "Tools\\DeltaV\\OperateTools\\OperateTools.ico"
-    },
-    {
       "name": "VIMTools",
       "tags": [
         "decode"
@@ -284,6 +260,21 @@
       "icon": "Tools\\DeltaV\\AMSTools\\AMSTools.ico"
     }
   ],
+  "Graphics": [
+    {
+      "name": "AlcHMIst",
+      "tags": [
+        "decode",
+        "verify",
+        "edit"
+      ],
+      "version": "1",
+      "desc": "Read, compare, check and bulk-edit HMI graphics from DeltaV Live and Operate, FactoryTalk View and RSView32, ProVOX, ABB Freelance, Ignition and FactoryTalk Optix in one window. Replaces FTViewTools, ODFDiff, OperateTools and LiveTools.",
+      "path": "Tools\\Graphics\\AlcHMIst\\AlcHMIst.exe",
+      "help_file": "Tools\\Graphics\\AlcHMIst\\AlcHMIst_help.txt",
+      "icon": "Tools\\Graphics\\AlcHMIst\\AlcHMIst.ico"
+    }
+  ],
   "Provox": [
     {
       "name": "PvxIO",
@@ -332,18 +323,6 @@
       "path": "Tools\\Provox\\FSTDecompiler\\FSTDecompiler.exe",
       "help_file": "Tools\\Provox\\FSTDecompiler\\FSTDecompiler_help.txt",
       "icon": "Tools\\Provox\\FSTDecompiler\\FSTDecompiler.ico"
-    },
-    {
-      "name": "ODFDiff",
-      "tags": [
-        "verify"
-      ],
-      "system": "Provox",
-      "version": "13",
-      "desc": "Compare two versions of an HMI configuration and see the changes as screen overlays, interactive HTML reports and an Excel change log.",
-      "path": "Tools\\Provox\\ODFDiff\\ODFDiff.exe",
-      "help_file": "Tools\\Provox\\ODFDiff\\ODFDiff_help.txt",
-      "icon": "Tools\\Provox\\ODFDiff\\ODFDiff.ico"
     },
     {
       "name": "PVXMigration",
@@ -419,18 +398,6 @@
       "path": "Tools\\AllenBradley\\ABCommission.exe",
       "help_file": "Tools\\AllenBradley\\ABCommission_help.txt",
       "icon": "Tools\\AllenBradley\\ABCommission.ico"
-    },
-    {
-      "name": "FTViewTools",
-      "tags": [
-        "decode"
-      ],
-      "system": "Allen Bradley",
-      "version": "9",
-      "desc": "Read FactoryTalk View SE/ME displays without FactoryTalk installed: every tag, caption and expression, which displays use each tag, and inconsistent shortcuts flagged. Exports CSV and HTML.",
-      "path": "Tools\\AllenBradley\\FTViewTools.exe",
-      "help_file": "Tools\\AllenBradley\\FTViewTools_help.txt",
-      "icon": "Tools\\AllenBradley\\FTViewTools.ico"
     }
   ],
   "CodeSys": [

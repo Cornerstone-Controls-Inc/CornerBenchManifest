@@ -3,7 +3,6 @@
   "installer_url": "https://cornerstonecontrols1c.sharepoint.com/sites/ProjectEngineers/Shared%20Documents/General/Engineering%20Tools/CornerBench%20ToolSuite/CornerBench_Setup.zip?download=1",
   "tools": {
     "ABB Migration": "16",
-    "LiveTools": "22",
     "DvHistExport": "8",
     "SuperOPCWatchIt": "10",
     "DifFHX": "15",
@@ -17,7 +16,6 @@
     "DVEmu": "15",
     "OPCBridge": "9",
     "Op2Live": "60",
-    "OperateTools": "28",
     "VIMTools": "11",
     "DvScan": "15",
     "DvVMManager": "31",
@@ -25,18 +23,17 @@
     "UpgradeScout": "8",
     "Doc2DV": "11",
     "AMSTools": "6",
+    "AlcHMIst": "1",
     "PvxIO": "13",
     "PvxPDX": "18",
     "PDXDiff": "11",
     "FSTDecompiler": "12",
-    "ODFDiff": "13",
     "PVXMigration": "13",
     "VMCreds": "11",
     "ABComms": "9",
     "EDSCatalog": "8",
     "Logix2dv": "13",
     "ABCommission": "11",
-    "FTViewTools": "9",
     "STReader": "10",
     "CornerPDF": "11",
     "SuperDocs": "10",
@@ -71,6 +68,10 @@
     "CornerCode",
     "DvStation",
     "FHXVerify",
+    "FTViewTools",
+    "LiveTools",
+    "ODFDiff",
+    "OperateTools",
     "PunchList",
     "WebFHX"
   ],
@@ -1025,6 +1026,14 @@
       "enc": "cbpk1",
       "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/FollowSuit.v1.zip.cbpk",
       "notes": "# v1\n\n- **Repeat an edit across many files.** Change one file by hand, give FollowSuit the file before and after, and point it at the other files. It works out the change and makes it in each file it fits. Works on text files of any kind: FHX, XML and Live graphics exports, CSV, ini, scripts.\n- **No AI.** Every change comes from a rule learned from your example, shown in plain view. Nothing is sent anywhere.\n- **It asks instead of guessing.** Where your edit can be read more than one way, it shows a real file and what each reading would do to it, and applies only what you confirm. A rule that would change a large share of the files from one or two examples waits for your go-ahead.\n- **A change package, not changed originals.** The result goes to a new folder: the changed files (an FHX holds only the changed items, ready to import), a zip of changed Live graphics, a list of every edit, and a change log row per file.\n- **First release.** It handles changes that repeat the same way from file to file. Where a second example is needed (a number that steps, a name that follows the file), add one."
+    },
+    "AlcHMIst": {
+      "kind": "zip",
+      "file": "AlcHMIst.zip",
+      "sha256": "ba69f288408eef216149305e815575aa643376da27b10bc7e332a294c74ed6de",
+      "enc": "cbpk1",
+      "url": "https://github.com/Cornerstone-Controls-Inc/CornerBenchManifest/releases/download/tools/AlcHMIst.v1.zip.cbpk",
+      "notes": "## v1\n\n- **One tool instead of four.** AlcHMIst replaces FTViewTools, ODFDiff, OperateTools and LiveTools, which retire with this release. Everything they did is here, on the same engines.\n- **Every HMI graphics system in one window.** A strip of system buttons picks the mode: DeltaV Live, DeltaV Operate, FactoryTalk View (with RSView32 and .mer/.apa archives), ProVOX, ABB Freelance, Ignition and FactoryTalk Optix. Opening a folder, file or archive picks the mode by itself, and each mode keeps its own project.\n- **Five tabs, the same in every mode:** View, Edit, Check, Compare and Document. Each system's own pages sit inside them.\n- **See every display:** drawn, its objects and properties, and drawn again for tag values you type in. Tags, text and scripts are searchable tables. The `.*` button on any filter searches with a regular expression.\n- **Compare two versions:** what was added, removed and changed, display by display, with the changes boxed on the drawing and a pixel check. Saves an Excel change log for FAT/SAT packs and an HTML report.\n- **Checks in every mode:** displays not read completely, objects off the display, empty or stacked objects, repeated names. Operate adds its linter.\n- **Find & replace and tag renames for Live and Operate,** with the regex helper OperateTools had: a pattern builder, a tester on values from the project, and warnings as you type. A preview lists every match and why one is left alone.\n- **Operate: Batch edit with forms.** Pick which objects and what to do (set a property, move animations to another tag, remove animations, rename, repair). Each rule reads back in plain words, and a preview shows every change. Batch edit also round-trips every property through Excel, with a preview. Resolution, Repair, Picture reports, Tag groups and Script (advanced) are all here.\n- **Live: all of LiveTools' pages:** Bulk edit, Editor, Rework, Verify, Standards, Findings, Library, Live reports, Design spec, Localize and Live values. Open takes the export folder, its Graphics.zip or a Live backup.\n- **The project you open is never written.** Every writing page writes to a folder outside it and reads each copy back. LiveTools' pages edit a working copy.\n- **Clear when it is busy.** A cover says what is opening or being read, with Cancel, and comes down when the tabs are ready to use.\n- **Runs from the command line:** `survey`, `tags`, `find`, `text`, `scripts`, `render`, `compare`, `checks`, `replace`, `pdx` and `show`. `live \u2026` is LiveTools' command line.\n- Ignition and Optix are built from public documentation and are marked unverified until checked against a site's project."
     }
   },
   "launcher_download": {
