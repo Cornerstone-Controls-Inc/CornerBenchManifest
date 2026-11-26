@@ -509,7 +509,7 @@
       "tags": [
         "edit"
       ],
-      "version": "18",
+      "version": "19",
       "desc": "Find and replace across Word, Excel, PowerPoint, DeltaV FHX, Operate graphics, XML and text files, with a preview before anything changes.",
       "path": "Tools\\Documentation\\FnR\\FnR.exe",
       "help_file": "Tools\\Documentation\\FnR\\FnR_help.txt",
@@ -595,7 +595,7 @@
       "tags": [
         "ai"
       ],
-      "version": "21",
+      "version": "22",
       "desc": "Install Cornerstone's AI add-ons \u2014 skills and tool servers for DeltaV FHX, graphics, OPC UA, alarms, remote machines and Emerson SMS \u2014 into Claude Code or Slipstream in one click.",
       "path": "Tools\\AI\\SkillExplorer\\SkillExplorer.exe",
       "help_file": "Tools\\AI\\SkillExplorer\\SkillExplorer_help.txt",
