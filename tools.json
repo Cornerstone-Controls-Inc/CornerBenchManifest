@@ -631,7 +631,7 @@
         "ai"
       ],
       "system": "",
-      "version": "2",
+      "version": "3",
       "desc": "Mask Center: set up the data-protection mask that hides customer names, sites, people, hosts and addresses before anything reaches a cloud AI. Build each customer's dictionary, preview and export masked copies, and export the AI audit trail. Also opens from the AI card and every tool's AI menu.",
       "path": "Tools\\AI\\DataMask\\DataMask.exe",
       "help_file": "Tools\\AI\\DataMask\\DataMask_help.txt",
