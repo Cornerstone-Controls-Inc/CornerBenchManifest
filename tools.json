@@ -268,7 +268,7 @@
         "verify",
         "edit"
       ],
-      "version": "2",
+      "version": "3",
       "desc": "Read, compare, check and bulk-edit HMI graphics from DeltaV Live and Operate, FactoryTalk View and RSView32, ProVOX, ABB Freelance, Ignition and FactoryTalk Optix in one window. Replaces FTViewTools, ODFDiff, OperateTools and LiveTools.",
       "path": "Tools\\Graphics\\AlcHMIst\\AlcHMIst.exe",
       "help_file": "Tools\\Graphics\\AlcHMIst\\AlcHMIst_help.txt",
